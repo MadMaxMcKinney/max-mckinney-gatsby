@@ -1,19 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 const ProjectCard = (props) => {
   return (
 	<ProjectCardContainer href={props.data.frontmatter.path}>
-		<img src={props.data.frontmatter.image} alt="Project Image"/>
+		<Img className="project-card-image" sizes={props.data.frontmatter.image.childImageSharp.sizes} alt="Project Image"/>
 		<ProjectCardContent>
 			<h4>{props.data.frontmatter.title}</h4>
 			<p>{props.data.frontmatter.projectShortBrief}</p>
-			<p class="read">Read more about it</p>
+			<p className="read">Read more about it</p>
 		</ProjectCardContent>
 	</ProjectCardContainer>
   )
 }
+
+// TODO: Create a style component wrapper for the gatsby-image component
 
 const ProjectCardContainer = styled.a`
 	display: grid;
@@ -28,7 +31,7 @@ const ProjectCardContainer = styled.a`
 		padding: 40px 32px;
 		align-self: center;
 	}
-	img {
+	.project-card-image {
 		grid-column: 1;
 		padding: 0;
 		height: 100%;
@@ -52,7 +55,7 @@ const ProjectCardContainer = styled.a`
 		opacity: 1;
 		border-bottom: 1px solid #cecece;
 		position: relative;
-		transition: opacity $animation-time;
+		transition: opacity 0.3s;
 		--accent-color: white;
 		&:after {
 			content: '';
@@ -62,7 +65,7 @@ const ProjectCardContainer = styled.a`
 			right: 100%;
 			bottom: -1px;
 			height: 1px;
-			transition: all $animation-time;
+			transition: all 0.3s;
 		}
 	}
 	&:hover {

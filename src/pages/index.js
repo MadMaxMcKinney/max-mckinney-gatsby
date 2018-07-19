@@ -11,7 +11,7 @@ const IndexPage = ({data}) => (
 	<ProjectCardGrid>
 
 		{data.allMarkdownRemark.edges.map(({node}) => (
-			<ProjectCard data={node}>
+			<ProjectCard data={node} key={node.key}>
 			</ProjectCard>
 		))}
 
@@ -65,7 +65,13 @@ query ProjectQuery {
 			  path
 			  projectShortBrief
 			  themeColor
-			  image
+			  image {
+				childImageSharp {
+				  sizes(maxWidth: 900) {
+					...GatsbyImageSharpSizes
+				  }
+				}
+			  }
 			}
 		  }
 		}

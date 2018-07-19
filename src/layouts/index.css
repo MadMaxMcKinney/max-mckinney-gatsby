@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
 
 html {
-	font-family: 'Roboto', sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
 body {
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	background: black;
 	color: white;
@@ -204,8 +204,6 @@ html {
 	box-sizing: inherit;
 }
 body {
-	color: white;
-	font-family: georgia, serif;
 	font-weight: normal;
 	word-wrap: break-word;
 	font-kerning: normal;
@@ -625,8 +623,58 @@ pre tt:after {
 
 /* Overrides */
 
+html {
+	font-size: 20px;
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	transition: all 0.3s;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+a:hover, a:focus, a:active {
+	opacity: 0.6;
+	text-decoration: none;
+}
+
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Source Sans Pro", sans-serif;
+	margin: 0;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+	margin-top: 24px;
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+h5 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 0.95rem;
 }
 
 strong {

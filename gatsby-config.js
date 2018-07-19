@@ -13,6 +13,16 @@ module.exports = {
 				name: 'pages',
 			},
 		},
-		`gatsby-plugin-react-next`
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				path: `${__dirname}/src/assets/img`,
+				name: 'img',
+			},
+		},
+		`gatsby-plugin-react-next`,
+		`gatsby-transformer-sharp`,
+		`gatsby-plugin-sharp`,
+		'gatsby-image'
 	],
 }
