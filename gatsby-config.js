@@ -13,5 +13,6 @@ module.exports = {
 				name: 'pages',
 			},
 		},
+		`gatsby-plugin-react-next`
 	],
 }

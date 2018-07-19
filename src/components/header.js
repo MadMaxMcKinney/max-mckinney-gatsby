@@ -110,6 +110,9 @@ const SiteLogoContainer = styled.div`
     width: 100%;
 	flex-grow: 1;
 	padding: 20px 50px;
+	@media (max-width: 1155px) {
+		padding: 0px;
+	}
 `
 
 export default Header
