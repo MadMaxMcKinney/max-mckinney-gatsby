@@ -2,13 +2,23 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+import logo from './../assets/max-white.png'
+
+import FaLinkedIn from 'react-icons/lib/fa/linkedin'
+import FaMedium from 'react-icons/lib/fa/medium'
+import Fa500px from 'react-icons/lib/fa/500px'
+import FaDribbble from 'react-icons/lib/fa/dribbble'
+import FaTwitter from 'react-icons/lib/fa/twitter'
+import FaGithub from 'react-icons/lib/fa/github'
+
+const iconSize = 17;
+
 const Header = () => (
 	<Navmenu>
 		<SiteLogoContainer>
 			<Link to="/">
 				<SiteLogo
-					class="site-logo"
-					src="<?php echo get_stylesheet_directory_uri(); ?>/img/max-white-v2.png"
+					src={logo}
 				/>
 			</Link>
 		</SiteLogoContainer>
@@ -16,32 +26,32 @@ const Header = () => (
 		<SitePages>
 			<li>
 				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank">
-					<i class="fab fa-lg fa-linkedin" />
+					<FaLinkedIn size={iconSize}/>
 				</a>
 			</li>
 			<li>
 				<a href="https://medium.com/@maxmckinney" target="_blank">
-					<i class="fab fa-lg fa-medium" />
+					<FaMedium size={iconSize}/>
 				</a>
 			</li>
 			<li>
 				<a href="https://500px.com/maxmckinney" target="_blank">
-					<i class="fab fa-lg fa-500px" />
+					<Fa500px size={iconSize}/>
 				</a>
 			</li>
 			<li>
 				<a href="https://dribbble.com/MaxMcKinney" target="_blank">
-					<i class="fab fa-lg fa-dribbble" />
+					<FaDribbble size={iconSize}/>
 				</a>
 			</li>
 			<li>
 				<a href="https://twitter.com/timmaxmckinney" target="_blank">
-					<i class="fab fa-lg fa-twitter" />
+					<FaTwitter size={iconSize}/>
 				</a>
 			</li>
 			<li>
 				<a href="https://github.com/MaxMcKinney" target="_blank">
-					<i class="fab fa-lg fa-github" />
+					<FaGithub size={iconSize}/>
 				</a>
 			</li>
 		</SitePages>
@@ -78,6 +88,9 @@ const SitePages = styled.ul`
 		a {
 			font-size: 0.7rem;
 			font-weight: 500;
+			text-decoration: none;
+			color: white;
+			transition: all 0.6s;
 		}
 	}
 `
@@ -95,7 +108,8 @@ const SiteLogoContainer = styled.div`
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    flex-grow: 1;
+	flex-grow: 1;
+	padding: 20px 50px;
 `
 
 export default Header
