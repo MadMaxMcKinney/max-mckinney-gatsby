@@ -1,16 +1,17 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Max McKinney',
-  },
-  plugins: [
-	  'gatsby-plugin-react-helmet',
-	  {
-		  resolve: 'gatsby-source-filesystem',
-		  options: {
-			  path: `${__dirname}/src/pages`,
-			  name: pages
-		  }
-	  },
-	  'gatsby-transformer-remark'
+	siteMetadata: {
+		title: 'Max McKinney',
+	},
+	plugins: [
+		'gatsby-plugin-react-helmet',
+		'gatsby-plugin-styled-components',
+		'gatsby-transformer-remark',
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				path: `${__dirname}/src/pages`,
+				name: 'pages',
+			},
+		},
 	],
 }
