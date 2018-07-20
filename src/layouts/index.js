@@ -11,6 +11,7 @@ import safariTab from './../assets/favicon/safari-pinned-tab.svg'
 
 // Component imports
 import Header from '../components/header'
+import Footer from '../components/footer'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -49,6 +50,9 @@ const Layout = ({ children, data }) => (
 		<PageGrid>
 			{children()}
 		</PageGrid>
+
+		<Footer />
+
 	</MainContainer>
 )
 

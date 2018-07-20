@@ -1,5 +1,4 @@
 ---
-path: "/gearhead-forge"
 title: "Gearhead Forge"
 projectClient: "Gearhead Forge"
 projectDate: "January 2017"

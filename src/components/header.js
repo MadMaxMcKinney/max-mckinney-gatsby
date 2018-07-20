@@ -91,7 +91,16 @@ const SitePages = styled.ul`
 			text-decoration: none;
 			color: white;
 			transition: all 0.6s;
+			&:hover {
+				opacity: 0.6;
+			}
 		}
+	}
+	@media(max-width: 1155px) {
+		margin-right: 0;
+	}
+	@media(max-width: 715px) {
+		display: none;
 	}
 `
 const SiteLogo = styled.img`

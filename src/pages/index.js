@@ -11,8 +11,7 @@ const IndexPage = ({data}) => (
 	<ProjectCardGrid>
 
 		{data.allMarkdownRemark.edges.map(({node}) => (
-			<ProjectCard data={node} key={node.key}>
-			</ProjectCard>
+			<ProjectCard data={node} key={node.key}></ProjectCard>
 		))}
 
 	</ProjectCardGrid>
@@ -60,6 +59,9 @@ query ProjectQuery {
 	allMarkdownRemark {
 		edges {
 		  node {
+			fields {
+				slug
+			}
 			frontmatter {
 			  title
 			  path
