@@ -676,6 +676,12 @@ h6 {
 	font-size: 0.95rem;
 }
 
+p {
+	font-size: 0.9rem;
+	line-height: 1.6875;
+	font-weight: 300;
+}
+
 strong {
 	color: white;
 }

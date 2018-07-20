@@ -47,9 +47,7 @@ const Layout = ({ children, data }) => (
 
 		<Header />
 
-		<PageGrid>
-			{children()}
-		</PageGrid>
+		{children()}
 
 		<Footer />
 
@@ -75,7 +73,7 @@ const PageGrid = styled.div`
 export default Layout
 
 export const query = graphql`
-	query SiteTitleQuery {
+	query SiteTitleQueryForProjectPage {
 		site {
 			siteMetadata {
 				title

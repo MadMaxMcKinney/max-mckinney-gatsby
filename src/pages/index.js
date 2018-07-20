@@ -64,7 +64,6 @@ query ProjectQuery {
 			}
 			frontmatter {
 			  title
-			  path
 			  projectShortBrief
 			  themeColor
 			  image {

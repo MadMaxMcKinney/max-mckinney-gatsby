@@ -38,6 +38,7 @@ const ProjectCardContainer = styled.div`
 		padding: 0;
 		height: 100%;
 		object-fit: cover;
+		margin: 0;
 	}
 	h4 {
 		display: inline-block;
