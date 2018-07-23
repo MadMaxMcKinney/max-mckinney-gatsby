@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import {fadeInDown, fadeInUp} from './../animations/m-styled-animations'
 
 export default function Template({ data }) {
 	return (
@@ -57,6 +58,7 @@ const ProjectHeader = styled.div`
 	align-items: center;
 	position: relative;
 	padding: 0px 24px;
+	animation: ${fadeInDown} 1s;
 
 	&:after {
 		position: absolute;
@@ -78,6 +80,8 @@ const ProjectPostTitle = styled.h1`
 	text-align: center;
 	font-size: 3.7rem;
 	z-index: 5;
+	animation: ${fadeInDown} 1.5s;
+
 	@media(max-width: 715px) {
 		font-size: 2.2rem;
 		line-height: 1;
@@ -87,6 +91,8 @@ const ProjectPostTitle = styled.h1`
 const ProjectContentGrid = styled.div`
 	display: grid;
 	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 900px) [end] minmax(24px, 1fr);
+	animation: ${fadeInUp} 1.8s;
+
 	& > * {
 		grid-column: center;
 	}

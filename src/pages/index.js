@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import ProjectCard from '../components/project-card';
 
-import fadeInDown from './../animations/m-styled-animations'
+import {fadeInDown} from './../animations/m-styled-animations'
 
 const IndexPage = ({data}) => (
   <React.Fragment>
@@ -41,6 +41,7 @@ const HeaderSubtitle = styled.h3`
 	color: #c3c3c3;
 	font-weight: 400;
 	line-height: 34px;
+	animation: ${fadeInDown} 1.5s;
 	@media(max-width: 425px) {
 		margin-bottom: 110px;
 	}
@@ -50,6 +51,7 @@ const ProjectCardGrid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
 	grid-gap: 40px;
+	animation: ${fadeInDown} 1.8s;
 	@media (max-width: 500px) {
 		grid-template-columns: 1fr;
 	}

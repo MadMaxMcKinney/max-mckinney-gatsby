@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import {fadeIn} from './../animations/m-styled-animations'
 
 import logo from './../assets/max-white.png'
 
@@ -68,6 +69,7 @@ const Navmenu = styled.div`
 	position: absolute;
 	top: 0;
 	z-index: 2;
+	animation: ${fadeIn} 1.3s;
 `
 
 const SitePages = styled.ul`

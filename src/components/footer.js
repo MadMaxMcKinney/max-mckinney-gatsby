@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import {fadeIn} from './../animations/m-styled-animations'
 
 import FaLinkedIn from 'react-icons/lib/fa/linkedin'
 import FaMedium from 'react-icons/lib/fa/medium'
@@ -62,6 +63,7 @@ const PageFooter = styled.div`
     flex-direction: row;
     align-items: flex-end;
 	justify-content: flex-end;
+	animation: ${fadeIn} 1.3s;
 
 	@media(max-width: 1155px) {
 		padding: 0 24px;
