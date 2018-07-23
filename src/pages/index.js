@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import ProjectCard from '../components/project-card';
 
+import fadeInDown from './../animations/m-styled-animations'
+
 const IndexPage = ({data}) => (
   <React.Fragment>
     <HeaderTitle>Fullstack <br/> Web Dev / Designer</HeaderTitle>
@@ -26,6 +28,7 @@ const HeaderTitle = styled.h1`
 	margin-top: 170px;
 	color: white;
 	font-weight: 600;
+	animation: ${fadeInDown} 1s;
 	@media(max-width: 425px) {
 		margin-top: 130px;
 	}
