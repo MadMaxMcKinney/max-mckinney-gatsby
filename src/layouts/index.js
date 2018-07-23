@@ -17,19 +17,19 @@ import './index.css'
 const Layout = ({ children, data }) => (
 	<MainContainer>
 		<Helmet title={data.site.siteMetadata.title}>
-			<meta name="description" content="I’m a developer and designer with a focus in web technolagies and native mobile development. I build cars on the side." />
+			<meta name="description" content={data.site.siteMetadata.description} />
 			<meta name="image" content={logo}/>
 			<meta itemprop="name" content="Max McKinney"/>
-			<meta itemprop="description" content="I’m a developer and designer with a focus in web technolagies and native mobile development. I build cars on the side."/>
+			<meta itemprop="description" content={data.site.siteMetadata.description}/>
 			<meta itemprop="image" content={logo}/>
 
 			<meta name="twitter:card" content="summary"/>
 			<meta name="twitter:title" content="Max McKinney"/>
-			<meta name="twitter:description" content="I’m a developer and designer with a focus in web technolagies and native mobile development. I build cars on the side."/>
+			<meta name="twitter:description" content={data.site.siteMetadata.description}/>
 			<meta name="twitter:site" content="@timmaxmckinney"/>
 
 			<meta name="og:title" content="Max McKinney"/>
-			<meta name="og:description" content="I’m a developer and designer with a focus in web technolagies and native mobile development. I build cars on the side."/>
+			<meta name="og:description" content={data.site.siteMetadata.description}/>
 			<meta name="og:image" content={logo}/>
 			<meta name="og:url" content="https://maxmckinney.com"/>
 			<meta name="og:site_name" content="Max McKinney"/>

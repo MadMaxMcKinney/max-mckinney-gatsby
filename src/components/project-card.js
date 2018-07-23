@@ -57,6 +57,9 @@ const ProjectCardContainer = styled.div`
 	&:hover ${ReadMore}:after, &:focus ${ReadMore}:after, &:active ${ReadMore}:after {
 		right: 0;
 	}
+	@media(max-width: 500px) {
+		grid-template-columns: 10% 1fr;
+	}
 `;
 
 const ProjectCardContent = styled.div`

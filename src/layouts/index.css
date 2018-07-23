@@ -685,3 +685,57 @@ p {
 strong {
 	color: white;
 }
+
+.photo-grid-container {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.photo-grid {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(170px, 1fr) );
+	grid-gap: 24px;
+}
+.photo-grid img {
+	color: transparent;
+}
+.photo-grid a:hover {
+	cursor: zoom-in;
+}
+.photo-grid a {
+	width: auto;
+	padding: 0;
+	border-radius: 2px;
+	object-fit: cover;
+	overflow: hidden;
+	box-shadow: 0px 4px 15px #00000017;
+}
+
+.photo-grid-subtitle {
+	margin-top: 0px;
+	text-align: center;
+	opacity: 0.85;
+	font-size: 0.8rem;
+}
+
+@media (max-width: 715px) {
+	.photo-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}	
+}
+
+@media (max-width: 500px) {
+	.photo-grid {
+		grid-template-columns: 1fr;
+	}	
+}
+
+.medium-zoom-overlay {
+	z-index: 8999;
+	background-color: rgba(0, 0, 0, 0.51) !important;
+}
+
+.medium-zoom-image--open {
+	z-index: 90000;
+	object-fit: cover;
+}
