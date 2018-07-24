@@ -7,19 +7,28 @@ import {fadeInDown} from './../animations/m-styled-animations'
 
 const IndexPage = ({data}) => (
   <React.Fragment>
-    <HeaderTitle>Fullstack <br/> Web Dev / Designer</HeaderTitle>
-	<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently contracting in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
+	  <PageGrid>
+		<HeaderTitle>Fullstack <br/> Web Dev / Designer</HeaderTitle>
+		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently contracting in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
 
-	<ProjectCardGrid>
+		<ProjectCardGrid>
 
-		{data.allMarkdownRemark.edges.map(({node}) => (
-			<ProjectCard data={node} key={node.key}></ProjectCard>
-		))}
+			{data.allMarkdownRemark.edges.map(({node}) => (
+				<ProjectCard data={node} key={node.key}></ProjectCard>
+			))}
 
-	</ProjectCardGrid>
-
+		</ProjectCardGrid>
+	</PageGrid>
   </React.Fragment>
 )
+
+const PageGrid = styled.div`
+	display: grid;
+	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 1100px) [end] minmax(24px, 1fr);
+	& > * {
+		grid-column: center;
+	}
+`
 
 const HeaderTitle = styled.h1`
 	font-size: 36px;

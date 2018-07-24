@@ -40,7 +40,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 		result.data.allMarkdownRemark.edges.forEach(({ node }) => {
 		  createPage({
 			path: node.fields.slug,
-			layout: "projectLayout",
 			component: path.resolve(`./src/templates/project.js`),
 			context: {
 			  // Data passed to context is available in page queries as GraphQL variables.

@@ -18,7 +18,9 @@
     "npm": "^6.2.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
-    "styled-components": "^3.3.3"
+    "styled-components": "^3.3.3",
+    "typeface-roboto": "0.0.54",
+    "typeface-source-sans-pro": "0.0.54"
   },
   "keywords": [
     "gatsby"

@@ -1,9 +1,12 @@
+require('typeface-roboto');
+require('typeface-source-sans-pro');
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import logo from './../assets/max-logo.png'
+import logo from './../assets/img/max-logo.png'
 import favicon32 from './../assets/favicon/favicon-32x32.png'
 import favicon16 from './../assets/favicon/favicon-16x16.png'
 import faviconApple from './../assets/favicon/apple-touch-icon.png'
@@ -47,9 +50,7 @@ const Layout = ({ children, data }) => (
 
 		<Header />
 
-		<PageGrid>
-			{children()}
-		</PageGrid>
+		{children()}
 
 		<Footer />
 
@@ -64,14 +65,6 @@ const MainContainer = styled.div`
 	width: 100%;
 `
 
-const PageGrid = styled.div`
-	display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 1100px) [end] minmax(24px, 1fr);
-	& > * {
-		grid-column: center;
-	}
-`
-
 export default Layout
 
 export const query = graphql`
@@ -79,6 +72,7 @@ export const query = graphql`
 		site {
 			siteMetadata {
 				title
+				description
 			}
 		}
 	}

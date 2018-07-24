@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import {fadeInDown, fadeInUp} from './../animations/m-styled-animations'
+import {fadeInDown, fadeInUp, fadeIn, fadeInScaleDown} from './../animations/m-styled-animations'
 
 export default function Template({ data }) {
 	return (

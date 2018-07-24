@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import {fadeIn} from './../animations/m-styled-animations'
 
-import logo from './../assets/max-white.png'
+import logo from './../assets/img/max-white.png'
 
 import FaLinkedIn from 'react-icons/lib/fa/linkedin'
 import FaMedium from 'react-icons/lib/fa/medium'
