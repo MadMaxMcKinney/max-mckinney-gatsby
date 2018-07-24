@@ -80,7 +80,7 @@ const ProjectPostTitle = styled.h1`
 	text-align: center;
 	font-size: 3.7rem;
 	z-index: 5;
-	animation: ${fadeInDown} 1.5s;
+	animation: ${fadeInScaleDown} 1.5s;
 
 	@media(max-width: 715px) {
 		font-size: 2.2rem;

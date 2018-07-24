@@ -1,7 +1,7 @@
 ---
 title: "Gearhead Forge"
 projectClient: "Gearhead Forge"
-projectDate: "January 2017"
+projectDate: "May 2016 - Jan 2017"
 projectAgency: "Self"
 projectRole: "Web Dev / Design, Brand"
 projectBrief: "Gearhead Forge is a side hobby turned business that I started in 2016 with a few friends. Gearhead Forge is a group of enthusiasts passionately keeping the flame of V8’s and hot rodding alive by building uniquely aggressive cars and forging a lifestyle."

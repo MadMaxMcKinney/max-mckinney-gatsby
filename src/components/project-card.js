@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 const ProjectCard = (props) => {
   return (
 	<Link to={props.data.fields.slug}>
-		<ProjectCardContainer href={props.data.frontmatter.path}>
+		<ProjectCardContainer>
 			<Img className="project-card-image" sizes={props.data.frontmatter.image.childImageSharp.sizes} alt="Project Image"/>
 			<ProjectCardContent>
 				<h4>{props.data.frontmatter.title}</h4>
