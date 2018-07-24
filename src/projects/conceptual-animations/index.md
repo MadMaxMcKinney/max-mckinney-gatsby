@@ -9,6 +9,7 @@ projectShortBrief: "Took design concepts and used After Effects to animate the u
 themeColor: "#452c56"
 image: "concept-animation-header.png"
 thumb: "concept-animation-header.png"
+sortDate: "2012-12-07"
 ---
 
 I worked closely a diverse design team including illustrators, modelers, and UI designers to create conceptual animations to be shown in executive presentations for project approval. I took existing design concepts and used After Effects to animate the user experience, which ranged from simple 2D animations to complex 2D/3D combination animations, requiring me to create the 3D models used as well.

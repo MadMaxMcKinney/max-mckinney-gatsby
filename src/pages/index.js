@@ -70,7 +70,7 @@ export default IndexPage
 
 export const query = graphql`
 query ProjectQuery {
-	allMarkdownRemark {
+	allMarkdownRemark(sort: {fields: [frontmatter___sortDate], order: DESC}) {
 		edges {
 		  node {
 			fields {

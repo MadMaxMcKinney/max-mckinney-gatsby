@@ -9,6 +9,7 @@ projectShortBrief: "This was a global application that supported over 25 differe
 themeColor: "#6923e0"
 image: "dell-welcome-header.jpg"
 thumb: "dell-welcome-thumb.jpg"
+sortDate: "2016-12-01"
 ---
 
 Co-developed with one other developer from the ground up, Dell's "Welcome to Windows 10" application for all users with a Dell computer upgrading to Windows 10. This was a global application that supported over 25 different languages and was fully responsive - it is estimated to server hundreds of thousands of people as soon as Windows 10 is available, with millions of people estimated several months after Windows 10 is released. Every link work correctly for all the languages and locations and the layout supported RTL localizations as well.

@@ -9,6 +9,7 @@ projectShortBrief: "Took on the role of lead web developer for implementing Dell
 themeColor: "#152a3d"
 image: "clarity-toolkit-large.jpg"
 thumb: "clarity-toolkit-thumb.jpg"
+sortDate: "2015-12-01"
 ---
 
 #####Design Compliance
