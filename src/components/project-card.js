@@ -11,7 +11,7 @@ const ProjectCard = (props) => {
 			<ProjectCardContent>
 				<h4>{props.data.frontmatter.title}</h4>
 				<p>{props.data.frontmatter.projectShortBrief}</p>
-				<ReadMore theme={props.data.frontmatter.themeColor}>Read more about it</ReadMore>
+				<ReadMore theme={props.data.frontmatter.accentColor}>Read more about it</ReadMore>
 			</ProjectCardContent>
 		</ProjectCardContainer>
 	</Link>

@@ -80,6 +80,7 @@ query ProjectQuery {
 			  title
 			  projectShortBrief
 			  themeColor
+			  accentColor
 			  image {
 				childImageSharp {
 				  sizes(maxWidth: 900) {
