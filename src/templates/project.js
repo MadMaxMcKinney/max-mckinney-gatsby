@@ -58,7 +58,10 @@ const ProjectHeader = styled.div`
 	align-items: center;
 	position: relative;
 	padding: 0px 24px;
-	animation: ${fadeInDown} 1s;
+
+	& img {
+		animation: ${fadeInDown} 1s;
+	}
 
 	&:after {
 		position: absolute;
@@ -80,7 +83,7 @@ const ProjectPostTitle = styled.h1`
 	text-align: center;
 	font-size: 3.7rem;
 	z-index: 5;
-	animation: ${fadeInScaleDown} 1.5s;
+	animation: ${fadeInScaleDown} 1.5s ease-out;
 
 	@media(max-width: 715px) {
 		font-size: 2.2rem;
