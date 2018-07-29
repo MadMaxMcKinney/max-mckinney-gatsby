@@ -12,7 +12,7 @@ export default function Template({ data }) {
 		</Helmet>
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
-			<Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`, zIndex: -1}} sizes={data.markdownRemark.frontmatter.image.childImageSharp.sizes}/>
+			<Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} sizes={data.markdownRemark.frontmatter.image.childImageSharp.sizes}/>
 			<ProjectPostTitle class="project-post-title">{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
 		</ProjectHeader>
 
