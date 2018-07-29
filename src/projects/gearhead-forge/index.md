@@ -57,4 +57,4 @@ The shop is backed with an e-commerce plugin for Wordpress. Initially I was goin
 
 Curious about the current live version? Designs or needs might have changed since the case study was written but you can view the current website to see the design and development in work!
 
-View live website
+<a href="http//gearheadforge.com">View live website</a>

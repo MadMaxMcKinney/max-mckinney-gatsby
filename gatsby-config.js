@@ -20,6 +20,7 @@ module.exports = {
 							backgroundColor: 'transparent'
 						}
 					},
+					`gatsby-remark-responsive-iframe`,
 				],
 			}
 		},
@@ -34,7 +35,7 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				path: `${__dirname}/src/projects`,
-				name: 'pages',
+				name: 'projects',
 			},
 		},
 		{
