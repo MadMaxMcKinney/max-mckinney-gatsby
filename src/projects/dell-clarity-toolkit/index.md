@@ -27,10 +27,9 @@ This toolkit allows devs to quickly become Clarity 3 compliant without having to
 
 The bootstrap based (custom fork) toolkit brings some extended functionality to the existing Bootstrap core. These include things like more fleshed out alerts that allow for more user interaction out of the box. Also included are components like Dell's masthead design and "Megamenus". All of these and more are included in an extra JS core the devs would use if they wanted this extra functionality, but allow for a 'light' version without the extra JS overhead if desired.
 
-<div class="photo-grid-container">
-<div class="photo-grid"><img src="Clarity_frame_os_v11.gif"/></div>
-</div>
-<p class="photo-grid-subtitle">Dashboard animation with extended functionality</p>
+<video width="100%" autoplay loop>
+<source src="/clarity-dashboard.mp4" type="video/mp4">
+</video>
 
 #####Future Versions
 
