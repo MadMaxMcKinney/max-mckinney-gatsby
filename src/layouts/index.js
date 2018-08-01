@@ -24,18 +24,18 @@ const Layout = ({ children, data }) => (
 			<meta name="image" content={logo}/>
 			<meta itemprop="name" content="Max McKinney"/>
 			<meta itemprop="description" content={data.site.siteMetadata.description}/>
-			<meta itemprop="image" content={data.site.host + "/" + logo}/>
+			<meta itemprop="image" content={data.site.siteMetadata.siteUrl + "/" + logo}/>
 
 			<meta name="twitter:card" content="summary"/>
 			<meta name="twitter:title" content="Max McKinney"/>
 			<meta name="twitter:description" content={data.site.siteMetadata.description}/>
 			<meta name="twitter:site" content="@timmaxmckinney"/>
-			<meta name="twitter:image" content={data.site.host + "/" + logo}/>
+			<meta name="twitter:image" content={data.site.siteMetadata.siteUrl + "/" + logo}/>
 
 			<meta name="og:title" content="Max McKinney"/>
 			<meta name="og:description" content={data.site.siteMetadata.description}/>
-			<meta name="og:image" content={data.site.host + "/" + logo}/>
-			<meta name="og:url" content={data.site.host}/>
+			<meta name="og:image" content={data.site.siteMetadata.siteUrl + "/" + logo}/>
+			<meta name="og:url" content={data.site.siteMetadata.siteUrl}/>
 			<meta name="og:site_name" content="Max McKinney"/>
 			<meta name="og:locale" content="en_US"/>
 			<meta name="og:type" content="website"/>
@@ -71,10 +71,10 @@ export default Layout
 export const query = graphql`
 	query SiteTitleQuery {
 		site {
-			host
 			siteMetadata {
 				title
 				description
+				siteUrl
 			}
 		}
 	}
