@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		title: 'Max McKinney',
-		description: 'I’m a developer and designer with a focus in web technologies. I build cars on the side.'
+		description: 'I’m a developer and designer with a focus in full-stack web technologies. I build cars on the side.'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
