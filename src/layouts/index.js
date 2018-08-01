@@ -30,6 +30,7 @@ const Layout = ({ children, data }) => (
 			<meta name="twitter:title" content="Max McKinney"/>
 			<meta name="twitter:description" content={data.site.siteMetadata.description}/>
 			<meta name="twitter:site" content="@timmaxmckinney"/>
+			<meta name="twitter:image" content={logo}/>
 
 			<meta name="og:title" content="Max McKinney"/>
 			<meta name="og:description" content={data.site.siteMetadata.description}/>
