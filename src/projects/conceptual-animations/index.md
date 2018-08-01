@@ -15,11 +15,15 @@ sortDate: "2012-12-07"
 
 I worked closely a diverse design team including illustrators, modelers, and UI designers to create conceptual animations to be shown in executive presentations for project approval. I took existing design concepts and used After Effects to animate the user experience, which ranged from simple 2D animations to complex 2D/3D combination animations, requiring me to create the 3D models used as well.
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/jR0UAbV2f-g?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;modestBranding=1&amp;loop=1&amp;playsinline=1&amp;playlist=jR0UAbV2f-g" frameborder="0" allow="autoplay; encrypted-media" loop></iframe>
+<video width="100%" autoplay loop>
+<source src="/conceptual-animation-dell-boot.mp4" type="video/mp4">
+</video>
 
 I created dynamic files to allow for easier future changes/adjustments, and integrated everything into After Effects. Element 3D was used for the 3D model integration into AE.
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/v-x2bVN_97w?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;modestBranding=1&amp;loop=1&amp;playsinline=1&amp;playlist=v-x2bVN_97w" frameborder="0" allow="autoplay; encrypted-media" loop></iframe>
+<video width="100%" autoplay loop>
+<source src="/conceptual-animation-xps-13.mp4" type="video/mp4">
+</video>
 
 #####Other Efforts
 

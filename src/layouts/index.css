@@ -677,6 +677,7 @@ p {
 	font-size: 0.9rem;
 	line-height: 1.6875;
 	font-weight: 300;
+	margin-bottom: 24px;
 }
 
 strong {
@@ -738,6 +739,7 @@ img:-mod-loading {
 video {
 	border-radius: 2px;
 	box-shadow: 0px 4px 15px #00000017;
+	margin-bottom: 24px;
 }
 
 .award {
