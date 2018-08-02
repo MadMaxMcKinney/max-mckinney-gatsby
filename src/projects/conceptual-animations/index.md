@@ -1,5 +1,6 @@
 ---
 title: "Concept Animation"
+url: ""
 projectClient: "Dell"
 projectDate: "Dec 2012 - Mar 2015"
 projectAgency: "Dell"
@@ -10,6 +11,7 @@ themeColor: "#452c56"
 accentColor: "#a93cba"
 image: "concept-animation-header.png"
 thumb: "concept-animation-header.png"
+showLiveContent: true
 sortDate: "2012-12-07"
 ---
 

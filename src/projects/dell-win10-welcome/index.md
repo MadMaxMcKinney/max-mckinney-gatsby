@@ -1,5 +1,6 @@
 ---
 title: "Dell - Win10 Welcome App"
+url: ""
 projectClient: "Dell"
 projectDate: "Dec 2016 - Mar 2017"
 projectAgency: "Dell"
@@ -10,6 +11,7 @@ themeColor: "#6923e0"
 accentColor: "#6923e0"
 image: "dell-welcome-header.jpg"
 thumb: "dell-welcome-thumb.jpg"
+showLiveContent: false
 sortDate: "2016-12-01"
 ---
 

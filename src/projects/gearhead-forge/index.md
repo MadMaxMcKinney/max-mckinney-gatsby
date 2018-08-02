@@ -1,5 +1,6 @@
 ---
 title: "Gearhead Forge"
+url: "http://gearheadforge.com/"
 projectClient: "Gearhead Forge"
 projectDate: "May 2016 - Jan 2017"
 projectAgency: "Self"
@@ -10,6 +11,7 @@ themeColor: "#171614"
 accentColor: "#ffc107"
 image: "gearhead-forge-header.jpg"
 thumb: "gearhead-forge-thumb.jpg"
+showLiveContent: true
 sortDate: "2016-05-07"
 ---
 
@@ -56,5 +58,3 @@ The shop is backed with an e-commerce plugin for Wordpress. Initially I was goin
 #####Live Link
 
 Curious about the current live version? Designs or needs might have changed since the case study was written but you can view the current website to see the design and development in work!
-
-<a href="http//gearheadforge.com">View live website</a>

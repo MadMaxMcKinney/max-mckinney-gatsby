@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import {fadeInDown, fadeInUp, fadeIn, fadeInScaleDown} from './../animations/m-styled-animations'
 
+import LiveContentCard from './../components/live-content-card'
+
 export default function Template({ data }) {
 	return (
 		<React.Fragment>
@@ -43,6 +45,11 @@ export default function Template({ data }) {
 			<h4>Case Study</h4>
 
 			<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+
+			{data.markdownRemark.frontmatter.showLiveContent && 
+				<LiveContentCard thumbnail={data.markdownRemark.frontmatter.image.childImageSharp.sizes.src} title={data.markdownRemark.frontmatter.title} url={data.markdownRemark.frontmatter.url} themeColor={data.markdownRemark.frontmatter.accentColor}/>
+			}
+			
 
 		</ProjectContentGrid>
 
@@ -159,6 +166,9 @@ export const query = graphql`
 				projectAgency
 				projectBrief
 				themeColor
+				accentColor
+				url
+				showLiveContent
 				image {
 					childImageSharp {
 					  sizes(maxWidth: 1600) {

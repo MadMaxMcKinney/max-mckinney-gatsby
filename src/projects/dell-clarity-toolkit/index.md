@@ -1,5 +1,6 @@
 ---
 title: "Dell - Clarity '3' Toolkit"
+url: ""
 projectClient: "Dell"
 projectDate: "Dec 2015 - Ongoing"
 projectAgency: "Dell"
@@ -10,6 +11,7 @@ themeColor: "#152a3d"
 accentColor: "#1676b1"
 image: "clarity-toolkit-large.jpg"
 thumb: "clarity-toolkit-thumb.jpg"
+showLiveContent: false
 sortDate: "2015-12-01"
 ---
 

@@ -3,12 +3,12 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import {fadeIn} from './../animations/m-styled-animations'
 
-import FaLinkedIn from 'react-icons/lib/fa/linkedin'
-import FaMedium from 'react-icons/lib/fa/medium'
-import Fa500px from 'react-icons/lib/fa/500px'
-import FaDribbble from 'react-icons/lib/fa/dribbble'
-import FaTwitter from 'react-icons/lib/fa/twitter'
-import FaGithub from 'react-icons/lib/fa/github'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaMedium } from 'react-icons/fa'
+import { Fa500px } from 'react-icons/fa'
+import { FaDribbble } from 'react-icons/fa'
+import { FaTwitter } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 
 const iconSize = 17;
 
@@ -20,7 +20,7 @@ const Footer = () => {
 		<FooterSocialLinks>
 			<li>
 				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank">
-					<FaLinkedIn size={iconSize}/>
+					<FaLinkedin size={iconSize}/>
 				</a>
 			</li>
 			<li>
