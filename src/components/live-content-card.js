@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {MdChevronRight} from 'react-icons/md'
+import MdChevronRight from 'react-icons/lib/md/chevron-right'
 
 export default (props) => {
   return (

@@ -5,12 +5,12 @@ import {fadeIn} from './../animations/m-styled-animations'
 
 import logo from './../assets/img/max-white.png'
 
-import {FaLinkedin} from 'react-icons/fa'
-import {FaMedium} from 'react-icons/fa'
-import {Fa500px} from 'react-icons/fa'
-import {FaDribbble} from 'react-icons/fa'
-import {FaTwitter} from 'react-icons/fa'
-import {FaGithub} from 'react-icons/fa'
+import FaLinkedIn from 'react-icons/lib/fa/linkedin'
+import FaMedium from 'react-icons/lib/fa/medium'
+import Fa500px from 'react-icons/lib/fa/500px'
+import FaDribbble from 'react-icons/lib/fa/dribbble'
+import FaTwitter from 'react-icons/lib/fa/twitter'
+import FaGithub from 'react-icons/lib/fa/github'
 
 const iconSize = 17;
 
@@ -27,7 +27,7 @@ const Header = () => (
 		<SitePages>
 			<li>
 				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank">
-					<FaLinkedin size={iconSize}/>
+					<FaLinkedIn size={iconSize}/>
 				</a>
 			</li>
 			<li>
