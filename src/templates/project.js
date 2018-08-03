@@ -15,7 +15,7 @@ export default function Template({ data }) {
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
 			<Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} sizes={data.markdownRemark.frontmatter.image.childImageSharp.sizes}/>
-			<ProjectPostTitle class="project-post-title">{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
+			<ProjectPostTitle>{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
 		</ProjectHeader>
 
 		<ProjectContentGrid>
