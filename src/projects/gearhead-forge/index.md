@@ -29,7 +29,7 @@ The idea for Gearhead Forge came from the passion and desire to build unique veh
 
 #####Frontend
 
-The frontend design heavily utilizes imagery to help build the brand and theme. It's responsive modern technologies (HTML5,CSS3/Sass,Vanilla JS). It's also been updated to use more CSS Grid to cut down on the amount of parent containers were needed with all the Flexbox work that was going on.
+The frontend design heavily utilizes imagery to help build the brand and theme. It's built on responsive modern technologies (HTML5,CSS3/Sass,Vanilla JS). It's also been updated to use more CSS Grid to cut down on the amount of parent containers were needed with all the Flexbox work that was going on.
 
 Gearhead Forge has several platforms that we try and build our audience through, one of those is a new YouTube channel. To help bring attention to the channel I utilize a nice full height banner on the homepage that acts a big call to action to the channel. Where some might put shop CTA's in the same location I decided that our audience will buy things they see being used or as a way to support a brand they believe in, that's why we are working on brand relationship with those who believe the same things we do.
 
