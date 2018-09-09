@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default class flipButton extends Component {
 	
 	state = {
-		isHovering: true
+		isHovering: false
 	}
 
 	constructor(props) {
