@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import ProjectCard from '../components/project-card';
+import ProjectCard from '../components/ProjectCard';
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
