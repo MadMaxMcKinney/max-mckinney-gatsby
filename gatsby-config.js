@@ -11,6 +11,12 @@ module.exports = {
 		`gatsby-plugin-sharp`,
 		'gatsby-image',
 		{
+			resolve: 'gatsby-plugin-google-analytics',
+			options: {
+				trackingId: "UA-60484784-4",
+			},
+		},
+		{
 			resolve: 'gatsby-transformer-remark',
 			options: {
 				plugins: [
