@@ -1,5 +1,5 @@
 import React from 'react'
-import Helment from 'react-helmet'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import FlickrPhotoGrid from '../components/FlickrPhotoGrid';
 import FlipButton from '../components/FlipButton';
