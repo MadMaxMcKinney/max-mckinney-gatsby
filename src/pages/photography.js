@@ -1,4 +1,5 @@
 import React from 'react'
+import Helment from 'react-helmet'
 import styled from 'styled-components'
 import FlickrPhotoGrid from '../components/FlickrPhotoGrid';
 import FlipButton from '../components/FlipButton';
@@ -7,6 +8,7 @@ import {fadeInDown} from './../animations/m-styled-animations'
 
 const PhotographyPage = () => (
   <React.Fragment>
+	<Helmet title={data.site.siteMetadata.title + ' | ' + "Photography"}></Helmet>
 	<PageGrid>
 		<HeaderAction>
 			<HeaderTitle>Photography</HeaderTitle>
