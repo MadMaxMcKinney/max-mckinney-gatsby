@@ -6,7 +6,7 @@ import FlipButton from '../components/FlipButton';
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
-const PhotographyPage = () => (
+const PhotographyPage = ({data}) => (
   <React.Fragment>
 	<Helmet title={data.site.siteMetadata.title + ' | ' + "Photography"}></Helmet>
 	<PageGrid>
@@ -60,3 +60,15 @@ const HeaderSubtitle = styled.h3`
 `;
 
 export default PhotographyPage
+
+export const query = graphql`
+	query SiteTitlePhotoQuery {
+		site {
+			siteMetadata {
+				title
+				description
+				siteUrl
+			}
+		}
+	}
+`;
