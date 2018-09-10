@@ -11,6 +11,7 @@ import Fa500px from 'react-icons/lib/fa/500px'
 import FaDribbble from 'react-icons/lib/fa/dribbble'
 import FaTwitter from 'react-icons/lib/fa/twitter'
 import FaGithub from 'react-icons/lib/fa/github'
+import IoCamera from 'react-icons/lib/io/ios-camera'
 
 const iconSize = 17;
 
@@ -26,6 +27,23 @@ const Header = () => (
 
 		<SitePages>
 			<li>
+				<Link to="/photography">
+					<span>Photography</span>
+					<IoCamera size={iconSize+6}/>
+				</Link>
+			</li>
+			<ListSeperator>
+				<span>|</span>
+			</ListSeperator>
+		</SitePages>
+
+		<SiteSocial>
+			<li>
+				<a href="https://github.com/MaxMcKinney" target="_blank">
+					<FaGithub size={iconSize}/>
+				</a>
+			</li>
+			<li>
 				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank">
 					<FaLinkedIn size={iconSize}/>
 				</a>
@@ -33,11 +51,6 @@ const Header = () => (
 			<li>
 				<a href="https://medium.com/@maxmckinney" target="_blank">
 					<FaMedium size={iconSize}/>
-				</a>
-			</li>
-			<li>
-				<a href="https://500px.com/maxmckinney" target="_blank">
-					<Fa500px size={iconSize}/>
 				</a>
 			</li>
 			<li>
@@ -50,12 +63,7 @@ const Header = () => (
 					<FaTwitter size={iconSize}/>
 				</a>
 			</li>
-			<li>
-				<a href="https://github.com/MaxMcKinney" target="_blank">
-					<FaGithub size={iconSize}/>
-				</a>
-			</li>
-		</SitePages>
+		</SiteSocial>
 	</Navmenu>
 )
 
@@ -72,7 +80,7 @@ const Navmenu = styled.div`
 	animation: ${fadeIn} 1.3s;
 `
 
-const SitePages = styled.ul`
+const SiteSocial = styled.ul`
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -83,7 +91,9 @@ const SitePages = styled.ul`
 	font-weight: 500;
 	letter-spacing: 1px;
 	margin-right: 40px;
-	width: 100%;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	/*width: 100%;*/
 	li {
 		margin: 0;
 		padding: 0px 20px;
@@ -105,6 +115,51 @@ const SitePages = styled.ul`
 		display: none;
 	}
 `
+const SitePages = styled.ul`
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	width: 100%;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	li {
+		margin: 0;
+		padding: 0px 20px;
+		a {
+			font-size: 0.7rem;
+			font-weight: 500;
+			text-decoration: none;
+			color: white;
+			transition: all 0.6s;
+			display: flex;
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+	span {
+		text-transform: none;
+		margin-right: 12px;
+		font-weight: 400;
+	}
+	@media(max-width: 1155px) {
+		margin-bottom: 0;
+	}
+`
+const ListSeperator = styled.li`
+	opacity: 0.5;
+	display: flex;
+	@media(max-width: 715px) {
+		display: none;
+	}
+`;
+
 const SiteLogo = styled.img`
 	width: 45px;
     height: auto;

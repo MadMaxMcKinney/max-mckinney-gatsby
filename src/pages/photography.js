@@ -30,6 +30,7 @@ const HeaderAction = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 170px;
+	animation: ${fadeInDown} 1s;
 	@media(max-width: 600px) {
 		flex-direction: column;
 	}
@@ -41,7 +42,6 @@ const HeaderTitle = styled.h1`
 	max-width: 400px;
 	color: white;
 	font-weight: 600;
-	animation: ${fadeInDown} 1s;
 `;
 
 const HeaderSubtitle = styled.h3`
