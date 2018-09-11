@@ -52,7 +52,7 @@ const Header = () => (
 				</a>
 			</li>
 			<li>
-				<Link to="/photography">
+				<Link to="/photography" target="_blank">
 					<IoCamera size={iconSize+6}/>
 				</Link>
 			</li>

@@ -38,7 +38,7 @@ export default class flickrPhotoGrid extends Component {
 		return (
 			<StyledMasonry options={masonryOptions}>
 				{this.state.photos.map(photo => 
-					<PhotoImageContainer href={`https://www.flickr.com/photos/${photo.owner}/${photo.id}`} key={photo.id}>
+					<PhotoImageContainer href={`https://www.flickr.com/photos/${photo.owner}/${photo.id}`} key={photo.id} target="_blank">
 							<PhotoImage src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`} />
 					</PhotoImageContainer>
 				)}
