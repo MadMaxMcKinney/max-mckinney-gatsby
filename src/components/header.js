@@ -37,13 +37,13 @@ const Header = () => (
 				</a>
 			</li>
 			<li>
-				<a href="https://medium.com/@maxmckinney" target="_blank">
-					<FaMedium size={iconSize}/>
+				<a href="https://dribbble.com/MaxMcKinney" target="_blank">
+					<FaDribbble size={iconSize}/>
 				</a>
 			</li>
 			<li>
-				<a href="https://dribbble.com/MaxMcKinney" target="_blank">
-					<FaDribbble size={iconSize}/>
+				<a href="https://medium.com/@maxmckinney" target="_blank">
+					<FaMedium size={iconSize}/>
 				</a>
 			</li>
 			<li>
