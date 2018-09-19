@@ -25,18 +25,6 @@ const Header = () => (
 			</Link>
 		</SiteLogoContainer>
 
-		<SitePages>
-			<li>
-				<Link to="/photography">
-					<span>Photography</span>
-					<IoCamera size={iconSize+6}/>
-				</Link>
-			</li>
-			<ListSeperator>
-				<span>|</span>
-			</ListSeperator>
-		</SitePages>
-
 		<SiteSocial>
 			<li>
 				<a href="https://github.com/MaxMcKinney" target="_blank">
@@ -49,19 +37,24 @@ const Header = () => (
 				</a>
 			</li>
 			<li>
-				<a href="https://medium.com/@maxmckinney" target="_blank">
-					<FaMedium size={iconSize}/>
+				<a href="https://dribbble.com/MaxMcKinney" target="_blank">
+					<FaDribbble size={iconSize}/>
 				</a>
 			</li>
 			<li>
-				<a href="https://dribbble.com/MaxMcKinney" target="_blank">
-					<FaDribbble size={iconSize}/>
+				<a href="https://medium.com/@maxmckinney" target="_blank">
+					<FaMedium size={iconSize}/>
 				</a>
 			</li>
 			<li>
 				<a href="https://twitter.com/timmaxmckinney" target="_blank">
 					<FaTwitter size={iconSize}/>
 				</a>
+			</li>
+			<li>
+				<Link to="/photography" target="_blank">
+					<IoCamera size={iconSize+6}/>
+				</Link>
 			</li>
 		</SiteSocial>
 	</Navmenu>
