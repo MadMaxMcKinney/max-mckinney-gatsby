@@ -9,6 +9,7 @@ import Fa500px from 'react-icons/lib/fa/500px'
 import FaDribbble from 'react-icons/lib/fa/dribbble'
 import FaTwitter from 'react-icons/lib/fa/twitter'
 import FaGithub from 'react-icons/lib/fa/github'
+import IoCamera from 'react-icons/lib/io/ios-camera'
 
 const iconSize = 17;
 
@@ -19,8 +20,18 @@ const Footer = () => {
 
 		<FooterSocialLinks>
 			<li>
+				<a href="https://github.com/MaxMcKinney" target="_blank">
+					<FaGithub size={iconSize}/>
+				</a>
+			</li>
+			<li>
 				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank">
 					<FaLinkedIn size={iconSize}/>
+				</a>
+			</li>
+			<li>
+				<a href="https://dribbble.com/MaxMcKinney" target="_blank">
+					<FaDribbble size={iconSize}/>
 				</a>
 			</li>
 			<li>
@@ -34,19 +45,14 @@ const Footer = () => {
 				</a>
 			</li>
 			<li>
-				<a href="https://dribbble.com/MaxMcKinney" target="_blank">
-					<FaDribbble size={iconSize}/>
-				</a>
-			</li>
-			<li>
 				<a href="https://twitter.com/timmaxmckinney" target="_blank">
 					<FaTwitter size={iconSize}/>
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/MaxMcKinney" target="_blank">
-					<FaGithub size={iconSize}/>
-				</a>
+				<Link to="/photography">
+					<IoCamera size={iconSize+6}/>
+				</Link>
 			</li>
 		</FooterSocialLinks>
 
@@ -104,7 +110,7 @@ const FooterSocialLinks = styled.ul`
 		display: flex;
 		margin-top: 24px;
 		li {
-			padding: 8px 15px;
+			padding: 8px 12px;
 		}
 	}
 }

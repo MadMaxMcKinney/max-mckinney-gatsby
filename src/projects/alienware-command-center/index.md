@@ -41,7 +41,7 @@ When Alienware announced their new branding in 2018 they also wanted a new Comma
 
 Creating the new Command Center involved designing a new design language that allows for UI customization to be dynamic in various ways. The desire was for the Command Center to be a heavily user customized experience. This is shown throughout the UI in the primary color being pulled from the current color theme of the system and with the particle effects seen in the background that I designed and animated. The particles can be configured by the user to match their style.
 
-<video width="100%" autoplay loop>
+<video width="100%" controls loop>
 <source src="/alienware-dark-wave.mp4" type="video/mp4">
 </video>
 
