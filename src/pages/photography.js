@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import FlickrPhotoGrid from '../components/FlickrPhotoGrid';
 import FlipButton from '../components/FlipButton';
 
+import { graphql } from "gatsby"
+
 import {fadeInDown} from './../animations/m-styled-animations'
 
 const PhotographyPage = ({data}) => (

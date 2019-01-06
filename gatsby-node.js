@@ -2,9 +2,9 @@ const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 // Look at every node when it is created
-exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
+exports.onCreateNode = ({node, getNode, actions}) => {
 	// Check for markdown nodes
-	const { createNodeField } = boundActionCreators;
+	const { createNodeField } = actions;
 	if(node.internal.type === 'MarkdownRemark') {
 		// Create a slug out of the markdown filepath name
 		const slug = createFilePath({
@@ -21,8 +21,8 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
 	}
 };
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-	const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+	const { createPage } = actions
 	return new Promise((resolve, reject) => {
 	  graphql(`
 		{

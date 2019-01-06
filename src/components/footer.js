@@ -1,15 +1,15 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 import styled from 'styled-components'
 import {fadeIn} from '../animations/m-styled-animations'
 
-import FaLinkedIn from 'react-icons/lib/fa/linkedin'
-import FaMedium from 'react-icons/lib/fa/medium'
-import Fa500px from 'react-icons/lib/fa/500px'
-import FaDribbble from 'react-icons/lib/fa/dribbble'
-import FaTwitter from 'react-icons/lib/fa/twitter'
-import FaGithub from 'react-icons/lib/fa/github'
-import IoCamera from 'react-icons/lib/io/ios-camera'
+import {FaLinkedin} from 'react-icons/fa'
+import {FaMedium} from 'react-icons/fa'
+import {Fa500px} from 'react-icons/fa'
+import {FaDribbble} from 'react-icons/fa'
+import {FaTwitter} from 'react-icons/fa'
+import {FaGithub} from 'react-icons/fa'
+import {IoIosCamera} from 'react-icons/io'
 
 const iconSize = 17;
 
@@ -26,7 +26,7 @@ const Footer = () => {
 			</li>
 			<li>
 				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank">
-					<FaLinkedIn size={iconSize}/>
+					<FaLinkedin size={iconSize}/>
 				</a>
 			</li>
 			<li>
@@ -51,7 +51,7 @@ const Footer = () => {
 			</li>
 			<li>
 				<Link to="/photography">
-					<IoCamera size={iconSize+6}/>
+					<IoIosCamera size={iconSize+6}/>
 				</Link>
 			</li>
 		</FooterSocialLinks>
@@ -113,7 +113,6 @@ const FooterSocialLinks = styled.ul`
 			padding: 8px 12px;
 		}
 	}
-}
 `;
 
 export default Footer;

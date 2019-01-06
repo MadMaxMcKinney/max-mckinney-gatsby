@@ -8,7 +8,8 @@ module.exports = {
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
 		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`,
+        `gatsby-plugin-sharp`,
+        `gatsby-plugin-layout`,
 		'gatsby-image',
 		{
 			resolve: 'gatsby-plugin-google-analytics',
@@ -53,7 +54,6 @@ module.exports = {
 				path: `${__dirname}/src/assets`,
 				name: 'img',
 			},
-		},
-		`gatsby-plugin-react-next`,
+		}
 	],
 }

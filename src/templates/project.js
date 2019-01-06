@@ -1,8 +1,9 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import {fadeInDown, fadeInUp, fadeIn, fadeInScaleDown} from './../animations/m-styled-animations'
+import {fadeInDown, fadeInUp, fadeInScaleDown} from './../animations/m-styled-animations'
 
 import LiveContentCard from '../components/LiveContentCard'
 
@@ -14,7 +15,7 @@ export default function Template({ data }) {
 		</Helmet>
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
-			<Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} sizes={data.markdownRemark.frontmatter.image.childImageSharp.sizes}/>
+			<Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}/>
 			<ProjectPostTitle>{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
 		</ProjectHeader>
 
@@ -47,7 +48,7 @@ export default function Template({ data }) {
 			<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
 
 			{data.markdownRemark.frontmatter.showLiveContent && 
-				<LiveContentCard thumbnail={data.markdownRemark.frontmatter.image.childImageSharp.sizes.src} title={data.markdownRemark.frontmatter.title} url={data.markdownRemark.frontmatter.url} themeColor={data.markdownRemark.frontmatter.accentColor}/>
+				<LiveContentCard thumbnail={data.markdownRemark.frontmatter.image.childImageSharp.fluid.src} title={data.markdownRemark.frontmatter.title} url={data.markdownRemark.frontmatter.url} themeColor={data.markdownRemark.frontmatter.accentColor}/>
 			}
 			
 
@@ -171,8 +172,8 @@ export const query = graphql`
 				showLiveContent
 				image {
 					childImageSharp {
-					  sizes(maxWidth: 1600) {
-						...GatsbyImageSharpSizes
+					  fluid(maxWidth: 1600) {
+						...GatsbyImageSharpFluid
 					  }
 					}
 				  }

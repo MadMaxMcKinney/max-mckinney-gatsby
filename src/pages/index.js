@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { graphql } from "gatsby"
 import styled from 'styled-components'
 import ProjectCard from '../components/ProjectCard';
 
@@ -83,8 +83,8 @@ query ProjectQuery {
 			  accentColor
 			  image {
 				childImageSharp {
-				  sizes(maxWidth: 900) {
-					...GatsbyImageSharpSizes
+				  fluid(maxWidth: 900) {
+					...GatsbyImageSharpFluid
 				  }
 				}
 			  }

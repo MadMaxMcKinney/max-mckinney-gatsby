@@ -17,17 +17,15 @@ export default class flickrPhotoGrid extends Component {
 		photos: [],
 	}
 
-	componentDidMount() {
+	async componentDidMount() {
 		try {
-			// No async functions while using Gatsby V1
-			fetch(`https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=${flickrAPIKey}&user_id=60907555%40N05&format=json&nojsoncallback=1`).then((response) => {
-				return response.json();
-			}).then((flickrFeed) => {
-				// "photo" is the full array of photos from the user's flickr feed
-				this.setState({
-					photos: flickrFeed.photos.photo
-				});
-			})
+            const response = await fetch(`https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=${flickrAPIKey}&user_id=60907555%40N05&format=json&nojsoncallback=1`)
+            const flickrFeed = response.json()
+            
+            // "photo" is the full array of photos from the user's flickr feed
+            this.setState({
+                photos: flickrFeed.photos.photo
+            });
 
 		} catch (e) {
 			console.log(e);

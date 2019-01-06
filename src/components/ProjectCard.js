@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
   return (
 	<Link to={props.data.fields.slug}>
 		<ProjectCardContainer>
-			<Img className="project-card-image" sizes={props.data.frontmatter.image.childImageSharp.sizes} alt="Project Image"/>
+			<Img className="project-card-image" fluid={props.data.frontmatter.image.childImageSharp.fluid} alt="Project Image"/>
 			<ProjectCardContent>
 				<h4>{props.data.frontmatter.title}</h4>
 				<p>{props.data.frontmatter.projectShortBrief}</p>
