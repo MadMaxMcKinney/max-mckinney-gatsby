@@ -20,7 +20,7 @@ export default class flickrPhotoGrid extends Component {
 	async componentDidMount() {
 		try {
             const response = await fetch(`https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=${flickrAPIKey}&user_id=60907555%40N05&format=json&nojsoncallback=1`)
-            const flickrFeed = response.json()
+            const flickrFeed = await response.json()
             
             // "photo" is the full array of photos from the user's flickr feed
             this.setState({
