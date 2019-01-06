@@ -12,6 +12,7 @@ export default function Template({ data }) {
 		<React.Fragment>
 
 		<Helmet title={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}>
+            <meta name="theme-color" content={data.markdownRemark.frontmatter.themeColor}/>
 		</Helmet>
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>

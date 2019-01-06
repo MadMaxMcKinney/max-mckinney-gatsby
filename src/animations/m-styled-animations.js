@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import { keyframes } from 'styled-components';
 
 // Fades
 export const fadeIn = keyframes`
