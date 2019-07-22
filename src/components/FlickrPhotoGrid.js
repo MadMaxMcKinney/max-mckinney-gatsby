@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
 import Masonry from 'react-masonry-component';
 
 const flickrAPIKey = "f26f7c762e903dd54fa52554cf306860";
@@ -46,12 +45,12 @@ export default class flickrPhotoGrid extends Component {
 }
 
 
-const PhotoGrid = styled.div`
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 32px;
-	margin-top: 170px;
-`;
+// const PhotoGrid = styled.div`
+// 	display: grid;
+// 	grid-template-columns: repeat(2, 1fr);
+// 	grid-gap: 32px;
+// 	margin-top: 170px;
+// `;
 
 const PhotoImage = styled.img`
 	padding: 0px;

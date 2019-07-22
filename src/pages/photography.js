@@ -10,7 +10,7 @@ import {fadeInDown} from './../animations/m-styled-animations'
 
 const PhotographyPage = ({data}) => (
   <React.Fragment>
-	<Helmet title={data.site.siteMetadata.title + ' | ' + "Photography"}></Helmet>
+	<Helmet title={`${data.site.siteMetadata.title} | Photography`}></Helmet>
 	<PageGrid>
 		<HeaderAction>
 			<HeaderTitle>Photography</HeaderTitle>
@@ -46,19 +46,6 @@ const HeaderTitle = styled.h1`
 	max-width: 400px;
 	color: white;
 	font-weight: 600;
-`;
-
-const HeaderSubtitle = styled.h3`
-	margin-bottom: 170px;
-	max-width: 350px;
-	font-size: 21px;
-	color: #c3c3c3;
-	font-weight: 400;
-	line-height: 34px;
-	animation: ${fadeInDown} 1.5s;
-	@media(max-width: 425px) {
-		margin-bottom: 110px;
-	}
 `;
 
 export default PhotographyPage

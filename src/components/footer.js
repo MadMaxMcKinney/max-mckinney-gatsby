@@ -5,7 +5,6 @@ import {fadeIn} from '../animations/m-styled-animations'
 
 import {FaLinkedin} from 'react-icons/fa'
 import {FaMedium} from 'react-icons/fa'
-import {Fa500px} from 'react-icons/fa'
 import {FaDribbble} from 'react-icons/fa'
 import {FaTwitter} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
@@ -20,32 +19,27 @@ const Footer = () => {
 
 		<FooterSocialLinks>
 			<li>
-				<a href="https://github.com/MaxMcKinney" target="_blank">
+				<a href="https://github.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
 					<FaGithub size={iconSize}/>
 				</a>
 			</li>
 			<li>
-				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank">
+				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank" rel="noopener noreferrer">
 					<FaLinkedin size={iconSize}/>
 				</a>
 			</li>
 			<li>
-				<a href="https://dribbble.com/MaxMcKinney" target="_blank">
+				<a href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
 					<FaDribbble size={iconSize}/>
 				</a>
 			</li>
 			<li>
-				<a href="https://medium.com/@maxmckinney" target="_blank">
+				<a href="https://medium.com/@maxmckinney" target="_blank" rel="noopener noreferrer">
 					<FaMedium size={iconSize}/>
 				</a>
 			</li>
 			<li>
-				<a href="https://500px.com/maxmckinney" target="_blank">
-					<Fa500px size={iconSize}/>
-				</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/timmaxmckinney" target="_blank">
+				<a href="https://twitter.com/timmaxmckinney" target="_blank" rel="noopener noreferrer">
 					<FaTwitter size={iconSize}/>
 				</a>
 			</li>

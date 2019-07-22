@@ -708,10 +708,11 @@ img:-mod-loading {
 .photo-grid a:hover {
 	cursor: zoom-in;
 }
-.photo-grid a {
-	width: auto;
-	padding: 0;
-	border-radius: 2px;
+.photo-grid span {
+	width: 100%;
+    padding: 0;
+    border-radius: 2px;
+    object-fit: cover;
 	object-fit: cover;
 	overflow: hidden;
 	box-shadow: 0px 4px 15px #00000017;
