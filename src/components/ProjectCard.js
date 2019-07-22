@@ -20,6 +20,34 @@ const ProjectCard = (props) => {
 
 // TODO: Create a style component wrapper for the gatsby-image component
 
+const ReadMore = styled.span`
+	margin-top: 8px;
+	font-weight: 500;
+	color: white;
+	display: inline-block;
+	opacity: 1;
+	border-bottom: 1px solid #cecece;
+	position: relative;
+	transition: opacity 0.3s;
+	--accent-color: ${props => props.theme};
+	&:after {
+		content: '';
+		position: absolute;
+		background: var(--accent-color);
+		left: 0;
+		right: 100%;
+		bottom: -1px;
+		height: 1px;
+		transition: all 0.3s;
+	}
+`;
+
+const ProjectCardContent = styled.div`
+	grid-column: 2;
+	padding: 40px 32px;
+	align-self: center;
+`;
+
 const ProjectCardContainer = styled.div`
 	display: grid;
     width: 100%;
@@ -59,34 +87,6 @@ const ProjectCardContainer = styled.div`
 	}
 	@media(max-width: 500px) {
 		grid-template-columns: 10% 1fr;
-	}
-`;
-
-const ProjectCardContent = styled.div`
-	grid-column: 2;
-	padding: 40px 32px;
-	align-self: center;
-`;
-
-const ReadMore = styled.span`
-	margin-top: 8px;
-	font-weight: 500;
-	color: white;
-	display: inline-block;
-	opacity: 1;
-	border-bottom: 1px solid #cecece;
-	position: relative;
-	transition: opacity 0.3s;
-	--accent-color: ${props => props.theme};
-	&:after {
-		content: '';
-		position: absolute;
-		background: var(--accent-color);
-		left: 0;
-		right: 100%;
-		bottom: -1px;
-		height: 1px;
-		transition: all 0.3s;
 	}
 `;
 
