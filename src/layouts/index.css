@@ -703,7 +703,8 @@ img:-mod-loading {
 	grid-gap: 24px;
 }
 .photo-grid img {
-	color: transparent;
+    color: transparent;
+    border-radius: 2px;
 }
 .photo-grid a:hover {
 	cursor: zoom-in;
