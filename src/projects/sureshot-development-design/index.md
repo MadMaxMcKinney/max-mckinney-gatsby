@@ -6,7 +6,7 @@ projectDate: "Jan 2019 - Ongoing"
 projectAgency: "Sureshot"
 projectRole: "Fullstack Developer / Designer"
 projectBrief: "Fullstack development and design across several different platforms. These platforms are built on React and written in Typescript with custom backend functionality running on dotNET core and C#. Lead the Sureshot design effort and design language creation from both a development and design perspective. This design language was created to bring visual and UX consistency between existing and new products. Sureshot UI was designed in Figma to allow other members to easily create mockups using it's team library functionality. All of the designs were made as components to allow faster iteration and better development handoff. The design language was created as a Typescript/React private NPM repo. It features flexible components while still maintaining an opinionated API structure. Every component is documented and shown in an interactive way using Storybook JS. Sureshot UI will continue to grow and adapt to support Sureshot's products."
-projectShortBrief: "Took on the role of lead web developer for implementing Dell's Clarity Design Language in a web toolkit."
+projectShortBrief: "Fullstack development and design across several different platforms. Created Sureshot UI design language."
 themeColor: "#330f0f"
 accentColor: "#CC2027"
 image: "Sureshot-UI-Header.png"
@@ -51,6 +51,7 @@ Part of building a strong design system and product catalog is building applicat
 <div class="photo-grid-container">
 <div class="photo-grid">
 <img src="sureshot-dev-storybook.png" />
+<img src="sureshot-dev-zero.png" />
 </div>
 </div>
 <p class="photo-grid-subtitle">Sureshot UI Documentation Example</p>

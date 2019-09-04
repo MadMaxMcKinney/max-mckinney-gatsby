@@ -54,6 +54,19 @@ module.exports = {
 				path: `${__dirname}/src/assets`,
 				name: 'img',
 			},
-		}
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+              name: `Max McKinney`,
+              short_name: `Max McKinney`,
+              description: `I’m a developer and designer with a focus in full-stack web technologies. I build cars on the side and take pictures.`,
+              start_url: `/`,
+              background_color: `#000000`,
+              theme_color: `#000000`,
+              display: `standalone`,
+              icon: `src/assets/img/max-logo.png`,
+            },
+        },
 	],
 }
