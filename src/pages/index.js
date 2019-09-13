@@ -9,7 +9,7 @@ const IndexPage = ({data}) => (
   <React.Fragment>
 	  <PageGrid>
 		<HeaderTitle>Fullstack <br/> Web Dev / Designer</HeaderTitle>
-		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently contracting in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
+		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently full-time in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
 
 		<ProjectCardGrid>
 
