@@ -85,6 +85,7 @@ const ProjectCardContainer = styled.div`
         bottom: 0;
         border: 1px solid transparent;
         transition: all 0.4s;
+        border-radius: 4px;
     }
 	&:hover {
         opacity: 1;
