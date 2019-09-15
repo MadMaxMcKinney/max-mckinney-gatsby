@@ -49,18 +49,16 @@ const ProjectCardContent = styled.div`
 `;
 
 const ProjectCardContainer = styled.div`
-	display: grid;
+    display: grid;
+    position: relative;
     width: 100%;
     background: #171717;
     border-radius: 4px;
 	grid-template-columns: 40% 1fr;
 	overflow: hidden;
-	height: 300px;
-	.recent-project-content {
-		grid-column: 2;
-		padding: 40px 32px;
-		align-self: center;
-	}
+    height: 300px;
+    transition: 0.4s;
+
 	.project-card-image {
 		grid-column: 1;
 		padding: 0;
@@ -77,10 +75,23 @@ const ProjectCardContainer = styled.div`
 		margin-top: 8px;
 		margin-bottom: 0px;
 		opacity: 0.70;
-	}
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border: 1px solid transparent;
+        transition: all 0.4s;
+    }
 	&:hover {
-		opacity: 1;
-	}
+        opacity: 1;
+    }
+    &:hover::after {
+        border: 1px solid #353535;
+    }
 	/* This syntax is used to reference another styled component */
 	&:hover ${ReadMore}:after, &:focus ${ReadMore}:after, &:active ${ReadMore}:after {
 		right: 0;
