@@ -16,10 +16,8 @@ sortDate: "2019-1-01"
 ---
 I joined Sureshot as a fullstack developer, however once realizing there was no designer on the team and seeing the visual and functional inconsistencies between products I began to implement a design system that could align all of the products. I designed the system to be modular to simplify our development workflows with a heavy focus in data management/dashboard components.
 
-<div class="photo-grid-container">
-<div class="photo-grid">
+<div class="photo-container">
 <img src="sureshot-ui.png" />
-</div>
 </div>
 <p class="photo-grid-subtitle">Sureshot UI example components</p>
 
