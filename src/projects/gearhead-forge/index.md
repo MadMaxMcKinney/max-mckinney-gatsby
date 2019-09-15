@@ -27,7 +27,7 @@ The idea for Gearhead Forge came from the passion and desire to build unique veh
 </div>
 <p class="photo-grid-subtitle">Gearhead Forge logos</p>
 
-#####Frontend
+##### Frontend
 
 The frontend design heavily utilizes imagery to help build the brand and theme. It's built on responsive modern technologies (HTML5,CSS3/Sass,Vanilla JS). It's also been updated to use more CSS Grid to cut down on the amount of parent containers were needed with all the Flexbox work that was going on.
 
@@ -41,7 +41,7 @@ Gearhead Forge has several platforms that we try and build our audience through,
 </div>
 <p class="photo-grid-subtitle">Banner image and home page</p>
 
-#####Backend
+##### Backend
 
 The Gearhead Forge site is built on Wordpress with several custom post types, an e-com platform, and custom fields for dynamic content. I use the custom fields on the project post types for the theme color (that's the background color and accent color), along with all the project information outside of the case study.
 
@@ -55,6 +55,6 @@ The shop is backed with an e-commerce plugin for Wordpress. Initially I was goin
 </div>
 <p class="photo-grid-subtitle">Shop pages</p>
 
-#####Live Link
+##### Live Link
 
 Curious about the current live version? Designs or needs might have changed since the case study was written but you can view the current website to see the design and development in work!

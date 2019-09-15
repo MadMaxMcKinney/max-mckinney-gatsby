@@ -27,6 +27,6 @@ I created dynamic files to allow for easier future changes/adjustments, and inte
 <source src="/conceptual-animation-xps-13.mp4" type="video/mp4">
 </video>
 
-#####Other Efforts
+##### Other Efforts
 
 One project required more explanation than simple animations would provide, so I created a functional "alpha" version of the Android application my team wanted to develop. It was created using Java and the Parse SDK for the cloud DB we needed.

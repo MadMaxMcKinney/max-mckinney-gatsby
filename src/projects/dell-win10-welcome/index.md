@@ -27,7 +27,7 @@ Co-developed with one other developer from the ground up, Dell's "Welcome to Win
 </div>
 <p class="photo-grid-subtitle">Landing pages</p>
 
-#####Universal Windows Platform
+##### Universal Windows Platform
 
 It was developed on the Universal Windows Platform framework which is brand new to the Windows development cycle here at Dell at the time of this apps creation. We were some of the first devs to get our hands dirty developing for Win10. We were in direct contact with Microsoft as we were developing this application pre-Windows 10 release date so Microsoft's documentation was constantly changing if not completely inaccurate as they were constantly updating Windows 10. Interfacing with them directly allowed us to develop this application correctly so it would work correctly once Windows 10 was released.
 
@@ -41,6 +41,6 @@ It was developed on the Universal Windows Platform framework which is brand new 
 </div>
 <p class="photo-grid-subtitle">Upsell pages</p>
 
-#####Timeline
+##### Timeline
 
 This entire application had 10 day hard cut turn around required as well. We managed to get everything mentioned above designed and finished in that time period with about 24 hours to spare. Thanks to a great design team as well the application even earned some high praise from executives at Microsoft and here at Dell.
