@@ -42,7 +42,7 @@ const Layout = ({ children, data }) => (
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:title" content="Max McKinney"/>
                 <meta name="twitter:description" content={data.site.siteMetadata.description}/>
-                <meta name="twitter:site" content="@timmaxmckinney"/>
+                <meta name="twitter:site" content="@madmaxmckinney"/>
                 <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + logo}/>
 
                 <meta name="og:title" content="Max McKinney"/>

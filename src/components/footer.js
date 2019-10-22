@@ -39,7 +39,7 @@ const Footer = () => {
 				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/timmaxmckinney" target="_blank" rel="noopener noreferrer">
+				<a href="https://twitter.com/madmaxmckinney" target="_blank" rel="noopener noreferrer">
 					<FaTwitter size={iconSize}/>
 				</a>
 			</li>
