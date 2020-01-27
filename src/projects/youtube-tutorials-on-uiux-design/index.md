@@ -1,5 +1,5 @@
 ---
-title: "YouTube Tutorials & Speed Art"
+title: "YouTube Tutorials on UI/UX Design"
 url: "https://www.youtube.com/channel/UCQNdi3oxWKsVw8-kA26PSpw"
 projectClient: "Self"
 projectDate: "Sept 2019 - Ongoing"
