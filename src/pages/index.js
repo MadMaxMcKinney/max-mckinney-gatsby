@@ -12,6 +12,12 @@ const IndexPage = ({data}) => (
 		<HeaderTitle>Fullstack <br/> Web Dev / Designer</HeaderTitle>
 		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently full-time in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
 
+        {/*<FilterContainer>
+            <span className="active">BOTH</span>
+            <span>DESIGN</span>
+            <span>DEVELOPMENT</span>
+        </FilterContainer>*/}
+
 		<ProjectCardGrid>
 			{data.allMarkdownRemark.edges.map(({node}) => (
 				<DetailedProjectCard data={node} key={node.key}></DetailedProjectCard>
@@ -60,10 +66,46 @@ const ProjectCardGrid = styled.div`
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 110px;
-	animation: ${fadeInDown} 1.8s;
+	animation: ${fadeInDown} 2.2s;
 	@media (max-width: 500px) {
 		grid-template-columns: 1fr;
 	}
+`;
+
+const FilterContainer = styled.div`
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    justify-content: flex-end;
+    align-items: center;
+    animation: ${fadeInDown} 1.7s;
+    margin-bottom: 48px;
+
+    span {
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #C3C3C3;
+        margin: 0;
+        padding: 0;
+    }
+    
+    span.active {
+        color: white;
+    }
+    span.active::before {
+        content:'[';
+        padding-right: 6px;
+        color: #C3C3C3;
+    }
+    span.active::after {
+        content:']';
+        padding-left: 6px;
+        color: #C3C3C3;
+    }
 `;
 
 export default IndexPage

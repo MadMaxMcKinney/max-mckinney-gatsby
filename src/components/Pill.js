@@ -15,7 +15,7 @@ const PillContainer = styled.div`
     align-items: center;
     padding: 0px 10px;
 	border-radius: 100px;
-    background: #222222;
+    background: #0C0C0C;
 
     span {
         color: white;

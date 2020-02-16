@@ -8,7 +8,7 @@ import BackgroundSourceNumbers from '../assets/img/bg-numbers.png'
 
 const ProjectCard = (props) => {
   return (
-    <ProjectCardContainer>
+    <ProjectCardContainer data-filter={props.data.frontmatter.categories}>
 
         <PreviewContainerMobile>
             <PreviewImage fluid={props.data.frontmatter.image.childImageSharp.fluid} alt="Project Image"/>
