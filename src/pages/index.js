@@ -1,20 +1,20 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import styled from 'styled-components'
-import ProjectCard from '../components/ProjectCard';
+import DetailedProjectCard from '../components/DetailedProjectCard';
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
 const IndexPage = ({data}) => (
   <React.Fragment>
 	  <PageGrid>
-          
+
 		<HeaderTitle>Fullstack <br/> Web Dev / Designer</HeaderTitle>
 		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently full-time in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
 
 		<ProjectCardGrid>
 			{data.allMarkdownRemark.edges.map(({node}) => (
-				<ProjectCard data={node} key={node.key}></ProjectCard>
+				<DetailedProjectCard data={node} key={node.key}></DetailedProjectCard>
 			))}
 		</ProjectCardGrid>
 
@@ -58,8 +58,8 @@ const HeaderSubtitle = styled.h3`
 
 const ProjectCardGrid = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
-	grid-gap: 40px;
+	grid-template-columns: 1fr;
+	grid-gap: 110px;
 	animation: ${fadeInDown} 1.8s;
 	@media (max-width: 500px) {
 		grid-template-columns: 1fr;
@@ -87,7 +87,8 @@ query ProjectQuery {
 					...GatsbyImageSharpFluid
 				  }
 				}
-			  }
+              }
+              categories
 			}
 		  }
 		}

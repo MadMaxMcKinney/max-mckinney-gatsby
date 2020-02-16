@@ -7,6 +7,7 @@ projectAgency: "Dell"
 projectRole: "Developer"
 projectBrief: "Created initial prototype showing new functionality of the UWP framework. Acted as a lead developer resource for the Alienware development team and created one-off examples of new tech for the final app to utilize. Designed and animated the particle backgrounds used throughout the app."
 projectShortBrief: "Worked as a lead developer resource, as well as a UI/UX designer, on the new Alienware Command Center."
+categories: ["Design", "Development"]
 themeColor: "#2b3a61"
 accentColor: "#446cdd"
 image: "alienware-command-center-header.jpg"

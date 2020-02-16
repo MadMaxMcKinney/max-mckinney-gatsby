@@ -7,6 +7,7 @@ projectAgency: "Self"
 projectRole: "Web Dev / Design, Brand"
 projectBrief: "Gearhead Forge is a side hobby turned business that I started in 2016 with a few friends. I created the brand and the designs surrounding it. I also developed and designed the website. Gearhead Forge is a group of enthusiasts passionately keeping the flame of V8’s and hot rodding alive by building uniquely aggressive cars and forging a lifestyle."
 projectShortBrief: "Developed and designed the website and brand for Gearhead Forge, a personal side hobby turned business about building cars."
+categories: ["Design", "Development"]
 themeColor: "#171614"
 accentColor: "#ffc107"
 image: "gearhead-forge-header.jpg"

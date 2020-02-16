@@ -60,6 +60,8 @@ const Layout = ({ children, data }) => (
                 <meta name="msapplication-TileColor" content="#000000"/>
                 <meta name="theme-color" content="#ffffff"/>
 
+                <script src="https://kit.fontawesome.com/d940246cad.js" crossorigin="anonymous"></script>
+
             </Helmet>
 
             <Header />

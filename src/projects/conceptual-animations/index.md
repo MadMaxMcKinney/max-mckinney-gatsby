@@ -7,6 +7,7 @@ projectAgency: "Dell"
 projectRole: "Design / Animation"
 projectBrief: "I took existing design concepts and used After Effects to animate the user experience, which ranged from simple 2D animations to complex 2D/3D combination animations."
 projectShortBrief: "Took design concepts and used After Effects to animate the user experience, ranging from 2D animations to complex 2D/3D animations."
+categories: ["Design"]
 themeColor: "#452c56"
 accentColor: "#a93cba"
 image: "concept-animation-header.png"
