@@ -100,13 +100,14 @@ const PreviewContainerMobile = styled.div`
     position: relative;
     display: none;
     margin-bottom: 4px;
+    height: 380px;
 
     @media(max-width: 1000px) {
         display: block;
     }
 
     ${PreviewImage} {
-        position: absolute;
+        position: absolute !important;
         top: 0;
         right: 0;
         bottom: 0;
