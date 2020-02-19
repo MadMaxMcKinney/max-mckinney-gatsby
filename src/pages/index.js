@@ -130,6 +130,13 @@ query ProjectQuery {
 				  }
 				}
               }
+              thumb {
+				childImageSharp {
+				  fluid(maxWidth: 900) {
+					...GatsbyImageSharpFluid
+				  }
+				}
+              }
               categories
 			}
 		  }

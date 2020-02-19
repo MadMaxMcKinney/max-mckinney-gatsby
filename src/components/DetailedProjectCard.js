@@ -11,7 +11,7 @@ const ProjectCard = (props) => {
     <ProjectCardContainer data-filter={props.data.frontmatter.categories}>
 
         <PreviewContainerMobile>
-            <PreviewImage fluid={props.data.frontmatter.image.childImageSharp.fluid} alt="Project Image"/>
+            <PreviewImage fluid={props.data.frontmatter.thumb.childImageSharp.fluid} alt="Project Image"/>
         </PreviewContainerMobile>
 
         <ProjectCardContent>
@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
         </ProjectCardContent>
 
         <PreviewContainer>
-            <Monitor imageSource={props.data.frontmatter.image.childImageSharp.fluid}/>
+            <Monitor imageSource={props.data.frontmatter.thumb.childImageSharp.fluid}/>
         </PreviewContainer>
 
     </ProjectCardContainer>
