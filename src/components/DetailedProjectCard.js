@@ -100,7 +100,9 @@ const PreviewContainerMobile = styled.div`
     position: relative;
     display: none;
     margin-bottom: 4px;
-    height: 380px;
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
 
     @media(max-width: 1000px) {
         display: block;
