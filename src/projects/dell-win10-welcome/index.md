@@ -7,7 +7,7 @@ projectAgency: "Dell"
 projectRole: "Developer / Designer"
 projectBrief: "This was a global application that supported over 25 different languages and was fully responsive – it is estimated to server hundreds of thousands of people as soon as Windows 10 is available, with millions of people estimated several months after Windows 10 is released."
 projectShortBrief: "This was a global application that supported over 25 different languages and is fully responsive built on UWP."
-categories: ["Design", "Development"]
+categories: ["Development"]
 themeColor: "#6923e0"
 accentColor: "#6923e0"
 image: "dell-welcome-header.jpg"

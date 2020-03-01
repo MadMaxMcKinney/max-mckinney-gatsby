@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import Img from 'gatsby-image'
 import Pill from './Pill'
 import ReadMoreButton from './ReadMoreButton'
@@ -8,7 +8,7 @@ import BackgroundSourceNumbers from '../assets/img/bg-numbers.png'
 
 const ProjectCard = (props) => {
   return (
-    <ProjectCardContainer data-filter={props.data.frontmatter.categories}>
+    <ProjectCardContainer data-filter={props.data.frontmatter.categories} className="active">
 
         <PreviewContainerMobile>
             <PreviewImage fluid={props.data.frontmatter.thumb.childImageSharp.fluid} alt="Project Image"/>
@@ -34,12 +34,22 @@ const ProjectCard = (props) => {
   )
 }
 
-// TODO: Create a style component wrapper for the gatsby-image component
+const fadeIn = keyframes`
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+`
+
 
 const ProjectCardContainer = styled.div`
     width: 100%;
     min-height: 400px;
-    display: grid;
+    display: none;
     position: relative;
     background: #171717;
     background-image: url(${BackgroundSourceNumbers});
@@ -47,7 +57,7 @@ const ProjectCardContainer = styled.div`
     border-radius: 4px;
     grid-template-columns: 1fr 565px;
     padding: 32px 50px;
-    transition: 0.4s;
+    transition: all 0.4s;
     border: 1px solid #FFFFFF33;
 
     h1 {
@@ -64,6 +74,12 @@ const ProjectCardContainer = styled.div`
         opacity: 0.70;
         flex: 1;
         max-width: 360px;
+    }
+
+    &.active {
+        display: grid;
+        opacity: 1;
+        animation: ${fadeIn} 0.3s;
     }
 
     &:hover {

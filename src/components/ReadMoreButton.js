@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const ReadMoreButton = (props) => {
   return (
 	<ButtonContainer to={props.link}>
-        <span>Read more about it</span><i class="fal fa-sm fa-arrow-right"></i>
+        <span>Read more about it</span><i className="fal fa-sm fa-arrow-right"></i>
 	</ButtonContainer>
   )
 }

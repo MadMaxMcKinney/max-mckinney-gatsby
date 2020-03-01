@@ -5,6 +5,65 @@ import DetailedProjectCard from '../components/DetailedProjectCard';
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
+const getFilterActionButtons = () => {
+    return document.querySelectorAll('#FilterContainer span');
+}
+
+const getFilterPortfolioItems = () => {
+    return document.querySelectorAll('[data-filter]');
+}
+
+const clearFilterItemsActive = () => {
+    let items = getFilterActionButtons();
+    items.forEach(item => {
+        item.classList.remove('active');
+    })
+
+    let portfolioItems = getFilterPortfolioItems();
+    portfolioItems.forEach(item => {
+        item.classList.remove('active');
+    })
+}
+
+const filterClickBoth = () => {
+    let portfolioItems = document.querySelectorAll('[data-filter]');
+
+    clearFilterItemsActive();
+    document.querySelector('#FilterItemBoth').classList.add('active');
+
+    setTimeout(() => {
+        portfolioItems.forEach(item => {
+            item.classList.add('active');
+        })
+    }, 50)
+}
+
+const filterClickDesign = () => {
+    let portfolioItemsDesign = document.querySelectorAll('[data-filter="Design"]')
+
+    clearFilterItemsActive();
+    document.querySelector('#FilterItemDesign').classList.add('active');
+
+    setTimeout(() => {
+        portfolioItemsDesign.forEach(item => {
+            item.classList.add('active');
+        })
+    }, 50)
+}
+
+const filterClickDev = () => {
+    let portfolioItemsDev = document.querySelectorAll('[data-filter="Development"]')
+
+    clearFilterItemsActive();
+    document.querySelector('#FilterItemDev').classList.add('active');
+
+    setTimeout(() => {
+        portfolioItemsDev.forEach(item => {
+            item.classList.add('active');
+        })
+    }, 50)
+}
+
 const IndexPage = ({data}) => (
   <React.Fragment>
 	  <PageGrid>
@@ -12,11 +71,11 @@ const IndexPage = ({data}) => (
 		<HeaderTitle>Fullstack <br/> Web Dev / Designer</HeaderTitle>
 		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently full-time in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
 
-        {/*<FilterContainer>
-            <span className="active">BOTH</span>
-            <span>DESIGN</span>
-            <span>DEVELOPMENT</span>
-        </FilterContainer>*/}
+        <FilterContainer id="FilterContainer">
+            <span className="active" onClick={filterClickBoth} id="FilterItemBoth">BOTH</span>
+            <span onClick={filterClickDesign} id="FilterItemDesign">DESIGN</span>
+            <span onClick={filterClickDev} id="FilterItemDev">DEVELOPMENT</span>
+        </FilterContainer>
 
 		<ProjectCardGrid>
 			{data.allMarkdownRemark.edges.map(({node}) => (
@@ -64,8 +123,10 @@ const HeaderSubtitle = styled.h3`
 
 const ProjectCardGrid = styled.div`
 	display: grid;
+    min-height: 800px;
 	grid-template-columns: 1fr;
 	grid-gap: 110px;
+    align-items: flex-start;
 	animation: ${fadeInDown} 2.2s;
 	@media (max-width: 500px) {
 		grid-template-columns: 1fr;
@@ -91,6 +152,12 @@ const FilterContainer = styled.div`
         color: #C3C3C3;
         margin: 0;
         padding: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
     
     span.active {
