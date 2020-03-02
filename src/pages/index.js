@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import DetailedProjectCard from '../components/DetailedProjectCard';
 
 import {fadeInDown} from './../animations/m-styled-animations'
@@ -33,7 +33,7 @@ const filterClickBoth = () => {
     let portfolioItems = document.querySelectorAll('[data-filter]');
 
     clearFilterItemsActive();
-    document.querySelector('#FilterItemBoth').classList.add('active');
+    document.querySelector('#FilterItemAll').classList.add('active');
 
     setTimeout(() => {
         portfolioItems.forEach(item => {
@@ -84,7 +84,7 @@ const IndexPage = ({data}) => (
 		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently full-time in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
 
         <FilterContainer id="FilterContainer">
-            <span className="active" onClick={filterClickBoth} id="FilterItemBoth">BOTH</span>
+            <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
             <span onClick={filterClickDesign} id="FilterItemDesign">DESIGN</span>
             <span onClick={filterClickDev} id="FilterItemDev">DEVELOPMENT</span>
         </FilterContainer>
@@ -145,6 +145,32 @@ const ProjectCardGrid = styled.div`
 	}
 `;
 
+const appearAnimLeft = keyframes`
+    from {
+        transform: scale(0.8);
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+`
+
+const appearAnimRight = keyframes`
+    from {
+        transform: scale(0.8);
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+`
+
 const FilterContainer = styled.div`
     width: 100%;
     display: grid;
@@ -177,13 +203,19 @@ const FilterContainer = styled.div`
     }
     span.active::before {
         content:'[';
+        display: inline-block;
         padding-right: 6px;
         color: #C3C3C3;
+        transition: all 0.3s;
+        animation: ${appearAnimLeft} 0.3s;
     }
     span.active::after {
         content:']';
+        display: inline-block;
         padding-left: 6px;
         color: #C3C3C3;
+        transition: all 0.3s;
+        animation: ${appearAnimRight} 0.3s;
     }
 `;
 
