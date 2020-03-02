@@ -25,6 +25,10 @@ const clearFilterItemsActive = () => {
     })
 }
 
+/**
+ * Filters the design AND dev portfolio items
+ *
+ */
 const filterClickBoth = () => {
     let portfolioItems = document.querySelectorAll('[data-filter]');
 
@@ -38,8 +42,12 @@ const filterClickBoth = () => {
     }, 50)
 }
 
+/**
+ * Filters the design portfolio items, anything that contains "design" using *
+ *
+ */
 const filterClickDesign = () => {
-    let portfolioItemsDesign = document.querySelectorAll('[data-filter="Design"]')
+    let portfolioItemsDesign = document.querySelectorAll('[data-filter*="Design"]')
 
     clearFilterItemsActive();
     document.querySelector('#FilterItemDesign').classList.add('active');
@@ -51,8 +59,12 @@ const filterClickDesign = () => {
     }, 50)
 }
 
+/**
+ * Filters the dev portfolio items, anything that contains "development" using *
+ *
+ */
 const filterClickDev = () => {
-    let portfolioItemsDev = document.querySelectorAll('[data-filter="Development"]')
+    let portfolioItemsDev = document.querySelectorAll('[data-filter*="Development"]')
 
     clearFilterItemsActive();
     document.querySelector('#FilterItemDev').classList.add('active');
