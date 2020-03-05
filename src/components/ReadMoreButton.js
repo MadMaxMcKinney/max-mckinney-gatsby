@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import styled from 'styled-components'
+import {PulseRight} from './Animations'
 
 const ReadMoreButton = (props) => {
   return (
@@ -28,6 +29,12 @@ const ButtonContainer = styled(Link)`
 
     &:hover, &:active, &:focus {
         border-color: #ffffff;
+    }
+
+    &:hover i {
+        animation: ${PulseRight} 0.3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 `;
 
