@@ -18,6 +18,11 @@ const Footer = () => {
 		<EmailLink href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</EmailLink>
 
 		<FooterSocialLinks>
+            <li>
+				<a href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
+					<FaDribbble size={iconSize}/>
+				</a>
+			</li>
 			<li>
 				<a href="https://github.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
 					<FaGithub size={iconSize}/>
@@ -26,11 +31,6 @@ const Footer = () => {
 			<li>
 				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank" rel="noopener noreferrer">
 					<FaLinkedin size={iconSize}/>
-				</a>
-			</li>
-			<li>
-				<a href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
-					<FaDribbble size={iconSize}/>
 				</a>
 			</li>
 			<li>
