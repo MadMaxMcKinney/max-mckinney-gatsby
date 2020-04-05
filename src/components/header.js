@@ -62,6 +62,8 @@ const Header = () => (
 	</Navmenu>
 )
 
+const SIZE_MOBILE = "715px";
+
 const Navmenu = styled.div`
 	width: 100%;
 	display: flex;
@@ -73,6 +75,10 @@ const Navmenu = styled.div`
 	top: 0;
 	z-index: 2;
 	animation: ${fadeIn} 1.3s;
+
+    @media(max-width: ${SIZE_MOBILE}) {
+        margin-top: 16px;
+    }
 `
 
 const SiteSocial = styled.ul`
@@ -106,9 +112,12 @@ const SiteSocial = styled.ul`
 	@media(max-width: 1155px) {
 		margin-right: 0;
 	}
-	@media(max-width: 715px) {
+	@media(max-width: ${SIZE_MOBILE}) {
         li:not(:last-child) {
 		    display: none;
+        }
+        li {
+            padding: 0;
         }
 	}
 `
@@ -135,8 +144,12 @@ const PillNavItem = styled.div`
         color: black;
     }
 
-    &:focus, &:active {
-
+    @media(max-width: ${SIZE_MOBILE}) {
+        padding: 4px 8px;
+        
+        p {
+            font-size: 12px;
+        }
     }
 `
 
@@ -147,6 +160,11 @@ const SiteLogo = styled.img`
 	display: block;
 	padding-top: 30px;
 	padding-bottom: 30px;
+
+    @media(max-width: ${SIZE_MOBILE}) {
+        padding: 0;
+        margin: 0;
+    }
 `
 const SiteLogoContainer = styled.div`
     display: flex;
