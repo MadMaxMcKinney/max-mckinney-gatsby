@@ -44,9 +44,9 @@ const Footer = () => {
 				</a>
 			</li>
 			<li>
-				<Link to="/photography">
+				<a href="https://maxmckinneyphoto.com/" rel="noopener noreferrer">
 					<IoIosCamera size={iconSize+6}/>
-				</Link>
+				</a>
 			</li>
 		</FooterSocialLinks>
 

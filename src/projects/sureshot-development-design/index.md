@@ -4,8 +4,8 @@ url: ""
 projectClient: "Sureshot"
 projectDate: "Jan 2019 - Ongoing"
 projectAgency: "Sureshot"
-projectRole: "Fullstack Developer / Designer"
-projectBrief: "Fullstack development and design across several different platforms. These platforms are built on React and written in Typescript with custom backend functionality running on dotNET core and C#. Lead the Sureshot design effort and design language creation from both a development and design perspective. This design language was created to bring visual and UX consistency between existing and new products. Sureshot UI was designed in Figma to allow other members to easily create mockups using it's team library functionality. All of the designs were made as components to allow faster iteration and better development handoff. The design language was created as a Typescript/React private NPM repo. It features flexible components while still maintaining an opinionated API structure. Every component is documented and shown in an interactive way using Storybook JS. Sureshot UI will continue to grow and adapt to support Sureshot's products."
+projectRole: "Lead Designer / Fullstack Dev"
+projectBrief: "Fullstack development and lead designer across several different platforms. These platforms are built on React and written in Typescript with custom backend functionality running on dotNET core and C#. Lead the Sureshot design effort and design language creation from both a development and design perspective. This design language was created to bring visual and UX consistency between existing and new products. Sureshot UI was designed in Figma to allow other members to easily create mockups using it's team library functionality. All of the designs were made as components to allow faster iteration and better development handoff. The design language was created as a Typescript/React private NPM repo. It features flexible components while still maintaining an opinionated API structure. Every component is documented and shown in an interactive way using Storybook JS. Sureshot UI will continue to grow and adapt to support Sureshot's products."
 projectShortBrief: "Fullstack development and design across several different platforms. Created Sureshot UI design language."
 categories: ["Design", "Development"]
 themeColor: "#330f0f"
@@ -15,7 +15,7 @@ thumb: "Sureshot-UI-Thumbnail.png"
 showLiveContent: false
 sortDate: "2019-1-01"
 ---
-I joined Sureshot as a fullstack developer, however once realizing there was no designer on the team and seeing the visual and functional inconsistencies between products I began to implement a design system that could align all of the products. I designed the system to be modular to simplify our development workflows with a heavy focus in data management/dashboard components.
+I joined Sureshot as a fullstack developer, however once realizing there was no designer on the team and seeing the visual and functional inconsistencies between products I began to build the groundwork and implement a design system that would align all of the products. I now act as the lead designer on the team. I designed the system to be modular to simplify our development workflows with a heavy focus in data management/dashboard components. 
 
 <div class="photo-container">
 <img src="sureshot-ui.png" />

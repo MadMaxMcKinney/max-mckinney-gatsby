@@ -51,9 +51,12 @@ const Header = () => (
 				</a>
 			</li>
 			<li>
-				<Link to="/photography" target="_blank" rel="noopener noreferrer">
-					<IoIosCamera size={iconSize+6}/>
-				</Link>
+				<a href="https://maxmckinneyphoto.com/" rel="noopener noreferrer">
+					<PillNavItem>
+                        <IoIosCamera size={iconSize+6}/>
+                        <p>Photography</p>
+                    </PillNavItem>
+				</a>
 			</li>
 		</SiteSocial>
 	</Navmenu>
@@ -104,46 +107,38 @@ const SiteSocial = styled.ul`
 		margin-right: 0;
 	}
 	@media(max-width: 715px) {
-		display: none;
+        li:not(:last-child) {
+		    display: none;
+        }
 	}
 `
-// const SitePages = styled.ul`
-// 	display: flex;
-// 	flex-direction: row;
-// 	justify-content: flex-end;
-// 	align-items: center;
-// 	list-style: none;
-// 	text-transform: uppercase;
-// 	font-size: 0.7rem;
-// 	font-weight: 500;
-// 	letter-spacing: 1px;
-// 	width: 100%;
-// 	margin-left: 0px;
-// 	margin-bottom: 0px;
-// 	li {
-// 		margin: 0;
-// 		padding: 0px 20px;
-// 		a {
-// 			font-size: 0.7rem;
-// 			font-weight: 500;
-// 			text-decoration: none;
-// 			color: white;
-// 			transition: all 0.6s;
-// 			display: flex;
-// 			&:hover {
-// 				opacity: 0.6;
-// 			}
-// 		}
-// 	}
-// 	span {
-// 		text-transform: none;
-// 		margin-right: 12px;
-// 		font-weight: 400;
-// 	}
-// 	@media(max-width: 1155px) {
-// 		margin-bottom: 0;
-// 	}
-// `
+
+const PillNavItem = styled.div`
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 8px;
+    justify-content: center;
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 100px;
+    transition: all 0.4s;
+
+    p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &:hover {
+        background: white;
+        color: black;
+    }
+
+    &:focus, &:active {
+
+    }
+`
 
 const SiteLogo = styled.img`
 	width: 45px;

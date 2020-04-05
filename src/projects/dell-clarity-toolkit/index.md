@@ -4,7 +4,7 @@ url: ""
 projectClient: "Dell"
 projectDate: "Dec 2015 - Dec 2018"
 projectAgency: "Dell"
-projectRole: "Frontend Developer"
+projectRole: "Frontend Dev / Design"
 projectBrief: "Took on the role of lead web developer for implementing Dell's Clarity Design Language in a web toolkit. This toolkit is based upon Bootstrap 3 and takes on a couple different roles in the dev cycle for existing Dell workers."
 projectShortBrief: "Took on the role of lead web developer for implementing Dell's Clarity Design Language in a web toolkit."
 categories: ["Design", "Development"]
