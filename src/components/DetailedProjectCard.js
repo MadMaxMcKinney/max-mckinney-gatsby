@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import Img from 'gatsby-image'
 import Pill from './Pill'
 import ReadMoreButton from './ReadMoreButton'
-import Monitor from './Monitor'
+import MonitorBorderOnly from './MonitorBorderOnly'
 import BackgroundSourceNumbers from '../assets/img/bg-numbers.png'
 
 const ProjectCard = (props) => {
@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
         </ProjectCardContent>
 
         <PreviewContainer>
-            <Monitor imageSource={props.data.frontmatter.thumb.childImageSharp.fluid}/>
+            <MonitorBorderOnly imageSource={props.data.frontmatter.thumb.childImageSharp.fluid}/>
         </PreviewContainer>
 
     </ProjectCardContainer>
