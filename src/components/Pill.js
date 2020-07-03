@@ -50,4 +50,10 @@ const PillContainer = styled.div`
         font-variant: small-caps;
         line-height: 165%;
     }
+
+    @media(max-width: 1000px) {
+        span {
+            font-size: 13px;
+        }
+    }
 `;

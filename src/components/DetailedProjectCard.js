@@ -137,7 +137,7 @@ const ProjectCardContent = styled.div`
     padding: 32px 50px;
 
     @media(max-width: 1000px) {
-        padding: 32px 50px;
+        padding: 24px;
     }
 `;
 
