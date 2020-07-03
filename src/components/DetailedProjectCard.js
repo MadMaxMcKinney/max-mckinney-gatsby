@@ -3,7 +3,6 @@ import styled, { keyframes } from 'styled-components'
 import Img from 'gatsby-image'
 import Pill from './Pill'
 import ReadMoreButton from './ReadMoreButton'
-import MonitorBorderOnly from './MonitorBorderOnly'
 import BackgroundSourceNumbers from '../assets/img/bg-numbers.png'
 
 const ProjectCard = (props) => {
@@ -27,7 +26,7 @@ const ProjectCard = (props) => {
         </ProjectCardContent>
 
         <PreviewContainer>
-            <MonitorBorderOnly imageSource={props.data.frontmatter.thumb.childImageSharp.fluid}/>
+            <PreviewImage fluid={props.data.frontmatter.thumb.childImageSharp.fluid}/>
         </PreviewContainer>
 
     </ProjectCardContainer>
@@ -47,6 +46,7 @@ const fadeIn = keyframes`
 
 
 const ProjectCardContainer = styled.div`
+    --border-radius: 4px;
     width: 100%;
     min-height: 400px;
     display: none;
@@ -54,11 +54,10 @@ const ProjectCardContainer = styled.div`
     background: #171717;
     background-image: url(${BackgroundSourceNumbers});
     background-repeat: repeat-y;
-    border-radius: 4px;
-    grid-template-columns: 1fr 565px;
-    padding: 32px 50px;
+    border-radius: var(--border-radius);
+    grid-template-columns: 1fr 1.2fr;
     transition: all 0.4s;
-    border: 1px solid #FFFFFF33;
+    overflow: hidden;
 
     h1 {
         display: inline-block;
@@ -74,6 +73,18 @@ const ProjectCardContainer = styled.div`
         opacity: 0.70;
         flex: 1;
         max-width: 360px;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid #FFFFFF33;
+        border-radius: var(--border-radius);;
+        z-index: 100;
     }
 
     &.active {
@@ -94,18 +105,12 @@ const ProjectCardContainer = styled.div`
 
 const PreviewImage = styled(Img)`
     display: block;
+    height: 100%;
+    object-fit: fill;
 `;
 
 const PreviewContainer = styled.div`
     position: relative;
-
-    ${PreviewImage} {
-        position: absolute;
-        top: 13px;
-        left: 13px;
-        right: 13px;
-        bottom: 17px;
-    }
 
     @media(max-width: 1000px) {
         display: none;
@@ -115,23 +120,12 @@ const PreviewContainer = styled.div`
 const PreviewContainerMobile = styled.div`
     position: relative;
     display: none;
-    margin-bottom: 4px;
-    width: 100%;
-    height: auto;
-    padding-top: 56.25%;
 
     @media(max-width: 1000px) {
         display: block;
     }
 
     ${PreviewImage} {
-        position: absolute !important;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 0px;
-        margin: 0px;
         border-bottom: 1px solid #FFFFFF33;
     }
 `;
@@ -140,7 +134,7 @@ const ProjectCardContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 24px;
+    padding: 32px 50px;
 
     @media(max-width: 1000px) {
         padding: 32px 50px;

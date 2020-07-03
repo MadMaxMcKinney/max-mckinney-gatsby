@@ -85,8 +85,8 @@ const IndexPage = ({data}) => (
 
         <FilterContainer id="FilterContainer">
             <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
-            <span onClick={filterClickDesign} id="FilterItemDesign">DESIGN</span>
-            <span onClick={filterClickDev} id="FilterItemDev">DEVELOPMENT</span>
+            <span onClick={filterClickDesign} id="FilterItemDesign"><i className="far fa-ruler-triangle"></i> DESIGN</span>
+            <span onClick={filterClickDev} id="FilterItemDev"><i class="far fa-brackets-curly"></i>  DEVELOPMENT</span>
         </FilterContainer>
 
 		<ProjectCardGrid>

@@ -4,18 +4,41 @@ import styled from 'styled-components'
 export default (props) => {
   return (
 	<PillContainer>
-		<span>{props.text}</span>
+		<span>{renderIcon(props.text)}{props.text}</span>
 	</PillContainer>
   )
+}
+
+/**
+ * Render a specific icon based on the category title
+ *
+ * @param {String} categoryTitle
+ * @returns
+ */
+function renderIcon(categoryTitle) {
+    switch(categoryTitle.toLowerCase()) {
+        case "design":
+            return <i className="far fa-ruler-triangle"></i>
+
+        case "development":
+            return <i class="far fa-brackets-curly"></i> 
+
+        default:
+            return ""
+    }
 }
 
 const PillContainer = styled.div`
 	display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 10px;
+    padding: 2px 14px;
 	border-radius: 100px;
     background: #0C0C0C;
+
+    i {
+        padding-right: 6px;
+    }
 
     span {
         color: white;
