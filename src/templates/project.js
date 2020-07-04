@@ -15,20 +15,20 @@ export default function Template({ data }) {
             <meta name="theme-color" content={data.markdownRemark.frontmatter.themeColor}/>
 
             <meta name="description" content={data.markdownRemark.frontmatter.projectShortBrief} />
-            <meta name="image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.image.childImageSharp.fixed.src}/>
+            <meta name="image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.thumb.childImageSharp.fixed.src}/>
             <meta itemprop="name" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
             <meta itemprop="description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
-            <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.image.childImageSharp.fixed.src}/>
+            <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.thumb.childImageSharp.fixed.src}/>
 
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:title" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
             <meta name="twitter:description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
             <meta name="twitter:site" content="@madmaxmckinney"/>
-            <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.image.childImageSharp.fixed.src}/>
+            <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.thumb.childImageSharp.fixed.src}/>
 
             <meta name="og:title" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
             <meta name="og:description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
-            <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.image.childImageSharp.fixed.src}/>
+            <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.thumb.childImageSharp.fixed.src}/>
             <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}/>
             <meta name="og:site_name" content="Max McKinney"/>
 
@@ -193,14 +193,18 @@ export const query = graphql`
 				themeColor
 				accentColor
 				url
-				showLiveContent
+                showLiveContent
+                thumb {
+                    childImageSharp {
+                        fixed {
+                            src
+                        }
+                    }
+                }
 				image {
 					childImageSharp {
                         fluid(maxWidth: 1600) {
                             ...GatsbyImageSharpFluid
-                        }
-                        fixed {
-                            src
                         }
                     }
 				}
