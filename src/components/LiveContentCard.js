@@ -10,7 +10,6 @@ export default (props) => {
 		<LiveContentThumbnail thumb={props.thumbnail}/>
 		<LiveContentInfo bg={props.thumbnail} themeColor={props.themeColor}>
 			<h1>{props.title}</h1>
-			<a href={props.url}>View Live</a>
 		</LiveContentInfo>
 		<LiveContentButton href={props.url} themeColor={props.themeColor}> <MdChevronRight size="40"/> </LiveContentButton>
 	</LiveContentCard>
@@ -42,6 +41,7 @@ const LiveContentInfo = styled.div`
 
 	h1 {
 		padding-top: 48px;
+        padding-bottom: 48px;
 		font-weight: 600;
 		font-size: 32px;
 		text-align: center;

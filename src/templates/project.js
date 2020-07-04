@@ -13,7 +13,28 @@ export default function Template({ data }) {
 
 		<Helmet title={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}>
             <meta name="theme-color" content={data.markdownRemark.frontmatter.themeColor}/>
-		</Helmet>
+
+            <meta name="description" content={data.markdownRemark.frontmatter.projectShortBrief} />
+            <meta name="image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.image.childImageSharp.fixed.src}/>
+            <meta itemprop="name" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
+            <meta itemprop="description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
+            <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.image.childImageSharp.fixed.src}/>
+
+            <meta name="twitter:card" content="summary"/>
+            <meta name="twitter:title" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
+            <meta name="twitter:description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
+            <meta name="twitter:site" content="@madmaxmckinney"/>
+            <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.image.childImageSharp.fixed.src}/>
+
+            <meta name="og:title" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
+            <meta name="og:description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
+            <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.image.childImageSharp.fixed.src}/>
+            <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}/>
+            <meta name="og:site_name" content="Max McKinney"/>
+
+            <meta name="msapplication-TileColor" content={data.markdownRemark.frontmatter.themeColor}/>
+
+        </Helmet>
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
 			<Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}/>
@@ -156,7 +177,8 @@ export const query = graphql`
 	query ProjectBySlug($slug: String!) {
 		site {
 			siteMetadata {
-				title
+                title
+                siteUrl
 			}
 		}
 		markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -166,18 +188,22 @@ export const query = graphql`
 				projectDate
 				projectRole
 				projectAgency
-				projectBrief
+                projectBrief
+                projectShortBrief
 				themeColor
 				accentColor
 				url
 				showLiveContent
 				image {
 					childImageSharp {
-					  fluid(maxWidth: 1600) {
-						...GatsbyImageSharpFluid
-					  }
-					}
-				  }
+                        fluid(maxWidth: 1600) {
+                            ...GatsbyImageSharpFluid
+                        }
+                        fixed {
+                            src
+                        }
+                    }
+				}
 			}
 			html
 			fields {

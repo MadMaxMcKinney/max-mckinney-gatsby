@@ -21,7 +21,7 @@ function renderIcon(categoryTitle) {
             return <i className="far fa-ruler-triangle"></i>
 
         case "development":
-            return <i class="far fa-brackets-curly"></i> 
+            return <i className="far fa-brackets-curly"></i> 
 
         default:
             return ""
