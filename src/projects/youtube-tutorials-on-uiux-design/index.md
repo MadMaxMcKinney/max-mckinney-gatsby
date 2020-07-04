@@ -37,6 +37,16 @@ Being a modern designer means adapting to both new technology and new tools all 
 </div>
 <p class="photo-grid-subtitle">Figma Tutorials</p>
 
+##### Design Commentary
+Outside of explicit tutorials and speed art I use my platform as a way of discussing design in various contexts. This can be anything from tips and tricks for managing colors in both a light and dark theme to talking about the latest design trends. This variety helps keep the channel fresh and provides real world examples of the things learned from the other tutorial series.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="design-01.png" />
+<img src="design-02.png"/></div>
+</div>
+<p class="photo-grid-subtitle">Various Design Topics</p>
+
 ##### The Channel
 If you are interested in watching any of the videos you can find them on YouTube! Most of the finished designs from the speed art videos can be found on Dribbble.
 
