@@ -80,7 +80,7 @@ const IndexPage = ({data}) => (
   <React.Fragment>
 	  <PageGrid>
 
-		<HeaderTitle>Fullstack <br/> Web Dev / Designer</HeaderTitle>
+		<HeaderTitle>UI/UX Designer, <br/> Frontend Developer</HeaderTitle>
 		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently full-time in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
 
         <FilterContainer id="FilterContainer">

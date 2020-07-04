@@ -85,6 +85,7 @@ const ProjectCardContainer = styled.div`
         border: 1px solid #FFFFFF33;
         border-radius: var(--border-radius);;
         z-index: 100;
+        pointer-events: none;
     }
 
     &.active {
