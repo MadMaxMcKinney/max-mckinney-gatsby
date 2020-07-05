@@ -58,7 +58,6 @@ const LiveContentInfo = styled.div`
 	@media(max-width: 450px) {
 		h1 {
 			line-height: 36px;
-			padding-bottom: 12px;
 		}
 	}
 
