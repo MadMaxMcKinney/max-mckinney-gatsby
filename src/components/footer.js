@@ -15,7 +15,7 @@ const iconSize = 17;
 const Footer = () => {
   return (
 	<PageFooter>
-		<EmailLink href="mailto:hello@maxmckinney.com">maxmckinney@hey.com</EmailLink>
+		<EmailLink href="mailto:maxmckinney@hey.com">maxmckinney@hey.com</EmailLink>
 
 		<FooterSocialLinks>
             <li>
