@@ -10,12 +10,11 @@ import faviconApple from './../assets/favicon/apple-touch-icon.png'
 import safariTab from './../assets/favicon/safari-pinned-tab.svg'
 
 // Component imports
-import Header from '../components/header'
+import Header from '../components/Header'
 import Footer from '../components/footer'
 import './index.css'
 
-require('typeface-roboto');
-require('typeface-source-sans-pro');
+require('typeface-barlow');
 
 const Layout = ({ children, data }) => (
     <StaticQuery

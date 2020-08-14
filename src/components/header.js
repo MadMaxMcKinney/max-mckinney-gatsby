@@ -5,15 +5,6 @@ import {fadeIn} from '../animations/m-styled-animations'
 
 import logo from './../assets/img/max-white.png'
 
-import {FaLinkedin} from 'react-icons/fa'
-import {FaMedium} from 'react-icons/fa'
-import {FaDribbble} from 'react-icons/fa'
-import {FaTwitter} from 'react-icons/fa'
-import {FaGithub} from 'react-icons/fa'
-import {IoIosCamera} from 'react-icons/io'
-
-const iconSize = 17;
-
 const Header = () => (
 	<Navmenu>
 		<SiteLogoContainer>
@@ -26,37 +17,37 @@ const Header = () => (
 
 		<SiteSocial>
             <li>
-				<a href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
-					<FaDribbble size={iconSize}/>
-				</a>
-			</li>
-			<li>
-				<a href="https://github.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
-					<FaGithub size={iconSize}/>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank" rel="noopener noreferrer">
-					<FaLinkedin size={iconSize}/>
-				</a>
-			</li>
-			<li>
-				<a href="https://medium.com/@maxmckinney" target="_blank" rel="noopener noreferrer">
-					<FaMedium size={iconSize}/>
-				</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/madmaxmckinney" target="_blank" rel="noopener noreferrer">
-					<FaTwitter size={iconSize}/>
-				</a>
-			</li>
-			<li>
 				<a href="https://maxmckinneyphoto.com/" rel="noopener noreferrer">
-					<PillNavItem>
-                        <IoIosCamera size={iconSize+6}/>
-                        <p>Photography</p>
-                    </PillNavItem>
+					<PillNavButton>
+                        <i class="fas fa-layer-group"></i>
+                        <p>Side Projects</p>
+                    </PillNavButton>
 				</a>
+			</li>
+            <li>
+				<SocialButton href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-dribbble"></i>
+				</SocialButton>
+			</li>
+			<li>
+				<SocialButton href="https://github.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+				</SocialButton>
+			</li>
+			<li>
+				<SocialButton href="https://www.linkedin.com/in/mckinneymax" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+				</SocialButton>
+			</li>
+			<li>
+				<SocialButton href="https://maxmckinneyphoto.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-camera-alt"></i>
+				</SocialButton>
+			</li>
+			<li>
+				<SocialButton href="https://twitter.com/madmaxmckinney" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+				</SocialButton>
 			</li>
 		</SiteSocial>
 	</Navmenu>
@@ -66,11 +57,12 @@ const SIZE_MOBILE = "715px";
 
 const Navmenu = styled.div`
 	width: 100%;
-	display: flex;
+    display: flex;
 	height: 60px;
 	margin-top: 18px;
 	padding: 10px 20px;
-	align-items: center;
+    align-items: center;
+    justify-content: space-between;
 	position: absolute;
 	top: 0;
 	z-index: 2;
@@ -90,30 +82,23 @@ const SiteSocial = styled.ul`
 	text-transform: uppercase;
 	font-size: 0.7rem;
 	font-weight: 500;
-	letter-spacing: 1px;
 	margin-right: 40px;
 	margin-left: 0px;
-	margin-bottom: 0px;
-	/*width: 100%;*/
+    margin-bottom: 0px;
+    
+    i {
+        font-size: 16px;
+    }
+
 	li {
 		margin: 0;
-		padding: 0px 20px;
-		a {
-			font-size: 0.7rem;
-			font-weight: 500;
-			text-decoration: none;
-			color: white;
-			transition: all 0.6s;
-			&:hover {
-				opacity: 0.6;
-			}
-		}
+		padding: 0px 8px;
 	}
 	@media(max-width: 1155px) {
 		margin-right: 0;
 	}
 	@media(max-width: ${SIZE_MOBILE}) {
-        li:not(:last-child) {
+        li:not(:first-child) {
 		    display: none;
         }
         li {
@@ -122,21 +107,21 @@ const SiteSocial = styled.ul`
 	}
 `
 
-const PillNavItem = styled.div`
+const PillNavButton = styled.div`
     display: grid;
     grid-auto-flow: column;
-    align-items: center;
-    grid-gap: 8px;
+    align-items: baseline;
+    gap: 8px;
     justify-content: center;
     padding: 8px 16px;
-    border: 2px solid white;
+    background: var(--blueblack-500);
     border-radius: 100px;
     transition: all 0.4s;
 
     p {
         margin: 0;
-        font-weight: 500;
-        font-size: 14px;
+        font-weight: 600;
+        font-size: 15px;
     }
 
     &:hover {
@@ -152,6 +137,23 @@ const PillNavItem = styled.div`
         }
     }
 `
+
+const SocialButton = styled.a`
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all 0.6s;
+    padding: 11px;
+    display: flex;
+    place-items: center;
+    border-radius: 100%;
+    transition: all 0.3s;
+
+    &:hover {
+        background: var(--blueblack-300);
+    }
+`;
 
 const SiteLogo = styled.img`
 	width: 45px;
@@ -171,8 +173,6 @@ const SiteLogoContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
-	flex-grow: 1;
 	padding: 20px 50px;
 	@media (max-width: 1155px) {
 		padding: 0px;

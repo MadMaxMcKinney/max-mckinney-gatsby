@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import {PulseRight} from './Animations'
 
-import {MdChevronRight} from 'react-icons/md/'
-
 export default (props) => {
   return (
 	<LiveContentCard>
@@ -11,7 +9,7 @@ export default (props) => {
 		<LiveContentInfo bg={props.thumbnail} themeColor={props.themeColor}>
 			<h1>{props.title}</h1>
 		</LiveContentInfo>
-		<LiveContentButton href={props.url} themeColor={props.themeColor}> <MdChevronRight size="40"/> </LiveContentButton>
+		<LiveContentButton href={props.url} themeColor={props.themeColor}> <i class="far fa-chevron-right"></i> </LiveContentButton>
 	</LiveContentCard>
   )
 }

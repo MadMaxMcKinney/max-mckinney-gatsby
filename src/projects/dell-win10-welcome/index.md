@@ -9,7 +9,7 @@ projectBrief: "This was a global application that supported over 25 different la
 projectShortBrief: "This was a global application that supported over 25 different languages and is fully responsive built on UWP."
 categories: ["Development"]
 themeColor: "#6923e0"
-accentColor: "#6923e0"
+accentColor: "#0095ff"
 image: "dell-welcome-header.jpg"
 thumb: "dell-welcome-thumb.jpg"
 showLiveContent: false

@@ -1,16 +1,6 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import styled from 'styled-components'
 import {fadeIn} from '../animations/m-styled-animations'
-
-import {FaLinkedin} from 'react-icons/fa'
-import {FaMedium} from 'react-icons/fa'
-import {FaDribbble} from 'react-icons/fa'
-import {FaTwitter} from 'react-icons/fa'
-import {FaGithub} from 'react-icons/fa'
-import {IoIosCamera} from 'react-icons/io'
-
-const iconSize = 17;
 
 const Footer = () => {
   return (
@@ -19,34 +9,29 @@ const Footer = () => {
 
 		<FooterSocialLinks>
             <li>
-				<a href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
-					<FaDribbble size={iconSize}/>
-				</a>
+				<SocialButton href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-dribbble"></i>
+				</SocialButton>
 			</li>
 			<li>
-				<a href="https://github.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
-					<FaGithub size={iconSize}/>
-				</a>
+				<SocialButton href="https://github.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+				</SocialButton>
 			</li>
 			<li>
-				<a href="https://www.linkedin.com/in/mckinneymax" target="_blank" rel="noopener noreferrer">
-					<FaLinkedin size={iconSize}/>
-				</a>
+				<SocialButton href="https://www.linkedin.com/in/mckinneymax" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+				</SocialButton>
 			</li>
 			<li>
-				<a href="https://medium.com/@maxmckinney" target="_blank" rel="noopener noreferrer">
-					<FaMedium size={iconSize}/>
-				</a>
+				<SocialButton href="https://maxmckinneyphoto.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-camera-alt"></i>
+				</SocialButton>
 			</li>
 			<li>
-				<a href="https://twitter.com/madmaxmckinney" target="_blank" rel="noopener noreferrer">
-					<FaTwitter size={iconSize}/>
-				</a>
-			</li>
-			<li>
-				<a href="https://maxmckinneyphoto.com/" rel="noopener noreferrer">
-					<IoIosCamera size={iconSize+6}/>
-				</a>
+				<SocialButton href="https://twitter.com/madmaxmckinney" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+				</SocialButton>
 			</li>
 		</FooterSocialLinks>
 
@@ -77,6 +62,23 @@ const PageFooter = styled.div`
 		padding: 0 24px;
 	}
 
+`;
+
+const SocialButton = styled.a`
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all 0.6s;
+    padding: 11px;
+    display: flex;
+    place-items: center;
+    border-radius: 100%;
+    transition: all 0.3s;
+
+    &:hover {
+        background: #1c2030;
+    }
 `;
 
 const EmailLink = styled.a`

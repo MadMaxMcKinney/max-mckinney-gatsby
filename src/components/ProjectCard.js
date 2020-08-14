@@ -1,105 +1,133 @@
 import React from 'react'
-import {Link} from 'gatsby'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import Img from 'gatsby-image'
+import Pill from './Pill'
+import ReadMoreButton from './ReadMoreButton'
 
 const ProjectCard = (props) => {
   return (
-	<Link to={props.data.fields.slug}>
-		<ProjectCardContainer>
-			<Img className="project-card-image" fluid={props.data.frontmatter.image.childImageSharp.fluid} alt="Project Image"/>
-			<ProjectCardContent>
-				<h4>{props.data.frontmatter.title}</h4>
-				<p>{props.data.frontmatter.projectShortBrief}</p>
-				<ReadMore theme={props.data.frontmatter.accentColor}>Read more about it</ReadMore>
-			</ProjectCardContent>
-		</ProjectCardContainer>
-	</Link>
+    <ProjectCardContainer data-filter={props.data.frontmatter.categories} className="active">
+
+        <PreviewContainerMobile>
+            <PreviewImage fluid={props.data.frontmatter.thumb.childImageSharp.fluid} alt="Project Image"/>
+        </PreviewContainerMobile>
+
+        <ProjectCardContent>
+            <PillList>
+                {props.data.frontmatter.categories && props.data.frontmatter.categories.map(category => {
+                    return <Pill text={category}/>
+                })}
+            </PillList>
+            <h1>{props.data.frontmatter.title}</h1>
+            <p>{props.data.frontmatter.projectShortBrief}</p>
+
+            <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}/>
+        </ProjectCardContent>
+
+        <PreviewContainer>
+            <PreviewImage fluid={props.data.frontmatter.thumb.childImageSharp.fluid}/>
+        </PreviewContainer>
+
+    </ProjectCardContainer>
   )
 }
 
-// TODO: Create a style component wrapper for the gatsby-image component
+const fadeIn = keyframes`
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+`
 
-const ReadMore = styled.span`
-	margin-top: 8px;
-	font-weight: 500;
-	color: white;
-	display: inline-block;
-	opacity: 1;
-	border-bottom: 1px solid #cecece;
-	position: relative;
-	transition: opacity 0.3s;
-	--accent-color: ${props => props.theme};
-	&:after {
-		content: '';
-		position: absolute;
-		background: var(--accent-color);
-		left: 0;
-		right: 100%;
-		bottom: -1px;
-		height: 1px;
-		transition: all 0.3s;
-	}
+
+const ProjectCardContainer = styled.div`
+    --border-radius: 4px;
+    width: 100%;
+    min-height: 400px;
+    display: none;
+    position: relative;
+    background: var(--blueblack-500);
+    border-radius: var(--border-radius);
+    grid-template-columns: 1fr 1.2fr;
+    transition: all 0.4s;
+    overflow: hidden;
+
+    h1 {
+        display: inline-block;
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        max-width: 320px;
+    }
+    p {
+        font-weight: 400;
+        margin-top: 16px;
+        margin-bottom: 0px;
+        padding-bottom: 24px;
+        flex: 1;
+        max-width: 360px;
+    }
+
+    &.active {
+        display: grid;
+        opacity: 1;
+        animation: ${fadeIn} 0.3s;
+    }
+
+    @media(max-width: 1000px) {
+        padding: 0px;
+        grid-template-columns: 1fr;
+    }
+`;
+
+const PreviewImage = styled(Img)`
+    display: block;
+    height: 100%;
+    object-fit: fill;
+`;
+
+const PreviewContainer = styled.div`
+    position: relative;
+
+    @media(max-width: 1000px) {
+        display: none;
+    }
+`;
+
+const PreviewContainerMobile = styled.div`
+    position: relative;
+    display: none;
+
+    @media(max-width: 1000px) {
+        display: block;
+    }
+
+    ${PreviewImage} {
+        border-bottom: 1px solid #FFFFFF33;
+    }
 `;
 
 const ProjectCardContent = styled.div`
-	grid-column: 2;
-	padding: 40px 32px;
-	align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 50px;
+
+    @media(max-width: 1000px) {
+        padding: 24px;
+    }
 `;
 
-const ProjectCardContainer = styled.div`
-    display: grid;
-    position: relative;
-    width: 100%;
-    background: #171717;
-    border-radius: 4px;
-	grid-template-columns: 40% 1fr;
-	overflow: hidden;
-    height: 300px;
-    transition: 0.4s;
-
-	.project-card-image {
-		grid-column: 1;
-		padding: 0;
-		height: 100%;
-		object-fit: cover;
-		margin: 0;
-	}
-	h4 {
-		display: inline-block;
-		line-height: 32px;
-		font-weight: 600;
-	}
-	p {
-		margin-top: 8px;
-		margin-bottom: 0px;
-		opacity: 0.70;
+const PillList = styled.div`
+    display: flex;
+    margin-bottom: 32px;
+    > * {
+        margin-right: 16px
     }
-    &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        border: 1px solid transparent;
-        transition: all 0.4s;
-        border-radius: 4px;
-    }
-	&:hover {
-        opacity: 1;
-    }
-    &:hover::after {
-        border: 1px solid #353535;
-    }
-	/* This syntax is used to reference another styled component */
-	&:hover ${ReadMore}:after, &:focus ${ReadMore}:after, &:active ${ReadMore}:after {
-		right: 0;
-	}
-	@media(max-width: 500px) {
-		grid-template-columns: 10% 1fr;
-	}
 `;
 
 export default ProjectCard;
