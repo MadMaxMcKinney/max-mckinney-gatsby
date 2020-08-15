@@ -11,7 +11,7 @@ import safariTab from './../assets/favicon/safari-pinned-tab.svg'
 
 // Component imports
 import Header from '../components/Header'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 import './index.css'
 
 require('typeface-barlow');
