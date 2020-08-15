@@ -10,13 +10,13 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 		const slug = createFilePath({
 			node,
 			getNode,
-			basePath: 'projects'
-		});
+			basePath: 'work'
+        });
 		// Add the newly created slug to the node itself
 		createNodeField({
 			node,
 			name: 'slug',
-			value: `/project${slug}`
+			value: `/work${slug}`
 		});
 	}
 };
