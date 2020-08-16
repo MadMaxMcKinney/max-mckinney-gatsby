@@ -21,7 +21,7 @@ const HeaderPillContainer = styled.span`
     place-items: center;
     vertical-align: middle;
 
-    background: var(--blueblack-500);
+    background: var(--blueblack-300);
     padding: 0px 8px;
     margin: 0 2px;
     border-radius: 6px;
