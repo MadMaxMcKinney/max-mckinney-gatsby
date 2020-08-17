@@ -33,8 +33,8 @@ const PillContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 2px 14px;
-	border-radius: 100px;
-    background: #0C0C0C;
+	border-radius: 4px;
+    background: var(--blueblack-300);
 
     i {
         padding-right: 6px;
@@ -45,7 +45,7 @@ const PillContainer = styled.div`
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 14px;
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: "Barlow", sans-serif;
         font-weight: 600;
         font-variant: small-caps;
         line-height: 165%;

@@ -14,8 +14,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './index.css'
 
-require('typeface-roboto');
-require('typeface-source-sans-pro');
+require('typeface-barlow');
 
 const Layout = ({ children, data }) => (
     <StaticQuery

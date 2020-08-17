@@ -9,7 +9,7 @@ projectBrief: "Created initial prototype showing new functionality of the UWP fr
 projectShortBrief: "Worked as a lead developer resource, as well as a UI/UX designer, on the new Alienware Command Center."
 categories: ["Design", "Development"]
 themeColor: "#2b3a61"
-accentColor: "#446cdd"
+accentColor: "#4f5457"
 image: "alienware-command-center-header.jpg"
 thumb: "alienware-command-center-thumb.jpg"
 showLiveContent: false

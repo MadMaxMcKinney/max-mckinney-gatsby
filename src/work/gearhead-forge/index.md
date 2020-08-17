@@ -9,7 +9,7 @@ projectBrief: "Gearhead Forge is a side hobby turned business that I started in 
 projectShortBrief: "Developed and designed the website and brand for Gearhead Forge, a personal side hobby turned business about building cars."
 categories: ["Design", "Development"]
 themeColor: "#171614"
-accentColor: "#ffc107"
+accentColor: "#ce9f13"
 image: "gearhead-forge-header.jpg"
 thumb: "gearhead-forge-thumb.jpg"
 showLiveContent: true

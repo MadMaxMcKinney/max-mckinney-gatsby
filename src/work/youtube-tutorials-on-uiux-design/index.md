@@ -9,7 +9,7 @@ projectBrief: "Created and maintained an ongoing tutorial based YouTube channel 
 projectShortBrief: "Created and maintained an ongoing YouTube channel with a focus in teaching others design based concepts."
 categories: ["Design"]
 themeColor: "#000000"
-accentColor: "#ffffff"
+accentColor: "#76b958"
 image: "YouTube-Tutorials-Header.png"
 thumb: "YouTube-Tutorials-Thumb.png"
 showLiveContent: true

@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import styled, { keyframes } from 'styled-components'
-import DetailedProjectCard from '../components/DetailedProjectCard';
+import ProjectCard from '../components/ProjectCard';
+import HeaderPill from '../components/HeaderPill'
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
@@ -81,7 +82,7 @@ const IndexPage = ({data}) => (
 	  <PageGrid>
 
 		<HeaderTitle>UI/UX Designer, <br/> Frontend Developer</HeaderTitle>
-		<HeaderSubtitle>I’m <strong>Max McKinney,</strong> currently full-time in ATX. My background is in <strong>computer science, UI/UX design, and creative problem solving</strong>. I build cars on the side as well.</HeaderSubtitle>
+		<HeaderSubtitle>I’m <HeaderPill showProfile title="Max McKinney" /> currently working full-time in ATX. <br/> My background is in <HeaderPill type="computer" title="Computer Science" /> and <HeaderPill type="uiux" title="UI/UX Design" />. I have a passion for <HeaderPill type="problem" title="Creative Problem Solving" />. <br/> I build cars on the side as well.</HeaderSubtitle>
 
         <FilterContainer id="FilterContainer">
             <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
@@ -91,7 +92,7 @@ const IndexPage = ({data}) => (
 
 		<ProjectCardGrid>
 			{data.allMarkdownRemark.edges.map(({node}) => (
-				<DetailedProjectCard data={node} key={node.key}></DetailedProjectCard>
+				<ProjectCard data={node} key={node.key}></ProjectCard>
 			))}
 		</ProjectCardGrid>
 
@@ -113,7 +114,8 @@ const HeaderTitle = styled.h1`
 	max-width: 400px;
 	margin-top: 170px;
 	color: white;
-	font-weight: 600;
+    font-weight: 600;
+    line-height: 50px;
 	animation: ${fadeInDown} 1s;
 	@media(max-width: 425px) {
 		margin-top: 130px;
@@ -122,15 +124,15 @@ const HeaderTitle = styled.h1`
 
 const HeaderSubtitle = styled.h3`
 	margin-bottom: 170px;
-	max-width: 350px;
+	max-width: 640px;
 	font-size: 21px;
-	color: #c3c3c3;
-	font-weight: 400;
+	color: #ffffff;
+	font-weight: normal;
 	line-height: 34px;
 	animation: ${fadeInDown} 1.5s;
 	@media(max-width: 425px) {
 		margin-bottom: 110px;
-	}
+    }
 `;
 
 const ProjectCardGrid = styled.div`
@@ -182,7 +184,6 @@ const FilterContainer = styled.div`
     margin-bottom: 48px;
 
     span {
-        font-family: "Source Sans Pro", sans-serif;
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: bold;

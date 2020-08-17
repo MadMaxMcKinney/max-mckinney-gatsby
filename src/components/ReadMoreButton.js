@@ -5,22 +5,23 @@ import {PulseRight} from './Animations'
 
 const ReadMoreButton = (props) => {
   return (
-	<ButtonContainer to={props.link}>
+	<ButtonContainer to={props.link} accent={props.accent}>
         <span>Read more about it</span><i className="fal fa-sm fa-arrow-right"></i>
 	</ButtonContainer>
   )
 }
 
 const ButtonContainer = styled(Link)`
-    background: #0F0F0F;
-    border: 1px solid #FFFFFF33;
+    background: ${props => props.accent};
+    border: 1px solid transparent;
     padding: 8px 16px;
     border-radius: 4px;
     font-size: 18px;
+    font-weight: 400;
     line-height: 160%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     transition: all 0.3s;
 
     span {
