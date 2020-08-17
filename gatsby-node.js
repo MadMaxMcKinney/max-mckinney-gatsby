@@ -18,7 +18,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 			name: 'slug',
 			value: `/work${slug}`
 		});
-	}
+    }
 };
 
 exports.createPages = ({ graphql, actions }) => {

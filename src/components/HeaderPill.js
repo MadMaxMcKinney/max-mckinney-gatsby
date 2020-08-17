@@ -21,7 +21,7 @@ const HeaderPillContainer = styled.span`
     place-items: center;
     vertical-align: middle;
 
-    background: var(--blueblack-300);
+    background: #111321;
     padding: 0px 8px;
     margin: 0 2px;
     border-radius: 6px;
@@ -32,6 +32,10 @@ const HeaderPillContainer = styled.span`
         height: 30px;
         object-fit: fill;
         border-radius: 100%;
+    }
+
+    @media(max-width: 500px) {
+        font-size: 0.8rem;
     }
 `;
 

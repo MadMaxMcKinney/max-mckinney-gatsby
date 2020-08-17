@@ -85,7 +85,10 @@ const IndexPage = ({data}) => (
 	  <PageGrid>
 
 		<HeaderTitle>UI/UX Designer, <br/> Frontend Developer</HeaderTitle>
-		<HeaderSubtitle>I’m <HeaderPill showProfile title="Max McKinney" /> currently working full-time in ATX. <br/> My background is in <HeaderPill type="computer" title="Computer Science" /> and <HeaderPill type="uiux" title="UI/UX Design" />. I have a passion for <HeaderPill type="problem" title="Creative Problem Solving" />. <br/> I build cars on the side as well.</HeaderSubtitle>
+
+		<HeaderSubtitleHome>I’m <HeaderPill showProfile title="Max McKinney" /> currently working full-time in ATX.<br/>My background is in <HeaderPill type="computer" title="Computer Science" /> and <HeaderPill type="uiux" title="UI/UX Design" />.<br/>I have a passion for <HeaderPill type="problem" title="Creative Problem Solving" />. <br/> I build cars on the side as well.</HeaderSubtitleHome>
+
+        <HeaderSubtitleMobile>I’m <HeaderPill showProfile title="Max McKinney" /><br/>Currently working full-time in ATX.<br/> My background is in <HeaderPill type="computer" title="Computer Science" /> <HeaderPill type="uiux" title="UI/UX Design" /><HeaderPill type="problem" title="Creative Problem Solving" /><br/>I build cars on the side as well.</HeaderSubtitleMobile>
 
         <FilterContainer id="FilterContainer">
             <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
@@ -109,6 +112,20 @@ const PageGrid = styled.div`
 	& > * {
 		grid-column: center;
 	}
+`
+
+const HeaderSubtitleHome = styled(HeaderSubtitle)`
+    @media(max-width: 500px) {
+        display: none;
+    }
+`
+
+const HeaderSubtitleMobile = styled(HeaderSubtitle)`
+    display: none;
+
+    @media(max-width: 500px) {
+        display: initial;
+    }
 `
 
 const ProjectCardGrid = styled.div`
@@ -193,6 +210,12 @@ const FilterContainer = styled.div`
         color: #C3C3C3;
         transition: all 0.3s;
         animation: ${appearAnimRight} 0.3s;
+    }
+
+    @media(max-width: 500px) {
+        span {
+            font-size: 0.7rem;
+        }
     }
 `;
 
