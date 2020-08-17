@@ -16,14 +16,14 @@ const Header = () => (
 		</SiteLogoContainer>
 
 		<SiteSocial>
-            <li>
+            {/* <li id="sideProjects">
 				<a href="https://maxmckinneyphoto.com/" rel="noopener noreferrer">
 					<PillNavButton>
                         <i class="fas fa-layer-group"></i>
                         <p>Side Projects</p>
                     </PillNavButton>
 				</a>
-			</li>
+			</li> */}
             <li>
 				<SocialButton href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-dribbble"></i>
@@ -98,11 +98,12 @@ const SiteSocial = styled.ul`
 		margin-right: 0;
 	}
 	@media(max-width: ${SIZE_MOBILE}) {
-        li:not(:first-child) {
-		    display: none;
-        }
         li {
             padding: 0;
+            display: none;
+        }
+        li #sideProjects {
+		    display: initial;
         }
 	}
 `
