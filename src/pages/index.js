@@ -2,7 +2,10 @@ import React from 'react'
 import { graphql } from "gatsby"
 import styled, { keyframes } from 'styled-components'
 import ProjectCard from '../components/ProjectCard';
+
 import HeaderPill from '../components/HeaderPill'
+import HeaderTitle from '../components/HeaderTitle'
+import HeaderSubtitle from '../components/HeaderSubtitle'
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
@@ -107,33 +110,6 @@ const PageGrid = styled.div`
 		grid-column: center;
 	}
 `
-
-const HeaderTitle = styled.h1`
-	font-size: 36px;
-	margin-bottom: 24px;
-	max-width: 400px;
-	margin-top: 170px;
-	color: white;
-    font-weight: 600;
-    line-height: 50px;
-	animation: ${fadeInDown} 1s;
-	@media(max-width: 425px) {
-		margin-top: 130px;
-	}
-`;
-
-const HeaderSubtitle = styled.h3`
-	margin-bottom: 170px;
-	max-width: 640px;
-	font-size: 21px;
-	color: #ffffff;
-	font-weight: normal;
-	line-height: 34px;
-	animation: ${fadeInDown} 1.5s;
-	@media(max-width: 425px) {
-		margin-bottom: 110px;
-    }
-`;
 
 const ProjectCardGrid = styled.div`
 	display: grid;
