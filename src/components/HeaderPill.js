@@ -8,8 +8,10 @@ const HeaderPill = (props) => (
     <HeaderPillContainer>
         {props.showProfile && <img src={MaxProfileImg} alt="Max McKinney Profile Image"/>}
         {props.type==="computer" && <i class="fad fa-computer-classic" style={{color: '#37FF63'}} />}
-        {props.type==="uiux" && <i class="fad fa-palette" style={{color: '#66B6FF'}} />}
+        {props.type==="uiux" && <i class="fad fa-ruler-triangle" style={{color: '#B468FF'}} />}
         {props.type==="problem" && <i class="fad fa-lightbulb" style={{color: '#B468FF'}} />}
+        {props.type==="development" && <i class="fad fa-brackets-curly" style={{color: '#FCC067'}} />}
+        {props.type==="experience" && <i class="fad fa-window" style={{color: '#66B6FF'}} />}
         {props.title}
     </HeaderPillContainer>
 )
@@ -40,7 +42,7 @@ const HeaderPillContainer = styled.span`
 `;
 
 HeaderPill.propTypes = {
-    type: PropTypes.oneOf(['computer', 'uiux', 'problem'])
+    type: PropTypes.oneOf(['computer', 'uiux', 'problem', 'development'])
 }
 
 export default HeaderPill

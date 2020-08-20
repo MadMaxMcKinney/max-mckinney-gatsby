@@ -86,9 +86,7 @@ const IndexPage = ({data}) => (
 
 		<HeaderTitle>UI/UX Designer, <br/> Frontend Developer</HeaderTitle>
 
-		<HeaderSubtitleHome>I’m <HeaderPill showProfile title="Max McKinney" /> currently working full-time in ATX.<br/>My background is in <HeaderPill type="computer" title="Computer Science" /> and <HeaderPill type="uiux" title="UI/UX Design" />.<br/>I have a passion for <HeaderPill type="problem" title="Creative Problem Solving" />. <br/> I build cars on the side as well.</HeaderSubtitleHome>
-
-        <HeaderSubtitleMobile>I’m <HeaderPill showProfile title="Max McKinney" /><br/>Currently working full-time in ATX.<br/> My background is in <HeaderPill type="computer" title="Computer Science" /> <HeaderPill type="uiux" title="UI/UX Design" /><HeaderPill type="problem" title="Creative Problem Solving" /><br/>I build cars on the side as well.</HeaderSubtitleMobile>
+		<HeaderSubtitleHome>I’m <HeaderPill showProfile title="Max McKinney" /> currently working full-time in ATX.<br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></HeaderSubtitleHome>
 
         <FilterContainer id="FilterContainer">
             <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
@@ -116,15 +114,7 @@ const PageGrid = styled.div`
 
 const HeaderSubtitleHome = styled(HeaderSubtitle)`
     @media(max-width: 500px) {
-        display: none;
-    }
-`
-
-const HeaderSubtitleMobile = styled(HeaderSubtitle)`
-    display: none;
-
-    @media(max-width: 500px) {
-        display: initial;
+        font-size: 0.8rem;
     }
 `
 

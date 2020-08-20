@@ -3,7 +3,6 @@ import {fadeInDown} from './../animations/m-styled-animations'
 
 const HeaderSubtitle = styled.h3`
 	margin-bottom: 170px;
-	max-width: 640px;
 	font-size: 21px;
 	color: #ffffff;
 	font-weight: normal;
