@@ -39,6 +39,11 @@ const Header = () => (
                     <i class="fab fa-linkedin-in"></i>
 				</SocialButton>
 			</li>
+            <li>
+				<SocialButton href="http://youtube.com/maxmckinney" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+				</SocialButton>
+			</li>
 			<li>
 				<SocialButton href="https://maxmckinneyphoto.com/" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-camera-alt"></i>
