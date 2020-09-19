@@ -14,6 +14,7 @@ image: "YouTube-Tutorials-Header.png"
 thumb: "YouTube-Tutorials-Thumb.png"
 showLiveContent: true
 sortDate: "2019-9-13"
+postType: "professional-project"
 ---
 I started making YouTube videos in the middle of 2019. The videos were designed to educate others in the realm of design through practical experience. As a developer and designer I recognize that my skills can always be improved, which is why the videos I make I do from an area of personal experience. My videos were created to help other designers grow their technical skills in different tools, or grow their design knowledge through practice videos and speed art videos.
 

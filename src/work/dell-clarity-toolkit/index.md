@@ -14,6 +14,7 @@ image: "clarity-toolkit-large.jpg"
 thumb: "clarity-toolkit-thumb.jpg"
 showLiveContent: false
 sortDate: "2015-12-01"
+postType: "professional-project"
 ---
 
 ##### Design Compliance

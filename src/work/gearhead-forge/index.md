@@ -14,6 +14,7 @@ image: "gearhead-forge-header.jpg"
 thumb: "gearhead-forge-thumb.jpg"
 showLiveContent: true
 sortDate: "2016-05-07"
+postType: "professional-project"
 ---
 
 The idea for Gearhead Forge came from the passion and desire to build unique vehicles and keep the flame of hot rodding alive! I designed the brand identity over a couple of weeks and after several logo iterations I landed on the blacksmith inspired logo meant to call attention to the 'forging' aspect of Gearhead Forge.

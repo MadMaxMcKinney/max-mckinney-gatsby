@@ -60,8 +60,8 @@ module.exports = {
         {
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/personal-projects`,
-				name: 'personal-project',
+				path: `${__dirname}/src/personalprojects`,
+				name: 'personalprojects',
 			},
         },
         {

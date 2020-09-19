@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import {fadeInDown, fadeInUp, fadeInScaleDown} from './../animations/m-styled-animations'
+import {fadeInDown, fadeInUp, fadeInScaleDown} from '../animations/m-styled-animations'
 
 import LiveContentCard from '../components/LiveContentCard'
 

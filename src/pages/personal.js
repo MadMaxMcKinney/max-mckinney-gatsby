@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import PageHeaderTitle from '../components/PageHeaderTitle'
 import PageHeaderSubtitle from '../components/PageHeaderSubtitle'
 
-import {fadeInDown} from './../animations/m-styled-animations'
+import {fadeInDown} from '../animations/m-styled-animations'
 
 
 const SideProjectsPage = ({data}) => (
@@ -16,16 +16,16 @@ const SideProjectsPage = ({data}) => (
         <Avatar>
             <Img fixed={data.file.childImageSharp.fixed} />
         </Avatar>
-        <PageHeaderTitle>Side Projects</PageHeaderTitle>
+        <PageHeaderTitle>Personal Projects</PageHeaderTitle>
         <PageHeaderSubtitle>These are some of my side projects. They are all over the place. <br/> You might find some things you enjoy though!</PageHeaderSubtitle>
 
         <SideProjectGrid>
             {data.personal.edges.map(({node}) => (
-                <SideProjectCard href="#" accent="#2094FA">
+                <SideProjectCard href={node.fields.slug} accent="#2094FA">
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
                     <h1>{node.frontmatter.title}</h1>
                     <SideProjectDetails>{node.frontmatter.description}</SideProjectDetails>
-                    <SideProjectLink>{node.frontmatter.urlText}</SideProjectLink>
+                    <SideProjectLink>{node.frontmatter.locationText}</SideProjectLink>
                 </SideProjectCard>
             ))}
             
@@ -157,7 +157,7 @@ const Avatar = styled.div`
 export default SideProjectsPage
 
 export const query = graphql`
-query pageQuery {
+query personalProjectQuery {
 	file(relativePath: {eq: "img/maxmckinney-profile.png"}) {
         childImageSharp {
             fixed(width: 80, height: 80) {
@@ -165,13 +165,16 @@ query pageQuery {
             }
         }
     }
-    personal: allMarkdownRemark(filter: {fileAbsolutePath:{regex: "/personal-projects/.*.md$/"}}) {
+    personal: allMarkdownRemark(filter: {fileAbsolutePath:{regex: "/personalprojects/.*.md$/"}}) {
         edges {
           node {
+            fields {
+				slug
+			}
             frontmatter {
               title
               description
-              urlText
+              locationText
               url
               image {
                 childImageSharp {

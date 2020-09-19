@@ -14,6 +14,7 @@ image: "Sureshot-UI-Header.png"
 thumb: "Sureshot-UI-Thumbnail.png"
 showLiveContent: false
 sortDate: "2019-1-01"
+postType: "professional-project"
 ---
 I joined Sureshot as a fullstack developer, however once realizing there was no designer on the team and seeing the visual and functional inconsistencies between products I began to build the groundwork and implement a design system that would align all of the products. I now act as the lead designer on the team. I designed the system to be modular to simplify our development workflows with a heavy focus in data management/dashboard components. 
 

@@ -6,7 +6,7 @@ const NotFoundPage = () => (
   <ErrorPageGrid>
     <h1>Whoops! This page was not found :(</h1>
 	<p>Head back to home and hopefully you can find what you are looking for!</p>
-	<p>If you can't find it feel free to contact me at <a href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</a></p>
+	<p>If you can't find it feel free to contact me at <a href="mailto:maxmckinney@hey.com">maxmckinney@hey.com</a></p>
 	<MButton to="/">Back to Home</MButton>
   </ErrorPageGrid>
 )
