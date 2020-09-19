@@ -33,11 +33,6 @@ const Footer = () => {
                     <i class="fas fa-camera-alt"></i>
 				</SocialButton>
 			</li>
-			<li>
-				<SocialButton href="https://twitter.com/madmaxmckinney" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-twitter"></i>
-				</SocialButton>
-			</li>
 		</FooterSocialLinks>
 
 	</PageFooter>

@@ -16,7 +16,7 @@ import './index.css'
 
 require('typeface-barlow');
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data, location }) => (
     <StaticQuery
     query={graphql`
     query SiteTitleQuery {
@@ -63,7 +63,7 @@ const Layout = ({ children, data }) => (
 
             </Helmet>
 
-            <Header />
+            <Header location={location} />
 
             {children}
 

@@ -3,9 +3,11 @@ import {Link} from 'gatsby'
 import styled from 'styled-components'
 import {fadeIn} from '../animations/m-styled-animations'
 
+import PillNavButton from './PillNavButton'
 import logo from './../assets/img/max-white.png'
+import {SIZE_MOBILE} from './CONSTANTS'
 
-const Header = () => (
+const Header = (props) => (
 	<Navmenu>
 		<SiteLogoContainer>
 			<Link to="/">
@@ -15,15 +17,26 @@ const Header = () => (
 			</Link>
 		</SiteLogoContainer>
 
-		<SiteSocial>
-            {/* <li id="sideProjects">
-				<a href="https://maxmckinneyphoto.com/" rel="noopener noreferrer">
-					<PillNavButton>
+		<SiteLinks>
+            {/* Page Tabs */}
+            <li id="professionalProjects">
+				<Link to="/">
+					<PillNavButton isActivePage={props.location.pathname === "/" ? true : false}>
                         <i class="fas fa-layer-group"></i>
-                        <p>Side Projects</p>
+                        <p>Professional</p>
                     </PillNavButton>
-				</a>
-			</li> */}
+				</Link>
+			</li>
+            <li id="personalProjects">
+				<Link to="/personal">
+					<PillNavButton isActivePage={props.location.pathname === "/personal" ? true : false}>
+                        <i class="fas fa-gem"></i>
+                        <p>Personal</p>
+                    </PillNavButton>
+				</Link>
+			</li>
+
+            {/* Social Tabs */}
             <li>
 				<SocialButton href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-dribbble"></i>
@@ -49,16 +62,9 @@ const Header = () => (
                     <i class="fas fa-camera-alt"></i>
 				</SocialButton>
 			</li>
-			<li>
-				<SocialButton href="https://twitter.com/madmaxmckinney" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-twitter"></i>
-				</SocialButton>
-			</li>
-		</SiteSocial>
+		</SiteLinks>
 	</Navmenu>
 )
-
-const SIZE_MOBILE = "715px";
 
 const Navmenu = styled.div`
 	width: 100%;
@@ -78,7 +84,7 @@ const Navmenu = styled.div`
     }
 `
 
-const SiteSocial = styled.ul`
+const SiteLinks = styled.ul`
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -104,44 +110,13 @@ const SiteSocial = styled.ul`
 	}
 	@media(max-width: ${SIZE_MOBILE}) {
         li {
-            padding: 0;
+            padding: 0px 4px;
             display: none;
         }
-        li #sideProjects {
+        li#personalProjects, li#professionalProjects {
 		    display: initial;
         }
 	}
-`
-
-const PillNavButton = styled.div`
-    display: grid;
-    grid-auto-flow: column;
-    align-items: baseline;
-    gap: 8px;
-    justify-content: center;
-    padding: 8px 16px;
-    background: var(--blueblack-500);
-    border-radius: 100px;
-    transition: all 0.4s;
-
-    p {
-        margin: 0;
-        font-weight: 600;
-        font-size: 15px;
-    }
-
-    &:hover {
-        background: white;
-        color: black;
-    }
-
-    @media(max-width: ${SIZE_MOBILE}) {
-        padding: 4px 8px;
-        
-        p {
-            font-size: 12px;
-        }
-    }
 `
 
 const SocialButton = styled.a`
