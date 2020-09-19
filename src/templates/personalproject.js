@@ -19,10 +19,10 @@ const SideProjectsPage = ({data}) => (
 
         <ButtonHStack>
         {data.personal.frontmatter.appStoreUrl && 
-            <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i class="fab fa-app-store"></i> Get the app</AppStoreButton>
+            <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i class="fab fa-app-store"></i> View on App Store</AppStoreButton>
         }
         {data.personal.frontmatter.githubUrl && 
-            <GithubButton href={data.personal.frontmatter.githubUrl}><i class="fab fa-github"></i> View the repo</GithubButton>
+            <GithubButton href={data.personal.frontmatter.githubUrl}><i class="fab fa-github"></i> View on Github</GithubButton>
         }
         </ButtonHStack>
 
