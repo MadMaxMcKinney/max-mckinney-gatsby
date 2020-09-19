@@ -9,9 +9,6 @@ const PageHeaderTitle = styled.h1`
     font-weight: 600;
     line-height: 50px;
 	animation: ${fadeInDown} 1s;
-	@media(max-width: 425px) {
-		margin-top: 130px;
-	}
 `;
 
 export default PageHeaderTitle

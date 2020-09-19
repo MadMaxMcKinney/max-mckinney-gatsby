@@ -213,7 +213,7 @@ export default IndexPage
 
 export const query = graphql`
 query ProjectQuery {
-	allMarkdownRemark(sort: {fields: [frontmatter___sortDate], order: DESC}) {
+	allMarkdownRemark(sort: {fields: [frontmatter___sortDate], order: DESC}, filter: {fileAbsolutePath:{regex: "/work/.*.md$/"}}) {
 		edges {
 		  node {
 			fields {

@@ -14,6 +14,7 @@ image: "alienware-command-center-header.jpg"
 thumb: "alienware-command-center-thumb.jpg"
 showLiveContent: false
 sortDate: "2017-12-01"
+postType: "professional-project"
 ---
 
 When Alienware announced their new branding in 2018 they also wanted a new Command Center for their users to get the most of the new hardware. Command Center allows Alienware users to customize the performance of their machine and also customize the lighting of the rig and create complex configurations that adapt to various games/apps. With this new Command Center there was a chance to bring new functionality and update the existing functionality to the demands of the 21st century.

@@ -20,11 +20,15 @@ const SideProjectsPage = ({data}) => (
         <PageHeaderSubtitle>These are some of my side projects. They are all over the place. <br/> You might find some things you enjoy though!</PageHeaderSubtitle>
 
         <SideProjectGrid>
-            <SideProjectCard href="#">
-                <h1>Smart Fridge</h1>
-                <SideProjectDetails>Smart Fridge is a web based application designed for touch and to collect/organize useful information related to home kitchens.</SideProjectDetails>
-                <SideProjectLink>side-project/smart-fridge</SideProjectLink>
-            </SideProjectCard>
+            {data.personal.edges.map(({node}) => (
+                <SideProjectCard href="#" accent="#2094FA">
+                    <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
+                    <h1>{node.frontmatter.title}</h1>
+                    <SideProjectDetails>{node.frontmatter.description}</SideProjectDetails>
+                    <SideProjectLink>{node.frontmatter.urlText}</SideProjectLink>
+                </SideProjectCard>
+            ))}
+            
         </SideProjectGrid>
 
     </PageGrid>
@@ -46,10 +50,15 @@ const SideProjectGrid = styled.div`
     margin-top: 150px;
 
     animation: ${fadeInDown} 1.7s;
+
+    @media(max-width: 600px) {
+        grid-template-columns: 1fr;
+        margin-top: 64px;
+    }
 `
 
 const SideProjectCard = styled.a`
-    --accent-color: #F8824E;
+    --accent-color: ${props => props.accent};
     
     display: flex;
     flex-direction: column;
@@ -91,6 +100,21 @@ const SideProjectCard = styled.a`
         opacity: 0.15;
     }
 
+    @media(max-width: 600px) {
+        padding: 20px;
+
+        h1 {
+            font-size: 1.1rem;
+        }
+    }
+
+`
+
+const SideProjectImage = styled(Img)`
+    width: 100px;
+    height: 100px;
+    margin-bottom: 32px;
+    border-radius: 24px;
 `
 
 const SideProjectDetails = styled.p`
@@ -135,11 +159,30 @@ export default SideProjectsPage
 export const query = graphql`
 query pageQuery {
 	file(relativePath: {eq: "img/maxmckinney-profile.png"}) {
-    childImageSharp {
-      fixed(width: 80, height: 80) {
-        ...GatsbyImageSharpFixed
-      }
+        childImageSharp {
+            fixed(width: 80, height: 80) {
+                ...GatsbyImageSharpFixed
+            }
+        }
     }
-  }
+    personal: allMarkdownRemark(filter: {fileAbsolutePath:{regex: "/personal-projects/.*.md$/"}}) {
+        edges {
+          node {
+            frontmatter {
+              title
+              description
+              urlText
+              url
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 200) {
+                      ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+    }
 }
 `
