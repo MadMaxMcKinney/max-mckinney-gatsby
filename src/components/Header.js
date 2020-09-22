@@ -96,10 +96,6 @@ const SiteLinks = styled.ul`
 	margin-right: 40px;
 	margin-left: 0px;
     margin-bottom: 0px;
-    
-    i {
-        font-size: 16px;
-    }
 
 	li {
 		margin: 0;
@@ -130,6 +126,10 @@ const SocialButton = styled.a`
     place-items: center;
     border-radius: 100%;
     transition: all 0.3s;
+
+    i {
+        font-size: 16px;
+    }
 
     &:hover {
         background: var(--blueblack-300);

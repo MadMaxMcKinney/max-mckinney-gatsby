@@ -6,7 +6,7 @@ locationText: "personal/get-sum/"
 image: "getsum-logo.png"
 sortDate: "2020-08-01"
 postType: "personal-project"
-appStoreUrl: "#"
+appStoreUrl: "https://apps.apple.com/us/app/id1532463456"
 githubUrl: "https://github.com/MaxMcKinney/Get-Sum"
 ---
 

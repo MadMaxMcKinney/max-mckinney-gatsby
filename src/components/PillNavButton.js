@@ -19,6 +19,10 @@ const PillNavButton = styled.div`
         font-size: 15px;
     }
 
+    i {
+        font-size: 16px;
+    }
+
     &:hover {
         background: white;
         color: black;
@@ -28,7 +32,11 @@ const PillNavButton = styled.div`
         padding: 4px 8px;
         
         p {
-            font-size: 12px;
+            font-size: 13px;
+        }
+
+        i {
+            font-size: 13px;
         }
     }
 `
