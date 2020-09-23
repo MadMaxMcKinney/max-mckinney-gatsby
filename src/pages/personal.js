@@ -21,7 +21,7 @@ const SideProjectsPage = ({data}) => (
 
         <SideProjectGrid>
             {data.personal.edges.map(({node}) => (
-                <SideProjectCard href={node.fields.slug} accent="#2094FA">
+                <SideProjectCard href={node.fields.slug} accent={node.frontmatter.accent}>
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
                     <h1>{node.frontmatter.title}</h1>
                     <SideProjectDetails>{node.frontmatter.description}</SideProjectDetails>
@@ -122,6 +122,7 @@ const SideProjectDetails = styled.p`
     margin-bottom: 0px;
     max-width: 350px;
     padding: 0;
+    flex: 1;
 `
 
 const SideProjectLink = styled.p`
@@ -174,6 +175,7 @@ query personalProjectQuery {
             frontmatter {
               title
               description
+              accent
               locationText
               url
               image {

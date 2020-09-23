@@ -1,7 +1,7 @@
 ---
 title: "Get Sum - Easy Counter"
 description: "A simplified WatchOS experience for users who want to keep track of a variety of categorized values with a simple counter."
-url: "#"
+accent: "#2094FA"
 locationText: "personal/get-sum/"
 image: "getsum-logo.png"
 sortDate: "2020-08-01"

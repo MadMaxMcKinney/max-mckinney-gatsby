@@ -45,7 +45,7 @@ const ProjectImg = styled(Img)`
     margin-bottom: 16px;
 
     margin-top: 170px;
-    border-radius: 100%;
+    border-radius: 24px;
 
     animation: ${fadeInDown} 0.8s;
 `
@@ -58,7 +58,6 @@ const AppStoreButton = styled.a`
     font-weight: 400;
     
     display: grid;
-    width: fit-content;
     grid-gap: 8px;
     grid-auto-flow: column;
     place-content: center;
@@ -87,7 +86,6 @@ const GithubButton = styled.a`
     font-weight: 400;
     
     display: grid;
-    width: fit-content;
     grid-gap: 8px;
     grid-auto-flow: column;
     place-content: center;
@@ -109,9 +107,8 @@ const GithubButton = styled.a`
 
 const ButtonHStack = styled.div`
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
     grid-gap: 16px;
-    width: fit-content;
 
     margin-top: 32px;
 
@@ -137,7 +134,6 @@ query PersonalProjectBySlug($slug: String!) {
             title
             description
             locationText
-            url
             image {
               childImageSharp {
                 fluid(maxWidth: 200) {
