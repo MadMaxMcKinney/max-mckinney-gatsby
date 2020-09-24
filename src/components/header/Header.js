@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import styled from 'styled-components'
-import {fadeIn} from '../animations/m-styled-animations'
+import {fadeIn} from '../../animations/m-styled-animations'
 
-import PillNavButton from './PillNavButton'
-import logo from './../assets/img/max-white.png'
-import {SIZE_MOBILE} from './CONSTANTS'
+import PillNavButton from '../buttons/PillNavButton'
+import logo from '../../assets/img/max-white.png'
+import {SIZE_MOBILE} from '../CONSTANTS'
 
 const Header = (props) => (
 	<Navmenu>

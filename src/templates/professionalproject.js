@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import {fadeInDown, fadeInUp, fadeInScaleDown} from '../animations/m-styled-animations'
 
-import LiveContentCard from '../components/LiveContentCard'
+import LiveContentCard from '../components/cards/LiveContentCard'
 
 export default function Template({ data }) {
 	return (

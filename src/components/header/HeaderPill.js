@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
 
-import MaxProfileImg from '../assets/img/maxmckinney-profile-small.png';
+import MaxProfileImg from '../../assets/img/maxmckinney-profile-small.png';
 
 const HeaderPill = (props) => (
     <HeaderPillContainer>
-        {props.showProfile && <img src={MaxProfileImg} alt="Max McKinney Profile Image"/>}
+        {props.showProfile && <img src={MaxProfileImg} alt="Max McKinney Profile"/>}
         {props.type==="computer" && <i class="fad fa-computer-classic" style={{color: '#37FF63'}} />}
         {props.type==="uiux" && <i class="fad fa-ruler-triangle" style={{color: '#B468FF'}} />}
         {props.type==="problem" && <i class="fad fa-lightbulb" style={{color: '#B468FF'}} />}

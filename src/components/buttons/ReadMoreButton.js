@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import styled from 'styled-components'
-import {PulseRight} from './Animations'
+import {PulseRight} from '../ANIMATIONS'
 
 const ReadMoreButton = (props) => {
   return (

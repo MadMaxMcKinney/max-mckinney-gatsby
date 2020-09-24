@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {fadeInDown} from './../animations/m-styled-animations'
+import {fadeInDown} from '../../animations/m-styled-animations'
 
 const PageHeaderSubtitle = styled.h3`
 	max-width: 640px;

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import Img from 'gatsby-image'
-import Pill from './Pill'
-import ReadMoreButton from './ReadMoreButton'
+import Pill from '../pills/Pill'
+import ReadMoreButton from '../buttons/ReadMoreButton'
 
 const ProjectCard = (props) => {
   return (

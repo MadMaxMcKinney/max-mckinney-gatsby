@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import PageHeaderTitle from '../components/PageHeaderTitle'
-import PageHeaderSubtitle from '../components/PageHeaderSubtitle'
+import PageHeaderTitle from '../components/page/PageHeaderTitle'
+import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
 
 import {fadeInDown} from '../animations/m-styled-animations'
 

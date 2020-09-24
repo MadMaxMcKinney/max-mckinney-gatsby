@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import GetSumLogo from '../../assets/img/getsum-logo.png'
 
-import PageHeaderTitle from '../../components/PageHeaderTitle'
-import PageHeaderSubtitle from '../../components/PageHeaderSubtitle'
+import PageHeaderTitle from '../../components/page/PageHeaderTitle'
+import PageHeaderSubtitle from '../../components/page/PageHeaderSubtitle'
 
 import {fadeInDown} from '../../animations/m-styled-animations'
 

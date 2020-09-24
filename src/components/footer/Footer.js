@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {fadeIn} from '../animations/m-styled-animations'
+import {fadeIn} from '../../animations/m-styled-animations'
 
 const Footer = () => {
   return (

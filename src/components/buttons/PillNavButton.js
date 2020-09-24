@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {SIZE_MOBILE} from './CONSTANTS'
+import {SIZE_MOBILE} from '../CONSTANTS'
 
 const PillNavButton = styled.div`
     display: grid;

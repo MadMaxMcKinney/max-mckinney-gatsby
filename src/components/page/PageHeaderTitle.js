@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {fadeInDown} from './../animations/m-styled-animations'
+import {fadeInDown} from '../../animations/m-styled-animations'
 
 const PageHeaderTitle = styled.h1`
 	font-size: 36px;

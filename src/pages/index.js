@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import styled, { keyframes } from 'styled-components'
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../components/cards/ProjectCard';
 
-import HeaderPill from '../components/HeaderPill'
-import HeaderTitle from '../components/HeaderTitle'
-import HeaderSubtitle from '../components/HeaderSubtitle'
+import HeaderPill from '../components/header/HeaderPill'
+import HeaderTitle from '../components/header/HeaderTitle'
+import HeaderSubtitle from '../components/header/HeaderSubtitle'
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
