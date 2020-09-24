@@ -166,7 +166,7 @@ query personalProjectQuery {
             }
         }
     }
-    personal: allMarkdownRemark(filter: {fileAbsolutePath:{regex: "/personalprojects/.*.md$/"}}) {
+    personal: allMarkdownRemark(sort: {fields: [frontmatter___sortDate], order: DESC}, filter: {fileAbsolutePath:{regex: "/personalprojects/.*.md$/"}}) {
         edges {
           node {
             fields {
