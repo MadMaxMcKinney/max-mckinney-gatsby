@@ -11,3 +11,8 @@ githubUrl: "https://github.com/MaxMcKinney/color-buddy-web"
 ---
 
 ![Get Sum Image](color-buddy-site.png)
+
+<div class="photo-grid">
+    <img src="color-buddy-palettes.png">
+    <img src="color-buddy-group.png">
+</div>
