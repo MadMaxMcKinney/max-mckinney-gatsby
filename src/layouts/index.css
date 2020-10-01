@@ -10,6 +10,11 @@ body {
 	min-height: 100%;
 	line-height: 1.6875;
 }
+::selection {
+    color: white;
+    background: #afafaf;
+    opacity: 1;
+}
 article,
 aside,
 details,

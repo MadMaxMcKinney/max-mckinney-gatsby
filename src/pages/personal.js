@@ -17,7 +17,7 @@ const SideProjectsPage = ({data}) => (
             <Img fixed={data.file.childImageSharp.fixed} />
         </Avatar>
         <PageHeaderTitle>Personal Projects</PageHeaderTitle>
-        <PageHeaderSubtitle>These are some of my side projects. They are all over the place. <br/> You might find some things you enjoy though!</PageHeaderSubtitle>
+        <PageHeaderSubtitle>These are some of my personal projects. They're all over the place. <br/> You might find some things you enjoy though!</PageHeaderSubtitle>
 
         <SideProjectGrid>
             {data.personal.edges.map(({node}) => (
