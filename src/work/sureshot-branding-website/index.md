@@ -6,7 +6,7 @@ projectDate: "Jan 2020 - October 2020"
 projectAgency: "Sureshot"
 projectRole: "Lead Designer"
 projectBrief: "Directed and designed the rebrand of Sureshot, a martech software company. This effort was a self-initiative designed to modernise the branding of the company to better connect with it’s elevated clients and compete with other high-tier martech companies. I created various branding documents and assets to be used throughout their updated applications(another effort I managed). Finally updated the corporate website with a design showing off the new branding and new software options available to clients in a more visual manner designed to increase sales."
-projectShortBrief: "Directed and designed the rebrand of Sureshot. Created the new corporate website."
+projectShortBrief: "Directed and designed the rebrand of Sureshot. Designed and created the new corporate website."
 categories: ["Design"]
 themeColor: "#330f0f"
 accentColor: "#CC2027"
