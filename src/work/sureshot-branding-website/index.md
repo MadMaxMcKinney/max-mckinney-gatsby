@@ -21,7 +21,7 @@ I joined Sureshot as a fullstack developer, however once realizing there was no 
 <div class="photo-container">
 <img src="Sureshot-Website-Dribbble.png" />
 </div>
-<p class="photo-grid-subtitle">Sureshot UI example components</p>
+<p class="photo-grid-subtitle">Sureshot Website</p>
 
 ##### Modernize
 The corporate redesign was an effort to modernize the elements of Sureshot to better connect with their clients. Sureshot competes in the world of marketing tools, and this area is full of large high-tech companies with significant cloud capabilities. The clients of Sureshot are modern and future looking users. The rebranding effort helps connect with this audience by engaging them with clean and modern visuals and compelling imagery from Sureshot’s software.
@@ -31,7 +31,7 @@ The corporate redesign was an effort to modernize the elements of Sureshot to be
 <img src="Sureshot-Website-2-Dribbble.png" />
 <img src="Sureshot-Website-7-Dribbble.png"/></div>
 </div>
-<p class="photo-grid-subtitle">Various Sureshot UI and Sureshot website pages</p>
+<p class="photo-grid-subtitle">Various Sureshot website and Sureshot UI pages</p>
 
 ##### Ecosystem
 Rebranding offers a lot of new opportunities that otherwise can be challenging to accomplish. I utilized this effort to align all of Sureshot’s visual languages together as one. This means the corporate branding, the sales website, and the products all belong to the same family. The goal here was to create a Sureshot ecosystem - an entire experience within Sureshot’s product network. Keeping clients in that network is key and by positively reinforcing consistent experiences and UX patterns it gives them strong reason to stay and not explore competitors.
