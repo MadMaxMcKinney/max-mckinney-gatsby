@@ -81,6 +81,10 @@ const ProjectCardContainer = styled.div`
     @media(max-width: 1000px) {
         padding: 0px;
         grid-template-columns: 1fr;
+
+        h1, p {
+            max-width: 100%;
+        }
     }
 `;
 

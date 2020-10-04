@@ -143,7 +143,12 @@ const ProjectCardGrid = styled.div`
 	grid-gap: 110px;
     align-items: flex-start;
 	animation: ${fadeInDown} 2.2s;
-	@media (max-width: 500px) {
+    @media(max-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+    }
+
+	@media (max-width: 730px) {
 		grid-template-columns: 1fr;
 	}
 `;
