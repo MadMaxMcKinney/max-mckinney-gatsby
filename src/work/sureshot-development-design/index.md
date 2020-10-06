@@ -45,6 +45,13 @@ Sureshot UI was built in a design tool called Figma utilizing the team features 
 </div>
 <p class="photo-grid-subtitle">Sureshot UI Figma</p>
 
+As the design language grew it also become better documented so that the team can reference components for UX guides and usage instructions. This is useful for those who are wanting to make new designs or for developers who are implementing/tweaking components.
+
+<div class="photo-container">
+<img src="sureshot-ui-updated-docs.png" />
+</div>
+<p class="photo-grid-subtitle">Sureshot UI Figma Documentation</p>
+
 ##### Future-proofing
 Part of building a strong design system and product catalog is building applications that will scale. An often overlooked requirement is building well documented products internally with a solid onboarding experience. Sureshot UI was built on the idea that any questions surrounding the library could be solved with resources also provided by the library. Sureshot UI has solid documentation, visual examples, API/prop lists with explanations, Storybook JS integration, as well as being written in Typescript with custom types (along with our other products as well).
 
@@ -54,4 +61,4 @@ Part of building a strong design system and product catalog is building applicat
 <img src="sureshot-dev-zero.png" />
 </div>
 </div>
-<p class="photo-grid-subtitle">Sureshot UI Documentation Example</p>
+<p class="photo-grid-subtitle">Sureshot UI Dev Documentation Example</p>
