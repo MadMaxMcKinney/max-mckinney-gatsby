@@ -50,7 +50,15 @@ When it comes to selling products, words can be very powerful. However people bu
 <img src="Sureshot-Website-4-Dribbble.png"/></div>
 </div>
 </div>
-<p class="photo-grid-subtitle">Product Screenshot compared to source product</p>
+<p class="photo-grid-subtitle">Command Screenshot compared to source product</p>
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-connect-webpage.png" />
+<img src="sureshot-connect-product.png"/></div>
+</div>
+</div>
+<p class="photo-grid-subtitle">Connect screenshot compared to source product</p>
 
 ##### Live Link
 

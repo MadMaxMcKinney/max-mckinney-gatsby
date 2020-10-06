@@ -19,7 +19,7 @@ postType: "professional-project"
 I joined Sureshot as a fullstack developer, however once realizing there was no designer on the team and seeing the visual and functional inconsistencies between products I began to build the groundwork and implement a design system that would align all of the products. I now act as the lead designer on the team. I designed the system to be modular to simplify our development workflows with a heavy focus in data management/dashboard components. 
 
 <div class="photo-container">
-<img src="sureshot-ui.png" />
+<img src="Sureshot-UI-Thumbnail.png" />
 </div>
 <p class="photo-grid-subtitle">Sureshot UI example components</p>
 
@@ -30,10 +30,10 @@ Sureshot UI aligned the visual language of the products with well documented UX 
 
 <div class="photo-grid-container">
 <div class="photo-grid">
-<img src="sureshot-activate.png" />
-<img src="sureshot-segmentation.png"/></div>
+<img src="sureshot-command-web.png" />
+<img src="Sureshot-Connect-Web.png"/></div>
 </div>
-<p class="photo-grid-subtitle">Sureshot Activate - Sureshot Segmentation</p>
+<p class="photo-grid-subtitle">Sureshot Command - Sureshot Connect</p>
 
 ##### Collaboration
 Sureshot UI was built in a design tool called Figma utilizing the team features of the tool to allow others to collaborate and quickly iterate on designs. Everything was built as components so if a change was made it would propagate through all the designs, which saved countless hours due to the large artboard counts and sizes many of our mocks had.
