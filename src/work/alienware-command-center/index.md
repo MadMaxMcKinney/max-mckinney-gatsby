@@ -70,14 +70,24 @@ We approached this by creating wireframes of every planned action. That isn't al
 Creating the new Command Center involved designing a new design language that allows for UI customization to be dynamic in various ways. The desire was for the Command Center to be a heavily user customized experience. This is shown throughout the UI in the primary color being pulled from the current color theme of the system and with the particle effects seen in the background that I designed and animated. The particles can be configured by the user to match their style.
 
 <div class="photo-container">
-<img src="alienware-visuals-4.png" />
+<img src="alienware-visuals-1.png" />
 </div>
 <p class="photo-grid-subtitle">New design language</p>
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+
+<img src="alienware-visuals-6.png"/>
+<img src="alienware-visuals-7.png"/>
+
+</div>
+</div>
+<p class="photo-grid-subtitle">Flexible design allows for complex layouts</p>
 
 The visuals were heavily influenced by the updated industrial design of the Alienware products. Sharp edges, sci-fi inspired colors, and a heavy use of light and shadows to direct the users attention to key elements.
 
 <div class="photo-container">
-<img src="alienware-visuals-1.png" />
+<img src="alienware-visuals-4.png" />
 </div>
 <p class="photo-grid-subtitle">Inspired by the new industrial design of Alienware</p>
 
