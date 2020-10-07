@@ -74,6 +74,11 @@ When it comes to selling products, words can be very powerful. However people bu
 </div>
 <p class="photo-grid-subtitle">Connect screenshot compared to source product</p>
 
+<div class="photo-container">
+<img src="sureshot-website-ex.png" />
+</div>
+<p class="photo-grid-subtitle">Sureshot Website</p>
+
 ##### Live Link
 
 Curious about the current live version? Check it out with the arrow below.

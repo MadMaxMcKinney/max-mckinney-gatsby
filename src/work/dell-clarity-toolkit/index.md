@@ -5,8 +5,8 @@ projectClient: "Dell"
 projectDate: "Dec 2015 - Dec 2018"
 projectAgency: "Dell"
 projectRole: "Frontend Dev / Design"
-projectBrief: "Took on the role of lead web developer for implementing Dell's Clarity Design Language in a web toolkit. This toolkit is based upon Bootstrap 3 and takes on a couple different roles in the dev cycle for existing Dell workers."
-projectShortBrief: "Took on the role of lead web developer for implementing Dell's Clarity Design Language in a web toolkit."
+projectBrief: "UI/UX designer and lead web developer for Dell's Clarity Design Language. This iteration of the Clarity design language was focused around enterprise software and needs. Built to be robust and easy to use, with strong documentation and examples."
+projectShortBrief: "UI/UX designer and lead web developer for Dell's Clarity Design Language. Clarity is an enterprise worthy design system."
 categories: ["Design", "Development"]
 themeColor: "#152a3d"
 accentColor: "#1676b1"
@@ -16,6 +16,18 @@ showLiveContent: false
 sortDate: "2016-12-01"
 postType: "professional-project"
 ---
+
+##### Interaction Principles
+
+Clarity has a focus on "Content, not Chrome", a principle where we prioritize screen space and control sizes to better show the content and data, removing the overhead of the application UI. This gave us a clear goal to reduce visual noise and ornamentation, allowing us to increase consistency. Finally we focused our efforts to creating a progressive architecture. Visually this meant a layered flow and dynamic navigation with meaningful transitions.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="dell-clarity-3-ex-3.png" />
+<img src="dell-clarity-3-ex-4.png"/>
+</div>
+</div>
+<p class="photo-grid-subtitle">Visual direction of Clarity 3</p>
 
 ##### Design Compliance
 
@@ -37,7 +49,7 @@ This toolkit allows devs to quickly become Clarity 3 compliant without having to
 
 ##### Extended Functionality
 
-The bootstrap based (custom fork) toolkit brings some extended functionality to the existing Bootstrap core. These include things like more fleshed out alerts that allow for more user interaction out of the box. Also included are components like Dell's masthead design and "Megamenus". All of these and more are included in an extra JS core the devs would use if they wanted this extra functionality, but allow for a 'light' version without the extra JS overhead if desired.
+The bootstrap based fork of the toolkit brings some extended functionality to the existing Bootstrap core. This includes things like more fleshed out alerts that allow for more user interaction out of the box. Also included are components like Dell's masthead design and "Megamenus". All of these and more are included in an extra JS core the devs would use if they wanted this extra functionality, but allow for a 'light' version without the extra JS overhead if desired.
 
 <div class="photo-grid-container">
 <div class="photo-grid">
