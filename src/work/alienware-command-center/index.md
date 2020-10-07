@@ -1,5 +1,5 @@
 ---
-title: "Alienware Command Center 2018"
+title: "Alienware Command Center"
 url: ""
 projectClient: "Alienware"
 projectDate: "Dec 2017 - Dec 2018"

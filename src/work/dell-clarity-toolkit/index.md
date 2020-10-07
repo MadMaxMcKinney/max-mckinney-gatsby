@@ -22,6 +22,14 @@ postType: "professional-project"
 This toolkit allows devs to quickly become Clarity 3 compliant without having to change their workflow. Also allows devs to easily stay up-to-date with Clarity as it's extremely easy to update the toolkit. Semantic versioning is used to help teams decide the correct approach for any larger API updates.
 
 <div class="photo-grid-container">
+<div class="photo-grid">
+<img src="dell-clarity-3-ui-1.png" />
+<img src="dell-clarity-3-ui-2.png"/>
+</div>
+</div>
+<p class="photo-grid-subtitle">Snipppets from the Clarity 3 design language</p>
+
+<div class="photo-grid-container">
 <div class="photo-grid"><img src="clarity_1.jpg" />
 <img src="clarity_2.jpg"/></div>
 </div>
@@ -30,6 +38,14 @@ This toolkit allows devs to quickly become Clarity 3 compliant without having to
 ##### Extended Functionality
 
 The bootstrap based (custom fork) toolkit brings some extended functionality to the existing Bootstrap core. These include things like more fleshed out alerts that allow for more user interaction out of the box. Also included are components like Dell's masthead design and "Megamenus". All of these and more are included in an extra JS core the devs would use if they wanted this extra functionality, but allow for a 'light' version without the extra JS overhead if desired.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="dell-clarity-3-ex-1.png" />
+<img src="dell-clarity-3-ex-2.png"/>
+</div>
+</div>
+<p class="photo-grid-subtitle">Concept applications using C3</p>
 
 <video width="100%" autoplay loop>
 <source src="/clarity-dashboard.mp4" type="video/mp4">
