@@ -1,12 +1,12 @@
 ---
-title: "Concept Animation"
+title: "UI Concept Animations"
 url: ""
 projectClient: "Dell"
 projectDate: "Dec 2012 - Mar 2015"
 projectAgency: "Dell"
 projectRole: "Design / Animation"
-projectBrief: "I took existing design concepts and used After Effects to animate the user experience, which ranged from simple 2D animations to complex 2D/3D combination animations."
-projectShortBrief: "Took design concepts and used After Effects to animate the user experience, ranging from 2D animations to complex 2D/3D animations."
+projectBrief: "Took UI design concepts and used After Effects to animate the user experience and user flows, which ranged from simple 2D animations to complex 2D/3D combination animations. This process guided our design research and studies as we could use this to better understand the functional needs of our users and test various UX patterns."
+projectShortBrief: "Took UI design concepts and used After Effects to animate the user experience and user flow, ranging from 2D animations to complex 2D/3D animations."
 categories: ["Design"]
 themeColor: "#452c56"
 accentColor: "#a93cba"
@@ -17,13 +17,13 @@ sortDate: "2012-12-07"
 postType: "professional-project"
 ---
 
-I worked closely with a diverse design team including illustrators, modelers, and UI designers to create conceptual animations to be shown in executive presentations for project approval. I took existing design concepts and used After Effects to animate the user experience, which ranged from simple 2D animations to complex 2D/3D combination animations, requiring me to create the 3D models used as well.
+I worked closely with a diverse design team including illustrators, modelers, and UI designers to create conceptual animations to be shown in executive presentations for project approval. I took existing design concepts and used After Effects to animate the user experience, which ranged from simple 2D animations to complex 2D/3D combination animations, requiring me to create the 3D models used as well. This process guided our design research and studies as we could use this to better understand the functional needs of our users and test various UX patterns.
 
 <video width="100%" controls loop>
 <source src="/conceptual-animation-dell-boot.mp4" type="video/mp4">
 </video>
 
-I created dynamic files to allow for easier future changes/adjustments, and integrated everything into After Effects. Element 3D was used for the 3D model integration into AE.
+I created dynamic files that could be manipulated through custom variables to allow for easier changes and live adjustments during presentations. These were created in After Effects but referenced files from design tools such as Sketch. Element 3D was used for the 3D model integration into After Effects while the model work was done with Blender.
 
 <video width="100%" controls loop>
 <source src="/conceptual-animation-xps-13.mp4" type="video/mp4">

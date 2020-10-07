@@ -89,7 +89,7 @@ The visuals were heavily influenced by the updated industrial design of the Alie
 
 </div>
 </div>
-<p class="photo-grid-subtitle">Wireframes of the homepage and game library</p>
+<p class="photo-grid-subtitle">Personalization has a key feature</p>
 
 ##### Video Demo
 
