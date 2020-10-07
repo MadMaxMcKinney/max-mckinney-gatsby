@@ -13,7 +13,7 @@ accentColor: "#0095ff"
 image: "dell-welcome-header.jpg"
 thumb: "dell-welcome-thumb.jpg"
 showLiveContent: false
-sortDate: "2016-12-01"
+sortDate: "2015-12-01"
 postType: "professional-project"
 ---
 
