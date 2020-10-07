@@ -21,8 +21,22 @@ postType: "professional-project"
 </div>
 <p class="photo-grid-subtitle">Sureshot Website</p>
 
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-about-webpage.png" />
+<img src="sureshot-sms-webpage.png"/></div>
+</div>
+<p class="photo-grid-subtitle">About Us page - Solution page</p>
+
 ##### Modernize
 The corporate redesign was an effort to modernize the elements of Sureshot to better connect with their clients. Sureshot competes in the world of marketing tools, and this area is full of large high-tech companies with significant cloud capabilities. The clients of Sureshot are modern and future looking users. The rebranding effort helps connect with this audience by engaging them with clean and modern visuals and compelling imagery from Sureshot’s software.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-logo-brand.png" />
+<img src="sureshot-color-brand.png"/></div>
+</div>
+<p class="photo-grid-subtitle">Glimpse at branding assets</p>
 
 <div class="photo-grid-container">
 <div class="photo-grid">
