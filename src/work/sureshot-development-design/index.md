@@ -26,14 +26,21 @@ I joined Sureshot as a fullstack developer, however once realizing there was no 
 ##### Simplify, simplify, simplify
 The goal for the Sureshot design system (now called Sureshot UI) was to align all of the existing and new products visually and functionally. Sureshot provides many different products and they encourage the customer/user to switch between different products for different needs, similar to how the Google web app suite works. A key part of that business model is keeping users integrated into your products. If your products are not consistent in appearance and functionality it trains the user to be comfortable with switching product ecosystems since they have already gotten used to different visuals and workflows. 
 
-Sureshot UI aligned the visual language of the products with well documented UX patterns. This new consistency not only improved the appearance of the applications but also helped define the Sureshot ecosystem of products. Removing the learning curve from each new application the user would visit by sharing consistent UX patterns and visuals keeps the user in the Sureshot world, not jumping between various different platforms and applications.
-
 <div class="photo-grid-container">
 <div class="photo-grid">
 <img src="sureshot-command-web.png" />
 <img src="Sureshot-Connect-Web.png"/></div>
 </div>
 <p class="photo-grid-subtitle">Sureshot Command - Sureshot Connect</p>
+
+Sureshot UI aligned the visual language of the products with well documented UX patterns. This new consistency not only improved the appearance of the applications but also helped define the Sureshot ecosystem of products. Removing the learning curve from each new application the user would visit by sharing consistent UX patterns and visuals keeps the user in the Sureshot world, not jumping between various different platforms and applications.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-ui-product-command-overview.png" />
+<img src="sureshot-ui-product-connect-overview.png"/></div>
+</div>
+<p class="photo-grid-subtitle">Consistent visual styling</p>
 
 ##### Collaboration
 Sureshot UI was built in a design tool called Figma utilizing the team features of the tool to allow others to collaborate and quickly iterate on designs. Everything was built as components so if a change was made it would propagate through all the designs, which saved countless hours due to the large artboard counts and sizes many of our mocks had.
