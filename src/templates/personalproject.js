@@ -16,7 +16,7 @@ const SideProjectsPage = ({data}) => (
 
 
         <ProjectImg fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
-        <PageHeaderTitle>{data.personal.frontmatter.title}</PageHeaderTitle>
+        <PersonalPageHeaderTitle>{data.personal.frontmatter.title}</PersonalPageHeaderTitle>
         <PageHeaderSubtitle>{data.personal.frontmatter.description}</PageHeaderSubtitle>
 
         <ButtonHStack>
@@ -60,6 +60,10 @@ const ButtonHStack = styled.div`
     margin-top: 32px;
 
     animation: ${fadeInDown} 1.6s;
+`
+
+const PersonalPageHeaderTitle = styled(PageHeaderTitle)`
+    max-width: 100%;
 `
 
 const Content = styled.div`
