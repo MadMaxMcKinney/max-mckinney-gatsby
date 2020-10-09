@@ -13,7 +13,7 @@ accentColor: "#CC2027"
 image: "Sureshot-UI-Header.png"
 thumb: "Sureshot-Website-Thumbnail.png"
 showLiveContent: true
-sortDate: "2020-6-01"
+sortDate: "2018-6-01"
 postType: "professional-project"
 ---
 <div class="photo-container">

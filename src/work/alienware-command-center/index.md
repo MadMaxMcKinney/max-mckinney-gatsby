@@ -5,15 +5,15 @@ projectClient: "Alienware"
 projectDate: "Dec 2017 - Dec 2018"
 projectAgency: "Dell"
 projectRole: "Developer"
-projectBrief: "Created initial prototype showing new functionality of the UWP framework. Acted as a lead developer resource for the Alienware development team and created one-off examples of new tech for the final app to utilize. Designed and animated the particle backgrounds used throughout the app."
-projectShortBrief: "Worked as a lead developer resource, as well as a UI/UX designer, on the new Alienware Command Center."
+projectBrief: "UI/UX designer on the Alienware Command Center. Directed the product's vision through user personas and UX research. Worked to create a unique design language inspired by the updated industrial design of the Alienware hardware. The visuals were designed to stand out from the competition by utilizing a unique light theme from the start, but still allowing strong customization from the user. Created hero moments in the product through a combination of animations and cinematic design. Brought the theme of personalization to a higher level by implementing a reflective UI pattern showcasing the user's hardware color schemes in the product UI."
+projectShortBrief: "UI/UX designer on the award winning Alienware Command Center redesign."
 categories: ["Design", "Development"]
 themeColor: "#2b3a61"
 accentColor: "#039ff2"
 image: "alienware-command-center-header.jpg"
 thumb: "alienware-command-center-thumb.jpg"
 showLiveContent: false
-sortDate: "2017-12-01"
+sortDate: "2020-12-01"
 postType: "professional-project"
 ---
 
