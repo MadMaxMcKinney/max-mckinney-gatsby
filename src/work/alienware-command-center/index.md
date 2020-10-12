@@ -6,7 +6,7 @@ projectDate: "Dec 2017 - Dec 2018"
 projectAgency: "Dell"
 projectRole: "Developer"
 projectBrief: "UI/UX designer on the Alienware Command Center. Directed the product's vision through user personas and UX research. Worked to create a unique design language inspired by the updated industrial design of the Alienware hardware. The visuals were designed to stand out from the competition by utilizing a unique light theme from the start, but still allowing strong customization from the user. Created hero moments in the product through a combination of animations and cinematic design. Brought the theme of personalization to a higher level by implementing a reflective UI pattern showcasing the user's hardware color schemes in the product UI."
-projectShortBrief: "UI/UX designer on the award winning Alienware Command Center redesign."
+projectShortBrief: "UI/UX designer on the award winning Alienware Command Center. Created a robust and researched design language."
 categories: ["Design", "Development"]
 themeColor: "#2b3a61"
 accentColor: "#039ff2"
@@ -67,7 +67,7 @@ We approached this by creating wireframes of every planned action. That isn't al
 
 ##### New Design Language
 
-Creating the new Command Center involved designing a new design language that allows for UI customization to be dynamic in various ways. The desire was for the Command Center to be a heavily user customized experience. This is shown throughout the UI in the primary color being pulled from the current color theme of the system and with the particle effects seen in the background that I designed and animated. The particles can be configured by the user to match their style.
+Designed a new visual language for Alienware that pushes the boundaries of traditional "flat" UI. This new language brought in subtle hints of light and shadow, transparency, depth, and dimensionality. Creating the new Command Center involved designing a new design language that allows for UI customization to be dynamic in various ways. The desire was for the Command Center to be a heavily user customized experience. This is shown throughout the UI in the primary color being pulled from the current color theme of the system and with the particle effects seen in the background that I designed and animated. The particles can be configured by the user to match their style.
 
 <div class="photo-container">
 <img src="alienware-visuals-1.png" />
