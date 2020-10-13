@@ -6,7 +6,7 @@ import {PulseRight} from '../ANIMATIONS'
 const ReadMoreButton = (props) => {
   return (
 	<ButtonContainer to={props.link} accent={props.accent}>
-        <span>Read more about it</span><i className="fal fa-sm fa-arrow-right"></i>
+        <span>Read more about it</span><i className="far fa-sm fa-arrow-right"></i>
 	</ButtonContainer>
   )
 }
