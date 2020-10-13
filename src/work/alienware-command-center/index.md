@@ -43,12 +43,17 @@ When Alienware announced their new branding in 2018 they also wanted a new Comma
 
 The goal with the new Command Center was not just a simply visual update. We wanted to rethink the entire structure of the program. Alienware was updating it's industrial language and the goal was to bring the UI to a higher standard to match the new ID. We had a solid foundation for our user base which is something that shouldn't be taken lightly. This program comes preinstalled on every Alienware, so it needs to work and be easy to use.
 
+<div class="photo-container">
+<img src="alienware-visuals-9.png" />
+</div>
+<p class="photo-grid-subtitle">Homepage wireframe</p>
+
 We approached this by creating wireframes of every planned action. That isn't always necessary once the initial UX patterns are established, but in this scenario it would be extremely challenging to provide updates down the road as the software gets installed at the factory initially. The goal was to get as much locked down upfront as we could. We did this via many user studies and hands-on interactive prototypes made from the wireframes. This proved invaluable later as we could really focus on the design and visuals once we knew the UX was solid. We looked at several different programs in various fields (Game libraries, RGB software, IoT interfaces) so we could bring the best of all of it since Command Center includes many unique "modules". This was another great use of the wireframing effort. 
 
 <div class="photo-grid-container">
 <div class="photo-grid">
 
-<img src="alienware-wireframe-1.png"/>
+<img src="alienware-wireframe-5.png"/>
 <img src="alienware-wireframe-4.png"/>
 
 </div>
