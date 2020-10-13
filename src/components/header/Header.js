@@ -29,7 +29,7 @@ const Header = (props) => (
 			</li>
             <li id="personalProjects">
 				<Link to="/personal">
-					<PillNavButton isActivePage={props.location.pathname === "/personal" ? true : false}>
+					<PillNavButton isActivePage={RegExp("\/personal.?").test(props.location.pathname) ? true : false}>
                         <i class="fas fa-gem"></i>
                         <p>Personal</p>
                     </PillNavButton>

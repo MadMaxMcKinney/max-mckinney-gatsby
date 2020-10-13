@@ -45,6 +45,16 @@ The corporate redesign was an effort to modernize the elements of Sureshot to be
 </div>
 <p class="photo-grid-subtitle">Various Sureshot website and Sureshot UI pages</p>
 
+##### Wireframes
+The corporate website was getting some much needed love. There was a new brand direction including a new design language that Sureshot's products now use. I wanted the new website to encompass these elements in a visually striking manner. This meant reimagining the structure and layout of the site so that it's foundation would support a more visual narrative. I approach these problems by exploring various layouts with traditional wireframing techniques. In this situation I could focus mainly on how the content would be paired with the large screenshots since there would need to be good balance now that Sureshot had compelling visuals to showoff.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-website-wireframe-1.png" />
+<img src="sureshot-website-wireframe-2.png"/></div>
+</div>
+<p class="photo-grid-subtitle">Homepage layout wireframes</p>
+
 ##### Ecosystem
 Rebranding offers a lot of new opportunities that otherwise can be challenging to accomplish. I utilized this effort to align all of Sureshot’s visual languages together as one. This means the corporate branding, the sales website, and the products all belong to the same family. The goal here was to create a Sureshot ecosystem - an entire experience within Sureshot’s product network. Keeping clients in that network is key and by positively reinforcing consistent experiences and UX patterns it gives them strong reason to stay and not explore competitors.
 
@@ -75,7 +85,7 @@ When it comes to selling products, words can be very powerful. However people bu
 <p class="photo-grid-subtitle">Connect screenshot compared to source product</p>
 
 <div class="photo-container">
-<img src="sureshot-website-ex.png" />
+<img src="sureshot-website-homepage.png" />
 </div>
 <p class="photo-grid-subtitle">Sureshot Website</p>
 
