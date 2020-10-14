@@ -1,12 +1,12 @@
 ---
-title: "YouTube Tutorials on UI/UX Design"
+title: "Teaching students on UI/UX Design"
 url: "https://www.youtube.com/channel/UCQNdi3oxWKsVw8-kA26PSpw"
 projectClient: "Self"
 projectDate: "Sept 2019 - Ongoing"
 projectAgency: "Self"
 projectRole: "Designer"
-projectBrief: "Created and maintained an ongoing tutorial based YouTube channel with a focus in teaching others design based concepts. Showed new concepts to others through building foundational ideas and then implementing those skills in 'design practice' videos. Demonstrated various ways of design thinking via speed art videos where graphic design and user interfaces (web and mobile) were created."
-projectShortBrief: "Created and maintained an ongoing YouTube channel with a focus in teaching others design based concepts."
+projectBrief: "Created and maintained an ongoing tutorial based YouTube channel and UI/UX course with a focus in teaching others design based concepts. Showed new concepts to others through building foundational ideas and then implementing those skills in 'design practice' videos. Demonstrated various ways of design thinking via speed art videos where graphic design and user interfaces (web and mobile) were created."
+projectShortBrief: "Created and maintained an ongoing YouTube channel and UI/UX course with a focus in teaching others design based concepts."
 categories: ["Design"]
 themeColor: "#000000"
 accentColor: "#438327"
