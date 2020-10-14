@@ -4,7 +4,7 @@ url: ""
 projectClient: "Sureshot"
 projectDate: "Jan 2019 - Ongoing"
 projectAgency: "Sureshot"
-projectRole: "Lead Designer / Fullstack Dev"
+projectRole: "Senior UI/UX Designer & Fullstack Dev"
 projectBrief: "Fullstack development and lead designer across several different platforms. These platforms are built on React and written in Typescript with custom backend functionality running on dotNET core and C#. Lead the Sureshot design effort and design language creation from both a development and design perspective. This design language was created to bring visual and UX consistency between existing and new products. Sureshot UI was designed in Figma to allow other members to easily create mockups using it's team library functionality. All of the designs were made as components to allow faster iteration and better development handoff. The design language was created as a Typescript/React private NPM repo. It features flexible components while still maintaining an opinionated API structure. Every component is documented and shown in an interactive way using Storybook JS. Sureshot UI will continue to grow and adapt to support Sureshot's products."
 projectShortBrief: "Created the Sureshot UI design language and product direction. Fullstack development and design across several different platforms."
 categories: ["Design", "Development"]

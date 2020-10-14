@@ -4,10 +4,10 @@ url: ""
 projectClient: "Dell"
 projectDate: "Dec 2016 - Mar 2017"
 projectAgency: "Dell"
-projectRole: "Developer / Designer"
+projectRole: "UI/UX Designer"
 projectBrief: "This was a global application that supported over 25 different languages and was fully responsive – it is estimated to server hundreds of thousands of people as soon as Windows 10 is available, with millions of people estimated several months after Windows 10 is released."
 projectShortBrief: "This was a global application that supported over 25 different languages and is fully responsive built on UWP."
-categories: ["Development"]
+categories: ["Design", "Development"]
 themeColor: "#6923e0"
 accentColor: "#0095ff"
 image: "dell-welcome-header.jpg"
