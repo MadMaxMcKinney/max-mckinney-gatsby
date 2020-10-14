@@ -29,7 +29,7 @@ Speed art videos are short timelapsed 8-10 minute videos that are useful for sho
 <p class="photo-grid-subtitle">Web Design & UI Design</p>
 
 ##### Tutorials
-Being a modern designer means adapting to both new technology and new tools all the time. I am a believer that there can never be enough knowledge shared online. I was self taught in my skills and YouTube played a big part in that, it is only fair that I provide back to the source that helped me. I focus on technical tutorials for various design tools (like Figma, Invision Studio, etc) and then using those skills walk through practical design exercises using them.
+Being a modern designer means adapting to both new technology and new tools all the time. I am a believer that there can never be enough knowledge shared online. I was self taught in my skills and YouTube played a big part in that, it is only fair that I provide back to the source that helped me. I focus on technical tutorials for various design tools (like Figma, Adobe XD, Sketch, etc) and then using those skills walk through practical design exercises using them.
 
 <div class="photo-grid-container">
 <div class="photo-grid">
