@@ -59,7 +59,7 @@ The bootstrap based fork of the toolkit brings some extended functionality to th
 </div>
 <p class="photo-grid-subtitle">Concept applications using C3</p>
 
-<video width="100%" autoplay loop>
+<video width="100%" controls loop>
 <source src="/clarity-dashboard.mp4" type="video/mp4">
 </video>
 
