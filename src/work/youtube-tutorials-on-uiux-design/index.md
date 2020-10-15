@@ -4,7 +4,7 @@ url: "https://www.youtube.com/channel/UCQNdi3oxWKsVw8-kA26PSpw"
 projectClient: "Self"
 projectDate: "Sept 2019 - Ongoing"
 projectAgency: "Self"
-projectRole: "Designer"
+projectRole: "UI/UX Designer & Educator"
 projectBrief: "Created and maintained an ongoing UI/UX course and tutorial based YouTube channel with a focus in teaching others design based concepts. Showed new concepts to others through building foundational ideas and then implementing those skills in 'design practice' videos. Demonstrated various ways of design thinking via speed art videos where graphic design and user interfaces (web and mobile) were created."
 projectShortBrief: "Created and maintained an ongoing YouTube channel and UI/UX course with a focus in teaching others design based concepts."
 categories: ["Design"]
@@ -16,7 +16,21 @@ showLiveContent: true
 sortDate: "2018-1-10"
 postType: "professional-project"
 ---
-I started making YouTube videos in the middle of 2019. The videos were designed to educate others in the realm of design through practical experience. As a developer and designer I recognize that my skills can always be improved, which is why the videos I make I do from an area of personal experience. My videos were created to help other designers grow their technical skills in different tools, or grow their design knowledge through practice videos and speed art videos.
+Once a year I teach a 3 month long course on UI/UX design. This course covers a breadth of information that helps the students understand the general 'world' of design. This is a hands-on course that allows the students to end their learning with a completed project worthy of a design portfolio. Topics include color theory, user research, user personas, design systems, typography, accessibility, and design presentation.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="windows-design.png" />
+<img src="spotify-design.png"/></div>
+</div>
+<p class="photo-grid-subtitle">Desktop Design & Widget Design</p>
+
+I started making design tutorial YouTube videos in the middle of 2019. The videos were designed to educate others in the realm of design through practical experience. As a developer and designer I recognize that my skills can always be improved, which is why the videos I make I do from an area of personal experience. My videos were created to help other designers grow their technical skills in different tools, or grow their design knowledge through practice videos and speed art videos.
+
+<div class="photo-container">
+<img src="ascalon-design.png" />
+</div>
+<p class="photo-grid-subtitle">Mobile App Design</p>
 
 ##### Design Speed Art
 Speed art videos are short timelapsed 8-10 minute videos that are useful for showing the iterative and thoughtful process of design. They usually don't include any voiceover (just music) and serve as a great way to get inside the head of another designer. I've found that seeing how other people work can bring new insights or improvements into your own personal workflow. The projects I record while making speed art videos are designs that I make for fun and to practice new skills. This insures that there will always be something new to gain from a speed art video, outside of just enjoying the aesthetics that is.
