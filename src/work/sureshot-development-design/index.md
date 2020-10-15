@@ -1,12 +1,12 @@
 ---
-title: "Sureshot UI Development & Design"
+title: "Sureshot UI Product Ecosystem"
 url: ""
 projectClient: "Sureshot"
-projectDate: "Jan 2019 - Ongoing"
+projectDate: "Jan 2019 - October 2020"
 projectAgency: "Sureshot"
-projectRole: "Senior UI/UX Designer & Fullstack Dev"
-projectBrief: "Fullstack development and lead designer across several different platforms. These platforms are built on React and written in Typescript with custom backend functionality running on dotNET core and C#. Lead the Sureshot design effort and design language creation from both a development and design perspective. This design language was created to bring visual and UX consistency between existing and new products. Sureshot UI was designed in Figma to allow other members to easily create mockups using it's team library functionality. All of the designs were made as components to allow faster iteration and better development handoff. The design language was created as a Typescript/React private NPM repo. It features flexible components while still maintaining an opinionated API structure. Every component is documented and shown in an interactive way using Storybook JS. Sureshot UI will continue to grow and adapt to support Sureshot's products."
-projectShortBrief: "Created the Sureshot UI design language and product direction. Fullstack development and design across several different platforms."
+projectRole: "Senior UI/UX Designer & Frontend Dev"
+projectBrief: "Prior to the Sureshot UI and product design effort Sureshot had several products that were highly disconnected. From a UX perspective they had very different interaction patterns and elements. Visually the products shared no similar elements and obviously were built at different times throughout the companies history. Establishing a strong product ecosystem was a primary goal. I approached this problem by understanding our primary users, and aligning the team on their needs. From there I directed and designed a consistent visual language (Sureshot UI) that aligned the products in terms of their visual space and components. This extended throughout the Sureshot product ecosystem (authentication pages, error pages, marketing, etc). As the visual updates were happening I explored the idea of creating shared patterns between the various products. This effort was looking at micro-interactions and shared features, like auto-complete, that could be aligned between the products. Having consistent interactions and unique shared UX allowed customers to switch between Sureshot's products with ease and familiarity. "
+projectShortBrief: "Created the Sureshot UI design language and product direction. Built a powerful shared product ecosystem."
 categories: ["Design", "Development"]
 themeColor: "#330f0f"
 accentColor: "#CC2027"
@@ -16,8 +16,6 @@ showLiveContent: false
 sortDate: "2019-1-01"
 postType: "professional-project"
 ---
-I joined Sureshot as a fullstack developer, however once realizing there was no designer on the team and seeing the visual and functional inconsistencies between products I began to build the groundwork and implement a design system that would align all of the products. I now act as the lead designer on the team. I designed the system to be modular to simplify our development workflows with a heavy focus in data management/dashboard components. 
-
 <div class="photo-container">
 <img src="Sureshot-UI-Thumbnail.png" />
 </div>
@@ -69,3 +67,6 @@ Part of building a strong design system and product catalog is building applicat
 </div>
 </div>
 <p class="photo-grid-subtitle">Sureshot UI Dev Documentation Example</p>
+
+##### Business Outcomes
+At the end of this effort Sureshot went from struggling to keep clients from switching to competitor products to easily selling an entire ecosystem to customers. The strong pairing of product design and functionality combined with the compelling nature of staying in a familiar and linked ecosystem increased Sureshot's business revenue and customer retention rates.
