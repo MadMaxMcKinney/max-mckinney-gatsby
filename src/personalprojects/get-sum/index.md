@@ -10,4 +10,4 @@ appStoreUrl: "https://apps.apple.com/us/app/id1532463456"
 githubUrl: "https://github.com/MaxMcKinney/Get-Sum"
 ---
 
-![Get Sum Image](getsum-example-image.png)
+![Get Sum Image](getsum-example.png)
