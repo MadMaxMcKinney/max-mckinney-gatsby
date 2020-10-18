@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -12,6 +13,30 @@ import {fadeInDown} from '../animations/m-styled-animations'
 
 
 const SideProjectsPage = ({data}) => (
+
+    <React.Fragment>
+
+    <Helmet title={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}>
+            <meta name="description" content={data.personal.frontmatter.description} />
+            <meta name="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+            <meta itemprop="name" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
+            <meta itemprop="description" content={data.personal.frontmatter.description}/>
+            <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+
+            <meta name="twitter:card" content="summary"/>
+            <meta name="twitter:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
+            <meta name="twitter:description" content={data.personal.frontmatter.description}/>
+            <meta name="twitter:site" content="@madmaxmckinney"/>
+            <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+
+            <meta name="og:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
+            <meta name="og:description" content={data.personal.frontmatter.description}/>
+            <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+            <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.personal.fields.slug}/>
+            <meta name="og:site_name" content="Max McKinney"/>
+
+        </Helmet>
+
     <PageGrid>
 
 
@@ -31,6 +56,7 @@ const SideProjectsPage = ({data}) => (
         <Content dangerouslySetInnerHTML={{ __html: data.personal.html }} />
 
     </PageGrid>
+    </React.Fragment>
 )
 
 const PageGrid = styled.div`
@@ -80,6 +106,12 @@ export default SideProjectsPage
 
 export const query = graphql`
 query PersonalProjectBySlug($slug: String!) {
+    site {
+        siteMetadata {
+            title
+            siteUrl
+        }
+    }
     personal: markdownRemark(fields: { slug: { eq: $slug } }) {
         frontmatter {
             title
@@ -87,6 +119,9 @@ query PersonalProjectBySlug($slug: String!) {
             locationText
             image {
               childImageSharp {
+                  fixed {
+                      src
+                  }
                 fluid(maxWidth: 200) {
                     ...GatsbyImageSharpFluid
                 }
@@ -96,6 +131,9 @@ query PersonalProjectBySlug($slug: String!) {
             githubUrl
         }
         html
+        fields {
+            slug
+        }
     }
 }
 `
