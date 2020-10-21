@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
@@ -21,7 +21,7 @@ const SideProjectsPage = ({data}) => (
 
         <SideProjectGrid>
             {data.personal.edges.map(({node}) => (
-                <SideProjectCard href={node.fields.slug} accent={node.frontmatter.accent}>
+                <SideProjectCard to={node.fields.slug} accent={node.frontmatter.accent}>
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
                     <h1>{node.frontmatter.title}</h1>
                     <SideProjectDetails>{node.frontmatter.description}</SideProjectDetails>
@@ -57,7 +57,7 @@ const SideProjectGrid = styled.div`
     }
 `
 
-const SideProjectCard = styled.a`
+const SideProjectCard = styled(Link)`
     --accent-color: ${props => props.accent};
     
     display: flex;

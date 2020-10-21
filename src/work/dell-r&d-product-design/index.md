@@ -17,7 +17,7 @@ sortDate: "2015-12-01"
 postType: "professional-project"
 ---
 
-I worked with the R&D design and development team within Dell to create and explore the future of Dell's products. I sometimes refer to this work as 'Conceptual UI/UX Design' as the work can vary the medium in which the 'interface' exists. Traditional UI design refers explicitly to the screens we are used to today, like our phones and monitors. The R&D team dealt with future looking concepts, like having a projected 'interface' displayed on your desk, or an 'interface' with no visuals only haptic feedback. This experience allowed for deep creativity and an abundance of problem solving.
+I worked with the R&D design and development team within Dell to create and explore the future of Dell's products. I sometimes refer to this work as 'Conceptual UI/UX Design' as the work can vary qthe medium in which the 'interface' exists. Traditional UI design refers explicitly to the screens we are used to today, like our phones and monitors. The R&D team dealt with future looking concepts, like having a projected 'interface' displayed on your desk, or an 'interface' with no visuals only haptic feedback. This experience allowed for deep creativity and an abundance of problem solving.
 
 <div class="photo-grid-container">
 <div class="photo-grid">
