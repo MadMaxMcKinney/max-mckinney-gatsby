@@ -70,7 +70,14 @@ module.exports = {
                 name: `assets`,
                 path: path.join(__dirname, `src`, `assets`),
             },
-		},
+        },
+        {
+            resolve: `gatsby-source-dribbble`,
+            options: {
+              // You can get your Access Token by following this tutorial: http://developer.dribbble.com/v2/oauth/
+              access_token: 'e5f8e434efd8ea84c706c13bd0b0815eeda79d5bccc81a67256bee4f62c425bb'
+            }
+        },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {

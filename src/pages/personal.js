@@ -5,8 +5,10 @@ import Img from "gatsby-image"
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
+import {MaxH1} from '../components/typography'
 
 import {fadeInDown} from '../animations/m-styled-animations'
+import ReadMoreButton from '../components/buttons/ReadMoreButton'
 
 
 const SideProjectsPage = ({data}) => (
@@ -30,6 +32,31 @@ const SideProjectsPage = ({data}) => (
             ))}
             
         </SideProjectGrid>
+        
+        <DribbbleSectionSeperator>
+            <MaxH1>Dribbble</MaxH1>
+            <a href="https://dribbble.com/MaxMcKinney">
+                <i className="far fa-external-link-alt"></i>
+            </a>
+        </DribbbleSectionSeperator>
+
+        <DribbbleGrid>
+            {data.allDribbbleShot.edges.map(({node}) => (
+                <a href={node.url}>
+                    <DribbblePost>
+                        <img src={node.localCover.publicURL}/>
+                    </DribbblePost>
+                </a>
+            ))}
+        </DribbbleGrid>
+        
+        <DribbbleReadMoreButton>
+            <ReadMoreButton accent="#FF3672" link="https://dribbble.com/MaxMcKinney">
+                More on Dribbble
+            </ReadMoreButton>
+        </DribbbleReadMoreButton>
+        
+        
 
     </PageGrid>
 )
@@ -50,6 +77,10 @@ const SideProjectGrid = styled.div`
     margin-top: 150px;
 
     animation: ${fadeInDown} 1.7s;
+
+    @media(max-width: 1015px) {
+        grid-gap: 32px;
+    }
 
     @media(max-width: 600px) {
         grid-template-columns: 1fr;
@@ -72,7 +103,7 @@ const SideProjectCard = styled(Link)`
     text-align: center;
 
     background: var(--blueblack-500);
-    transition: all 0.3s;
+    transition: all 0.2s;
     overflow: hidden;
 
     &:hover {
@@ -100,7 +131,11 @@ const SideProjectCard = styled(Link)`
         opacity: 0.15;
     }
 
-    @media(max-width: 600px) {
+    &:active {
+        transform: scale(0.97);
+    }
+
+    @media(max-width: 1015px) {
         padding: 20px;
 
         h1 {
@@ -155,6 +190,103 @@ const Avatar = styled.div`
     }
 `
 
+const DribbbleSectionSeperator = styled.div`
+    margin-top: 100px;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    justify-self: flex-start;
+
+    animation: ${fadeInDown} 3.1s;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FF3672;
+
+        &:hover {
+            opacity: 0.7;
+        }
+        &:active {
+            opacity: 1;
+        }
+    }
+`
+
+const DribbbleGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    grid-gap: 24px;
+
+    margin-top: 48px;
+    margin-bottom: 56px;
+
+    animation: ${fadeInDown} 2.7s;
+
+    a {
+        line-height: 0;
+    }
+
+    @media(max-width: 600px) {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+`
+
+const DribbblePost = styled.div`
+    border-radius: 16px;
+    border: 2px solid transparent;
+
+    position: relative;
+
+    transition-property: border border-radius transform;
+    transition-duration: 0.15s;
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid transparent;
+        border-radius: 12px;
+
+        transition: border 0.2s;
+    }
+    // Hover
+    &:hover {
+        border: 2px solid white;
+        transform: scale(1.03);
+    }
+
+    &:hover::after {
+        border: 4px solid black;
+    }
+
+    // Active (Pressed)
+    &:active {
+        border: 2px solid transparent;
+        transform: scale(1);
+    }
+
+    &:active::after {
+        border: 4px solid transparent;
+    }
+`
+
+const DribbbleReadMoreButton = styled.div`
+    justify-self: flex-start;
+    animation: ${fadeInDown} 3.2s;
+`
+
 export default SideProjectsPage
 
 export const query = graphql`
@@ -189,5 +321,15 @@ query personalProjectQuery {
           }
         }
     }
+    allDribbbleShot(limit: 12) {
+        edges {
+            node {
+                url
+                localCover {
+                  publicURL
+                }
+            }
+        }
+      }
 }
 `

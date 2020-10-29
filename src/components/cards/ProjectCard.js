@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import Img from 'gatsby-image'
 import Pill from '../pills/Pill'
 import ReadMoreButton from '../buttons/ReadMoreButton'
+import {MaxH1} from '../typography'
 
 const ProjectCard = (props) => {
   return (
@@ -18,10 +19,12 @@ const ProjectCard = (props) => {
                     return <Pill text={category}/>
                 })}
             </PillList>
-            <h1>{props.data.frontmatter.title}</h1>
+            <MaxH1>{props.data.frontmatter.title}</MaxH1>
             <p>{props.data.frontmatter.projectShortBrief}</p>
 
-            <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}/>
+            <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}>
+                Read more about it
+            </ReadMoreButton>
         </ProjectCardContent>
 
         <PreviewContainer>
@@ -54,11 +57,7 @@ const ProjectCardContainer = styled.div`
     transition: all 0.4s;
     overflow: hidden;
 
-    h1 {
-        display: inline-block;
-        line-height: 40px;
-        font-weight: 600;
-        font-size: 1.6rem;
+    ${MaxH1} {
         max-width: 320px;
     }
     p {
@@ -80,7 +79,7 @@ const ProjectCardContainer = styled.div`
         padding: 0px;
         grid-template-columns: 1fr;
 
-        h1, p {
+        ${MaxH1}, p {
             max-width: 100%;
         }
     }

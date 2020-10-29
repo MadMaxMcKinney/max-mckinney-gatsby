@@ -11,7 +11,7 @@ const PillNavButton = styled.div`
     background: var(--blueblack-500);
     border-radius: 100px;
     border: ${props => props.isActivePage ? `1px solid white` : `1px solid transparent`};
-    transition: all 0.4s;
+    transition: all 0.2s;
 
     p {
         margin: 0;
@@ -26,6 +26,10 @@ const PillNavButton = styled.div`
     &:hover {
         background: white;
         color: black;
+    }
+
+    &:active {
+        transform: scale(0.97);
     }
 
     @media(max-width: ${SIZE_MOBILE}) {

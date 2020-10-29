@@ -6,7 +6,7 @@ import {PulseRight} from '../ANIMATIONS'
 const ReadMoreButton = (props) => {
   return (
 	<ButtonContainer to={props.link} accent={props.accent}>
-        <span>Read more about it</span><i className="far fa-sm fa-arrow-right"></i>
+        <span>{props.children}</span><i className="far fa-sm fa-arrow-right"></i>
 	</ButtonContainer>
   )
 }
@@ -22,7 +22,7 @@ const ButtonContainer = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: baseline;
-    transition: all 0.3s;
+    transition: all 0.2s;
 
     span {
         margin-right: 16px;
@@ -36,6 +36,10 @@ const ButtonContainer = styled(Link)`
         animation: ${PulseRight} 0.3s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
+    }
+
+    &:active {
+        transform: scale(0.97);
     }
 `;
 
