@@ -8,6 +8,7 @@ import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
 import AppStoreButton from '../components/buttons/AppStoreButton'
 import GithubButton from '../components/buttons/GithubButton'
+import YouTubeButton from '../components/buttons/YouTubeButton'
 
 import {fadeInDown} from '../animations/m-styled-animations'
 
@@ -51,6 +52,9 @@ const SideProjectsPage = ({data}) => (
         {data.personal.frontmatter.githubUrl && 
             <GithubButton href={data.personal.frontmatter.githubUrl}><i class="fab fa-github"></i> View on Github</GithubButton>
         }
+        {data.personal.frontmatter.youtubeUrl && 
+            <YouTubeButton href={data.personal.frontmatter.youtubeUrl}><i class="fab fa-youtube"></i> View on YouTube</YouTubeButton>
+        }
         </ButtonHStack>
 
         <Content dangerouslySetInnerHTML={{ __html: data.personal.html }} />
@@ -82,6 +86,7 @@ const ButtonHStack = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
     grid-gap: 16px;
+    justify-items: flex-start;
 
     margin-top: 32px;
 
@@ -99,6 +104,10 @@ const Content = styled.div`
 
     img {
         border-radius: 2px;
+    }
+
+    p {
+        opacity: 0.85;
     }
 `
 
@@ -129,6 +138,7 @@ query PersonalProjectBySlug($slug: String!) {
             }
             appStoreUrl
             githubUrl
+            youtubeUrl
         }
         html
         fields {

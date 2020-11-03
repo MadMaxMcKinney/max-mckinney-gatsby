@@ -4,7 +4,7 @@ description: "Menuette is the easiest way to find delicious food – browse beau
 accent: "#E85E41"
 locationText: "personal/menuette/"
 image: "menuette-thumbnail.png"
-sortDate: "2020-09-01"
+sortDate: "2019-09-01"
 postType: "personal-project"
 appStoreUrl: "https://apps.apple.com/app/id1382472110"
 githubUrl: ""
