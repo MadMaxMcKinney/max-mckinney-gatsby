@@ -79,6 +79,12 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-source-medium`,
+            options: {
+              username: `@maxmckinney`,
+            },
+        },
+        {
             resolve: `gatsby-plugin-manifest`,
             options: {
               name: `Max McKinney`,

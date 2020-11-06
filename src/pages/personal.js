@@ -8,7 +8,7 @@ import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
 import {MaxH1} from '../components/typography'
 
 import {fadeInDown} from '../animations/m-styled-animations'
-import ReadMoreButton from '../components/buttons/ReadMoreButton'
+import AccentButton from '../components/buttons/AccentButton'
 
 
 const SideProjectsPage = ({data}) => (
@@ -33,12 +33,10 @@ const SideProjectsPage = ({data}) => (
             
         </SideProjectGrid>
         
-        <DribbbleSectionSeperator>
+        <SectionSeperator>
+            <i class="fab fa-dribbble fa-2x"></i>
             <MaxH1>Dribbble</MaxH1>
-            <a href="https://dribbble.com/MaxMcKinney">
-                <i className="far fa-external-link-alt"></i>
-            </a>
-        </DribbbleSectionSeperator>
+        </SectionSeperator>
 
         <DribbbleGrid>
             {data.allDribbbleShot.edges.map(({node}) => (
@@ -50,11 +48,37 @@ const SideProjectsPage = ({data}) => (
             ))}
         </DribbbleGrid>
         
-        <DribbbleReadMoreButton>
-            <ReadMoreButton accent="#FF3672" link="https://dribbble.com/MaxMcKinney">
+        <ReadMoreButtonContainer>
+            <AccentButton accent="#FF3672" link="https://dribbble.com/MaxMcKinney">
                 More on Dribbble
-            </ReadMoreButton>
-        </DribbbleReadMoreButton>
+            </AccentButton>
+        </ReadMoreButtonContainer>
+
+        <SectionSeperator>
+            <i class="fab fa-medium fa-2x"></i>
+            <MaxH1>Publications</MaxH1>
+        </SectionSeperator>
+
+        <MediumPostGrid>
+            {data.allMediumPost.edges.map(({node}) => (
+                <MediumPost href={"https://maxmckinney.medium.com/" + node.slug + "-" + node.medium_id}>
+                    <div>
+                        <img src={`https://miro.medium.com/max/1000/${node.virtuals.previewImage.imageId}`} alt="Article preview image"/>
+                    </div>
+                    <div>
+                        <p><strong>{node.title}</strong></p>
+                        <p>{node.virtuals.subtitle}</p>
+                    </div>
+                </MediumPost>
+                
+            ))}
+        </MediumPostGrid>
+
+        <ReadMoreButtonContainer>
+            <AccentButton accent="#FFFFFF" link="https://maxmckinney.medium.com/">
+                More on Medium
+            </AccentButton>
+        </ReadMoreButtonContainer>
         
         
 
@@ -190,28 +214,18 @@ const Avatar = styled.div`
     }
 `
 
-const DribbbleSectionSeperator = styled.div`
+const SectionSeperator = styled.div`
     margin-top: 100px;
+    
     display: inline-grid;
     grid-auto-flow: column;
     grid-gap: 16px;
     justify-self: flex-start;
+    place-items: center;
+
+    color: white;
 
     animation: ${fadeInDown} 3.1s;
-
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FF3672;
-
-        &:hover {
-            opacity: 0.7;
-        }
-        &:active {
-            opacity: 1;
-        }
-    }
 `
 
 const DribbbleGrid = styled.div`
@@ -235,7 +249,9 @@ const DribbbleGrid = styled.div`
 `
 
 const DribbblePost = styled.div`
-    border-radius: 16px;
+    --border-radius: 4px;
+
+    border-radius: var(--border-radius);
     border: 2px solid transparent;
 
     position: relative;
@@ -257,7 +273,7 @@ const DribbblePost = styled.div`
         right: 0;
         bottom: 0;
         border: 4px solid transparent;
-        border-radius: 12px;
+        border-radius: var(--border-radius);
 
         transition: border 0.2s;
     }
@@ -282,7 +298,64 @@ const DribbblePost = styled.div`
     }
 `
 
-const DribbbleReadMoreButton = styled.div`
+const MediumPostGrid = styled.div`
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 32px;
+    align-items: flex-start;
+
+    margin: 56px 0px;
+
+    animation: ${fadeInDown} 2.7s;
+`
+
+const MediumPost = styled.a`
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    grid-gap: 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    height: 100%;
+
+    border: 1px solid transparent;
+
+    transition: all 0.1s;
+
+    p {
+        margin: 0;
+        max-width: 650px;
+    }
+
+    div {
+        line-height: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100px;
+        border-radius: 4px;
+    }
+
+    &:hover {
+        border: 1px solid white;
+    }
+
+    &:active {
+        transform: scale(0.99);
+    }
+
+    @media(max-width: 710px) {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+
+        img {
+            object-fit: cover;
+            height: 200px;
+        }
+    }
+`
+
+const ReadMoreButtonContainer = styled.div`
     justify-self: flex-start;
     animation: ${fadeInDown} 3.2s;
 `
@@ -321,7 +394,7 @@ query personalProjectQuery {
           }
         }
     }
-    allDribbbleShot(limit: 12) {
+    allDribbbleShot(limit: 9) {
         edges {
             node {
                 url
@@ -330,6 +403,22 @@ query personalProjectQuery {
                 }
             }
         }
-      }
+    }
+    allMediumPost(sort: { fields: [createdAt], order: DESC }, limit: 4) {
+        edges {
+          node {
+            id
+            title
+            virtuals {
+              subtitle
+              previewImage {
+                imageId
+              }
+            }
+            medium_id
+            slug
+          }
+        }
+    }
 }
 `
