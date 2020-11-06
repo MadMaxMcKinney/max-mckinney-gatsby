@@ -34,7 +34,7 @@ const SideProjectsPage = ({data}) => (
         </SideProjectGrid>
         
         <SectionSeperator>
-            <i class="fab fa-dribbble fa-2x"></i>
+            <i class="fab fa-dribbble" style={{fontSize: 41, marginTop: 6}}></i>
             <MaxH1>Dribbble</MaxH1>
         </SectionSeperator>
 
@@ -55,7 +55,7 @@ const SideProjectsPage = ({data}) => (
         </ReadMoreButtonContainer>
 
         <SectionSeperator>
-            <i class="fab fa-medium fa-2x"></i>
+            <i class="fab fa-medium fa-2x" style={{fontSize: 44, marginTop: 9}}></i>
             <MaxH1>Publications</MaxH1>
         </SectionSeperator>
 
@@ -324,6 +324,7 @@ const MediumPost = styled.a`
     p {
         margin: 0;
         max-width: 650px;
+        font-weight: 400;
     }
 
     div {
