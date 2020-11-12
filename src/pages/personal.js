@@ -256,10 +256,8 @@ const DribbblePost = styled.div`
 
     position: relative;
 
-    transition-property: border border-radius transform;
+    transition-property: border transform;
     transition-duration: 0.15s;
-
-    overflow: hidden;
 
     img {
         width: 100%;
@@ -272,29 +270,24 @@ const DribbblePost = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        border: 4px solid transparent;
+        margin: -6px;
         border-radius: var(--border-radius);
+        border: 2px solid transparent;
 
-        transition: border 0.2s;
+        transition: border 0.1s;
     }
+
     // Hover
     &:hover {
-        border: 2px solid white;
         transform: scale(1.03);
     }
-
-    &:hover::after {
-        border: 4px solid black;
+    &:hover&::after {
+        border: 2px solid white;
     }
 
     // Active (Pressed)
     &:active {
-        border: 2px solid transparent;
         transform: scale(1);
-    }
-
-    &:active::after {
-        border: 4px solid transparent;
     }
 `
 
@@ -317,6 +310,7 @@ const MediumPost = styled.a`
     border-radius: 4px;
     height: 100%;
 
+    position: relative;
     border: 1px solid transparent;
 
     transition: all 0.1s;
@@ -337,7 +331,21 @@ const MediumPost = styled.a`
         border-radius: 4px;
     }
 
-    &:hover {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: -8px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+
+        transition: border 0.1s;
+    }
+
+    &:hover&::after {
         border: 1px solid white;
     }
 
