@@ -273,7 +273,6 @@ const DribbblePost = styled.div`
         margin: -6px;
         border-radius: var(--border-radius);
         border: 2px solid transparent;
-
         transition: border 0.1s;
     }
 
