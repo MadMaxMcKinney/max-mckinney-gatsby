@@ -30,7 +30,6 @@ const SideProjectsPage = ({data}) => (
                     <SideProjectLink>{node.frontmatter.locationText}</SideProjectLink>
                 </SideProjectCard>
             ))}
-            
         </SideProjectGrid>
         
         <SectionSeperator>
@@ -107,8 +106,19 @@ const SideProjectGrid = styled.div`
     }
 
     @media(max-width: 600px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 10px; /* Explicit grid, defining the first item */
+        grid-auto-flow: column;
+        grid-auto-columns: 80%; /* Implicit grid, defining the remaining items */
+        overflow-x: scroll;
         margin-top: 64px;
+        grid-column: 1/4;
+        grid-gap: 24px;
+        
+        /* This is needed to provide an air gap before and after the items in the horizontally scrolling list */
+        &::after, &::before{
+            content: '';
+            width: 10px;
+        }
     }
 `
 
@@ -243,8 +253,19 @@ const DribbbleGrid = styled.div`
     }
 
     @media(max-width: 600px) {
-        grid-template-columns: 1fr;
-        grid-gap: 16px;
+        grid-template-columns: 10px; /* Explicit grid, defining the first item */
+        grid-auto-flow: column;
+        grid-auto-columns: 80%; /* Implicit grid, defining the remaining items */
+        overflow-x: scroll;
+        margin-top: 64px;
+        grid-column: 1/4;
+        grid-gap: 24px;
+        
+        /* This is needed to provide an air gap before and after the items in the horizontally scrolling list */
+        &::after, &::before{
+            content: '';
+            width: 10px;
+        }
     }
 `
 
@@ -287,6 +308,28 @@ const DribbblePost = styled.div`
     // Active (Pressed)
     &:active {
         transform: scale(1);
+    }
+
+    @media(max-width: 600px) {
+        border: none;
+        background: var(--blueblack-500);
+        padding: 8px;
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            transform: scale(1);
+            background: white;
+            padding: 2px;
+        }
+        &:hover&::after {
+            border: none;
+        }
+        &:active {
+            transform: scale(0.98);
+        }
     }
 `
 

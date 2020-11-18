@@ -29,6 +29,10 @@ const HeaderPillContainer = styled.span`
     border-radius: 6px;
     font-weight: 600;
 
+    i {
+        margin-top: 3px;
+    }
+
     img {
         width: 30px;
         height: 30px;
