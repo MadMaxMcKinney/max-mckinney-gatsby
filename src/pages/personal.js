@@ -312,8 +312,8 @@ const DribbblePost = styled.div`
 
     @media(max-width: 600px) {
         border: none;
-        background: var(--blueblack-500);
-        padding: 8px;
+        background: #262833;
+        padding: 5px;
 
         &::after {
             display: none;
