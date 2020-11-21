@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from "gatsby"
 
-import logo from './../assets/img/max-logo.png'
 import metaFeaturedImage from './../assets/img/website-meta-share.png'
 import favicon32 from './../assets/favicon/favicon-32x32.png'
 import favicon16 from './../assets/favicon/favicon-16x16.png'
@@ -48,7 +47,6 @@ const Layout = ({ children, data, location }) => (
                 <meta name="og:title" content="Max McKinney"/>
                 <meta name="og:description" content={data.site.siteMetadata.description}/>
                 <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
-                <meta name="og:url" content={data.site.siteMetadata.siteUrl}/>
                 <meta name="og:site_name" content="Max McKinney"/>
                 <meta name="og:locale" content="en_US"/>
                 <meta name="og:type" content="website"/>

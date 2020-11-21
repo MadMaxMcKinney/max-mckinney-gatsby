@@ -1,7 +1,10 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+
+import metaFeaturedImage from './../assets/img/website-meta-share-personal.png'
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
@@ -14,6 +17,21 @@ import AccentButton from '../components/buttons/AccentButton'
 const SideProjectsPage = ({data}) => (
     <PageGrid>
 
+        <Helmet title={data.site.siteMetadata.title + ' | Personal '}>
+            <meta itemprop="name" content={data.site.siteMetadata.title + ' | Personal '}/>
+            <meta name="description" content={data.site.siteMetadata.description} />
+            <meta itemprop="description" content={data.site.siteMetadata.description}/>
+            <meta name="image" content={metaFeaturedImage}/>
+            <meta itemprop="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
+
+            <meta name="twitter:title" content={data.site.siteMetadata.title + ' | Personal'}/>
+            <meta name="twitter:description" content={data.site.siteMetadata.description}/>
+            <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
+
+            <meta name="og:title" content={data.site.siteMetadata.title + ' | Personal'}/>
+            <meta name="og:description" content={data.site.siteMetadata.description}/>
+            <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
+        </Helmet>
 
         <Avatar>
             <Img fixed={data.file.childImageSharp.fixed} />
@@ -405,6 +423,12 @@ export default SideProjectsPage
 
 export const query = graphql`
 query personalProjectQuery {
+    site {
+        siteMetadata {
+            title
+            siteUrl
+        }
+    }
 	file(relativePath: {eq: "img/maxmckinney-profile.png"}) {
         childImageSharp {
             fixed(width: 80, height: 80) {
