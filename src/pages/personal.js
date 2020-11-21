@@ -42,6 +42,7 @@ const SideProjectsPage = ({data}) => (
                 <a href={node.url}>
                     <DribbblePost>
                         <img src={node.localCover.publicURL}/>
+                        <p>{node.title}</p>
                     </DribbblePost>
                 </a>
             ))}
@@ -108,11 +109,11 @@ const SideProjectGrid = styled.div`
     @media(max-width: 600px) {
         grid-template-columns: 10px; /* Explicit grid, defining the first item */
         grid-auto-flow: column;
-        grid-auto-columns: 80%; /* Implicit grid, defining the remaining items */
+        grid-auto-columns: 75%; /* Implicit grid, defining the remaining items */
         overflow-x: scroll;
         margin-top: 64px;
         grid-column: 1/4;
-        grid-gap: 24px;
+        grid-gap: 16px;
         
         /* This is needed to provide an air gap before and after the items in the horizontally scrolling list */
         &::after, &::before{
@@ -177,6 +178,11 @@ const SideProjectCard = styled(Link)`
         }
     }
 
+    @media(max-width: 600px) {
+        place-items: flex-start;
+        text-align: left;
+    }
+
 `
 
 const SideProjectImage = styled(Img)`
@@ -199,6 +205,10 @@ const SideProjectLink = styled.p`
     margin: 0;
     margin-top: 24px;
     padding: 0;
+
+    @media(max-width: 600px) {
+        font-size: 0.8rem;
+    }
 `
 
 const Avatar = styled.div`
@@ -255,11 +265,11 @@ const DribbbleGrid = styled.div`
     @media(max-width: 600px) {
         grid-template-columns: 10px; /* Explicit grid, defining the first item */
         grid-auto-flow: column;
-        grid-auto-columns: 80%; /* Implicit grid, defining the remaining items */
+        grid-auto-columns: 75%; /* Implicit grid, defining the remaining items */
         overflow-x: scroll;
         margin-top: 64px;
         grid-column: 1/4;
-        grid-gap: 24px;
+        grid-gap: 16px;
         
         /* This is needed to provide an air gap before and after the items in the horizontally scrolling list */
         &::after, &::before{
@@ -273,36 +283,26 @@ const DribbblePost = styled.div`
     --border-radius: 4px;
 
     border-radius: var(--border-radius);
-    border: 2px solid transparent;
+    background: var(--blueblack-500);
+    padding: 4px;
 
     position: relative;
 
-    transition-property: border transform;
+    transition-property: all;
     transition-duration: 0.15s;
 
     img {
         width: 100%;
     }
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: -6px;
-        border-radius: var(--border-radius);
-        border: 2px solid transparent;
-        transition: border 0.1s;
+    p {
+        margin: 0;
+        padding: 6px 8px;
     }
 
     // Hover
     &:hover {
         transform: scale(1.03);
-    }
-    &:hover&::after {
-        border: 2px solid white;
     }
 
     // Active (Pressed)
@@ -311,19 +311,11 @@ const DribbblePost = styled.div`
     }
 
     @media(max-width: 600px) {
-        border: none;
-        background: var(--blueblack-300);
-        padding: 5px;
-        padding-bottom: 16px;
-
-        &::after {
-            display: none;
-        }
 
         &:hover {
             transform: scale(1);
             background: white;
-            padding: 2px;
+            color: black;
         }
         &:hover&::after {
             border: none;
@@ -453,6 +445,7 @@ query personalProjectQuery {
                 localCover {
                   publicURL
                 }
+                title
             }
         }
     }

@@ -89,7 +89,7 @@ module.exports = {
             options: {
               name: `Max McKinney`,
               short_name: `Max McKinney`,
-              description: `I’m a developer and designer with a focus in full-stack web technologies. I build cars on the side and take pictures.`,
+              description: `I'm Max McKinney. My background is in UI/UX design and web development. A decade of creating allows me to make seamless experiences.`,
               start_url: `/`,
               background_color: `#000000`,
               theme_color: `#000000`,
