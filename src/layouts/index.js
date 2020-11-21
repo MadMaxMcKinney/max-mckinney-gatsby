@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { StaticQuery, graphql } from "gatsby"
 
 import logo from './../assets/img/max-logo.png'
+import metaFeaturedImage from './../assets/img/website-meta-share.png'
 import favicon32 from './../assets/favicon/favicon-32x32.png'
 import favicon16 from './../assets/favicon/favicon-16x16.png'
 import faviconApple from './../assets/favicon/apple-touch-icon.png'
@@ -33,20 +34,20 @@ const Layout = ({ children, data, location }) => (
         <MainContainer>
             <Helmet title={data.site.siteMetadata.title}>
                 <meta name="description" content={data.site.siteMetadata.description} />
-                <meta name="image" content={logo}/>
+                <meta name="image" content={metaFeaturedImage}/>
                 <meta itemprop="name" content="Max McKinney"/>
                 <meta itemprop="description" content={data.site.siteMetadata.description}/>
-                <meta itemprop="image" content={data.site.siteMetadata.siteUrl + logo}/>
+                <meta itemprop="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
 
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:title" content="Max McKinney"/>
                 <meta name="twitter:description" content={data.site.siteMetadata.description}/>
                 <meta name="twitter:site" content="@madmaxmckinney"/>
-                <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + logo}/>
+                <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
 
                 <meta name="og:title" content="Max McKinney"/>
                 <meta name="og:description" content={data.site.siteMetadata.description}/>
-                <meta name="og:image" content={data.site.siteMetadata.siteUrl + logo}/>
+                <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
                 <meta name="og:url" content={data.site.siteMetadata.siteUrl}/>
                 <meta name="og:site_name" content="Max McKinney"/>
                 <meta name="og:locale" content="en_US"/>
