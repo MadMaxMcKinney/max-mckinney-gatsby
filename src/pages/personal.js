@@ -314,6 +314,9 @@ const DribbblePost = styled.div`
     }
 
     @media(max-width: 600px) {
+        &:hover {
+            transform: scale(1);
+        }
         &:active {
             transform: scale(0.98);
         }
