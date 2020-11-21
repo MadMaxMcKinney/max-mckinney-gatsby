@@ -14,22 +14,24 @@ import {fadeInDown} from '../animations/m-styled-animations'
 import AccentButton from '../components/buttons/AccentButton'
 
 
+const description = "These are some of my personal projects. They're all over the place. You might find some things you enjoy though!"
+
 const SideProjectsPage = ({data}) => (
     <PageGrid>
 
         <Helmet title={data.site.siteMetadata.title + ' | Personal '}>
             <meta itemprop="name" content={data.site.siteMetadata.title + ' | Personal '}/>
-            <meta name="description" content={data.site.siteMetadata.description} />
-            <meta itemprop="description" content={data.site.siteMetadata.description}/>
-            <meta name="image" content={metaFeaturedImage}/>
+            <meta name="description" content={description} />
+            <meta itemprop="description" content={description}/>
+            <meta name="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
             <meta itemprop="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
 
             <meta name="twitter:title" content={data.site.siteMetadata.title + ' | Personal'}/>
-            <meta name="twitter:description" content={data.site.siteMetadata.description}/>
+            <meta name="twitter:description" content={description}/>
             <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
 
             <meta name="og:title" content={data.site.siteMetadata.title + ' | Personal'}/>
-            <meta name="og:description" content={data.site.siteMetadata.description}/>
+            <meta name="og:description" content={description}/>
             <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
         </Helmet>
 

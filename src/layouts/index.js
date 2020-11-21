@@ -33,7 +33,7 @@ const Layout = ({ children, data, location }) => (
         <MainContainer>
             <Helmet title={data.site.siteMetadata.title}>
                 <meta name="description" content={data.site.siteMetadata.description} />
-                <meta name="image" content={metaFeaturedImage}/>
+                <meta name="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
                 <meta itemprop="name" content="Max McKinney"/>
                 <meta itemprop="description" content={data.site.siteMetadata.description}/>
                 <meta itemprop="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
