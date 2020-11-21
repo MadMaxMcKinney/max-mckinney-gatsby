@@ -38,7 +38,7 @@ const Layout = ({ children, data, location }) => (
                 <meta itemprop="description" content={data.site.siteMetadata.description}/>
                 <meta itemprop="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
 
-                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:title" content="Max McKinney"/>
                 <meta name="twitter:description" content={data.site.siteMetadata.description}/>
                 <meta name="twitter:site" content="@madmaxmckinney"/>
