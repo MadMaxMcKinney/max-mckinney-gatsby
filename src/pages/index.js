@@ -89,7 +89,6 @@ const IndexPage = ({data}) => (
         <DisplayDesktop>
             <HeaderSubtitle>I’m <HeaderPill showProfile title="Max McKinney" /> currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></HeaderSubtitle>
         </DisplayDesktop>
-		
 
         <DisplayMobile>
             <HeaderSubtitle>I’m <HeaderPill showProfile title="Max McKinney" /><br/>currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <br/><HeaderPill type="uiux" title="UI/UX Design" /> <HeaderPill type="development" title="Web Dev" /><br/>A decade of creating lets me make <HeaderPill type="experience" title="Seamless Experiences" /></HeaderSubtitle>
