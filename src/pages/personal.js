@@ -250,7 +250,7 @@ const SectionSeperator = styled.div`
 
 const DribbbleGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-gap: 24px;
 
     margin-top: 48px;
@@ -298,11 +298,14 @@ const DribbblePost = styled.div`
     p {
         margin: 0;
         padding: 6px 8px;
+        font-size: 0.8rem;
     }
 
     // Hover
     &:hover {
         transform: scale(1.03);
+        background: white;
+        color: black;
     }
 
     // Active (Pressed)
@@ -311,15 +314,6 @@ const DribbblePost = styled.div`
     }
 
     @media(max-width: 600px) {
-
-        &:hover {
-            transform: scale(1);
-            background: white;
-            color: black;
-        }
-        &:hover&::after {
-            border: none;
-        }
         &:active {
             transform: scale(0.98);
         }
