@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {SIZE_MOBILE} from '../CONSTANTS'
+import {SIZE_MOBILE_LARGE} from '../CONSTANTS'
 
 const PillNavButton = styled.div`
     display: grid;
@@ -32,7 +32,7 @@ const PillNavButton = styled.div`
         transform: scale(0.97);
     }
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         padding: 4px 8px;
         
         p {

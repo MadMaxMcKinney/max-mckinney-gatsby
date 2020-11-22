@@ -5,7 +5,7 @@ import {fadeIn} from '../../animations/m-styled-animations'
 
 import PillNavButton from '../buttons/PillNavButton'
 import logo from '../../assets/img/max-white.png'
-import {SIZE_MOBILE} from '../CONSTANTS'
+import {SIZE_MOBILE_LARGE} from '../CONSTANTS'
 
 const Header = (props) => (
 	<Navmenu>
@@ -79,7 +79,7 @@ const Navmenu = styled.div`
 	z-index: 2;
 	animation: ${fadeIn} 1.3s;
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         margin-top: 16px;
     }
 `
@@ -104,7 +104,7 @@ const SiteLinks = styled.ul`
 	@media(max-width: 1155px) {
 		margin-right: 0;
 	}
-	@media(max-width: ${SIZE_MOBILE}) {
+	@media(max-width: ${SIZE_MOBILE_LARGE}) {
         li {
             padding: 0px 4px;
             display: none;
@@ -144,7 +144,7 @@ const SiteLogo = styled.img`
 	padding-top: 30px;
 	padding-bottom: 30px;
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         padding: 0;
         margin: 0;
     }

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import {SIZE_MOBILE} from '../components/CONSTANTS'
 
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.png'
 
@@ -126,7 +127,7 @@ const SideProjectGrid = styled.div`
         grid-gap: 32px;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: ${SIZE_MOBILE}) {
         grid-template-columns: 10px; /* Explicit grid, defining the first item */
         grid-auto-flow: column;
         grid-auto-columns: 75%; /* Implicit grid, defining the remaining items */
@@ -134,6 +135,7 @@ const SideProjectGrid = styled.div`
         margin-top: 64px;
         grid-column: 1/4;
         grid-gap: 16px;
+        padding-bottom: 16px;
         
         /* This is needed to provide an air gap before and after the items in the horizontally scrolling list */
         &::after, &::before{
@@ -198,7 +200,7 @@ const SideProjectCard = styled(Link)`
         }
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: ${SIZE_MOBILE}) {
         place-items: flex-start;
         text-align: left;
     }
@@ -226,7 +228,7 @@ const SideProjectLink = styled.p`
     margin-top: 24px;
     padding: 0;
 
-    @media(max-width: 600px) {
+    @media(max-width: ${SIZE_MOBILE}) {
         font-size: 0.8rem;
     }
 `
@@ -266,6 +268,10 @@ const SectionSeperator = styled.div`
     color: white;
 
     animation: ${fadeInDown} 3.1s;
+
+    @media(max-width: ${SIZE_MOBILE}) {
+        margin-top: 64px;
+    }
 `
 
 const DribbbleGrid = styled.div`
@@ -282,7 +288,7 @@ const DribbbleGrid = styled.div`
         line-height: 0;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: ${SIZE_MOBILE}) {
         grid-template-columns: 10px; /* Explicit grid, defining the first item */
         grid-auto-flow: column;
         grid-auto-columns: 75%; /* Implicit grid, defining the remaining items */
@@ -290,6 +296,8 @@ const DribbbleGrid = styled.div`
         margin-top: 64px;
         grid-column: 1/4;
         grid-gap: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 24px;
         
         /* This is needed to provide an air gap before and after the items in the horizontally scrolling list */
         &::after, &::before{
@@ -333,7 +341,7 @@ const DribbblePost = styled.div`
         transform: scale(1);
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: ${SIZE_MOBILE}) {
         &:hover {
             transform: scale(1);
         }
@@ -352,6 +360,10 @@ const MediumPostGrid = styled.div`
     margin: 56px 0px;
 
     animation: ${fadeInDown} 2.7s;
+
+    @media(max-width: ${SIZE_MOBILE}) {
+        margin-bottom: 32px;
+    }
 `
 
 const MediumPost = styled.a`
