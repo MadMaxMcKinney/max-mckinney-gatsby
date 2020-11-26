@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import styled from 'styled-components'
 import { StaticQuery, graphql } from "gatsby"
 
 import metaFeaturedImage from './../assets/img/website-meta-share.png'
@@ -30,7 +29,7 @@ const Layout = ({ children, data, location }) => (
 	}
     `}
     render={data => (
-        <MainContainer>
+        <div>
             <Helmet title={data.site.siteMetadata.title}>
                 <meta name="description" content={data.site.siteMetadata.description} />
                 <meta name="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
@@ -68,13 +67,9 @@ const Layout = ({ children, data, location }) => (
 
             <Footer />
 
-        </MainContainer>
+        </div>
     )}
     />
 )
-
-const MainContainer = styled.div`
-	width: 100%;
-`
 
 export default Layout
