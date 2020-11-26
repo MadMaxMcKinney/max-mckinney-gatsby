@@ -5,42 +5,14 @@ import {PulseRight} from '../ANIMATIONS'
 
 const ReadMoreButton = (props) => {
   return (
-	<ButtonContainer to={props.link} accent={props.accent}>
-        <span>{props.children}</span><i className="far fa-sm fa-arrow-right"></i>
+	<ButtonContainer to={props.link} accent={props.accent} className="flex group items-baseline justify-center rounded px-4 py-2 border border-solid border-transparent text-lg transition transform hover:border-white active:scale-95">
+        <span className="mr-3">{props.children}</span><i className="far fa-sm fa-arrow-right group-hover:animate-pulse-right"></i>
 	</ButtonContainer>
   )
 }
 
 const ButtonContainer = styled(Link)`
     background: ${props => props.accent};
-    border: 1px solid transparent;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 160%;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    transition: all 0.2s;
-
-    span {
-        margin-right: 16px;
-    }
-
-    &:hover, &:active, &:focus {
-        border-color: #ffffff;
-    }
-
-    &:hover i {
-        animation: ${PulseRight} 0.3s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
-
-    &:active {
-        transform: scale(0.97);
-    }
 `;
 
 export default ReadMoreButton;
