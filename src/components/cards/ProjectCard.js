@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
         </div>
 
         {/* Card Content */}
-        <div className="p-8 flex flex-col items-start w-full lg:w-5/12 lg:px-11 lg:py-8">
+        <div className="p-8 flex flex-col items-start w-full h-full lg:w-5/12 lg:px-11 lg:py-8">
             {/* Pills */}
             <div className="inline-grid grid-flow-col gap-3 pb-8">
                 {props.data.frontmatter.categories && props.data.frontmatter.categories.map(category => {
@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
             
             {/* Words */}
             <h1 className="text-3xl font-bold">{props.data.frontmatter.title}</h1>
-            <p className="text-lg pt-6 pb-8">{props.data.frontmatter.projectShortBrief}</p>
+            <p className="text-lg pt-6 pb-8 flex-1">{props.data.frontmatter.projectShortBrief}</p>
             
             {/* Read More */}
             <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}>

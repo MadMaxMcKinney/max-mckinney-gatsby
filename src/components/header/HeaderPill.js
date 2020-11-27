@@ -6,7 +6,7 @@ import MaxProfileImg from '../../assets/img/maxmckinney-profile-small.png';
 import IBMBee from '../../assets/img/ibm-bee.png';
 
 const HeaderPill = (props) => (
-    <HeaderPillContainer>
+    <HeaderPillContainer className="inline-grid grid-flow-col gap-2 place-items-center align-middle px-2 mx-1 rounded font-bold text-base">
         {props.showProfile && <img src={MaxProfileImg} alt="Max McKinney Profile"/>}
         {props.type==="computer" && <i class="fad fa-computer-classic" style={{color: '#37FF63'}} />}
         {props.type==="uiux" && <i class="fad fa-ruler-triangle" style={{color: '#B468FF'}} />}
@@ -19,17 +19,7 @@ const HeaderPill = (props) => (
 )
 
 const HeaderPillContainer = styled.span`
-    display: inline-grid;
-    grid-auto-flow: column;
-    gap: 8px;
-    place-items: center;
-    vertical-align: middle;
-
     background: #111321;
-    padding: 0px 8px;
-    margin: 0 2px;
-    border-radius: 6px;
-    font-weight: 600;
 
     i {
         margin-top: 3px;
@@ -40,10 +30,6 @@ const HeaderPillContainer = styled.span`
         height: 30px;
         object-fit: fill;
         border-radius: 100%;
-    }
-
-    @media(max-width: 500px) {
-        font-size: 0.8rem;
     }
 `;
 
