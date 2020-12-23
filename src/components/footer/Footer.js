@@ -29,7 +29,7 @@ const Footer = () => {
 				</SocialButton>
 			</li>
 			<li>
-				<SocialButton href="https://maxmckinneyphoto.com/" target="_blank" rel="noopener noreferrer">
+				<SocialButton href="https://photography.maxmckinney.com/" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-camera-alt"></i>
 				</SocialButton>
 			</li>
