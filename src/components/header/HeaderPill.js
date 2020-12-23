@@ -6,7 +6,7 @@ import MaxProfileImg from '../../assets/img/maxmckinney-profile-small.png';
 import IBMBee from '../../assets/img/ibm-bee.png';
 
 const HeaderPill = (props) => (
-    <HeaderPillContainer className="inline-grid grid-flow-col gap-2 place-items-center align-middle px-2 mx-1 rounded font-bold text-base">
+    <HeaderPillContainer className="inline-grid grid-flow-col gap-2 place-items-center align-middle px-2 mx-1 rounded font-bold text-xl">
         {props.showProfile && <img src={MaxProfileImg} alt="Max McKinney Profile"/>}
         {props.type==="computer" && <i class="fad fa-computer-classic" style={{color: '#37FF63'}} />}
         {props.type==="uiux" && <i class="fad fa-ruler-triangle" style={{color: '#B468FF'}} />}

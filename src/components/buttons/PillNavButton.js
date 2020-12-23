@@ -1,27 +1,17 @@
+import React from 'react'
 import styled from 'styled-components'
-import {SIZE_MOBILE_LARGE} from '../CONSTANTS'
 
-const PillNavButton = styled.div`
-    display: grid;
-    grid-auto-flow: column;
-    align-items: baseline;
-    gap: 8px;
-    justify-content: center;
-    padding: 4px 10px;
+const PillNavButton = (props) => {
+    return (
+      <PillNavButtonContainer isActivePage={props.isActivePage} className="grid grid-flow-col gap-2 text-sm font-bold uppercase rounded-full transition-all items-baseline justify-center px-3 py-1 md:text-base">
+          {props.children}
+      </PillNavButtonContainer>
+    )
+}
+
+const PillNavButtonContainer = styled.div`
     background: var(--blueblack-500);
-    border-radius: 100px;
     border: ${props => props.isActivePage ? `1px solid white` : `1px solid transparent`};
-    transition: all 0.2s;
-
-    p {
-        margin: 0;
-        font-weight: 700;
-        font-size: 15px;
-    }
-
-    i {
-        font-size: 14px;
-    }
 
     &:hover {
         background: white;
@@ -30,18 +20,6 @@ const PillNavButton = styled.div`
 
     &:active {
         transform: scale(0.97);
-    }
-
-    @media(max-width: ${SIZE_MOBILE_LARGE}) {
-        padding: 4px 8px;
-        
-        p {
-            font-size: 13px;
-        }
-
-        i {
-            font-size: 13px;
-        }
     }
 `
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import SocialButton from '../buttons/SocialButton'
 
 const Footer = () => {
   return (
@@ -31,7 +32,7 @@ const Footer = () => {
 				</SocialButton>
 			</li>
 			<li>
-				<SocialButton href="https://maxmckinneyphoto.com/" target="_blank" rel="noopener noreferrer">
+				<SocialButton href="https://photography.maxmckinney.com/" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-camera-alt"></i>
 				</SocialButton>
 			</li>
@@ -40,20 +41,5 @@ const Footer = () => {
 	</div>
   )
 }
-
-const SocialButton = styled.a`
-    color: white;
-    font-size: 1.6rem;
-    transition: all 0.6s;
-    padding: 11px;
-    display: inline-flex;
-    place-items: center;
-    border-radius: 100%;
-    transition: all 0.3s;
-
-    &:hover {
-        background: #1c2030;
-    }
-`;
 
 export default Footer;
