@@ -39,7 +39,7 @@ When Alienware announced their new branding in 2018 they also wanted a new Comma
 </div>
 <p class="photo-grid-subtitle">Command Center home screen (dark)</p>
 
-##### Research & Wireframing
+#### Research & Wireframing
 
 The goal with the new Command Center was not just a simply visual update. We wanted to rethink the entire structure of the program. Alienware was updating it's industrial language and the goal was to bring the UI to a higher standard to match the new ID. We had a solid foundation for our user base which is something that shouldn't be taken lightly. This program comes preinstalled on every Alienware, so it needs to work and be easy to use.
 
@@ -70,7 +70,7 @@ We approached this by creating wireframes of every planned action. That isn't al
 </div>
 <p class="photo-grid-subtitle">Command Center home screen (dark)</p>
 
-##### New Design Language
+#### New Design Language
 
 Designed a new visual language for Alienware that pushes the boundaries of traditional "flat" UI. This new language brought in subtle hints of light and shadow, transparency, depth, and dimensionality. Creating the new Command Center involved designing a new design language that allows for UI customization to be dynamic in various ways. The desire was for the Command Center to be a heavily user customized experience. This is shown throughout the UI in the primary color being pulled from the current color theme of the system and with the particle effects seen in the background that I designed and animated. The particles can be configured by the user to match their style.
 
@@ -106,7 +106,7 @@ The visuals were heavily influenced by the updated industrial design of the Alie
 </div>
 <p class="photo-grid-subtitle">Personalization has a key feature</p>
 
-##### Video Demo
+#### Video Demo
 
 Part of the beauty of the new Command Center is seeing it in motion. This is an animated mock up made during the design phase which showcases some of the unique motion elements of the design.
 
@@ -114,7 +114,7 @@ Part of the beauty of the new Command Center is seeing it in motion. This is an 
 <source src="/hero-intro.mp4" type="video/mp4">
 </video>
 
-##### Awards
+#### Awards
 <div class="award">
 <img src="GDUSA-Web.png"/>
 </div>

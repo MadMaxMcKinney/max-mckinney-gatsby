@@ -83,11 +83,11 @@ const IndexPage = ({data}) => (
   <React.Fragment>
 	  <PageGrid>
 
-		<HeaderTitle>UI/UX Designer, <br/> Frontend Developer</HeaderTitle>
+		<HeaderTitle>Designing for empathy, <br/> humanizing technology.</HeaderTitle>
 
         {/* Desktop Text */}
         <div className="hidden md:block">
-            <h1 className="hidden mb-36 text-2xl text-white leading-relaxed animate-fade-in md:block">I’m <HeaderPill showProfile title="Max McKinney" /> currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></h1>
+            <h1 className="hidden mb-36 text-xl text-white leading-relaxed animate-fade-in md:block">I’m <HeaderPill showProfile title="Max McKinney" /> currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></h1>
         </div>
 
         {/* Mobile Text */}
@@ -96,7 +96,7 @@ const IndexPage = ({data}) => (
         </div>
         
 
-        <FilterContainer className="grid w-full grid-flow-col gap-3 justify-end items-center mb-8 animate-fade-in text-sm md:text-lg md:gap-6" id="FilterContainer">
+        <FilterContainer className="grid w-full grid-flow-col gap-3 justify-end items-center mb-8 animate-fade-in text-sm md:gap-6" id="FilterContainer">
             <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
             <span onClick={filterClickDesign} id="FilterItemDesign"><i className="far fa-ruler-triangle"></i> DESIGN</span>
             <span onClick={filterClickDev} id="FilterItemDev"><i className="far fa-brackets-curly"></i>  DEVELOPMENT</span>

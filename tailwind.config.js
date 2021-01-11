@@ -28,9 +28,32 @@ module.exports = {
                         transform: 'translateY(0px)'
                     },
 				},
-			},
+            },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        color: '#ffffff',
+                    
+                        h1: {
+                            color: '#fff'
+                        },
+                        h2: {
+                            color: '#fff'
+                        },
+                        h3: {
+                            color: '#fff'
+                        },
+                        h4: {
+                            color: '#fff'
+                        },
+                    },
+                },
+            }
         },
     },
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
     variants: {
         extend: {
             animation: ['hover', 'focus', 'group-hover'],

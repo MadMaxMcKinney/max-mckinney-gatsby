@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import {SIZE_MOBILE} from '../components/CONSTANTS'
+import {SIZE_MOBILE, SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
 
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.png'
 
@@ -40,15 +40,15 @@ const SideProjectsPage = ({data}) => (
             <Img fixed={data.file.childImageSharp.fixed} />
         </Avatar>
         <PageHeaderTitle>Personal Projects</PageHeaderTitle>
-        <PageHeaderSubtitle>These are some of my personal projects. They're all over the place. <br/> You might find some things you enjoy though!</PageHeaderSubtitle>
+        <PageHeaderSubtitle className="text-xl">These are some of my personal projects. They're all over the place. <br/> You might find some things you enjoy though!</PageHeaderSubtitle>
 
         <SideProjectGrid>
             {data.personal.edges.map(({node}) => (
                 <SideProjectCard to={node.fields.slug} accent={node.frontmatter.accent}>
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
-                    <h1>{node.frontmatter.title}</h1>
-                    <SideProjectDetails>{node.frontmatter.description}</SideProjectDetails>
-                    <SideProjectLink>{node.frontmatter.locationText}</SideProjectLink>
+                    <h1 className="text-2xl font-bold">{node.frontmatter.title}</h1>
+                    <SideProjectDetails className="mt-4 text-lg">{node.frontmatter.description}</SideProjectDetails>
+                    <SideProjectLink className="mt-6 text-lg">{node.frontmatter.locationText}</SideProjectLink>
                 </SideProjectCard>
             ))}
         </SideProjectGrid>
@@ -63,7 +63,7 @@ const SideProjectsPage = ({data}) => (
                 <a href={node.url}>
                     <DribbblePost>
                         <img src={node.localCover.publicURL}/>
-                        <p>{node.title}</p>
+                        <p className="text-base m-2">{node.title}</p>
                     </DribbblePost>
                 </a>
             ))}
@@ -86,12 +86,11 @@ const SideProjectsPage = ({data}) => (
                     <div>
                         <img src={`https://miro.medium.com/max/1000/${node.virtuals.previewImage.imageId}`} alt="Article preview image"/>
                     </div>
-                    <div>
+                    <div className="grid">
                         <p><strong>{node.title}</strong></p>
                         <p>{node.virtuals.subtitle}</p>
                     </div>
                 </MediumPost>
-                
             ))}
         </MediumPostGrid>
 
@@ -127,7 +126,7 @@ const SideProjectGrid = styled.div`
         grid-gap: 32px;
     }
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         grid-template-columns: 10px; /* Explicit grid, defining the first item */
         grid-auto-flow: column;
         grid-auto-columns: 75%; /* Implicit grid, defining the remaining items */
@@ -200,7 +199,7 @@ const SideProjectCard = styled(Link)`
         }
     }
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         place-items: flex-start;
         text-align: left;
     }
@@ -215,20 +214,15 @@ const SideProjectImage = styled(Img)`
 `
 
 const SideProjectDetails = styled.p`
-    margin-top: 16px;
-    margin-bottom: 0px;
-    max-width: 350px;
+    max-width: 370px;
     padding: 0;
     flex: 1;
 `
 
 const SideProjectLink = styled.p`
     color: var(--accent-color);
-    margin: 0;
-    margin-top: 24px;
-    padding: 0;
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         font-size: 0.8rem;
     }
 `
@@ -269,7 +263,7 @@ const SectionSeperator = styled.div`
 
     animation: ${fadeInDown} 3.1s;
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         margin-top: 64px;
     }
 `
@@ -288,7 +282,7 @@ const DribbbleGrid = styled.div`
         line-height: 0;
     }
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         grid-template-columns: 10px; /* Explicit grid, defining the first item */
         grid-auto-flow: column;
         grid-auto-columns: 75%; /* Implicit grid, defining the remaining items */
@@ -323,12 +317,6 @@ const DribbblePost = styled.div`
         width: 100%;
     }
 
-    p {
-        margin: 0;
-        padding: 6px 8px;
-        font-size: 0.8rem;
-    }
-
     // Hover
     &:hover {
         transform: scale(1.03);
@@ -341,7 +329,7 @@ const DribbblePost = styled.div`
         transform: scale(1);
     }
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         &:hover {
             transform: scale(1);
         }
@@ -361,7 +349,7 @@ const MediumPostGrid = styled.div`
 
     animation: ${fadeInDown} 2.7s;
 
-    @media(max-width: ${SIZE_MOBILE}) {
+    @media(max-width: ${SIZE_MOBILE_LARGE}) {
         margin-bottom: 32px;
     }
 `
@@ -384,11 +372,7 @@ const MediumPost = styled.a`
         max-width: 650px;
         font-weight: 400;
     }
-
-    div {
-        line-height: 0;
-    }
-
+    
     img {
         width: 100%;
         height: 100px;

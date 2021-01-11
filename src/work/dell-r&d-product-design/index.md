@@ -39,7 +39,7 @@ I worked with the R&D design and development team within Dell to create and expl
 </div>
 <p class="photo-grid-subtitle">Enterprise applications integrated with Deep Data</p>
 
-##### New Technologies
+#### New Technologies
 
 Exploring the future is exciting but it isn't without limits. I worked to understand the limits while finding out how far we could stretch them to fit our future vision. This involved speaking with industry leading companies and new tech start-ups to understand current limits and discuss future technical possibilities and partnerships that may allow Dell's future vision to come to life. We would design, animate, and prototype these ideas to solidify the direction we wanted to guide our partners towards. 
 
@@ -58,7 +58,7 @@ Exploring the future is exciting but it isn't without limits. I worked to unders
 </div>
 <p class="photo-grid-subtitle">Prototype projector interface application pages</p>
 
-##### New Users
+#### New Users
 
 A unique challenge to design future looking software is identifying the user base for it. Dell has an established audience for many of it's softwares already, which can provide a solid base for growth. To expand on that foundation the team and I conducted many user interviews and Q/A studies on existing products. Utilizing this knowledge we began to build user personas that represented long term goals of the users who were interviewed.
 

@@ -5,7 +5,7 @@ projectClient: "Sureshot"
 projectDate: "Jan 2020 - October 2020"
 projectAgency: "Sureshot"
 projectRole: "Senior UI/UX Designer"
-projectBrief: "Directed and designed the rebrand of Sureshot, a martech software company. This effort was a self-initiative designed to modernize the branding of the company to better connect with it’s elevated clients and compete with other high-tier martech companies. I created various branding documents and assets to be used throughout their updated applications(another effort I managed). Finally updated the corporate website with a design showing off the new branding and new software options available to clients in a more visual manner designed to increase sales."
+projectBrief: "Directed and designed the rebrand of Sureshot, a martech software company. This effort was a self-initiative designed to modernize the branding of the company to better connect with it’s elevated clients and compete with other high-tier martech companies. I created various branding documents and assets to be used throughout their updated applications(another effort I managed). Updated the corporate website with a new design showing off the fresh branding and new software options available to clients in a more visual manner designed to increase sales."
 projectShortBrief: "Directed and designed the rebrand of Sureshot. Designed and created the new corporate website."
 categories: ["Design"]
 themeColor: "#330f0f"
@@ -28,7 +28,7 @@ postType: "professional-project"
 </div>
 <p class="photo-grid-subtitle">About Us page - Solution page</p>
 
-##### Modernize
+#### Modernize
 The corporate redesign was an effort to modernize the elements of Sureshot to better connect with their clients. Sureshot competes in the world of marketing tools, and this area is full of large high-tech companies with significant cloud capabilities. The clients of Sureshot are modern and future looking users. The rebranding effort helps connect with this audience by engaging them with clean and modern visuals and compelling imagery from Sureshot’s software.
 
 <div class="photo-grid-container">
@@ -45,7 +45,7 @@ The corporate redesign was an effort to modernize the elements of Sureshot to be
 </div>
 <p class="photo-grid-subtitle">Various Sureshot website and Sureshot UI pages</p>
 
-##### Wireframes
+#### Wireframes
 The corporate website was getting some much needed love. There was a new brand direction including a new design language that Sureshot's products now use. I wanted the new website to encompass these elements in a visually striking manner. This meant reimagining the structure and layout of the site so that it's foundation would support a more visual narrative. I approach these problems by exploring various layouts with traditional wireframing techniques. In this situation I could focus mainly on how the content would be paired with the large screenshots since there would need to be good balance now that Sureshot had compelling visuals to showoff.
 
 <div class="photo-grid-container">
@@ -55,7 +55,7 @@ The corporate website was getting some much needed love. There was a new brand d
 </div>
 <p class="photo-grid-subtitle">Homepage layout wireframes</p>
 
-##### Ecosystem
+#### Ecosystem
 Rebranding offers a lot of new opportunities that otherwise can be challenging to accomplish. I utilized this effort to align all of Sureshot’s visual languages together as one. This means the corporate branding, the sales website, and the products all belong to the same family. The goal here was to create a Sureshot ecosystem - an entire experience within Sureshot’s product network. Keeping clients in that network is key and by positively reinforcing consistent experiences and UX patterns it gives them strong reason to stay and not explore competitors.
 
 <div class="photo-grid-container">
@@ -65,7 +65,7 @@ Rebranding offers a lot of new opportunities that otherwise can be challenging t
 </div>
 <p class="photo-grid-subtitle">Ecosytem of product visuals</p>
 
-##### Show don't tell
+#### Show don't tell
 When it comes to selling products, words can be very powerful. However people buy with their eyes first. An issue that Sureshot initially faced was failing to compel their clients to explore their products as no product imagery was ever shown. The new corporate website offers modern and visually compelling imagery designed to engage the potential client with Sureshot’s offerings. This was done through unique product screenshots to keep the eye engaged with the content.
 
 <div class="photo-grid-container">
@@ -89,6 +89,6 @@ When it comes to selling products, words can be very powerful. However people bu
 </div>
 <p class="photo-grid-subtitle">Sureshot Website</p>
 
-##### Live Link
+#### Live Link
 
 Curious about the current live version? Check it out with the arrow below.

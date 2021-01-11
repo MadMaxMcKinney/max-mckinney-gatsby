@@ -16,7 +16,7 @@ body {
 }
 
 .photo-grid-container {
-	margin-top: 16px;
+	margin-top: 24px;
 	margin-bottom: 16px;
 }
 
@@ -43,10 +43,10 @@ body {
 }
 
 .photo-grid-subtitle {
-	margin-top: 0px;
+	margin-top: 0px !important;
 	text-align: center;
-	opacity: 0.85;
-	font-size: 0.8rem;
+	opacity: 0.85 !important;
+	font-size: 0.95rem;
 }
 
 @media (max-width: 715px) {
@@ -60,7 +60,7 @@ body {
 }
 
 .photo-container {
-    margin-top: 16px;
+    margin-top: 16px !important;
 	margin-bottom: 16px;
 }
 .photo-container img {
