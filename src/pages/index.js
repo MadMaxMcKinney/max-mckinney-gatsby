@@ -84,7 +84,7 @@ const IndexPage = ({data}) => (
   <React.Fragment>
 	  <PageGrid>
 
-		<HeaderTitle>UI/UX Designer, <br/> Frontend Developer</HeaderTitle>
+		<HeaderTitle>Designing for empathy, <br/> humanizing technology.</HeaderTitle>
 
         <DisplayDesktop>
             <HeaderSubtitle>I’m <HeaderPill showProfile title="Max McKinney" /> currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></HeaderSubtitle>

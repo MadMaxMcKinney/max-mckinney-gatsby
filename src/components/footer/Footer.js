@@ -41,7 +41,7 @@ const Footer = () => {
 
 const PageFooter = styled.div`
 	display: flex;
-    padding: 0px 100px;
+    padding: 64px 100px;
     margin: 0 auto;
 	margin-top: 100px;
 	margin-bottom: 30px;
