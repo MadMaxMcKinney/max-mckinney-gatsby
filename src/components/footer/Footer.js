@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import {fadeIn} from '../../animations/m-styled-animations'
+import SocialButton from '../buttons/SocialButton'
 
 const Footer = () => {
   return (
-	<PageFooter>
-		<EmailLink href="mailto:maxmckinney@hey.com">maxmckinney@hey.com</EmailLink>
+	<div className="animate-fade-in-slow px-6 mt-10 mb-10 mx-auto flex flex-col justify-center md:mx-auto md:flex-row md:justify-end md:mt-32 xl:px-28">
 
-		<FooterSocialLinks>
+        {/* Email */}
+		<div className="text-2xl font-bold hidden md:block" href="mailto:maxmckinney@hey.com">maxmckinney@hey.com</div>
+
+        {/* Social Links */}
+		<div className="inline-grid grid-flow-col gap-4 list-none justify-center md:hidden">
             <li>
 				<SocialButton href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-dribbble"></i>
@@ -33,82 +36,10 @@ const Footer = () => {
                     <i class="fas fa-camera-alt"></i>
 				</SocialButton>
 			</li>
-		</FooterSocialLinks>
+		</div>
 
-	</PageFooter>
+	</div>
   )
 }
-
-const PageFooter = styled.div`
-	display: flex;
-    padding: 64px 100px;
-    margin: 0 auto;
-	margin-top: 100px;
-	margin-bottom: 30px;
-    flex-direction: row;
-    align-items: flex-end;
-	justify-content: flex-end;
-	animation: ${fadeIn} 1.3s;
-
-	@media(max-width: 1155px) {
-		padding: 0 24px;
-	}
-	
-	@media(max-width: 715px) {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-top: 50px;
-		padding: 0 24px;
-	}
-
-`;
-
-const SocialButton = styled.a`
-    font-size: 0.7rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-    transition: all 0.6s;
-    padding: 11px;
-    display: flex;
-    place-items: center;
-    border-radius: 100%;
-    transition: all 0.3s;
-
-    &:hover {
-        background: #1c2030;
-    }
-`;
-
-const EmailLink = styled.a`
-	font-size: 1.2rem;
-	display: block;
-	margin-top: 40px;
-	font-weight: 600;
-`;
-
-const FooterSocialLinks = styled.ul`
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	line-height: 1.9;
-	font-size: 1.1rem;
-	font-weight: 300;
-	justify-content: center;
-	width: 100%;
-	display: none;
-	flex-direction: row;
-	li {
-		padding: 8px 50px;
-	}
-	@media(max-width: 715px) {
-		display: flex;
-		margin-top: 24px;
-		li {
-			padding: 8px 12px;
-		}
-	}
-`;
 
 export default Footer;

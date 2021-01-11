@@ -12,7 +12,8 @@ module.exports = {
 		`gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-layout`,
-		'gatsby-image',
+        'gatsby-image',
+        'gatsby-plugin-postcss',
 		{
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
@@ -20,7 +21,7 @@ module.exports = {
 				// Puts tracking script in the head instead of the body
 				head: true,
 			},
-		},
+        },
 		{
 			resolve: 'gatsby-transformer-remark',
 			options: {

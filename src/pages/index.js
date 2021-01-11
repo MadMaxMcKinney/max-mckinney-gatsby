@@ -5,7 +5,6 @@ import ProjectCard from '../components/cards/ProjectCard';
 
 import HeaderPill from '../components/header/HeaderPill'
 import HeaderTitle from '../components/header/HeaderTitle'
-import HeaderSubtitle from '../components/header/HeaderSubtitle'
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
@@ -86,26 +85,29 @@ const IndexPage = ({data}) => (
 
 		<HeaderTitle>Designing for empathy, <br/> humanizing technology.</HeaderTitle>
 
-        <DisplayDesktop>
-            <HeaderSubtitle>I’m <HeaderPill showProfile title="Max McKinney" /> currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></HeaderSubtitle>
-        </DisplayDesktop>
+        {/* Desktop Text */}
+        <div className="hidden md:block">
+            <h1 className="hidden mb-36 text-xl text-white leading-relaxed animate-fade-in md:block">I’m <HeaderPill showProfile title="Max McKinney" /> currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></h1>
+        </div>
 
-        <DisplayMobile>
-            <HeaderSubtitle>I’m <HeaderPill showProfile title="Max McKinney" /><br/>currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <br/><HeaderPill type="uiux" title="UI/UX Design" /> <HeaderPill type="development" title="Web Dev" /><br/>A decade of creating lets me make <HeaderPill type="experience" title="Seamless Experiences" /></HeaderSubtitle>
-        </DisplayMobile>
+        {/* Mobile Text */}
+        <div className="block md:hidden">
+            <h1 className="block mb-36 text-xl text-white leading-relaxed animate-fade-in md:hidden">I’m <HeaderPill showProfile title="Max McKinney" /><br/>currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <br/><HeaderPill type="uiux" title="UI/UX Design" /> <HeaderPill type="development" title="Web Dev" /><br/>A decade of creating lets me make <HeaderPill type="experience" title="Seamless Experiences" /></h1>
+        </div>
         
 
-        <FilterContainer id="FilterContainer">
+        <FilterContainer className="grid w-full grid-flow-col gap-3 justify-end items-center mb-8 animate-fade-in text-sm md:gap-6" id="FilterContainer">
             <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
             <span onClick={filterClickDesign} id="FilterItemDesign"><i className="far fa-ruler-triangle"></i> DESIGN</span>
             <span onClick={filterClickDev} id="FilterItemDev"><i className="far fa-brackets-curly"></i>  DEVELOPMENT</span>
         </FilterContainer>
 
-		<ProjectCardGrid>
+        {/* Project Card Grid */}
+		<ProjectGrid className="animate-fade-in grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1 lg:gap-24">
 			{data.allMarkdownRemark.edges.map(({node}) => (
 				<ProjectCard data={node} key={node.key}></ProjectCard>
 			))}
-		</ProjectCardGrid>
+		</ProjectGrid>
 
 	</PageGrid>
   </React.Fragment>
@@ -118,39 +120,6 @@ const PageGrid = styled.div`
 		grid-column: center;
 	}
 `
-
-const DisplayDesktop = styled.div`
-    display: initial;
-
-    @media(max-width: 500px) {
-        display: none;
-    }
-`
-
-const DisplayMobile = styled.div`
-    display: none;
-
-    @media(max-width: 500px) {
-        display: initial;
-    }
-`
-
-const ProjectCardGrid = styled.div`
-	display: grid;
-    min-height: 800px;
-	grid-template-columns: 1fr;
-	grid-gap: 110px;
-    align-items: flex-start;
-	animation: ${fadeInDown} 2.2s;
-    @media(max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 24px;
-    }
-
-	@media (max-width: 730px) {
-		grid-template-columns: 1fr;
-	}
-`;
 
 const appearAnimLeft = keyframes`
     from {
@@ -178,19 +147,13 @@ const appearAnimRight = keyframes`
     }
 `
 
-const FilterContainer = styled.div`
-    width: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 24px;
-    justify-content: flex-end;
-    align-items: center;
-    animation: ${fadeInDown} 1.7s;
-    margin-bottom: 48px;
+const ProjectGrid = styled.div`
+    min-height: 800px;
+`
 
+const FilterContainer = styled.div`
     span {
         text-transform: uppercase;
-        font-size: 0.8rem;
         font-weight: bold;
         letter-spacing: 1px;
         color: #C3C3C3;
@@ -222,12 +185,6 @@ const FilterContainer = styled.div`
         color: #C3C3C3;
         transition: all 0.3s;
         animation: ${appearAnimRight} 0.3s;
-    }
-
-    @media(max-width: 500px) {
-        span {
-            font-size: 0.7rem;
-        }
     }
 `;
 

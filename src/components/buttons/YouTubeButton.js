@@ -6,6 +6,7 @@ const YouTubeButton = styled.a`
     padding: 8px 16px;
 
     font-weight: 400;
+    font-size: 18px;
     
     display: grid;
     grid-gap: 8px;
@@ -13,7 +14,7 @@ const YouTubeButton = styled.a`
     place-content: center;
     place-items: center;
 
-    transition: all 0.2s cubic-bezier();
+    transition: all 0.2s;
 
     &:hover {
         box-shadow: 0px 7px 32px 0px rgba(250, 32, 32, 0.4);

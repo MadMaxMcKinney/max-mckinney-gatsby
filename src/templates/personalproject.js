@@ -43,7 +43,7 @@ const SideProjectsPage = ({data}) => (
 
         <ProjectImg fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
         <PersonalPageHeaderTitle>{data.personal.frontmatter.title}</PersonalPageHeaderTitle>
-        <PageHeaderSubtitle>{data.personal.frontmatter.description}</PageHeaderSubtitle>
+        <PageHeaderSubtitle className="text-xl">{data.personal.frontmatter.description}</PageHeaderSubtitle>
 
         <ButtonHStack>
         {data.personal.frontmatter.appStoreUrl && 
@@ -57,7 +57,7 @@ const SideProjectsPage = ({data}) => (
         }
         </ButtonHStack>
 
-        <Content dangerouslySetInnerHTML={{ __html: data.personal.html }} />
+        <Content className="prose prose-lg max-w-none text-white" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
 
     </PageGrid>
     </React.Fragment>

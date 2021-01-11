@@ -44,30 +44,30 @@ export default function Template({ data }) {
 		<ProjectContentGrid>
 			<ProjectDetails>
 				<div>
-					<h4>Role</h4>
-					<p>{data.markdownRemark.frontmatter.projectRole}</p>
+					<h2 className="font-bold text-2xl mb-1">Role</h2>
+					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectRole}</p>
 				</div>
 				<div>
-					<h4>Client</h4>
-					<p>{data.markdownRemark.frontmatter.projectClient}</p>
+					<h2 className="font-bold text-2xl mb-1">Client</h2>
+					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectClient}</p>
 				</div>
 				<div>
-					<h4>Agency</h4>
-					<p>{data.markdownRemark.frontmatter.projectAgency}</p>
+					<h2 className="font-bold text-2xl mb-1">Agency</h2>
+					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectAgency}</p>
 				</div>
 				<div>
-					<h4>Date</h4>
-					<p>{data.markdownRemark.frontmatter.projectDate}</p>
+					<h2 className="font-bold text-2xl mb-1">Date</h2>
+					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectDate}</p>
 				</div>
 				<div>
-					<h4>Brief</h4>
-					<p>{data.markdownRemark.frontmatter.projectBrief}</p>
+					<h2 className="font-bold text-2xl mb-1">Brief</h2>
+					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectBrief}</p>
 				</div>
 			</ProjectDetails>
 
-			<h4>Case Study</h4>
+			<h2 className="font-bold text-2xl mb-1">Case Study</h2>
 
-			<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+			<div className="prose prose-lg text-white max-w-none" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
 
 			{data.markdownRemark.frontmatter.showLiveContent && 
 				<LiveContentCard thumbnail={data.markdownRemark.frontmatter.image.childImageSharp.fluid.src} title={data.markdownRemark.frontmatter.title} url={data.markdownRemark.frontmatter.url} themeColor={data.markdownRemark.frontmatter.accentColor}/>
