@@ -27,7 +27,7 @@ I started making design tutorial YouTube videos in the middle of 2019. The video
 </div>
 <p class="photo-grid-subtitle">Mobile App Design</p>
 
-##### Design Speed Art
+#### Design Speed Art
 Speed art videos are short timelapsed 8-10 minute videos that are useful for showing the iterative and thoughtful process of design. They usually don't include any voiceover (just music) and serve as a great way to get inside the head of another designer. I've found that seeing how other people work can bring new insights or improvements into your own personal workflow. The projects I record while making speed art videos are designs that I make for fun and to practice new skills. This insures that there will always be something new to gain from a speed art video, outside of just enjoying the aesthetics that is.
 
 <div class="photo-grid-container">
@@ -37,7 +37,7 @@ Speed art videos are short timelapsed 8-10 minute videos that are useful for sho
 </div>
 <p class="photo-grid-subtitle">Web Design & UI Design</p>
 
-##### Tutorials
+#### Tutorials
 Being a modern designer means adapting to both new technology and new tools all the time. I am a believer that there can never be enough knowledge shared online. I was self taught in my skills and YouTube played a big part in that, it is only fair that I provide back to the source that helped me. I focus on technical tutorials for various design tools (like Figma, Adobe XD, Sketch, etc) and then using those skills walk through practical design exercises using them.
 
 <div class="photo-grid-container">
@@ -47,7 +47,7 @@ Being a modern designer means adapting to both new technology and new tools all 
 </div>
 <p class="photo-grid-subtitle">Figma Tutorials</p>
 
-##### Design Commentary
+#### Design Commentary
 Outside of explicit tutorials and speed art I use my platform as a way of discussing design in various contexts. This can be anything from tips and tricks for managing colors in both a light and dark theme to talking about the latest design trends. This variety helps keep the channel fresh and provides real world examples of the things learned from the other tutorial series.
 
 <div class="photo-grid-container">
@@ -57,5 +57,5 @@ Outside of explicit tutorials and speed art I use my platform as a way of discus
 </div>
 <p class="photo-grid-subtitle">Various Design Topics</p>
 
-##### The Channel
+#### The Channel
 If you are interested in watching any of the videos you can find them on YouTube! Most of the finished designs from the speed art videos can be found on Dribbble.
