@@ -83,7 +83,7 @@ const IndexPage = ({data}) => (
   <React.Fragment>
 	  <PageGrid>
 
-		<HeaderTitle>Designing for empathy, <br/> humanizing technology.</HeaderTitle>
+		<HeaderTitle className="font-bold text-3xl animate-fade-in-fast md:text-4xl">Designing for empathy, <br/> humanizing technology.</HeaderTitle>
 
         {/* Desktop Text */}
         <div className="hidden md:block">
@@ -92,7 +92,9 @@ const IndexPage = ({data}) => (
 
         {/* Mobile Text */}
         <div className="block md:hidden">
-            <h1 className="block mb-36 text-xl text-white leading-relaxed animate-fade-in md:hidden">I’m <HeaderPill showProfile title="Max McKinney" /><br/>currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <br/><HeaderPill type="uiux" title="UI/UX Design" /> <HeaderPill type="development" title="Web Dev" /><br/>A decade of creating lets me make <HeaderPill type="experience" title="Seamless Experiences" /></h1>
+            <p className="block text-lg font-semibold text-white leading-relaxed animate-fade-in md:hidden"><span className="opacity-60">I’m</span> Max McKinney, <span className="opacity-60">currently a</span> Design Lead <span className="opacity-60">at</span> IBM.</p>
+            <p className="block text-lg font-semibold text-white leading-relaxed animate-fade-in md:hidden"><span className="opacity-60">My background is in</span> UI/UX Design <span className="opacity-60">and</span> Web Development.</p>
+            <p className="block text-lg font-semibold text-white leading-relaxed animate-fade-in md:hidden mb-24 "><span className="opacity-60">A decade of creating lets me make</span> Seamless Experiences.</p>
         </div>
         
 
@@ -103,7 +105,7 @@ const IndexPage = ({data}) => (
         </FilterContainer>
 
         {/* Project Card Grid */}
-		<ProjectGrid className="animate-fade-in grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1 lg:gap-24">
+		<ProjectGrid className="animate-fade-in-slow grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1 lg:gap-24">
 			{data.allMarkdownRemark.edges.map(({node}) => (
 				<ProjectCard data={node} key={node.key}></ProjectCard>
 			))}

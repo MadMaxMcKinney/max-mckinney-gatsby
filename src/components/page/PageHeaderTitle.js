@@ -1,14 +1,9 @@
-import styled from 'styled-components'
-import {fadeInDown} from '../../animations/m-styled-animations'
+import React from 'react'
 
-const PageHeaderTitle = styled.h1`
-	font-size: 36px;
-	margin-bottom: 24px;
-	max-width: 400px;
-	color: white;
-    font-weight: 600;
-    line-height: 50px;
-	animation: ${fadeInDown} 1s;
-`;
+const PageHeaderTitle = ({children}) => {
+    return (
+        <h1 className="text-3xl mb-6 text-white font-bold animate-fade-in-fast md:text-4xl">{children}</h1>
+    )
+}
 
 export default PageHeaderTitle
