@@ -229,17 +229,15 @@ const SideProjectLink = styled.p`
 
 const Avatar = styled.div`
     display: flex;
-    width: 90px;
-    height: 90px;
+    justify-self: flex-start;
     place-items: center;
 
-    background: var(--blueblack-300);
-    padding: 6px;
+    background: var(--blueblack-500);
+    padding: 5px;
     margin-bottom: 16px;
     margin-top: 170px;
 
     border-radius: 100%;
-    border: 1px solid #40476A;
 
     animation: ${fadeInDown} 0.7s;
 
