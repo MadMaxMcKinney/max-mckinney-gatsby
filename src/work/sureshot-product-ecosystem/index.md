@@ -4,10 +4,10 @@ url: ""
 projectClient: "Sureshot"
 projectDate: "Jan 2019 - October 2020"
 projectAgency: "Sureshot"
-projectRole: "Senior UI/UX Designer & Frontend Dev"
+projectRole: "Senior UI/UX Designer"
 projectBrief: "Prior to the Sureshot UI and product design effort Sureshot had several products that were highly disconnected. From a UX perspective they had very different interaction patterns and elements. Visually the products shared no similar elements and obviously were built at different times throughout the companies history. Establishing a strong product ecosystem was a primary goal. I approached this problem by understanding our primary users, and aligning the team on their needs. From there I directed and designed a consistent visual language (Sureshot UI) that aligned the products in terms of their visual space and components. This extended throughout the Sureshot product ecosystem (authentication pages, error pages, marketing, etc). As the visual updates were happening I explored the idea of creating shared patterns between the various products. This effort was looking at micro-interactions and shared features, like auto-complete, that could be aligned between the products. Having consistent interactions and unique shared UX allowed customers to switch between Sureshot's products with ease and familiarity. "
 projectShortBrief: "Created the Sureshot UI design language and product direction. Built a powerful shared product ecosystem."
-categories: ["Design", "Development"]
+categories: ["Design"]
 themeColor: "#330f0f"
 accentColor: "#CC2027"
 image: "Sureshot-UI-Header.png"
@@ -41,7 +41,7 @@ Sureshot UI aligned the visual language of the products with well documented UX 
 <p class="photo-grid-subtitle">Consistent visual styling</p>
 
 #### Collaboration
-Sureshot UI was built in a design tool called Figma utilizing the team features of the tool to allow others to collaborate and quickly iterate on designs. Everything was built as components so if a change was made it would propagate through all the designs, which saved countless hours due to the large artboard counts and sizes many of our mocks had.
+Sureshot UI was built in Figma and utilized the team features of the tool to allow others to collaborate and quickly iterate with the custom modular designs and pre-built layout modules. Everything was built with the latest auto-layout components so designers could quickly iterate and prototype with ease. The library also included "layout modules" which were predefined sections of the UI that shared common elements and patterns. These modules still allowed for customization but helped create a consistent experience between the Sureshot ecosystem.
 
 <div class="photo-grid-container">
 <div class="photo-grid">
@@ -58,7 +58,7 @@ As the design language grew it also become better documented so that the team ca
 <p class="photo-grid-subtitle">Sureshot UI Figma Documentation</p>
 
 #### Future-proofing
-Part of building a strong design system and product catalog is building applications that will scale. An often overlooked requirement is building well documented products internally with a solid onboarding experience. Sureshot UI was built on the idea that any questions surrounding the library could be solved with resources also provided by the library. Sureshot UI has solid documentation, visual examples, API/prop lists with explanations, Storybook JS integration, as well as being written in Typescript with custom types (along with our other products as well).
+Part of building a strong design system and product catalog is building applications that will scale. An often overlooked requirement is building well documented products internally with a solid onboarding experience. Sureshot UI was built on the idea that any questions surrounding the library could be solved with resources also provided by the library. Sureshot UI has solid documentation, visual examples, API/prop lists with explanations, and Storybook JS integration.
 
 <div class="photo-grid-container">
 <div class="photo-grid">
