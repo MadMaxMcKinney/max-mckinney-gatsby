@@ -1,5 +1,5 @@
 ---
-title: "Dell - Clarity '3' Design Language"
+title: "Dell Clarity 3 Design Language"
 url: ""
 projectClient: "Dell"
 projectDate: "Dec 2015 - Dec 2018"

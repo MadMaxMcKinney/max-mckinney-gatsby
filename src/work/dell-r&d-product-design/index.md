@@ -1,5 +1,5 @@
 ---
-title: "Dell - R&D Product Design"
+title: "Dell R&D Product Design"
 url: ""
 projectClient: "Dell"
 projectDate: "Dec 2012 - Mar 2015"
