@@ -1,11 +1,18 @@
 module.exports = {
 	theme: {
 		extend: {
+            boxShadow: {
+                'cardHighlight': '0px 64px 194px 32px rgba(255, 255, 255, 0.09)'
+            },
 			colors: {
 				gray: {
                     700: '#1c2030',
 					900: '#0f1015',
 				},
+                blueblack: {
+                    300: '#1C2030',
+                    500: '#0f1015',
+                }
             },
             animation: {
                 'pulse-right': 'pulsing-right 0.3s alternate infinite',
@@ -57,7 +64,9 @@ module.exports = {
     variants: {
         extend: {
             animation: ['hover', 'focus', 'group-hover'],
-            scale: ['active']
+            scale: ['active'],
+            display: ['group-hover'],
+            translate: ['group-hover']
         }
     }
 }

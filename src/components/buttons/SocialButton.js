@@ -1,11 +1,18 @@
 import React from 'react'
+import {Link} from 'gatsby'
 
-const SocialButton = (props) => {
+export const SocialButton = (props) => {
     return (
-      <a href={props.href} target={props.accent} rel={props.rel} className="flex place-items-center rounded-full transition-all text-2xl p-3 no-underline text-white hover:bg-gray-700 md:text-base">
+      <a href={props.href} target={props.accent} rel={props.rel} className="grid place-items-center rounded-full transition-all text-2xl p-3 no-underline text-white hover:bg-blueblack-500 md:text-base">
           {props.children}
       </a>
     )
 }
 
-export default SocialButton
+export const SocialLinkButton = (props) => {
+    return (
+      <Link to={props.to} className="grid place-items-center rounded-full transition-all text-2xl p-3 no-underline text-white hover:bg-blueblack-500 md:text-base">
+          {props.children}
+      </Link>
+    )
+}

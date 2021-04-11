@@ -46,7 +46,7 @@ const SideProjectsPage = ({data}) => (
             {data.personal.edges.map(({node}) => (
                 <SideProjectCard to={node.fields.slug} accent={node.frontmatter.accent}>
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
-                    <h1 className="text-2xl font-bold">{node.frontmatter.title}</h1>
+                    <p className="text-xl md:text-2xl font-bold">{node.frontmatter.title}</p>
                     <SideProjectDetails className="mt-4 text-lg">{node.frontmatter.description}</SideProjectDetails>
                     <SideProjectLink className="mt-6 text-lg">{node.frontmatter.locationText}</SideProjectLink>
                 </SideProjectCard>
@@ -193,10 +193,6 @@ const SideProjectCard = styled(Link)`
 
     @media(max-width: 1015px) {
         padding: 20px;
-
-        h1 {
-            font-size: 1.1rem;
-        }
     }
 
     @media(max-width: ${SIZE_MOBILE_LARGE}) {

@@ -7,7 +7,7 @@ export default (props) => {
 	<LiveContentCard>
 		<LiveContentThumbnail thumb={props.thumbnail}/>
 		<LiveContentInfo bg={props.thumbnail} themeColor={props.themeColor}>
-			<h1>{props.title}</h1>
+			<p>{props.title}</p>
 		</LiveContentInfo>
 		<LiveContentButton href={props.url} themeColor={props.themeColor}> <i class="far fa-chevron-right"></i> </LiveContentButton>
 	</LiveContentCard>
@@ -37,7 +37,7 @@ const LiveContentInfo = styled.div`
 	background-size: cover;
 	background-position: center;
 
-	h1 {
+	p {
 		padding-top: 48px;
         padding-bottom: 48px;
 		font-weight: 600;
@@ -54,7 +54,7 @@ const LiveContentInfo = styled.div`
 	}
 
 	@media(max-width: 450px) {
-		h1 {
+		p {
 			line-height: 36px;
 		}
 	}

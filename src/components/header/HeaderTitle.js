@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const HeaderTitle = styled.h1`
+const HeaderTitle = styled.p`
 	margin-bottom: 24px;
 	max-width: 400px;
 	margin-top: 170px;

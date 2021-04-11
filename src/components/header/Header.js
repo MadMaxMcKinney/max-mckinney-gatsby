@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import styled from 'styled-components'
 
 import PillNavButton from '../buttons/PillNavButton'
-import SocialButton from '../buttons/SocialButton'
+import {SocialButton, SocialLinkButton} from '../buttons/SocialButton'
 import logo from '../../assets/img/max-white.png'
 
 const Header = (props) => (
@@ -60,6 +60,12 @@ const Header = (props) => (
                     <i class="fas fa-camera-alt"></i>
 				</SocialButton>
 			</li>
+            <li className="hidden md:block">
+                <SocialLinkButton to="/supporters">
+                    <i class="fas fa-gift"></i>
+                </SocialLinkButton>
+			</li>
+            
 		</div>
 	</Navmenu>
 )

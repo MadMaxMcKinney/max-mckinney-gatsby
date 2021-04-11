@@ -87,7 +87,7 @@ const IndexPage = ({data}) => (
 
         {/* Desktop Text */}
         <div className="hidden md:block">
-            <h1 className="hidden mb-36 text-xl text-white leading-relaxed animate-fade-in md:block">I’m <HeaderPill showProfile title="Max McKinney" /> currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></h1>
+            <p className="hidden mb-36 text-xl text-white leading-relaxed animate-fade-in md:block">I’m <HeaderPill showProfile title="Max McKinney" /> currently a design lead at <HeaderPill type="ibm" title="IBM" /><br/>My background is in <HeaderPill type="uiux" title="UI/UX Design" /> and <HeaderPill type="development" title="Web Development" /><br/>A decade of creating allows me to make <HeaderPill type="experience" title="Seamless Experiences" /></p>
         </div>
 
         {/* Mobile Text */}

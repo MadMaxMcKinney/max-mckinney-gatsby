@@ -23,7 +23,7 @@ const ProjectCard = (props) => {
             </div>
             
             {/* Words */}
-            <h1 className="text-3xl font-bold">{props.data.frontmatter.title}</h1>
+            <p className="text-3xl font-bold">{props.data.frontmatter.title}</p>
             <p className="text-lg pt-6 pb-8 flex-1">{props.data.frontmatter.projectShortBrief}</p>
             
             {/* Read More */}
