@@ -27,6 +27,7 @@ const SupportersPage = ({data}) => {
         fetch("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCQNdi3oxWKsVw8-kA26PSpw&key=AIzaSyA-1UNliOvD3F9x2n54PM-ppnBJhDhM4cA")
             .then(res => res.json())
             .then(data => {
+                // Convert to Number to match what the CountUp component needs
                 let value = Number(data.items[0].statistics.subscriberCount)
                 setSubCount(value)
             })
