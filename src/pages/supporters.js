@@ -26,7 +26,10 @@ const SupportersPage = ({data}) => {
     useEffect(() => {
         fetch("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCQNdi3oxWKsVw8-kA26PSpw&key=AIzaSyA-1UNliOvD3F9x2n54PM-ppnBJhDhM4cA")
             .then(res => res.json())
-            .then(data => setSubCount(data.items[0].statistics.subscriberCount))
+            .then(data => {
+                let value = Number(data.items[0].statistics.subscriberCount)
+                setSubCount(value)
+            })
     })
 
     return (

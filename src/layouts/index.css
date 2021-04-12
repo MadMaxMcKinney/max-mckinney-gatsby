@@ -24,6 +24,10 @@ body {
     line-height: 1.6875;
 }
 
+.gatsby-image-wrapper-constrained {
+    display: block;
+}
+
 .photo-grid-container {
 	margin-top: 24px;
 	margin-bottom: 16px;
