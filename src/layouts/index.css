@@ -25,7 +25,7 @@ body {
 }
 
 .gatsby-image-wrapper-constrained {
-    display: block;
+    display: block !important;
 }
 
 .photo-grid-container {
