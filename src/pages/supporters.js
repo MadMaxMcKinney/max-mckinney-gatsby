@@ -88,7 +88,7 @@ const SupportersPage = ({data}) => {
 const WallpaperContainer = (props) => (
     <a className="border border-transparent rounded overflow-hidden transform group relative hover:-translate-y-1 hover:border-white hover:shadow-cardHighlight transition-all duration-200" href={props.href} target="_blank" rel="noopener noreferrer">
         <p className="rounded-md bg-white text-gray-900 text-xs font-bold grid place-items-center px-2 py-1 absolute top-2 right-2 z-10">sRGB</p>
-        <p className="opacity-0 text-lg font-bold absolute grid place-items-center w-full h-full text-center z-10 group-hover:opacity-100 transition-all">Download</p>
+        <p className="opacity-0 text-lg font-bold absolute flex justify-center items-center w-full h-full text-center z-10 group-hover:opacity-100 transition-all">Download</p>
         {props.children}
     </a>
 )
