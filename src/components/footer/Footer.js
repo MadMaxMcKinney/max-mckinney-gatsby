@@ -12,12 +12,12 @@ const Footer = () => {
         {/* Social Links */}
 		<div className="inline-grid grid-cols-3 gap-3 list-none justify-center md:hidden">
             <li>
-				<SocialButton href="https://dribbble.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
+				<SocialButton href="https://dribbble.com/MadMaxMcKinney" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-dribbble"></i>
 				</SocialButton>
 			</li>
 			<li>
-				<SocialButton href="https://github.com/MaxMcKinney" target="_blank" rel="noopener noreferrer">
+				<SocialButton href="https://github.com/MaxMaxMcKinney" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
 				</SocialButton>
 			</li>
