@@ -84,7 +84,7 @@ const Navmenu = styled.div`
 `
 
 const SiteLogo = styled.img`
-    width: 45px;
+    width: 40px;
     height: auto;
 `
 
