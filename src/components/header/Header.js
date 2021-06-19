@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import PillNavButton from '../buttons/PillNavButton'
 import {SocialButton, SocialLinkButton} from '../buttons/SocialButton'
-import logo from '../../assets/img/max-white.png'
+import logo from '../../assets/img/max_white_vector.svg'
 
 const Header = (props) => (
 	<Navmenu className="animate-fade-in-fast">
