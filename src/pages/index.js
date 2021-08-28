@@ -98,11 +98,11 @@ const IndexPage = ({data}) => (
         </div>
         
 
-        <FilterContainer className="grid w-full grid-flow-col gap-3 justify-end items-center mb-8 animate-fade-in text-sm md:gap-6" id="FilterContainer">
+        {/* <FilterContainer className="grid w-full grid-flow-col gap-3 justify-end items-center mb-8 animate-fade-in text-sm md:gap-6" id="FilterContainer">
             <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
             <span onClick={filterClickDesign} id="FilterItemDesign"><i className="far fa-ruler-triangle"></i> DESIGN</span>
             <span onClick={filterClickDev} id="FilterItemDev"><i className="far fa-brackets-curly"></i>  DEVELOPMENT</span>
-        </FilterContainer>
+        </FilterContainer> */}
 
         {/* Project Card Grid */}
 		<ProjectGrid className="animate-fade-in-slow grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1 lg:gap-24">
