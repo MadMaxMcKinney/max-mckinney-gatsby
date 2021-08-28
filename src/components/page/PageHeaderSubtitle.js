@@ -5,7 +5,6 @@ const PageHeaderSubtitle = styled.h3`
 	max-width: 640px;
 	color: #ffffff;
 	font-weight: normal;
-	line-height: 34px;
 	animation: ${fadeInDown} 1.5s;
 `;
 

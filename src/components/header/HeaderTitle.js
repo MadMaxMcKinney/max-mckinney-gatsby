@@ -5,7 +5,7 @@ const HeaderTitle = styled.p`
 	max-width: 400px;
 	margin-top: 170px;
 	color: white;
-    line-height: 50px;
+    line-height: 50px !important;
 	@media(max-width: 425px) {
 		margin-top: 130px;
 	}
