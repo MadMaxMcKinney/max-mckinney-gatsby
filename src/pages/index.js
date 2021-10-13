@@ -92,9 +92,9 @@ const IndexPage = ({data}) => (
 
         {/* Mobile Text */}
         <div className="block md:hidden">
-            <p className="block text-lg font-semibold text-white leading-relaxed animate-fade-in md:hidden"><span className="opacity-60">I’m</span> Max McKinney, <span className="opacity-60">currently a</span> Design Lead <span className="opacity-60">at</span> IBM.</p>
-            <p className="block text-lg font-semibold text-white leading-relaxed animate-fade-in md:hidden"><span className="opacity-60">My background is in</span> UI/UX Design <span className="opacity-60">and</span> Web Development.</p>
-            <p className="block text-lg font-semibold text-white leading-relaxed animate-fade-in md:hidden mb-24 "><span className="opacity-60">A decade of creating lets me make</span> Seamless Experiences.</p>
+            <p className="block text-lg font-medium text-white leading-relaxed animate-fade-in md:hidden"><span className="opacity-70">I’m</span> Max McKinney, <span className="opacity-70">currently a</span> Design Lead <span className="opacity-70">at</span> IBM.</p>
+            <p className="block text-lg font-medium text-white leading-relaxed animate-fade-in md:hidden"><span className="opacity-70">My background is in</span> UI/UX Design <span className="opacity-70">and</span> Web Development.</p>
+            <p className="block text-lg font-medium text-white leading-relaxed animate-fade-in md:hidden mb-24 "><span className="opacity-70">A decade of creating lets me make</span> Seamless Experiences.</p>
         </div>
         
 
@@ -102,7 +102,7 @@ const IndexPage = ({data}) => (
             <span className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</span>
             <span onClick={filterClickDesign} id="FilterItemDesign"><i className="far fa-ruler-triangle"></i> DESIGN</span>
             <span onClick={filterClickDev} id="FilterItemDev"><i className="far fa-brackets-curly"></i>  DEVELOPMENT</span>
-        </FilterContainer> */}
+        </FilterContainer> */} 
 
         {/* Project Card Grid */}
 		<ProjectGrid className="animate-fade-in-slow grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1 lg:gap-24">
