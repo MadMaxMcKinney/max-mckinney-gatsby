@@ -7,7 +7,7 @@ import HeaderPill from '../components/header/HeaderPill'
 import HeaderTitle from '../components/header/HeaderTitle'
 import { SocialColorButton } from '../components/buttons/SocialButton';
 
-import maxProfileImg from '../assets/img/maxmckinney-profile.png';
+import maxProfileImg from '../assets/img/maxmckinney-profile-transparent.png';
 
 import {fadeInDown} from './../animations/m-styled-animations'
 
@@ -18,6 +18,7 @@ const IndexPage = ({data}) => (
 		<HeaderTitle className="font-bold text-4xl mb-24 animate-fade-in-fast sm:text-5xl md:text-7xl md:leading-massive">I’m Max McKinney, a design leader building for empathy and humanizing technology.</HeaderTitle>
 
         <div className="grid grid-cols-1 sm:grid-cols-6 animate-fade-in">
+
             <div className="col-span-3 order-2 text-xl sm:text-2xl sm:order-1">
                 <p className="text-gray-300 mb-6">I’m currently a design lead at <a href="https://ibm.com" className="text-max-blue-300 font-medium underline">IBM</a> working in the cyber security space. I run a design centric <a href="https://www.youtube.com/c/MaxMcKinney" className="text-max-red-300 font-medium underline">YouTube</a> channel, do automotive <a href="https://photography.maxmckinney.com" className="text-max-purple-300 font-medium underline">photography</a>, and build <a href="https://photography.maxmckinney.com/automotive" className="text-max-green-300 font-medium underline">cars</a>.</p>
 
@@ -25,14 +26,16 @@ const IndexPage = ({data}) => (
 
                 <p className="text-gray-300 mb-10">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</p>
             </div>
-            <div className="col-span-3 order-1 relative flex items-center justify-center max-h-72 ml-2 mb-12 w-32 animate-fade-in-slow sm:w-auto sm:mb-0 sm:ml-24 sm:mr-4 sm:order-2 lg:ml-48">
+
+            <div className="col-span-3 w-full justify-self-center h-36 order-1 relative flex items-center justify-center max-h-72 ml-2 mb-12 animate-fade-in-slow sm:w-auto sm:h-auto sm:mb-0 sm:ml-24 sm:mr-4 sm:order-2 lg:ml-48">
                 <div className="absolute w-11/12 h-11/12 border-4 -top-3 -left-3 border-max-green-300 rounded-2xl z-20 animate-fade-in-fast" />
-                <img src={maxProfileImg} alt="Max profile image" className="rounded h-full w-full object-cover m-0 z-10"/>
-                <div className="absolute w-11/12 h-11/12 border-4 -bottom-4 -right-4 border-max-purple-300 rounded-2xl z-0 animate-fade-in" />
+                <img src={maxProfileImg} alt="Max profile image" className="rounded h-full w-52 object-cover m-0 z-10 sm:w-full"/>
+                <div className="absolute w-11/12 h-11/12 border-4 -bottom-5 -right-5 border-max-purple-300 rounded-2xl z-0 animate-fade-in" />
             </div>
+
         </div>
 
-        <div className="grid grid-flow-col gap-6 justify-start items-center list-none mb-28 animate-fade-in-slow">
+        <div className="grid grid-flow-col gap-6 items-center list-none mb-20 animate-fade-in-slow sm:justify-start">
             <SocialColorButton className="hover:text-max-red-300" href="https://dribbble.com/MadMaxMcKinney" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-dribbble"></i>
             </SocialColorButton>
