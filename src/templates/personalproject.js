@@ -43,7 +43,7 @@ const SideProjectsPage = ({data}) => (
 
         <ProjectImg fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
         <PersonalPageHeaderTitle>{data.personal.frontmatter.title}</PersonalPageHeaderTitle>
-        <PageHeaderSubtitle className="text-xl">{data.personal.frontmatter.description}</PageHeaderSubtitle>
+        <PageHeaderSubtitle>{data.personal.frontmatter.description}</PageHeaderSubtitle>
 
         <ButtonHStack>
         {data.personal.frontmatter.appStoreUrl && 

@@ -1,12 +1,9 @@
-import styled from 'styled-components'
-import {fadeInDown} from '../../animations/m-styled-animations'
+import React from 'react'
 
-const PageHeaderSubtitle = styled.h3`
-	max-width: 640px;
-	color: #ffffff;
-	font-weight: normal;
-	line-height: 34px;
-	animation: ${fadeInDown} 1.5s;
-`;
+const PageHeaderSubtitle = (props) => {
+    return (
+        <h2 className="text-white text-2xl animate-fade-in max-w-3xl">{props.children}</h2>
+    )
+}
 
 export default PageHeaderSubtitle

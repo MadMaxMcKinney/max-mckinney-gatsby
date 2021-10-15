@@ -4,6 +4,15 @@ module.exports = {
             boxShadow: {
                 'cardHighlight': '0px 64px 194px 32px rgba(255, 255, 255, 0.09)'
             },
+            height: {
+                "11/12": '95%'
+            },
+            width: {
+                "11/12": '95%'
+            },
+            lineHeight: {
+                'massive': '5.2rem'
+            },
 			colors: {
 				gray: {
                     700: '#1c2030',
@@ -12,13 +21,28 @@ module.exports = {
                 blueblack: {
                     300: '#1C2030',
                     500: '#0f1015',
+                },
+                max: {
+                    green: {
+                        300: '#19D18C',
+                    },
+                    red: {
+                        300: '#F25E31',
+                    },
+                    blue: {
+                        300: '#28C0FD',
+                    },
+                    purple: {
+                        300: '#A866FD',
+                    }
                 }
             },
             animation: {
                 'pulse-right': 'pulsing-right 0.3s alternate infinite',
                 'fade-in-slow': 'fade-in 3s',
                 'fade-in': 'fade-in 2s',
-                'fade-in-fast': 'fade-in 1s'  
+                'fade-in-fast': 'fade-in 1s',
+                'color-change': 'color-change 6s infinite'
             },
 			keyframes: {
                 'pulsing-right': {
@@ -35,6 +59,20 @@ module.exports = {
                         transform: 'translateY(0px)'
                     },
 				},
+                'color-change': {
+                    '0%': {
+                        color: '#19D18C'
+                    },
+                    '33%': {
+                        color: '#F25E31'
+                    },
+                    '66%': {
+                        color: '#28C0FD'
+                    },
+                    '100%': {
+                        color: '#A866FD'
+                    }
+                }
             },
             typography: {
                 DEFAULT: {
@@ -66,7 +104,8 @@ module.exports = {
             animation: ['hover', 'focus', 'group-hover'],
             scale: ['active'],
             display: ['group-hover'],
-            translate: ['group-hover']
+            translate: ['group-hover'],
+            brightness: ['hover']
         }
     }
 }

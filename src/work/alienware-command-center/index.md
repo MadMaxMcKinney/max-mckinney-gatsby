@@ -7,7 +7,7 @@ projectAgency: "Dell"
 projectRole: "UI/UX Designer"
 projectBrief: "UI/UX designer on the Alienware Command Center. Directed the product's vision through user personas and UX research. Worked to create a unique design language inspired by the updated industrial design of the Alienware hardware. The visuals were designed to stand out from the competition by utilizing a unique light theme from the start, but still allowing strong customization from the user. Created hero moments in the product through a combination of animations and cinematic design. Brought the theme of personalization to a higher level by implementing a reflective UI pattern showcasing the user's hardware color schemes in the product UI."
 projectShortBrief: "UI/UX designer on the award winning Alienware Command Center. Created a robust and researched design language."
-categories: ["Design"]
+categories: ["UI/UX", "Systems", "Product"]
 themeColor: "#2b3a61"
 accentColor: "#039ff2"
 image: "alienware-command-center-header.jpg"

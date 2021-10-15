@@ -33,38 +33,6 @@ const Header = (props) => (
                     </PillNavButton>
 				</Link>
 			</li>
-
-            {/* Social Tabs */}
-            <li className="hidden md:block">
-				<SocialButton href="https://dribbble.com/MadMaxMcKinney" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-dribbble"></i>
-				</SocialButton>
-			</li>
-			<li className="hidden md:block">
-				<SocialButton href="https://github.com/MadMaxMcKinney" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-				</SocialButton>
-			</li>
-			<li className="hidden md:block">
-				<SocialButton href="https://www.linkedin.com/in/mckinneymax" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin-in"></i>
-				</SocialButton>
-			</li>
-            <li className="hidden md:block">
-				<SocialButton href="http://youtube.com/maxmckinney" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-youtube"></i>
-				</SocialButton>
-			</li>
-			<li className="hidden md:block">
-				<SocialButton href="https://photography.maxmckinney.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-camera-alt"></i>
-				</SocialButton>
-			</li>
-            <li className="hidden md:block">
-                <SocialLinkButton to="/supporters">
-                    <i class="fas fa-gift"></i>
-                </SocialLinkButton>
-			</li>
             
 		</div>
 	</Navmenu>
