@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 export default (props) => {
   return (
-	<PillContainer>
-		<span>{renderIcon(props.text)}{props.text}</span>
-	</PillContainer>
+	<div className="flex justify-center items-center py-1 px-2 rounded-sm bg-white text-gray-900">
+		<span className="uppercase text-sm font-semibold ">{renderIcon(props.text)}{props.text}</span>
+	</div>
   )
 }
 
@@ -18,42 +18,30 @@ export default (props) => {
 function renderIcon(categoryTitle) {
     switch(categoryTitle.toLowerCase()) {
         case "design":
-            return <i className="far fa-ruler-triangle"></i>
+            return <i className="fas fa-ruler-triangle pr-1"></i>
 
         case "development":
-            return <i className="far fa-brackets-curly"></i> 
+            return <i className="fas fa-brackets-curly pr-1"></i> 
+
+        case "ui/ux":
+            return <i className="fas fa-pen-nib pr-1"></i> 
+        
+        case "product":
+            return <i className="fas fa-browsers pr-1"></i> 
+        
+        case "strategy":
+            return <i className="fas fa-brain-circuit pr-1"></i> 
+
+        case "systems":
+            return <i className="fas fa-grid-2 pr-1"></i> 
+
+        case "lead":
+            return <i className="fas fa-user-pilot-tie pr-1"></i> 
+        
+        case "visual":
+            return <i className="fas fa-palette pr-1"></i> 
 
         default:
             return ""
     }
 }
-
-const PillContainer = styled.div`
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 14px;
-	border-radius: 4px;
-    background: var(--blueblack-300);
-
-    i {
-        padding-right: 6px;
-    }
-
-    span {
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 14px;
-        font-family: "Barlow", sans-serif;
-        font-weight: 600;
-        font-variant: small-caps;
-        line-height: 165%;
-    }
-
-    @media(max-width: 1000px) {
-        span {
-            font-size: 13px;
-        }
-    }
-`;

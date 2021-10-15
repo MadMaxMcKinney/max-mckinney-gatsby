@@ -7,7 +7,7 @@ projectAgency: "Dell"
 projectRole: "UI/UX Designer"
 projectBrief: "Worked with an R&D UI team building future looking designs and outlining product visions for enterprise and consumer software. Took visionary ideas and brought them to life with UI designs and interactive prototypes. Built future looking user profiles as a way of predicting the product direction 10+ years out. Used this information to guide the creation of new and unique user interaction patterns."
 projectShortBrief: "Built future looking designs and outlined product visions for enterprise and consumer software."
-categories: ["Design"]
+categories: ["UI/UX", "Visual", "Strategy"]
 themeColor: "#6923e0"
 accentColor: "#0095ff"
 image: "dell-welcome-header.jpg"

@@ -44,28 +44,28 @@ export default function Template({ data }) {
 		<ProjectContentGrid>
 			<ProjectDetails>
 				<div>
-					<h2 className="mb-1">Role</h2>
+					<h2 className="mb-1 text-2xl font-bold">Role</h2>
 					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectRole}</p>
 				</div>
 				<div>
-					<h2 className="mb-1">Client</h2>
+					<h2 className="mb-1 text-2xl font-bold">Client</h2>
 					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectClient}</p>
 				</div>
 				<div>
-					<h2 className="mb-1">Agency</h2>
+					<h2 className="mb-1 text-2xl font-bold">Agency</h2>
 					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectAgency}</p>
 				</div>
 				<div>
-					<h2 className="mb-1">Date</h2>
+					<h2 className="mb-1 text-2xl font-bold">Date</h2>
 					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectDate}</p>
 				</div>
 				<div>
-					<h2 className="mb-1">Brief</h2>
+					<h2 className="mb-1 text-2xl font-bold">Brief</h2>
 					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectBrief}</p>
 				</div>
 			</ProjectDetails>
 
-			<h2 className="mb-1">Case Study</h2>
+			<h2 className="mb-1 text-2xl font-bold">Case Study</h2>
 
 			<div className="prose prose-lg text-white max-w-none" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
 

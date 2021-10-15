@@ -7,7 +7,7 @@ projectAgency: "Sureshot"
 projectRole: "Senior UI/UX Designer"
 projectBrief: "Prior to the Sureshot UI and product design effort Sureshot had several products that were highly disconnected. From a UX perspective they had very different interaction patterns and elements. Visually the products shared no similar elements and obviously were built at different times throughout the companies history. Establishing a strong product ecosystem was a primary goal. I approached this problem by understanding our primary users, and aligning the team on their needs. From there I directed and designed a consistent visual language (Sureshot UI) that aligned the products in terms of their visual space and components. This extended throughout the Sureshot product ecosystem (authentication pages, error pages, marketing, etc). As the visual updates were happening I explored the idea of creating shared patterns between the various products. This effort was looking at micro-interactions and shared features, like auto-complete, that could be aligned between the products. Having consistent interactions and unique shared UX allowed customers to switch between Sureshot's products with ease and familiarity. "
 projectShortBrief: "Created the Sureshot UI design language and product direction. Built a powerful shared product ecosystem."
-categories: ["Design"]
+categories: ["Lead", "UI/UX", "Systems"]
 themeColor: "#330f0f"
 accentColor: "#CC2027"
 image: "Sureshot-UI-Header.png"
