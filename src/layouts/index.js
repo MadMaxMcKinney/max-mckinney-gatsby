@@ -55,7 +55,7 @@ const Layout = ({ children, data, location }) => (
                 <link rel="icon" type="image/png" sizes="16x16" href={favicon16}/>
                 <link rel="mask-icon" href={safariTab} color="#5bbad5"/>
                 <meta name="msapplication-TileColor" content="#000000"/>
-                <meta name="theme-color" content="#ffffff"/>
+                <meta name="theme-color" content="#000000"/>
 
                 <script src="https://kit.fontawesome.com/d940246cad.js" crossorigin="anonymous"></script>
 

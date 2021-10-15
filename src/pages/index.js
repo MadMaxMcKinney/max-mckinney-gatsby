@@ -15,8 +15,7 @@ const IndexPage = ({data}) => (
   <React.Fragment>
 	  <PageGrid>
 
-		<HeaderTitle className="font-bold text-4xl mb-24 animate-fade-in-fast sm:text-5xl md:text-7xl md:leading-massive">I’m Max McKinney, a design leader building 
-for empathy and humanizing technology.</HeaderTitle>
+		<HeaderTitle className="font-bold text-4xl mb-24 animate-fade-in-fast sm:text-5xl md:text-7xl md:leading-massive">I’m Max McKinney, a design leader building for empathy and humanizing technology.</HeaderTitle>
 
         <div className="grid grid-cols-1 sm:grid-cols-6 animate-fade-in">
             <div className="col-span-3 order-2 text-xl sm:text-2xl sm:order-1">
