@@ -10,6 +10,7 @@ module.exports = {
             height: {
                 "11/12": '95%',
                 'header': '1000px',
+                'header-mobile': '600px',
                 'project-image': '650px'
             },
             width: {

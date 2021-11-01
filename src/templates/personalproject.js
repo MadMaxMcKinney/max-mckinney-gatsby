@@ -6,9 +6,9 @@ import Img from "gatsby-image"
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
-import AppStoreButton from '../components/buttons/AppStoreButton'
-import GithubButton from '../components/buttons/GithubButton'
-import YouTubeButton from '../components/buttons/YouTubeButton'
+import AppStoreButton from '../components/buttons/social/AppStoreButton'
+import GithubButton from '../components/buttons/social/GithubButton'
+import YouTubeButton from '../components/buttons/social/YouTubeButton'
 
 import {fadeInDown} from '../animations/m-styled-animations'
 
