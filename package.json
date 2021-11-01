@@ -35,7 +35,8 @@
     "styled-components": "^4.4.1",
     "tailwindcss": "^2.1.1",
     "typeface-barlow": "0.0.71",
-    "typeface-roboto": "0.0.54",
+    "typeface-inter": "^3.18.1",
+    "typeface-rubik": "^1.1.13",
     "typeface-source-sans-pro": "0.0.54"
   },
   "keywords": [

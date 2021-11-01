@@ -14,6 +14,8 @@ import Footer from '../components/footer/Footer'
 import './index.css'
 
 require('typeface-barlow');
+require('typeface-rubik');
+require('typeface-inter');
 
 const Layout = ({ children, data, location }) => (
     <StaticQuery

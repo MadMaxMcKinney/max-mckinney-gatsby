@@ -1,14 +1,20 @@
 module.exports = {
 	theme: {
+        container: {
+            center: true,
+        },
 		extend: {
             boxShadow: {
                 'cardHighlight': '0px 64px 194px 32px rgba(255, 255, 255, 0.09)'
             },
             height: {
-                "11/12": '95%'
+                "11/12": '95%',
+                'header': '1000px',
+                'project-image': '650px'
             },
             width: {
-                "11/12": '95%'
+                "11/12": '95%',
+                "content": '680px'
             },
             lineHeight: {
                 'massive': '5.2rem'
@@ -24,21 +30,28 @@ module.exports = {
                 },
                 max: {
                     green: {
-                        300: '#19D18C',
+                        300: '#75965A',
+                    },
+                    yellow: {
+                        300: '#F0A500'
                     },
                     red: {
-                        300: '#F25E31',
+                        300: '#F43E3E',
                     },
                     blue: {
-                        300: '#28C0FD',
+                        300: '#325273',
                     },
                     purple: {
-                        300: '#A866FD',
+                        300: '#7F46C7',
+                    },
+                    pink: {
+                        300: '#DB2777'
                     }
                 }
             },
             animation: {
                 'pulse-right': 'pulsing-right 0.3s alternate infinite',
+                'fade-in-very-slow': 'fade-in 4s',
                 'fade-in-slow': 'fade-in 3s',
                 'fade-in': 'fade-in 2s',
                 'fade-in-fast': 'fade-in 1s',
