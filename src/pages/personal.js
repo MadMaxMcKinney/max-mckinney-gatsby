@@ -36,11 +36,8 @@ const SideProjectsPage = ({data}) => (
             <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
         </Helmet>
 
-        <Avatar>
-            <Img fixed={data.file.childImageSharp.fixed} />
-        </Avatar>
-        <PageHeaderTitle>Personal Projects</PageHeaderTitle>
-        <PageHeaderSubtitle>These are some of my personal projects. They're all over the place. <br/> You might find some things you enjoy though!</PageHeaderSubtitle>
+        <PageHeaderTitle className="mt-96">hello.</PageHeaderTitle>
+        <PageHeaderSubtitle>These are some of my personal projects. <br/>They're all over the place. You might find some things you enjoy though!</PageHeaderSubtitle>
 
         <SideProjectGrid>
             {data.personal.edges.map(({node}) => (

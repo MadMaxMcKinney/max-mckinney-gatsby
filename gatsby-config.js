@@ -95,7 +95,7 @@ module.exports = {
               start_url: `/`,
               background_color: `#000000`,
               display: `standalone`,
-              icon: `src/assets/img/max-white.png`,
+              icon: `src/assets/img/max_transition_shapes.png`,
             },
         },
 	],
