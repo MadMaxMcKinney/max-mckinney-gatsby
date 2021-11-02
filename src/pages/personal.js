@@ -3,16 +3,15 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import {SIZE_MOBILE, SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
+import {SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
 
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.png'
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
-import {MaxH1} from '../components/typography'
+import MLink from '../components/links/MLink'
 
 import {fadeInDown} from '../animations/m-styled-animations'
-import AccentButton from '../components/buttons/AccentButton'
 
 
 const description = "These are some of my personal projects. They're all over the place. You might find some things you enjoy though!"
@@ -37,45 +36,32 @@ const SideProjectsPage = ({data}) => (
         </Helmet>
 
         <PageHeaderTitle className="mt-96">hello.</PageHeaderTitle>
-        <PageHeaderSubtitle>These are some of my personal projects. <br/>They're all over the place. You might find some things you enjoy though!</PageHeaderSubtitle>
+        <PageHeaderSubtitle>These are some of my personal projects. They are all over the place, but you might find some things you enjoy! My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing the best place for that is my <MLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</MLink></PageHeaderSubtitle>
 
         <SideProjectGrid>
             {data.personal.edges.map(({node}) => (
                 <SideProjectCard to={node.fields.slug} accent={node.frontmatter.accent}>
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
-                    <p className="text-xl md:text-2xl font-bold">{node.frontmatter.title}</p>
-                    <SideProjectDetails className="mt-4 text-lg">{node.frontmatter.description}</SideProjectDetails>
+                    <h2 className="text-xl md:text-2xl font-bold">{node.frontmatter.title}</h2>
+                    <SideProjectDetails className="text-gray-300 mt-4 text-lg">{node.frontmatter.description}</SideProjectDetails>
                     <SideProjectLink className="mt-6 text-lg">{node.frontmatter.locationText}</SideProjectLink>
                 </SideProjectCard>
             ))}
         </SideProjectGrid>
         
-        <SectionSeperator>
-            <i class="fab fa-dribbble" style={{fontSize: 41, marginTop: 6}}></i>
-            <MaxH1>Dribbble</MaxH1>
-        </SectionSeperator>
+        <h1 className="font-bold text-2xl text-white mt-28 mb-12">design stuff from <MLink className="text-max-pink-300" href="https://dribbble.com/MadMaxMcKinney">dribbble</MLink></h1>
 
         <DribbbleGrid>
             {data.allDribbbleShot.edges.map(({node}) => (
                 <a href={node.url}>
                     <DribbblePost>
                         <img src={node.localCover.publicURL}/>
-                        <p className="text-base m-2">{node.title}</p>
                     </DribbblePost>
                 </a>
             ))}
         </DribbbleGrid>
-        
-        <ReadMoreButtonContainer>
-            <AccentButton accent="#FF3672" link="https://dribbble.com/MaxMcKinney">
-                More on Dribbble
-            </AccentButton>
-        </ReadMoreButtonContainer>
 
-        <SectionSeperator>
-            <i class="fab fa-medium fa-2x" style={{fontSize: 44, marginTop: 9}}></i>
-            <MaxH1>Publications</MaxH1>
-        </SectionSeperator>
+        <h1 className="font-bold text-2xl text-white mt-28 mb-12">writing stuff from <MLink className="text-max-yellow-300" href="https://maxmckinney.medium.com/">medium</MLink></h1>
 
         <MediumPostGrid>
             {data.allMediumPost.edges.map(({node}) => (
@@ -90,13 +76,6 @@ const SideProjectsPage = ({data}) => (
                 </MediumPost>
             ))}
         </MediumPostGrid>
-
-        <ReadMoreButtonContainer>
-            <AccentButton accent="#FFFFFF" link="https://maxmckinney.medium.com/">
-                More on Medium
-            </AccentButton>
-        </ReadMoreButtonContainer>
-        
         
 
     </PageGrid>
@@ -264,9 +243,6 @@ const DribbbleGrid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-gap: 24px;
 
-    margin-top: 48px;
-    margin-bottom: 56px;
-
     animation: ${fadeInDown} 2.7s;
 
     a {
@@ -335,8 +311,6 @@ const MediumPostGrid = styled.div`
     grid-auto-flow: row;
     grid-gap: 32px;
     align-items: flex-start;
-
-    margin: 56px 0px;
 
     animation: ${fadeInDown} 2.7s;
 
