@@ -7,6 +7,9 @@ module.exports = {
             boxShadow: {
                 'cardHighlight': '0px 64px 194px 32px rgba(255, 255, 255, 0.09)'
             },
+            backgroundSize: {
+                '300%': '300%'
+            },
             height: {
                 "11/12": '95%',
                 'header': '1000px',
@@ -52,6 +55,7 @@ module.exports = {
             },
             animation: {
                 'pulse-right': 'pulsing-right 0.3s alternate infinite',
+                'flow-background': 'flow 10s ease-in-out infinite',
                 'fade-in-very-slow': 'fade-in 4s',
                 'fade-in-slow': 'fade-in 3s',
                 'fade-in': 'fade-in 2s',
@@ -73,6 +77,17 @@ module.exports = {
                         transform: 'translateY(0px)'
                     },
 				},
+                'flow': {
+                    '0%': {
+                        'background-position': '0 50%'
+                    },
+                    '50%': {
+                        'background-position': '100% 50%'
+                    },
+                    '100%': {
+                        'background-position': '0 50%'
+                    },
+                },
                 'color-change': {
                     '0%': {
                         color: '#19D18C'
