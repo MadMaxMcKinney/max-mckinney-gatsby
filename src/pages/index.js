@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 import { StaticImage } from 'gatsby-plugin-image';
 import ProjectCard from '../components/cards/Project';
+import MLink from '../components/links/MLink'
 
 const IndexPage = ({data}) => (
   <React.Fragment>
@@ -26,7 +27,9 @@ const IndexPage = ({data}) => (
 
                 <p className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.</p>
 
-                <p>To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</p>
+                <p className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</p>
+
+                <p>Currently not available for hire. Have other questions though? Reach out <MLink href="mailto:max@maxmckinney.com">max@maxmckinney.com</MLink></p>
             </div>
         </div>
 
