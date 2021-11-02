@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
-import PillNavButton from '../buttons/PillNavButton'
+import PageNavButton from '../buttons/PageNavButton'
 
 const Header = (props) => {
 
@@ -21,18 +21,16 @@ const Header = (props) => {
                 {/* Page Tabs */}
                 <li id="professionalProjects">
                     <Link to="/">
-                        <PillNavButton isActivePage={props.location.pathname === "/" ? true : false}>
-                            <i class="fas fa-layer-group"></i>
-                            <p>Professional</p>
-                        </PillNavButton>
+                        <PageNavButton isActivePage={props.location.pathname === "/" ? true : false}>
+                            <p>Work</p>
+                        </PageNavButton>
                     </Link>
                 </li>
                 <li id="personalProjects">
                     <Link to="/personal">
-                        <PillNavButton isActivePage={RegExp("\/personal.?").test(props.location.pathname) ? true : false}>
-                            <i class="fas fa-gem"></i>
+                        <PageNavButton isActivePage={RegExp("\/personal.?").test(props.location.pathname) ? true : false}>
                             <p>Personal</p>
-                        </PillNavButton>
+                        </PageNavButton>
                     </Link>
                 </li>
             </div>
