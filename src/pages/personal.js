@@ -249,11 +249,9 @@ const DribbbleGrid = styled.div`
         grid-auto-flow: column;
         grid-auto-columns: 75%; /* Implicit grid, defining the remaining items */
         overflow-x: scroll;
-        margin-top: 64px;
         grid-column: 1/4;
         grid-gap: 16px;
         padding-bottom: 16px;
-        margin-bottom: 24px;
         
         /* This is needed to provide an air gap before and after the items in the horizontally scrolling list */
         &::after, &::before{

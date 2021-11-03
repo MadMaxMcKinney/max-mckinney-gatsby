@@ -44,7 +44,7 @@ const SideProjectsPage = ({data}) => (
         <PageHeaderTitle className="mb-6 mt-6 w-full">{data.personal.frontmatter.title}</PageHeaderTitle>
         <PageSubtitle>{data.personal.frontmatter.description}</PageSubtitle>
 
-        <div className="flex gap-4 justify-start mt-8 animate-fade-in">
+        <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in">
         {data.personal.frontmatter.appStoreUrl && 
             <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i class="fab fa-app-store"></i>View on App Store</AppStoreButton>
         }
