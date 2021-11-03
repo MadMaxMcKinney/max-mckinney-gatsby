@@ -7,7 +7,7 @@ import MLink from '../components/links/MLink'
 
 const IndexPage = ({data}) => (
   <React.Fragment>
-	  <div className="px-4">
+	  <div className="px-6">
 
         <div className="flex items-end relative h-header-mobile md:h-header" id="Header">
             <div className="contained-content z-10 pb-16 md:pb-32">
@@ -16,11 +16,11 @@ const IndexPage = ({data}) => (
                 <h1 className="font-bold text-6xl text-white mb-5 animate-fade-in-slow sm:text-7xl md:text-9xl">Leader.</h1>
                 <h1 className="font-bold text-6xl text-white animate-fade-in-very-slow sm:text-7xl md:text-9xl">Nerd.</h1>
             </div>
-            <Img style={{position: 'absolute', top: 0, left: '-16px', right: '-16px', height: `100%`}} fluid={data.maxBG.childImageSharp.fluid} className="bg-bottom animate-fade-in-very-slow"/>
+            <Img style={{position: 'absolute', top: 0, left: '-24px', right: '-24px', height: `100%`}} fluid={data.maxBG.childImageSharp.fluid} className="bg-bottom animate-fade-in-very-slow"/>
         </div>
 		
 
-        <div className="contained-content mt-24 animate-fade-in-slow" id="BioDescription">
+        <div className="contained-content mt-16 animate-fade-in-slow sm:mt-24" id="BioDescription">
 
             <div className="font-semibold text-gray-400 text-2xl sm:text-3xl sm:leading-10">
                 <p className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a design lead at IBM working in the cyber security space. I run a design centric YouTube channel, do automotive photography, and build cars.</p>
@@ -29,12 +29,12 @@ const IndexPage = ({data}) => (
 
                 <p className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</p>
 
-                <p>Currently not available for hire. Have other questions though? Reach out <MLink href="mailto:max@maxmckinney.com">max@maxmckinney.com</MLink></p>
+                <p>Currently not available for hire. If you have other questions/needs feel free to reach out to me at <MLink href="mailto:max@maxmckinney.com">max@maxmckinney.com</MLink>.</p>
             </div>
         </div>
 
         {/* Project Card Grid */}
-		<div id="ProjectGrid" className="animate-fade-in-slow mt-48 grid grid-cols-1 gap-16 lg:gap-32">
+		<div id="ProjectGrid" className="animate-fade-in-slow mt-24 grid grid-cols-1 gap-16 sm:mt-40 lg:gap-32">
 			{data.allMarkdownRemark.edges.map(({node}) => (
 				<ProjectCard data={node} key={node.key}></ProjectCard>
 			))}

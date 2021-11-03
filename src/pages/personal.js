@@ -8,7 +8,7 @@ import {SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.png'
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
-import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
+import PageSubtitle from '../components/page/PageSubtitle'
 import MLink from '../components/links/MLink'
 
 import {fadeInDown} from '../animations/m-styled-animations'
@@ -35,10 +35,11 @@ const SideProjectsPage = ({data}) => (
             <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
         </Helmet>
 
-        <PageHeaderTitle className="mt-96">hello.</PageHeaderTitle>
-        <PageHeaderSubtitle>These are some of my personal projects. They are all over the place, but you might find some things you enjoy! My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing the best place for that is my <MLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</MLink></PageHeaderSubtitle>
+        <PageHeaderTitle className="mb-6 mt-32 sm:mt-56">hello.</PageHeaderTitle>
+        <PageSubtitle>These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</PageSubtitle>
+        <PageSubtitle>My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <MLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</MLink> is the best place, so follow me there.</PageSubtitle>
 
-        <SideProjectGrid>
+        <SideProjectGrid className="mt-24 animate-fade-in-slow">
             {data.personal.edges.map(({node}) => (
                 <SideProjectCard to={node.fields.slug} accent={node.frontmatter.accent}>
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
@@ -49,9 +50,9 @@ const SideProjectsPage = ({data}) => (
             ))}
         </SideProjectGrid>
         
-        <h1 className="font-bold text-2xl text-white mt-28 mb-12">design stuff from <MLink className="text-max-pink-300" href="https://dribbble.com/MadMaxMcKinney">dribbble</MLink></h1>
+        <h1 className="font-bold text-2xl text-white mt-28 mb-12 animate-fade-in-slow">design stuff from <MLink className="text-max-pink-300" href="https://dribbble.com/MadMaxMcKinney">dribbble</MLink></h1>
 
-        <DribbbleGrid>
+        <DribbbleGrid className="animate-fade-in-slow">
             {data.allDribbbleShot.edges.map(({node}) => (
                 <a href={node.url}>
                     <DribbblePost>
@@ -61,9 +62,9 @@ const SideProjectsPage = ({data}) => (
             ))}
         </DribbbleGrid>
 
-        <h1 className="font-bold text-2xl text-white mt-28 mb-12">writing stuff from <MLink className="text-max-yellow-300" href="https://maxmckinney.medium.com/">medium</MLink></h1>
+        <h1 className="font-bold text-2xl text-white mt-28 mb-12 animate-fade-in-slow">writing stuff from <MLink className="text-max-yellow-300" href="https://maxmckinney.medium.com/">medium</MLink></h1>
 
-        <MediumPostGrid>
+        <MediumPostGrid className="animate-fade-in-slow">
             {data.allMediumPost.edges.map(({node}) => (
                 <MediumPost href={"https://maxmckinney.medium.com/" + node.slug + "-" + node.medium_id}>
                     <div>
@@ -93,10 +94,6 @@ const SideProjectGrid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 72px;
-
-    margin-top: 150px;
-
-    animation: ${fadeInDown} 1.7s;
 
     @media(max-width: 1015px) {
         grid-gap: 32px;
@@ -243,8 +240,6 @@ const DribbbleGrid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-gap: 24px;
 
-    animation: ${fadeInDown} 2.7s;
-
     a {
         line-height: 0;
     }
@@ -311,8 +306,6 @@ const MediumPostGrid = styled.div`
     grid-auto-flow: row;
     grid-gap: 32px;
     align-items: flex-start;
-
-    animation: ${fadeInDown} 2.7s;
 
     @media(max-width: ${SIZE_MOBILE_LARGE}) {
         margin-bottom: 32px;

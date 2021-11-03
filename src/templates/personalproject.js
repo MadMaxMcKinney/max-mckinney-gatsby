@@ -5,12 +5,11 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
-import PageHeaderSubtitle from '../components/page/PageHeaderSubtitle'
 import AppStoreButton from '../components/buttons/social/AppStoreButton'
 import GithubButton from '../components/buttons/social/GithubButton'
 import YouTubeButton from '../components/buttons/social/YouTubeButton'
-
 import {fadeInDown} from '../animations/m-styled-animations'
+import PageSubtitle from '../components/page/PageSubtitle'
 
 
 const SideProjectsPage = ({data}) => (
@@ -42,10 +41,10 @@ const SideProjectsPage = ({data}) => (
 
 
         <ProjectImg fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
-        <PersonalPageHeaderTitle>{data.personal.frontmatter.title}</PersonalPageHeaderTitle>
-        <PageHeaderSubtitle>{data.personal.frontmatter.description}</PageHeaderSubtitle>
+        <PageHeaderTitle className="mb-6 mt-6 w-full">{data.personal.frontmatter.title}</PageHeaderTitle>
+        <PageSubtitle>{data.personal.frontmatter.description}</PageSubtitle>
 
-        <ButtonHStack>
+        <div className="flex gap-4 justify-start mt-8 animate-fade-in">
         {data.personal.frontmatter.appStoreUrl && 
             <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i class="fab fa-app-store"></i>View on App Store</AppStoreButton>
         }
@@ -55,7 +54,7 @@ const SideProjectsPage = ({data}) => (
         {data.personal.frontmatter.youtubeUrl && 
             <YouTubeButton href={data.personal.frontmatter.youtubeUrl}><i class="fab fa-youtube"></i> View on YouTube</YouTubeButton>
         }
-        </ButtonHStack>
+        </div>
 
         <Content className="prose prose-lg max-w-none text-white" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
 
@@ -80,21 +79,6 @@ const ProjectImg = styled(Img)`
     border-radius: 24px;
 
     animation: ${fadeInDown} 0.8s;
-`
-
-const ButtonHStack = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-    grid-gap: 16px;
-    justify-items: flex-start;
-
-    margin-top: 32px;
-
-    animation: ${fadeInDown} 1.6s;
-`
-
-const PersonalPageHeaderTitle = styled(PageHeaderTitle)`
-    max-width: 100%;
 `
 
 const Content = styled.div`

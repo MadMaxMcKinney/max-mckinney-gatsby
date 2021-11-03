@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import GetSumLogo from '../../assets/img/getsum-logo.png'
 
 import PageHeaderTitle from '../../components/page/PageHeaderTitle'
-import PageHeaderSubtitle from '../../components/page/PageHeaderSubtitle'
+import PageSubtitle from '../../components/page/PageSubtitle'
 
 import {fadeInDown} from '../../animations/m-styled-animations'
 
@@ -14,7 +14,7 @@ const GetSumPrivacyPage = ({data}) => (
 
         <ProjectImg src={GetSumLogo} />
         <PageHeaderTitle>Get Sum - Privacy Policy</PageHeaderTitle>
-        <PageHeaderSubtitle>TLDR: I only collect the analytics that Apple automatically gives developers, nothing more. The app just counts things. That's it.</PageHeaderSubtitle>
+        <PageSubtitle>TLDR: I only collect the analytics that Apple automatically gives developers, nothing more. The app just counts things. That's it.</PageSubtitle>
 
         <Content>
         <h1>PRIVACY NOTICE</h1>

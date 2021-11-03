@@ -9,7 +9,7 @@ const GithubButton = styled.a`
     font-weight: 400;
     font-size: 18px;
     
-    display: grid;
+    display: inline-grid;
     grid-gap: 8px;
     grid-auto-flow: column;
     place-content: center;

@@ -23,6 +23,9 @@ module.exports = {
             lineHeight: {
                 'massive': '5.2rem'
             },
+            screens: {
+                'hover-supported': {'raw': '(hover)'},
+            },
 			colors: {
 				gray: {
                     700: '#1c2030',
