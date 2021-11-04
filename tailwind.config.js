@@ -12,9 +12,12 @@ module.exports = {
             },
             height: {
                 "11/12": '95%',
-                'header': '1000px',
-                'header-mobile': '600px',
+                'header': '85vh',
+                'header-mobile': '580px',
                 'project-image': '650px'
+            },
+            minHeight: {
+                '870px': '870px'
             },
             width: {
                 "11/12": '95%',
@@ -58,7 +61,7 @@ module.exports = {
             },
             animation: {
                 'pulse-right': 'pulsing-right 0.3s alternate infinite',
-                'flow-background': 'flow 10s ease-in-out infinite',
+                'flow-background': 'flow 7.5s ease-in-out infinite',
                 'fade-in-very-slow': 'fade-in 4s',
                 'fade-in-slow': 'fade-in 3s',
                 'fade-in': 'fade-in 2s',

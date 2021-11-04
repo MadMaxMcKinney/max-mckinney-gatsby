@@ -9,7 +9,7 @@ const IndexPage = ({data}) => (
   <React.Fragment>
 	  <div className="px-6">
 
-        <div className="flex items-end relative h-header-mobile md:h-header" id="Header">
+        <div className="flex items-end relative h-header-mobile md:min-h-870px md:h-header" id="Header">
             <div className="contained-content z-10 pb-16 md:pb-32">
                 <StaticImage className="h-auto w-40 mb-8 animate-fade-in-fast md:w-52" src={"../assets/img/max_transition_shapes.png"} alt="Max Shape Logo"/>
                 <h1 className="font-bold text-6xl text-white mb-5 animate-fade-in sm:text-7xl md:text-9xl">Designer.</h1>

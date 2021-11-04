@@ -14,7 +14,7 @@ import MLink from '../components/links/MLink'
 import {fadeInDown} from '../animations/m-styled-animations'
 
 
-const description = "These are some of my personal projects. They're all over the place. You might find some things you enjoy though!"
+const description = "These are some of my personal projects. They are all over the place but you might find some things you enjoy!"
 
 const SideProjectsPage = ({data}) => (
     <PageGrid>
