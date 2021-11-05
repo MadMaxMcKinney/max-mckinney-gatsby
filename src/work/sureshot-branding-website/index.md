@@ -6,7 +6,7 @@ projectDate: "Jan 2020 - October 2020"
 projectAgency: "Sureshot"
 projectRole: "Senior UI/UX Designer"
 projectBrief: "Directed and designed the rebrand of Sureshot, a martech software company. This effort was a self-initiative designed to modernize the branding of the company to better connect with it’s elevated clients and compete with other high-tier martech companies. I created various branding documents and assets to be used throughout their updated applications(another effort I managed). Updated the corporate website with a new design showing off the fresh branding and new software options available to clients in a more visual manner designed to increase sales."
-projectShortBrief: "Directed and designed the rebrand of Sureshot. Designed and created the new corporate website."
+projectShortBrief: "Directed and designed the rebrand of corporate Sureshot. Designed and created the Sureshot website. Utilized self-created persona definitions and user needs to tailor the content with a resulting increase of sales."
 categories: ["Lead", "UI/UX", "Strategy"]
 themeColor: "#330f0f"
 accentColor: "#CC2027"

@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
 	siteMetadata: {
 		title: 'Max McKinney',
-		description: "I'm Max McKinney, designing for empathy and humanizing technology. A decade of creating allows me to make seamless experiences.",
+		description: "I’m Max McKinney, a design leader building for empathy and humanizing technology. I specialize in design architecture and thrive in undefined problem spaces.",
 		siteUrl: "https://maxmckinney.com"
 	},
 	plugins: [
@@ -91,7 +91,7 @@ module.exports = {
             options: {
               name: `Max McKinney`,
               short_name: `Max McKinney`,
-              description: `I’m Max McKinney, a design leader building for empathy and humanizing technology. I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.`,
+              description: `I’m Max McKinney, a design leader building for empathy and humanizing technology. I specialize in design architecture and thrive in undefined problem spaces.`,
               start_url: `/`,
               background_color: `#000000`,
               display: `standalone`,
