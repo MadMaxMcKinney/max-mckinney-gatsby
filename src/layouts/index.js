@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
-import metaFeaturedImage from './../assets/img/website-meta-share.png'
+import metaFeaturedImage from './../assets/img/website-meta-share-primary.jpg'
 import favicon32 from './../assets/favicon/favicon-32x32.png'
 import favicon16 from './../assets/favicon/favicon-16x16.png'
 import faviconApple from './../assets/favicon/apple-touch-icon.png'

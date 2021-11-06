@@ -5,7 +5,7 @@ import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import {SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
 
-import metaFeaturedImage from './../assets/img/website-meta-share-personal.png'
+import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import PageSubtitle from '../components/page/PageSubtitle'
