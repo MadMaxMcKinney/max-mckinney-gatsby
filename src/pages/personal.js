@@ -36,8 +36,8 @@ const SideProjectsPage = ({data}) => (
         </Helmet>
 
         <PageHeaderTitle className="mb-6 mt-32 sm:mt-56">hello.</PageHeaderTitle>
-        <PageSubtitle>These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</PageSubtitle>
-        <PageSubtitle>My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <MLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</MLink> is the best place, so follow me there.</PageSubtitle>
+        <PageSubtitle className="animate-fade-in ">These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</PageSubtitle>
+        <PageSubtitle className="animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <MLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</MLink> is the best place, so follow me there.</PageSubtitle>
 
         <SideProjectGrid className="mt-24 animate-fade-in-slow">
             {data.personal.edges.map(({node}) => (

@@ -1,5 +1,6 @@
 import React from 'react'
 import {SocialColorButton} from '../../components/buttons/SocialButton'
+import MLink from '../links/MLink'
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
 		</div>
 
         {/* Email */}
-		<div className="text-xl text-center font-bold md:text-2xl md:text-left" href="mailto:max@maxmckinney.com">max@maxmckinney.com</div>
+		<MLink className="text-xl text-center font-bold md:text-2xl md:text-left" href="mailto:max@maxmckinney.com">max@maxmckinney.com</MLink>
 
 	</div>
   )

@@ -34,7 +34,7 @@ const IndexPage = ({data}) => (
         </div>
 
         {/* Project Card Grid */}
-		<div id="ProjectGrid" className="animate-fade-in-slow mt-24 grid grid-cols-1 gap-16 sm:mt-40 lg:gap-32">
+		<div id="ProjectGrid" className="animate-fade-in-slow mt-24 grid grid-cols-1 gap-16 sm:mt-30 lg:gap-32">
 			{data.allMarkdownRemark.edges.map(({node}) => (
 				<ProjectCard data={node} key={node.key}></ProjectCard>
 			))}
