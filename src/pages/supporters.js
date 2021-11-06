@@ -12,7 +12,7 @@ import w3 from '../assets/img/supporters/1000/MM_Support_Wallpaper_3.png'
 import w4 from '../assets/img/supporters/1000/MM_Support_Wallpaper_4.png'
 import w5 from '../assets/img/supporters/1000/MM_Support_Wallpaper_5.png'
 
-import metaFeaturedImage from '../assets/img/website-meta-share-personal.png'
+import metaFeaturedImage from '../assets/img/website-meta-share-primary.jpg'
 
 const description = "Thank you to all of my supporters! These wallpapers are created at every milestone we hit, it's the least I can do to say thank you."
 
