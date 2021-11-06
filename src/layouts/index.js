@@ -11,7 +11,6 @@ import safariTab from './../assets/favicon/safari-pinned-tab.svg'
 // Component imports
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
-import './index.css'
 
 require('typeface-rubik');
 require('typeface-inter');

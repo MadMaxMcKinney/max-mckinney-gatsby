@@ -1,5 +1,4 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
 import Img from 'gatsby-image'
 import Pill from '../pills/Pill'
 import ReadMoreButton from '../buttons/ReadMoreButton'

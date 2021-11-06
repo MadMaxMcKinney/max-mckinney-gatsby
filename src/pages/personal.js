@@ -196,45 +196,6 @@ const SideProjectLink = styled.p`
     }
 `
 
-const Avatar = styled.div`
-    display: flex;
-    justify-self: flex-start;
-    place-items: center;
-
-    background: var(--blueblack-500);
-    padding: 5px;
-    margin-bottom: 16px;
-    margin-top: 170px;
-
-    border-radius: 100%;
-
-    animation: ${fadeInDown} 0.7s;
-
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 100%;
-    }
-`
-
-const SectionSeperator = styled.div`
-    margin-top: 100px;
-    
-    display: inline-grid;
-    grid-auto-flow: column;
-    grid-gap: 16px;
-    justify-self: flex-start;
-    place-items: center;
-
-    color: white;
-
-    animation: ${fadeInDown} 3.1s;
-
-    @media(max-width: ${SIZE_MOBILE_LARGE}) {
-        margin-top: 64px;
-    }
-`
-
 const DribbbleGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));

@@ -14,8 +14,6 @@ import w5 from '../assets/img/supporters/1000/MM_Support_Wallpaper_5.png'
 
 import metaFeaturedImage from '../assets/img/website-meta-share-personal.png'
 
-const youtubeRequest = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCQNdi3oxWKsVw8-kA26PSpw&key=AIzaSyA-1UNliOvD3F9x2n54PM-ppnBJhDhM4cA"
-
 const description = "Thank you to all of my supporters! These wallpapers are created at every milestone we hit, it's the least I can do to say thank you."
 
 const SupportersPage = ({data}) => {
