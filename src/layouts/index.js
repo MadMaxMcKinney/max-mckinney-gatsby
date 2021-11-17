@@ -37,18 +37,18 @@ const Layout = ({ children, data, location }) => (
                 <meta itemprop="description" content={data.site.siteMetadata.description}/>
                 <meta itemprop="image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
 
-                <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:title" content="Max McKinney"/>
-                <meta name="twitter:description" content={data.site.siteMetadata.description}/>
-                <meta name="twitter:site" content="@madmaxmckinney"/>
-                <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="twitter:title" content="Max McKinney"/>
+                <meta property="twitter:description" content={data.site.siteMetadata.description}/>
+                <meta property="twitter:site" content="@madmaxmckinney"/>
+                <meta property="twitter:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
 
-                <meta name="og:title" content="Max McKinney"/>
-                <meta name="og:description" content={data.site.siteMetadata.description}/>
-                <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
-                <meta name="og:site_name" content="Max McKinney"/>
-                <meta name="og:locale" content="en_US"/>
-                <meta name="og:type" content="website"/>
+                <meta name="title" property="og:title" content="Max McKinney"/>
+                <meta name="image" property="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
+                <meta name="description" property="og:description" content={data.site.siteMetadata.description}/>
+                <meta property="og:site_property" content="Max McKinney"/>
+                <meta property="og:locale" content="en_US"/>
+                <meta property="og:type" content="website"/>
 
                 <link rel="apple-touch-icon" sizes="180x180" href={faviconApple}/>
                 <link rel="icon" type="image/png" sizes="32x32" href={favicon32}/>
