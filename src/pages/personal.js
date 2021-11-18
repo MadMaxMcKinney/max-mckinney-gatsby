@@ -9,7 +9,7 @@ import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
 
 import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import PageSubtitle from '../components/page/PageSubtitle'
-import MLink from '../components/links/MLink'
+import PageLink from '../components/links/PageLink'
 
 import {fadeInDown} from '../animations/m-styled-animations'
 
@@ -37,7 +37,7 @@ const SideProjectsPage = ({data}) => (
 
         <PageHeaderTitle className="mb-6 mt-32 sm:mt-56">hello.</PageHeaderTitle>
         <PageSubtitle className="animate-fade-in ">These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</PageSubtitle>
-        <PageSubtitle className="animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <MLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</MLink> is the best place, so follow me there.</PageSubtitle>
+        <PageSubtitle className="animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <PageLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</PageLink> is the best place, so follow me there.</PageSubtitle>
 
         <SideProjectGrid className="mt-24 animate-fade-in-slow">
             {data.personal.edges.map(({node}) => (
@@ -50,7 +50,7 @@ const SideProjectsPage = ({data}) => (
             ))}
         </SideProjectGrid>
         
-        <h1 className="font-bold text-2xl text-white mt-28 mb-12 animate-fade-in-slow">design stuff from <MLink className="text-max-pink-300" href="https://dribbble.com/MadMaxMcKinney">dribbble</MLink></h1>
+        <h1 className="font-bold text-2xl text-white mt-28 mb-12 animate-fade-in-slow">design stuff from <PageLink className="text-max-pink-300" href="https://dribbble.com/MadMaxMcKinney">dribbble</PageLink></h1>
 
         <DribbbleGrid className="animate-fade-in-slow">
             {data.allDribbbleShot.edges.map(({node}) => (
@@ -62,7 +62,7 @@ const SideProjectsPage = ({data}) => (
             ))}
         </DribbbleGrid>
 
-        <h1 className="font-bold text-2xl text-white mt-28 mb-12 animate-fade-in-slow">writing stuff from <MLink className="text-max-yellow-300" href="https://maxmckinney.medium.com/">medium</MLink></h1>
+        <h1 className="font-bold text-2xl text-white mt-28 mb-12 animate-fade-in-slow">writing stuff from <PageLink className="text-max-yellow-300" href="https://maxmckinney.medium.com/">medium</PageLink></h1>
 
         <MediumPostGrid className="animate-fade-in-slow">
             {data.allMediumPost.edges.map(({node}) => (

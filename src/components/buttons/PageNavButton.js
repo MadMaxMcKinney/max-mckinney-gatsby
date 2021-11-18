@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const PillNavButton = (props) => {
+const PageNavButton = (props) => {
     return (
       <PageNavButtonContainer isActivePage={props.isActivePage} className="grid grid-flow-col gap-2 text-sm font-bold place-items-center transition-all group hover-supported:hover:opacity-70">
           {props.children} <i class="mr-2 fa-solid fa-caret-right transform translate-y-px hover-supported:group-hover:animate-pulse-right"></i>
@@ -13,4 +13,4 @@ const PageNavButtonContainer = styled.div`
     color: ${props => props.isActivePage ? `white` : `#9CA3AF`};
 `
 
-export default PillNavButton
+export default PageNavButton
