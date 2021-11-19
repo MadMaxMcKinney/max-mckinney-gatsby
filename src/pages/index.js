@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import { StaticImage } from 'gatsby-plugin-image';
 import ProjectCard from '../components/cards/ProjectCard';
 import PageLink from '../components/links/PageLink'
+import { MHeadingHero, MBody2XLarge } from '../components/typography';
 
 const IndexPage = ({data}) => (
   <React.Fragment>
@@ -12,9 +13,9 @@ const IndexPage = ({data}) => (
         <div className="flex items-end relative h-header-mobile md:min-h-870px md:h-header" id="Header">
             <div className="contained-content z-10 pb-16 md:pb-32">
                 <StaticImage className="h-auto w-40 mb-8 animate-fade-in-fast md:w-52" src={"../assets/img/max_transition_shapes.png"} alt="Max Shape Logo"/>
-                <h1 className="font-bold text-6xl text-white mb-5 animate-fade-in sm:text-7xl md:text-9xl">Designer.</h1>
-                <h1 className="font-bold text-6xl text-white mb-5 animate-fade-in-slow sm:text-7xl md:text-9xl">Leader.</h1>
-                <h1 className="font-bold text-6xl text-white animate-fade-in-very-slow sm:text-7xl md:text-9xl">Nerd.</h1>
+                <MHeadingHero className="mb-5 animate-fade-in">Designer.</MHeadingHero>
+                <MHeadingHero className="mb-5 animate-fade-in-slow">Leader.</MHeadingHero>
+                <MHeadingHero className="animate-fade-in-very-slow">Nerd.</MHeadingHero>
             </div>
             <Img style={{position: 'absolute', top: 0, left: '-24px', right: '-24px', height: `100%`}} fluid={data.maxBG.childImageSharp.fluid} className="bg-bottom animate-fade-in-very-slow"/>
         </div>
@@ -22,14 +23,14 @@ const IndexPage = ({data}) => (
 
         <div className="contained-content mt-16 animate-fade-in-slow sm:mt-24" id="BioDescription">
 
-            <div className="font-semibold text-gray-400 text-2xl sm:text-3xl sm:leading-10">
-                <p className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a design lead at IBM working in the cyber security space. I run a design centric YouTube channel, do automotive photography, and build cars.</p>
+            <div className="text-gray-400">
+                <MBody2XLarge className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a design lead at IBM working in the cyber security space. I run a design centric YouTube channel, do automotive photography, and build cars.</MBody2XLarge>
 
-                <p className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.</p>
+                <MBody2XLarge className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.</MBody2XLarge>
 
-                <p className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</p>
+                <MBody2XLarge className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</MBody2XLarge>
 
-                <p>Currently not available for hire. If you want to connect reach out to me at <PageLink href="mailto:max@maxmckinney.com">max@maxmckinney.com</PageLink>.</p>
+                <MBody2XLarge>Currently not available for hire. If you want to connect reach out to me at <PageLink href="mailto:max@maxmckinney.com">max@maxmckinney.com</PageLink>.</MBody2XLarge>
             </div>
         </div>
 

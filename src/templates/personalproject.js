@@ -10,6 +10,7 @@ import GithubButton from '../components/buttons/social/GithubButton'
 import YouTubeButton from '../components/buttons/social/YouTubeButton'
 import {fadeInDown} from '../animations/m-styled-animations'
 import PageSubtitle from '../components/page/PageSubtitle'
+import { MBodyXLarge, MHeading1 } from '../components/typography'
 
 
 const SideProjectsPage = ({data}) => (
@@ -41,8 +42,8 @@ const SideProjectsPage = ({data}) => (
 
 
         <ProjectImg fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
-        <PageHeaderTitle className="mb-6 mt-6 w-full">{data.personal.frontmatter.title}</PageHeaderTitle>
-        <PageSubtitle>{data.personal.frontmatter.description}</PageSubtitle>
+        <MHeading1 className="mb-6 mt-6 w-full text-white">{data.personal.frontmatter.title}</MHeading1>
+        <MBodyXLarge className="text-gray-400 max-w-3xl">{data.personal.frontmatter.description}</MBodyXLarge>
 
         <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in">
         {data.personal.frontmatter.appStoreUrl && 

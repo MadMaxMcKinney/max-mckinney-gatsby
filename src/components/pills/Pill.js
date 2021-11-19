@@ -1,9 +1,10 @@
 import React from 'react'
+import { MBodyUtility } from '../typography'
 
 export default (props) => {
   return (
 	<div className="flex justify-center items-center py-1 px-2 rounded-sm bg-white text-gray-900">
-		<span className="uppercase text-sm font-semibold ">{renderIcon(props.text)}{props.text}</span>
+		<MBodyUtility className="uppercase text-sm font-semibold ">{renderIcon(props.text)}{props.text}</MBodyUtility>
 	</div>
   )
 }

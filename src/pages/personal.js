@@ -7,9 +7,8 @@ import {SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
 
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
 
-import PageHeaderTitle from '../components/page/PageHeaderTitle'
-import PageSubtitle from '../components/page/PageSubtitle'
 import PageLink from '../components/links/PageLink'
+import { MBodyXLarge, MHeading1, MBodyLarge, MBodyRegular, MHeading3, MBodySmall } from '../components/typography'
 
 import {fadeInDown} from '../animations/m-styled-animations'
 
@@ -35,22 +34,24 @@ const SideProjectsPage = ({data}) => (
             <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
         </Helmet>
 
-        <PageHeaderTitle className="mb-6 mt-32 sm:mt-56">hello.</PageHeaderTitle>
-        <PageSubtitle className="animate-fade-in ">These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</PageSubtitle>
-        <PageSubtitle className="animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <PageLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</PageLink> is the best place, so follow me there.</PageSubtitle>
+        <MHeading1 className="mb-6 mt-32 sm:mt-56 animate-fade-in-fast text-white">hello.</MHeading1>
+        
+        <MBodyXLarge className="mb-8 text-gray-400 max-w-3xl animate-fade-in">These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</MBodyXLarge>
+
+        <MBodyXLarge className="mb-8 text-gray-400 max-w-3xl animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <PageLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</PageLink> is the best place, so follow me there.</MBodyXLarge>
 
         <SideProjectGrid className="mt-24 animate-fade-in-slow">
             {data.personal.edges.map(({node}) => (
                 <SideProjectCard to={node.fields.slug} accent={node.frontmatter.accent}>
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
                     <h2 className="text-xl md:text-2xl font-bold">{node.frontmatter.title}</h2>
-                    <SideProjectDetails className="text-gray-300 mt-4 text-lg">{node.frontmatter.description}</SideProjectDetails>
-                    <SideProjectLink className="mt-6 text-lg">{node.frontmatter.locationText}</SideProjectLink>
+                    <MBodyLarge className="text-gray-400 mt-4 flex-1">{node.frontmatter.description}</MBodyLarge>
+                    <SideProjectLink className="mt-6">{node.frontmatter.locationText}</SideProjectLink>
                 </SideProjectCard>
             ))}
         </SideProjectGrid>
         
-        <h1 className="font-bold text-2xl text-white mt-28 mb-12 animate-fade-in-slow">design stuff from <PageLink className="text-max-pink-300" href="https://dribbble.com/MadMaxMcKinney">dribbble</PageLink></h1>
+        <MHeading3 className="text-white mt-28 mb-12 animate-fade-in-slow">design stuff from <PageLink className="text-max-pink-300" href="https://dribbble.com/MadMaxMcKinney">dribbble</PageLink></MHeading3>
 
         <DribbbleGrid className="animate-fade-in-slow">
             {data.allDribbbleShot.edges.map(({node}) => (
@@ -62,7 +63,7 @@ const SideProjectsPage = ({data}) => (
             ))}
         </DribbbleGrid>
 
-        <h1 className="font-bold text-2xl text-white mt-28 mb-12 animate-fade-in-slow">writing stuff from <PageLink className="text-max-yellow-300" href="https://maxmckinney.medium.com/">medium</PageLink></h1>
+        <MHeading3 className="text-white mt-28 mb-12 animate-fade-in-slow">writing stuff from <PageLink className="text-max-yellow-300" href="https://maxmckinney.medium.com/">medium</PageLink></MHeading3>
 
         <MediumPostGrid className="animate-fade-in-slow">
             {data.allMediumPost.edges.map(({node}) => (
@@ -71,8 +72,8 @@ const SideProjectsPage = ({data}) => (
                         <img src={`https://miro.medium.com/max/1000/${node.virtuals.previewImage.imageId}`} alt="Article preview image"/>
                     </div>
                     <div className="grid">
-                        <p><strong>{node.title}</strong></p>
-                        <p>{node.virtuals.subtitle}</p>
+                        <MBodyRegular><strong>{node.title}</strong></MBodyRegular>
+                        <MBodyRegular>{node.virtuals.subtitle}</MBodyRegular>
                     </div>
                 </MediumPost>
             ))}
@@ -182,18 +183,8 @@ const SideProjectImage = styled(Img)`
     border-radius: 24px;
 `
 
-const SideProjectDetails = styled.p`
-    max-width: 370px;
-    padding: 0;
-    flex: 1;
-`
-
-const SideProjectLink = styled.p`
+const SideProjectLink = styled(MBodyRegular)`
     color: var(--accent-color);
-
-    @media(max-width: ${SIZE_MOBILE_LARGE}) {
-        font-size: 0.8rem;
-    }
 `
 
 const DribbbleGrid = styled.div`

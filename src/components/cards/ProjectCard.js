@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import Pill from '../pills/Pill'
 import ReadMoreButton from '../buttons/ReadMoreButton'
+import { MBodyLarge, MHeading2 } from '../typography'
 
 const ProjectCard = (props) => {
   return (
@@ -22,8 +23,8 @@ const ProjectCard = (props) => {
             </div>
             
             {/* Words */}
-            <h2 className="text-3xl font-bold">{props.data.frontmatter.title}</h2>
-            <p className="text-lg font-medium text-gray-400 pt-6 pb-8 flex-1">{props.data.frontmatter.projectShortBrief}</p>
+            <MHeading2>{props.data.frontmatter.title}</MHeading2>
+            <MBodyLarge className="text-gray-400 pt-6 pb-8 flex-1">{props.data.frontmatter.projectShortBrief}</MBodyLarge>
             
             <div id="ProjectActions">
                 <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { MBodySmall } from '../typography'
 
 const PageNavButton = (props) => {
     return (
@@ -9,7 +10,7 @@ const PageNavButton = (props) => {
     )
 }
 
-const PageNavButtonContainer = styled.div`
+const PageNavButtonContainer = styled(MBodySmall)`
     color: ${props => props.isActivePage ? `white` : `#9CA3AF`};
 `
 

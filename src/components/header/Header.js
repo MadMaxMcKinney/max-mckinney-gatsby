@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import PageNavButton from '../buttons/PageNavButton'
+import DropdownButton from '../buttons/DropdownButton'
 
 const Header = (props) => {
 
@@ -32,6 +33,9 @@ const Header = (props) => {
                             <p>Personal</p>
                         </PageNavButton>
                     </Link>
+                </li>
+                <li>
+                    <DropdownButton/>
                 </li>
             </div>
             </div>

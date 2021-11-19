@@ -67,6 +67,7 @@ module.exports = {
                 'fade-in-slow': 'fade-in 3s',
                 'fade-in': 'fade-in 2s',
                 'fade-in-fast': 'fade-in 1s',
+                'dropdown-in': 'fade-in 0.2s',
                 'color-change': 'color-change 6s infinite'
             },
 			keyframes: {
