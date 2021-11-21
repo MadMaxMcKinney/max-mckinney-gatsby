@@ -3,17 +3,14 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-
-import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import AppStoreButton from '../components/buttons/social/AppStoreButton'
 import GithubButton from '../components/buttons/social/GithubButton'
 import YouTubeButton from '../components/buttons/social/YouTubeButton'
 import {fadeInDown} from '../animations/m-styled-animations'
-import PageSubtitle from '../components/page/PageSubtitle'
-import { MBodyXLarge, MHeading1 } from '../components/typography'
+import { MBodyXL, MHeading01 } from '../components/typography'
 
 
-const SideProjectsPage = ({data}) => (
+const SideProjectDetailView = ({data}) => (
 
     <React.Fragment>
 
@@ -36,14 +33,12 @@ const SideProjectsPage = ({data}) => (
             <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.personal.fields.slug}/>
             <meta name="og:site_name" content="Max McKinney"/>
 
-        </Helmet>
+    </Helmet>
 
     <PageGrid>
-
-
         <ProjectImg fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
-        <MHeading1 className="mb-6 mt-6 w-full text-white">{data.personal.frontmatter.title}</MHeading1>
-        <MBodyXLarge className="text-gray-400 max-w-3xl">{data.personal.frontmatter.description}</MBodyXLarge>
+        <MHeading01 className="mb-6 mt-6 w-full text-white">{data.personal.frontmatter.title}</MHeading01>
+        <MBodyXL className="text-gray-400 max-w-3xl">{data.personal.frontmatter.description}</MBodyXL>
 
         <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in">
         {data.personal.frontmatter.appStoreUrl && 
@@ -96,7 +91,7 @@ const Content = styled.div`
     }
 `
 
-export default SideProjectsPage
+export default SideProjectDetailView
 
 export const query = graphql`
 query PersonalProjectBySlug($slug: String!) {

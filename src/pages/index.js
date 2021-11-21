@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import { StaticImage } from 'gatsby-plugin-image';
 import ProjectCard from '../components/cards/ProjectCard';
 import PageLink from '../components/links/PageLink'
-import { MHeadingHero, MBody2XLarge } from '../components/typography';
+import { MHeadingHero, MBodyLead } from '../components/typography';
 
 const IndexPage = ({data}) => (
   <React.Fragment>
@@ -24,13 +24,13 @@ const IndexPage = ({data}) => (
         <div className="contained-content mt-16 animate-fade-in-slow sm:mt-24" id="BioDescription">
 
             <div className="text-gray-400">
-                <MBody2XLarge className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a design lead at IBM working in the cyber security space. I run a design centric YouTube channel, do automotive photography, and build cars.</MBody2XLarge>
+                <MBodyLead className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a design lead at IBM working in the cyber security space. I run a design centric YouTube channel, do automotive photography, and build cars.</MBodyLead>
 
-                <MBody2XLarge className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.</MBody2XLarge>
+                <MBodyLead className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.</MBodyLead>
 
-                <MBody2XLarge className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</MBody2XLarge>
+                <MBodyLead className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</MBodyLead>
 
-                <MBody2XLarge>Currently not available for hire. If you want to connect reach out to me at <PageLink href="mailto:max@maxmckinney.com">max@maxmckinney.com</PageLink>.</MBody2XLarge>
+                <MBodyLead>Currently not available for hire. If you want to connect reach out to me at <PageLink href="mailto:max@maxmckinney.com">max@maxmckinney.com</PageLink>.</MBodyLead>
             </div>
         </div>
 
