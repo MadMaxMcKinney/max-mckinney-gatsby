@@ -1,4 +1,5 @@
 module.exports = {
+    mode: "jit",
     purge: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
         container: {
@@ -131,14 +132,5 @@ module.exports = {
     },
     plugins: [
         require('@tailwindcss/typography'),
-    ],
-    variants: {
-        extend: {
-            animation: ['hover', 'focus', 'group-hover'],
-            scale: ['active'],
-            display: ['group-hover'],
-            translate: ['group-hover'],
-            brightness: ['hover']
-        }
-    }
+    ]
 }
