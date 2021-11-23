@@ -31,10 +31,6 @@ module.exports = {
                 'hover-supported': {'raw': '(hover)'},
             },
 			colors: {
-				gray: {
-                    700: '#1c2030',
-					900: '#0f1015',
-				},
                 blueblack: {
                     300: '#1C2030',
                     500: '#0f1015',
