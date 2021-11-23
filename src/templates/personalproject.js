@@ -42,13 +42,13 @@ const SideProjectDetailView = ({data}) => (
 
         <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in">
         {data.personal.frontmatter.appStoreUrl && 
-            <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i class="fab fa-app-store"></i>View on App Store</AppStoreButton>
+            <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i className="fab fa-app-store"></i>View on App Store</AppStoreButton>
         }
         {data.personal.frontmatter.githubUrl && 
-            <GithubButton href={data.personal.frontmatter.githubUrl}><i class="fab fa-github"></i> View on Github</GithubButton>
+            <GithubButton href={data.personal.frontmatter.githubUrl}><i className="fab fa-github"></i> View on Github</GithubButton>
         }
         {data.personal.frontmatter.youtubeUrl && 
-            <YouTubeButton href={data.personal.frontmatter.youtubeUrl}><i class="fab fa-youtube"></i> View on YouTube</YouTubeButton>
+            <YouTubeButton href={data.personal.frontmatter.youtubeUrl}><i className="fab fa-youtube"></i> View on YouTube</YouTubeButton>
         }
         </div>
 

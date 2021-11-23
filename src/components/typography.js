@@ -63,9 +63,15 @@ export const MBody = ({children, className}) => {
     )
 }
 
+export const MBodyLight = ({children, className}) => {
+    return (
+        <p className={`font-normal text-lg ${className}`}>{children}</p>
+    )
+}
+
 export const MBodySmall = ({children, className}) => {
     return (
-        <p className={`font-bold text-sm leading-5 ${className}`}>{children}</p>
+        <p className={`font-normal text-sm leading-5 ${className}`}>{children}</p>
     )
 }
 //////

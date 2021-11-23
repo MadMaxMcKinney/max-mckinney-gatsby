@@ -11,6 +11,11 @@
     }
 }
 
+::selection {
+    background-color: #829298;
+    color: white;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     --blueblack-500: #0f1015;

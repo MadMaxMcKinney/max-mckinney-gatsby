@@ -28,7 +28,7 @@ const ProjectCard = (props) => {
             
             <div id="ProjectActions">
                 <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}>
-                    Read more about it
+                    View case study
                 </ReadMoreButton>
             </div>
         </div>

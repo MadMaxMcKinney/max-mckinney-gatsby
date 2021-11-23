@@ -8,7 +8,7 @@ import {SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
 
 import PageLink from '../components/links/PageLink'
-import { MBodyXL, MHeading01, MBody, MHeading03, MBodySmall } from '../components/typography'
+import { MBodyXL, MHeading01, MBody, MHeading03, MBodyLight } from '../components/typography'
 
 
 const description = "These are some of my personal projects. They are all over the place but you might find some things you enjoy!"
@@ -71,7 +71,7 @@ const SideProjectsPage = ({data}) => (
                     </div>
                     <div className="grid">
                         <MBody><strong>{node.title}</strong></MBody>
-                        <MBodySmall>{node.virtuals.subtitle}</MBodySmall>
+                        <MBodyLight>{node.virtuals.subtitle}</MBodyLight>
                     </div>
                 </MediumPost>
             ))}
@@ -181,7 +181,7 @@ const SideProjectImage = styled(Img)`
     border-radius: 24px;
 `
 
-const SideProjectLink = styled(MBodySmall)`
+const SideProjectLink = styled(MBodyLight)`
     color: var(--accent-color);
 `
 

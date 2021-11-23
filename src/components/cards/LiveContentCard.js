@@ -9,7 +9,7 @@ export default (props) => {
 		<LiveContentInfo bg={props.thumbnail} themeColor={props.themeColor}>
 			<p>{props.title}</p>
 		</LiveContentInfo>
-		<LiveContentButton href={props.url} themeColor={props.themeColor}> <i class="far fa-chevron-right"></i> </LiveContentButton>
+		<LiveContentButton href={props.url} themeColor={props.themeColor}> <i className="far fa-chevron-right"></i> </LiveContentButton>
 	</LiveContentCard>
   )
 }
