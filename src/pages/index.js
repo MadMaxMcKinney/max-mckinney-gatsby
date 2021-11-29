@@ -16,7 +16,7 @@ const IndexPage = ({data}) => (
                 <h1 className="font-bold text-6xl text-white mb-5 animate-fade-in-slow sm:text-7xl md:text-9xl">Leader.</h1>
                 <h1 className="font-bold text-6xl text-white animate-fade-in-very-slow sm:text-7xl md:text-9xl">Nerd.</h1>
             </div>
-            <Img style={{position: 'absolute', top: 0, left: '-24px', right: '-24px', height: `100%`}} fluid={data.maxBG.childImageSharp.fluid} className="bg-bottom animate-fade-in-very-slow"/>
+            <Img style={{position: 'absolute', top: 0, left: '-24px', right: '-24px', height: `100%`}} fluid={data.maxBG.childImageSharp.fluid} className="bg-bottom animate-fade-in-slow"/>
         </div>
 		
 

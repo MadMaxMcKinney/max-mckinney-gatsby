@@ -40,11 +40,11 @@ const SideProjectsPage = ({data}) => (
     <PageGrid>
 
 
-        <ProjectImg fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
-        <PageHeaderTitle className="mb-6 mt-6 w-full">{data.personal.frontmatter.title}</PageHeaderTitle>
-        <PageSubtitle>{data.personal.frontmatter.description}</PageSubtitle>
+        <ProjectImg className="animate-fade-in-fast" fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
+        <PageHeaderTitle className="mb-6 mt-6 animate-fade-in w-full">{data.personal.frontmatter.title}</PageHeaderTitle>
+        <PageSubtitle className="animate-fade-in-slow">{data.personal.frontmatter.description}</PageSubtitle>
 
-        <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in">
+        <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in-very-slow">
         {data.personal.frontmatter.appStoreUrl && 
             <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i class="fab fa-app-store"></i>View on App Store</AppStoreButton>
         }
@@ -56,7 +56,7 @@ const SideProjectsPage = ({data}) => (
         }
         </div>
 
-        <Content className="prose prose-lg max-w-none text-white" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
+        <Content className="prose prose-lg max-w-none text-white animate-fade-in-very-slow" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
 
     </PageGrid>
     </React.Fragment>
@@ -77,14 +77,10 @@ const ProjectImg = styled(Img)`
 
     margin-top: 170px;
     border-radius: 24px;
-
-    animation: ${fadeInDown} 0.8s;
 `
 
 const Content = styled.div`
     margin-top: 64px;
-
-    animation: ${fadeInDown} 2s;
 
     img {
         border-radius: 2px;

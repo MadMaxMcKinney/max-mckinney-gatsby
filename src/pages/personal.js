@@ -35,9 +35,15 @@ const SideProjectsPage = ({data}) => (
             <meta name="og:image" content={data.site.siteMetadata.siteUrl + metaFeaturedImage}/>
         </Helmet>
 
+<<<<<<< HEAD
         <PageHeaderTitle className="mb-6 mt-32 sm:mt-56">hello.</PageHeaderTitle>
         <PageSubtitle className="animate-fade-in ">These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</PageSubtitle>
         <PageSubtitle className="animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <PageLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</PageLink> is the best place, so follow me there.</PageSubtitle>
+=======
+        <PageHeaderTitle className="mb-6 mt-32 animate-fade-in-fast sm:mt-56">hello.</PageHeaderTitle>
+        <PageSubtitle className="animate-fade-in">These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</PageSubtitle>
+        <PageSubtitle className="animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <MLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</MLink> is the best place, so follow me there.</PageSubtitle>
+>>>>>>> 0422cd276d3f798d7727af00092aa013a8c41f89
 
         <SideProjectGrid className="mt-24 animate-fade-in-slow">
             {data.personal.edges.map(({node}) => (
