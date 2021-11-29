@@ -29,7 +29,7 @@ const Footer = () => {
 		</div>
 
         {/* Email */}
-		<PageLink className="text-xl text-center font-bold md:text-2xl md:text-left" href="mailto:max@maxmckinney.com">max@maxmckinney.com</PageLink>
+		<PageLink className="text-xl text-center font-bold md:text-2xl md:text-left" href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</PageLink>
 
 	</div>
   )
