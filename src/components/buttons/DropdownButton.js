@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import { useComponentVisible } from '../hooks';
+import { useComponentVisible } from '../hooks/useComponentVisible';
 
 
 const DropdownButton = (props) => {

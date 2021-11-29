@@ -62,13 +62,13 @@ const Layout = ({ children, data, location }) => (
 
             </Helmet>
 
-            <Header location={location} />
-            
             <PowerUpProvider>
+                <Header location={location} />
+                
                 {children}
+                
+                <Footer />
             </PowerUpProvider>
-            
-            <Footer />
 
         </div>
     )}
