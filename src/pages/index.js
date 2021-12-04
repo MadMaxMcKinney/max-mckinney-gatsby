@@ -23,7 +23,7 @@ const IndexPage = ({data}) => (
         <div className="contained-content mt-16 animate-fade-in-slow sm:mt-24" id="BioDescription">
 
             <div className="font-semibold text-gray-400 text-2xl sm:text-3xl sm:leading-10">
-                <p className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a design lead at IBM working in the cyber security space. I run a design centric YouTube channel, do automotive photography, and build cars.</p>
+                <p className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently an Education Designer at Figma. I design with empathy and with a goal of humanizing technology. I also run a design centric YouTube channel, do automotive photography, and build cars.</p>
 
                 <p className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.</p>
 
