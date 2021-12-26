@@ -7,7 +7,7 @@ import PageNavButton from '../buttons/PageNavButton'
 const Header = (props) => {
 
     return (
-        <Navmenu className="grid place-items-center w-full mt-4 px-4 z-10 top-0 absolute animate-fade-in-fast">
+        <Navmenu className="grid place-items-center w-full mt-4 px-6 z-10 top-0 absolute animate-fade-in-fast">
             <div className="flex justify-between container">
 
             {/* Site Logo Container */}
