@@ -2,11 +2,12 @@ import React from 'react'
 import Img from 'gatsby-image'
 import Pill from '../pills/Pill'
 import ReadMoreButton from '../buttons/ReadMoreButton'
+import PropTypes from 'prop-types'
+import { MBody, MHeading02 } from '../typography'
 
 const ProjectCard = (props) => {
   return (
-    <div data-filter={props.data.frontmatter.categories} className="">
-
+    <div>
         {/* Preview Image */}
         <div className="rounded-lg max-w-7xl h-96 overflow-hidden mx-auto md:h-project-image">
             <Img className="object-fill h-full" fluid={props.data.frontmatter.thumb.childImageSharp.fluid}/>
@@ -22,18 +23,29 @@ const ProjectCard = (props) => {
             </div>
             
             {/* Words */}
-            <h2 className="text-3xl font-bold">{props.data.frontmatter.title}</h2>
-            <p className="text-lg font-medium text-gray-400 pt-6 pb-8 flex-1">{props.data.frontmatter.projectShortBrief}</p>
+            <MHeading02>{props.data.frontmatter.title}</MHeading02>
+            <MBody className="text-gray-400 pt-6 pb-8 flex-1">{props.data.frontmatter.projectShortBrief}</MBody>
             
             <div id="ProjectActions">
                 <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}>
-                    Read more about it
+                    View case study
                 </ReadMoreButton>
             </div>
         </div>
 
     </div>
   )
+}
+
+ProjectCard.propTypes = {
+    /** A markdown object that contains professional project details */
+    data: PropTypes.shape({
+        categories: PropTypes.array,
+        thumb: PropTypes.any,
+        title: PropTypes.string,
+        accentColor: PropTypes.string,
+        fields: PropTypes.object
+    })
 }
 
 export default ProjectCard;

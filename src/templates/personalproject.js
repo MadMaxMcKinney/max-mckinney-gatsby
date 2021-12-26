@@ -3,16 +3,14 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-
-import PageHeaderTitle from '../components/page/PageHeaderTitle'
 import AppStoreButton from '../components/buttons/social/AppStoreButton'
 import GithubButton from '../components/buttons/social/GithubButton'
 import YouTubeButton from '../components/buttons/social/YouTubeButton'
 import {fadeInDown} from '../animations/m-styled-animations'
-import PageSubtitle from '../components/page/PageSubtitle'
+import { MBodyXL, MHeading01 } from '../components/typography'
 
 
-const SideProjectsPage = ({data}) => (
+const SideProjectDetailView = ({data}) => (
 
     <React.Fragment>
 
@@ -35,24 +33,22 @@ const SideProjectsPage = ({data}) => (
             <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.personal.fields.slug}/>
             <meta name="og:site_name" content="Max McKinney"/>
 
-        </Helmet>
+    </Helmet>
 
     <PageGrid>
-
-
         <ProjectImg className="animate-fade-in-fast" fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
-        <PageHeaderTitle className="mb-6 mt-6 animate-fade-in w-full">{data.personal.frontmatter.title}</PageHeaderTitle>
-        <PageSubtitle className="animate-fade-in-slow">{data.personal.frontmatter.description}</PageSubtitle>
+        <MHeading01 className="mb-6 mt-6 w-full text-white animate-fade-in-fast">{data.personal.frontmatter.title}</MHeading01>
+        <MBodyXL className="text-gray-400 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
 
         <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in-very-slow">
         {data.personal.frontmatter.appStoreUrl && 
-            <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i class="fab fa-app-store"></i>View on App Store</AppStoreButton>
+            <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i className="fab fa-app-store"></i>View on App Store</AppStoreButton>
         }
         {data.personal.frontmatter.githubUrl && 
-            <GithubButton href={data.personal.frontmatter.githubUrl}><i class="fab fa-github"></i> View on Github</GithubButton>
+            <GithubButton href={data.personal.frontmatter.githubUrl}><i className="fab fa-github"></i> View on Github</GithubButton>
         }
         {data.personal.frontmatter.youtubeUrl && 
-            <YouTubeButton href={data.personal.frontmatter.youtubeUrl}><i class="fab fa-youtube"></i> View on YouTube</YouTubeButton>
+            <YouTubeButton href={data.personal.frontmatter.youtubeUrl}><i className="fab fa-youtube"></i> View on YouTube</YouTubeButton>
         }
         </div>
 
@@ -91,7 +87,7 @@ const Content = styled.div`
     }
 `
 
-export default SideProjectsPage
+export default SideProjectDetailView
 
 export const query = graphql`
 query PersonalProjectBySlug($slug: String!) {

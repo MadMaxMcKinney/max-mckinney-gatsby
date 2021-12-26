@@ -62,9 +62,9 @@ const Layout = ({ children, data, location }) => (
             </Helmet>
 
             <Header location={location} />
-
+                
             {children}
-
+                
             <Footer />
 
         </div>

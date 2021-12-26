@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    h1 {
-      @apply text-3xl font-bold;
-    }
-}
-
 @layer utilities {
     .contained-content {
         max-width: 680px;
@@ -15,6 +9,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+::selection {
+    background-color: #829298;
+    color: white;
 }
 
 body {

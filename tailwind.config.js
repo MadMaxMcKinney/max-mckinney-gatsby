@@ -1,4 +1,5 @@
 module.exports = {
+    mode: "jit",
     purge: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
         container: {
@@ -31,10 +32,6 @@ module.exports = {
                 'hover-supported': {'raw': '(hover)'},
             },
 			colors: {
-				gray: {
-                    700: '#1c2030',
-					900: '#0f1015',
-				},
                 blueblack: {
                     300: '#1C2030',
                     500: '#0f1015',
@@ -134,14 +131,5 @@ module.exports = {
     },
     plugins: [
         require('@tailwindcss/typography'),
-    ],
-    variants: {
-        extend: {
-            animation: ['hover', 'focus', 'group-hover'],
-            scale: ['active'],
-            display: ['group-hover'],
-            translate: ['group-hover'],
-            brightness: ['hover']
-        }
-    }
+    ]
 }

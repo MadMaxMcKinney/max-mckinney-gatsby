@@ -3,7 +3,7 @@ import React from 'react'
 export default (props) => {
   return (
 	<div className="flex justify-center items-center py-1 px-2 rounded-sm bg-white text-gray-900">
-		<span className="uppercase text-sm font-semibold ">{renderIcon(props.text)}{props.text}</span>
+		<h6 className="uppercase text-sm font-medium tracking-wide">{renderIcon(props.text)}{props.text}</h6>
 	</div>
   )
 }

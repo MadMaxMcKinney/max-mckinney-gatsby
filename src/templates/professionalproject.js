@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 import {fadeInDown, fadeInUp, fadeInScaleDown} from '../animations/m-styled-animations'
 
 import LiveContentCard from '../components/cards/LiveContentCard'
+import { MBodyLight, MHeading03 } from '../components/typography'
 
 export default function Template({ data }) {
 	return (
@@ -44,28 +45,28 @@ export default function Template({ data }) {
 		<ProjectContentGrid>
 			<ProjectDetails>
 				<div>
-					<h2 className="mb-1 text-2xl font-bold">Role</h2>
-					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectRole}</p>
+					<MHeading03 className="mb-1">Role</MHeading03>
+					<MBodyLight className="mb-4">{data.markdownRemark.frontmatter.projectRole}</MBodyLight>
 				</div>
 				<div>
-					<h2 className="mb-1 text-2xl font-bold">Client</h2>
-					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectClient}</p>
+					<MHeading03 className="mb-1">Client</MHeading03>
+					<MBodyLight className="mb-4">{data.markdownRemark.frontmatter.projectClient}</MBodyLight>
 				</div>
 				<div>
-					<h2 className="mb-1 text-2xl font-bold">Agency</h2>
-					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectAgency}</p>
+					<MHeading03 className="mb-1">Agency</MHeading03>
+					<MBodyLight className="mb-4">{data.markdownRemark.frontmatter.projectAgency}</MBodyLight>
 				</div>
 				<div>
-					<h2 className="mb-1 text-2xl font-bold">Date</h2>
-					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectDate}</p>
+					<MHeading03 className="mb-1">Date</MHeading03>
+					<MBodyLight className="mb-4">{data.markdownRemark.frontmatter.projectDate}</MBodyLight>
 				</div>
 				<div>
-					<h2 className="mb-1 text-2xl font-bold">Brief</h2>
-					<p className="mb-4 text-lg">{data.markdownRemark.frontmatter.projectBrief}</p>
+					<MHeading03 className="mb-1">Brief</MHeading03>
+					<MBodyLight className="mb-4">{data.markdownRemark.frontmatter.projectBrief}</MBodyLight>
 				</div>
 			</ProjectDetails>
 
-			<h2 className="mb-1 text-2xl font-bold">Case Study</h2>
+			<MHeading03 className="mb-1">Case Study</MHeading03>
 
 			<div className="prose prose-lg text-white max-w-none" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
 
