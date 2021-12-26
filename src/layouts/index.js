@@ -11,7 +11,6 @@ import safariTab from './../assets/favicon/safari-pinned-tab.svg'
 // Component imports
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
-import { PowerUpProvider } from '../components/contexts/PowerUpContext'
 
 require('typeface-rubik');
 require('typeface-inter');
@@ -62,13 +61,11 @@ const Layout = ({ children, data, location }) => (
 
             </Helmet>
 
-            <PowerUpProvider>
-                <Header location={location} />
+            <Header location={location} />
                 
-                {children}
+            {children}
                 
-                <Footer />
-            </PowerUpProvider>
+            <Footer />
 
         </div>
     )}

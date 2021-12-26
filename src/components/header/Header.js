@@ -3,8 +3,6 @@ import {Link} from 'gatsby'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import PageNavButton from '../buttons/PageNavButton'
-import DropdownButton from '../buttons/DropdownButton'
-import DropdownPowerup from '../dropdowns/DropdownPowerup'
 
 const Header = (props) => {
 
@@ -14,8 +12,8 @@ const Header = (props) => {
 
             {/* Site Logo Container */}
             <div className="flex flex-row items-center justify-start">
-                <Link to="/">
-                    <StaticImage className="h-auto w-20" src="../../assets/img/max_transition_shapes.png" alt="Max McKinney Shape Logo"/>
+                <Link className='transition-opacity hover:opacity-80' to="/">
+                    <StaticImage className="h-auto w-12" src="../../assets/img/max_word_mark.png" alt="Max McKinney Shape Logo"/>
                 </Link>
             </div>
 
@@ -34,11 +32,6 @@ const Header = (props) => {
                             <p>Personal</p>
                         </PageNavButton>
                     </Link>
-                </li>
-                <li>
-                    <DropdownButton>
-                        <DropdownPowerup/>
-                    </DropdownButton>
                 </li>
             </div>
             </div>

@@ -30,7 +30,7 @@ const IndexPage = ({data}) => (
 
                 <MBodyLead className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</MBodyLead>
 
-                <MBodyLead>Currently not available for hire. If you want to connect reach out to me at <PageLink href="mailto:max@maxmckinney.com">max@maxmckinney.com</PageLink>.</MBodyLead>
+                <MBodyLead>Currently not available for hire. If you want to connect reach out to me at <PageLink href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</PageLink>.</MBodyLead>
             </div>
         </div>
 

@@ -37,8 +37,8 @@ const SideProjectDetailView = ({data}) => (
 
     <PageGrid>
         <ProjectImg fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
-        <MHeading01 className="mb-6 mt-6 w-full text-white">{data.personal.frontmatter.title}</MHeading01>
-        <MBodyXL className="text-gray-400 max-w-3xl">{data.personal.frontmatter.description}</MBodyXL>
+        <MHeading01 className="mb-6 mt-6 w-full text-white animate-fade-in-fast">{data.personal.frontmatter.title}</MHeading01>
+        <MBodyXL className="text-gray-400 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
 
         <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in">
         {data.personal.frontmatter.appStoreUrl && 
