@@ -1,6 +1,5 @@
 module.exports = {
-    mode: "jit",
-    purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
         container: {
             center: true,
@@ -55,7 +54,11 @@ module.exports = {
                     pink: {
                         300: '#DB2777'
                     }
-                }
+                },
+                // Alias these names for the v2 -> v3 transition
+                green: colors.emerald,
+                yellow: colors.amber,
+                purple: colors.violet,
             },
             animation: {
                 'pulse-right': 'pulsing-right 0.3s alternate infinite',
