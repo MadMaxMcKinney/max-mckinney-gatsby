@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import GetSumLogo from '../../assets/img/getsum-logo.png'
+import GetSumLogo from '../../assets/img/personal-projects/getsum-logo.png'
 
 import PageHeaderTitle from '../../components/page/PageHeaderTitle'
 import PageSubtitle from '../../components/page/PageSubtitle'

@@ -40,14 +40,21 @@ const SideProjectsPage = ({data}) => (
         <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <PageLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</PageLink> is the best place, so follow me there.</MBodyXL>
 
         <SideProjectGrid className="mt-12 sm:mt-24 animate-fade-in-slow">
-            {data.personal.edges.map(({node}) => (
-                <SideProjectCard to={node.fields.slug} accent={node.frontmatter.accent}>
+            {data.personal.edges.map(({node}) => {
+                
+                // Determine if the project is linking to something external or an internal page
+                // If there is no externalLink frontmatter then use the generated slug for internal page
+                const processedLink = node.frontmatter.externalLink ? node.frontmatter.externalLink : node.fields.slug
+
+                return (
+                <SideProjectCard to={processedLink} accent={node.frontmatter.accent}>
                     <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
                     <h2 className="text-xl md:text-2xl font-bold">{node.frontmatter.title}</h2>
                     <MBody className="text-gray-400 mt-4 flex-1">{node.frontmatter.description}</MBody>
                     <SideProjectLink className="mt-6">{node.frontmatter.locationText}</SideProjectLink>
                 </SideProjectCard>
-            ))}
+                )
+            })}
         </SideProjectGrid>
 
     </PageGrid>
@@ -186,6 +193,7 @@ query personalProjectQuery {
               accent
               locationText
               url
+              externalLink
               image {
                 childImageSharp {
                   fluid(maxWidth: 200) {
