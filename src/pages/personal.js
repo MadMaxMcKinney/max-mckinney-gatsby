@@ -39,7 +39,7 @@ const SideProjectsPage = ({data}) => (
 
         <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <PageLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</PageLink> is the best place, so follow me there.</MBodyXL>
 
-        <SideProjectGrid className="mt-12 sm:mt-24 animate-fade-in-slow">
+        <div id="SideProjectGrid" className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 sm:gap-8 md:gap-14 sm:mt-24 animate-fade-in-slow">
             {data.personal.edges.map(({node}) => {
                 
                 // Determine if the project is linking to something external or an internal page
@@ -55,7 +55,7 @@ const SideProjectsPage = ({data}) => (
                 </SideProjectCard>
                 )
             })}
-        </SideProjectGrid>
+        </div>
 
     </PageGrid>
 )
@@ -66,33 +66,6 @@ const PageGrid = styled.div`
 	& > * {
 		grid-column: center;
 	}
-`
-
-const SideProjectGrid = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 72px;
-
-    @media(max-width: 1015px) {
-        grid-gap: 32px;
-    }
-
-    @media(max-width: ${SIZE_MOBILE_LARGE}) {
-        grid-template-columns: 10px; /* Explicit grid, defining the first item */
-        grid-auto-flow: column;
-        grid-auto-columns: 75%; /* Implicit grid, defining the remaining items */
-        overflow-x: scroll;
-        margin-top: 64px;
-        grid-column: 1/4;
-        grid-gap: 16px;
-        padding-bottom: 16px;
-        
-        /* This is needed to provide an air gap before and after the items in the horizontally scrolling list */
-        &::after, &::before{
-            content: '';
-            width: 10px;
-        }
-    }
 `
 
 const SideProjectCard = styled(DynamicLink)`
