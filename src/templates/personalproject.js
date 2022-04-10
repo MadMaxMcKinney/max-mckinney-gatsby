@@ -6,7 +6,6 @@ import Img from "gatsby-image"
 import AppStoreButton from '../components/buttons/social/AppStoreButton'
 import GithubButton from '../components/buttons/social/GithubButton'
 import YouTubeButton from '../components/buttons/social/YouTubeButton'
-import {fadeInDown} from '../animations/m-styled-animations'
 import { MBodyXL, MHeading01 } from '../components/typography'
 
 

@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import {fadeInDown, fadeInUp, fadeInScaleDown} from '../animations/m-styled-animations'
 
 import LiveContentCard from '../components/cards/LiveContentCard'
 import { MBodyLight, MHeading03 } from '../components/typography'
@@ -38,8 +37,8 @@ export default function Template({ data }) {
         </Helmet>
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
-			<Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}/>
-			<ProjectPostTitle>{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
+			<Img className="animate-fade-in" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}/>
+			<ProjectPostTitle className='animate-fade-in-slow'>{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
 		</ProjectHeader>
 
 		<div className='page-grid page-grid-sm text-white/80 animate-fade-in-up'>
@@ -90,10 +89,6 @@ const ProjectHeader = styled.div`
 	position: relative;
 	padding: 0px 24px;
 
-	& img {
-		animation: ${fadeInDown} 1s;
-	}
-
 	&:after {
 		position: absolute;
 		content: '';
@@ -114,7 +109,6 @@ const ProjectPostTitle = styled.h1`
 	text-align: center;
 	font-size: 3.7rem;
 	z-index: 5;
-	animation: ${fadeInScaleDown} 1.5s ease-out;
 
 	@media(max-width: 715px) {
 		font-size: 2.2rem;
