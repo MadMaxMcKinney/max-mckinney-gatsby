@@ -24,13 +24,13 @@ const IndexPage = ({data}) => (
         <div className="contained-content mt-16 animate-fade-in-slow sm:mt-24" id="BioDescription">
 
             <div className="text-gray-400">
-                <MBodyLead className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a design lead at IBM working in the cyber security space. I run a design centric YouTube channel, do automotive photography, and build cars.</MBodyLead>
+                <MBodyLead className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a Designer at Figma. I also run a design centric YouTube channel, do automotive photography, and build cars.</MBodyLead>
 
-                <MBodyLead className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.</MBodyLead>
+                <MBodyLead className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My background is in user experience design, product development, design systems, and design leadership.</MBodyLead>
 
-                <MBodyLead className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</MBodyLead>
+                <MBodyLead className="mb-6">To support my design projects I enjoy creating end-to-end experiences via frontend web development with a focus in React, Gatsby/Next, and CSS component systems.</MBodyLead>
 
-                <MBodyLead>Currently not available for hire. If you want to connect reach out to me at <PageLink href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</PageLink>.</MBodyLead>
+                <MBodyLead>Currently not available for hire. If you'd like to connect, please reach out to me at <PageLink href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</PageLink>.</MBodyLead>
             </div>
         </div>
 
