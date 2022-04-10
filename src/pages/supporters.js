@@ -32,7 +32,7 @@ const SupportersPage = ({data}) => {
     })
 
     return (
-    <PageGrid>
+    <div className='page-grid'>
 
         <Helmet title={data.site.siteMetadata.title + ' | Supporters '}>
             <meta itemprop="name" content={data.site.siteMetadata.title + ' | Supporters '}/>
@@ -79,7 +79,7 @@ const SupportersPage = ({data}) => {
             </SupporterMilestoneRow>
         </div>    
 
-    </PageGrid>
+    </div>
     )
 }
 
@@ -90,14 +90,6 @@ const WallpaperContainer = (props) => (
         {props.children}
     </a>
 )
-
-const PageGrid = styled.div`
-	display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 1100px) [end] minmax(24px, 1fr);
-	& > * {
-		grid-column: center;
-	}
-`
 
 const RightGradient = styled.div`
     position: absolute;

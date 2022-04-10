@@ -9,7 +9,7 @@ import {fadeInDown} from '../../animations/m-styled-animations'
 
 
 const GetSumPrivacyPage = ({data}) => (
-    <PageGrid>
+    <div className='page-grid'>
 
 
         <ProjectImg src={GetSumLogo} />
@@ -78,16 +78,8 @@ const GetSumPrivacyPage = ({data}) => (
 <p>This privacy policy was created using Termly&rsquo;s Privacy Policy Generator.</p>
         </Content>
 
-    </PageGrid>
+    </div>
 )
-
-const PageGrid = styled.div`
-	display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 1100px) [end] minmax(24px, 1fr);
-	& > * {
-		grid-column: center;
-	}
-`
 
 const ProjectImg = styled.img`
     width: 100px;

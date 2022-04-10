@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {PulseRight} from '../Animations'
 
 export default (props) => {
   return (
@@ -71,10 +70,4 @@ const LiveContentButton = styled.a`
 	&:hover {
 		opacity: 0.7;
 	}
-
-    &:hover svg {
-        animation: ${PulseRight} 0.3s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
 `;

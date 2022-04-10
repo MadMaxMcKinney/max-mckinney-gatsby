@@ -35,7 +35,7 @@ const SideProjectDetailView = ({data}) => (
 
     </Helmet>
 
-    <PageGrid>
+    <div className='page-grid'>
         <ProjectImg className="animate-fade-in-fast" fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
         <MHeading01 className="mb-6 mt-6 w-full text-white animate-fade-in-fast">{data.personal.frontmatter.title}</MHeading01>
         <MBodyXL className="text-gray-400 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
@@ -54,17 +54,9 @@ const SideProjectDetailView = ({data}) => (
 
         <Content className="prose prose-lg max-w-none text-white animate-fade-in-very-slow" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
 
-    </PageGrid>
+    </div>
     </React.Fragment>
 )
-
-const PageGrid = styled.div`
-	display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 1100px) [end] minmax(24px, 1fr);
-	& > * {
-		grid-column: center;
-	}
-`
 
 const ProjectImg = styled(Img)`
     width: 100px;

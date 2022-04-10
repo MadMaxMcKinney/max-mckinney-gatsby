@@ -42,7 +42,7 @@ export default function Template({ data }) {
 			<ProjectPostTitle>{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
 		</ProjectHeader>
 
-		<ProjectContentGrid>
+		<div className='page-grid page-grid-sm text-white/80 animate-fade-in-up'>
 			<ProjectDetails>
 				<div>
 					<MHeading03 className="mb-1">Role</MHeading03>
@@ -75,7 +75,7 @@ export default function Template({ data }) {
 			}
 			
 
-		</ProjectContentGrid>
+		</div>
 
 		<BackgroundColor themeColor={data.markdownRemark.frontmatter.themeColor}/>
 		</React.Fragment>
@@ -119,19 +119,6 @@ const ProjectPostTitle = styled.h1`
 	@media(max-width: 715px) {
 		font-size: 2.2rem;
 		line-height: 1;
-	}
-`;
-
-const ProjectContentGrid = styled.div`
-	display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 900px) [end] minmax(24px, 1fr);
-	animation: ${fadeInUp} 1.8s;
-
-	& > * {
-		grid-column: center;
-	}
-	p {
-		opacity: 0.85;
 	}
 `;
 

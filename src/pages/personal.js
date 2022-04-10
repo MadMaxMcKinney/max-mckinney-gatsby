@@ -1,9 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import DynamicLink from '../components/utils/DynamicLink'
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
 
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
@@ -15,7 +15,7 @@ import { MBodyXL, MHeading01, MBody, MHeading03, MBodyLight } from '../component
 const description = "These are some of my personal projects. They are all over the place but you might find some things you enjoy!"
 
 const SideProjectsPage = ({data}) => (
-    <PageGrid>
+    <div className="page-grid">
 
         <Helmet title={data.site.siteMetadata.title + ' | Personal '}>
             <meta itemprop="name" content={data.site.siteMetadata.title + ' | Personal '}/>
@@ -48,39 +48,28 @@ const SideProjectsPage = ({data}) => (
 
                 return (
                 <SideProjectCard to={processedLink} accent={node.frontmatter.accent}>
-                    <SideProjectImage fluid={node.frontmatter.image.childImageSharp.fluid} />
+                    <GatsbyImage id="SideImage" className="w-24 h-24 rounded-3xl mb-8" image={getImage(node.frontmatter.image)} />
                     <h2 className="text-xl md:text-2xl font-bold">{node.frontmatter.title}</h2>
                     <MBody className="text-gray-400 mt-4 flex-1">{node.frontmatter.description}</MBody>
-                    <SideProjectLink className="mt-6">{node.frontmatter.locationText}</SideProjectLink>
+                    <MBodyLight className="mt-6 text-[color:var(--accent-color)]">{node.frontmatter.locationText}</MBodyLight>
                 </SideProjectCard>
                 )
             })}
         </div>
 
-    </PageGrid>
+    </div>
 )
-
-const PageGrid = styled.div`
-	display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 1100px) [end] minmax(24px, 1fr);
-	& > * {
-		grid-column: center;
-	}
-`
 
 const SideProjectCard = styled(DynamicLink)`
     --accent-color: ${props => props.accent};
     
     display: flex;
     flex-direction: column;
-    place-items: center;
     position: relative;
-    padding: 24px;
+    padding: 32px;
 
     border-radius: 24px;
     border: 2px solid transparent;
-
-    text-align: center;
 
     background: var(--blueblack-500);
     transition: all 0.2s;
@@ -119,22 +108,6 @@ const SideProjectCard = styled(DynamicLink)`
         padding: 20px;
     }
 
-    @media(max-width: ${SIZE_MOBILE_LARGE}) {
-        place-items: flex-start;
-        text-align: left;
-    }
-
-`
-
-const SideProjectImage = styled(Img)`
-    width: 100px;
-    height: 100px;
-    margin-bottom: 32px;
-    border-radius: 24px;
-`
-
-const SideProjectLink = styled(MBodyLight)`
-    color: var(--accent-color);
 `
 
 export default SideProjectsPage
@@ -145,13 +118,6 @@ query personalProjectQuery {
         siteMetadata {
             title
             siteUrl
-        }
-    }
-	file(relativePath: {eq: "img/maxmckinney-profile.png"}) {
-        childImageSharp {
-            fixed(width: 80, height: 80) {
-                ...GatsbyImageSharpFixed
-            }
         }
     }
     personal: allMarkdownRemark(sort: {fields: [frontmatter___sortDate], order: DESC}, filter: {fileAbsolutePath:{regex: "/personalprojects/.*.md$/"}}) {
@@ -169,9 +135,7 @@ query personalProjectQuery {
               externalLink
               image {
                 childImageSharp {
-                  fluid(maxWidth: 200) {
-                      ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(width: 200)
                 }
               }
             }

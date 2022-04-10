@@ -69,6 +69,7 @@ module.exports = {
                 'fade-in-slow': 'fade-in 3s',
                 'fade-in': 'fade-in 2s',
                 'fade-in-fast': 'fade-in 1s',
+                'fade-in-up': 'fade-in-up 1s',
                 'color-change': 'color-change 6s infinite'
             },
 			keyframes: {
@@ -80,6 +81,16 @@ module.exports = {
 					'0%': { 
                         opacity: 0,
                         transform: 'translateY(-20px)' 
+                    },
+					'100%': { 
+                        opacity: 1,
+                        transform: 'translateY(0px)'
+                    },
+				},
+                'fade-in-up': {
+					'0%': { 
+                        opacity: 0,
+                        transform: 'translateY(20px)' 
                     },
 					'100%': { 
                         opacity: 1,
