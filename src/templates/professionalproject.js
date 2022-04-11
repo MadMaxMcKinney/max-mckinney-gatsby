@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
+import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import Img from 'gatsby-image'
 
 import LiveContentCard from '../components/cards/LiveContentCard'
@@ -37,7 +38,7 @@ export default function Template({ data }) {
         </Helmet>
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
-			<Img className="animate-fade-in" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}/>
+			<GatsbyImage className="animate-fade-in" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} image={getImage(data.markdownRemark.frontmatter.image.childImageSharp)}/>
 			<ProjectPostTitle className='animate-fade-in-slow'>{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
 		</ProjectHeader>
 
@@ -185,9 +186,7 @@ export const query = graphql`
                 }
 				image {
 					childImageSharp {
-                        fluid(maxWidth: 1600) {
-                            ...GatsbyImageSharpFluid
-                        }
+                        gatsbyImageData(width: 1600)
                     }
 				}
 			}
