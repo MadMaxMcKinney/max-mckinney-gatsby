@@ -49,7 +49,7 @@ const SideProjectsPage = ({data}) => (
                 return (
                 <SideProjectCard to={processedLink} accent={node.frontmatter.accent}>
                     <GatsbyImage id="SideImage" className="w-24 h-24 rounded-3xl mb-8" image={getImage(node.frontmatter.image)} />
-                    <h2 className="text-xl md:text-2xl font-bold">{node.frontmatter.title}</h2>
+                    <MHeading03>{node.frontmatter.title}</MHeading03>
                     <MBody className="text-gray-400 mt-4 flex-1">{node.frontmatter.description}</MBody>
                     <MBodyLight className="mt-6 text-[color:var(--accent-color)]">{node.frontmatter.locationText}</MBodyLight>
                 </SideProjectCard>
@@ -105,7 +105,7 @@ const SideProjectCard = styled(DynamicLink)`
     }
 
     @media(max-width: 1015px) {
-        padding: 20px;
+        padding: 24px;
     }
 
 `
