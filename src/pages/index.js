@@ -12,12 +12,12 @@ const IndexPage = ({data}) => (
 
         <div className="flex items-end relative h-header-mobile md:min-h-870px md:h-header" id="Header">
             <div className="contained-content z-10 pb-16 md:pb-32">
-                <StaticImage className="h-auto w-40 mb-8 animate-fade-in-fast md:w-52" src={"../assets/img/max_transition_shapes.png"} alt="Max Shape Logo"/>
+                <StaticImage className="h-auto w-40 mb-8 animate-fade-in-fast md:w-52" src={"../assets/img/max_transition_shapes.png"} loading="eager" alt="Max Shape Logo"/>
                 <MHeadingHero className="mb-5 animate-fade-in">Designer.</MHeadingHero>
                 <MHeadingHero className="mb-5 animate-fade-in-slow">Leader.</MHeadingHero>
                 <MHeadingHero className="animate-fade-in-very-slow">Nerd.</MHeadingHero>
             </div>
-            <Img style={{position: 'absolute', top: 0, left: '-24px', right: '-24px', height: `100%`}} fluid={data.maxBG.childImageSharp.fluid} className="bg-bottom animate-fade-in-slow"/>
+            <StaticImage style={{position: 'absolute', top: 0, left: '-24px', right: '-24px', height: `100%`}} src={"../assets/img/max-helmet.jpeg"} loading="eager" className="bg-bottom animate-fade-in-slow"/>
         </div>
 		
 
@@ -79,12 +79,5 @@ query ProjectQuery {
 		  }
 		}
 	}
-    maxBG: file(relativePath: { eq: "img/max-helmet.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
-    	}
-    }
 }
 `
