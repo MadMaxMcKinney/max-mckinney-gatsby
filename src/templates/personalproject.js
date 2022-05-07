@@ -15,26 +15,26 @@ const SideProjectDetailView = ({data}) => (
 
     <Helmet title={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}>
         <meta name="description" content={data.personal.frontmatter.description} />
-        <meta name="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+        <meta name="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.icon.childImageSharp.fluid.src}/>
         <meta itemprop="name" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
         <meta itemprop="description" content={data.personal.frontmatter.description}/>
-        <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+        <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.icon.childImageSharp.fluid.src}/>
 
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
         <meta name="twitter:description" content={data.personal.frontmatter.description}/>
         <meta name="twitter:site" content="@madmaxmckinney"/>
-        <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+        <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.icon.childImageSharp.fluid.src}/>
 
         <meta name="og:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
         <meta name="og:description" content={data.personal.frontmatter.description}/>
-        <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+        <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.icon.childImageSharp.fluid.src}/>
         <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.personal.fields.slug}/>
         <meta name="og:site_name" content="Max McKinney"/>
     </Helmet>
 
     <div className='page-grid'>
-        <GatsbyImage className="w-24 h-24 mb-4 mt-44 rounded-3xl animate-fade-in-fast" image={getImage(data.personal.frontmatter.image.childImageSharp)} />
+        <GatsbyImage className="w-24 h-24 mb-4 mt-44 rounded-3xl animate-fade-in-fast" image={getImage(data.personal.frontmatter.icon.childImageSharp)} />
         <MHeading01 className="mb-6 mt-6 w-full text-white animate-fade-in-fast">{data.personal.frontmatter.title}</MHeading01>
         <MBodyXL className="text-gray-400 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
 
@@ -81,7 +81,7 @@ export const query = graphql`
                 title
                 description
                 locationText
-                image {
+                icon {
                     childImageSharp {
                         gatsbyImageData(width: 200)
                     }
