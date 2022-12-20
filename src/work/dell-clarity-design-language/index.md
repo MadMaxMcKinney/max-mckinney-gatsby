@@ -4,7 +4,7 @@ url: ""
 projectClient: "Dell"
 projectDate: "Dec 2015 - Dec 2018"
 projectAgency: "Dell"
-projectRole: "UI/UX Design & Frontend Dev"
+projectRole: "UI/UX Designer & Frontend Dev"
 projectBrief: "UI/UX designer and web developer for Dell's Clarity Design Language. This iteration of the Clarity design language was focused around enterprise software and needs. Built to be robust and easy to use, with strong documentation and examples."
 projectShortBrief: "UI/UX designer and web developer for Dell's Clarity Design Language. Clarity is an enterprise worthy design system."
 categories: ["UI/UX", "Development", "Systems"]

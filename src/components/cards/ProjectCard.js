@@ -17,9 +17,7 @@ const ProjectCard = (props) => {
         <div className="contained-content mt-12">
             {/* Pills */}
             <div className="inline-grid grid-flow-col gap-3 pb-8">
-                {props.data.frontmatter.categories && props.data.frontmatter.categories.map(category => {
-                    return <Pill text={category}/>
-                })}
+                <Pill text={props.data.frontmatter.projectRole}/>
             </div>
             
             {/* Words */}
@@ -40,8 +38,8 @@ const ProjectCard = (props) => {
 ProjectCard.propTypes = {
     /** A markdown object that contains professional project details */
     data: PropTypes.shape({
-        categories: PropTypes.array,
         thumb: PropTypes.any,
+        projectRole: PropTypes.string,
         title: PropTypes.string,
         accentColor: PropTypes.string,
         fields: PropTypes.object

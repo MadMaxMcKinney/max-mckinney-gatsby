@@ -57,14 +57,14 @@ export default function Template({ data }) {
 				</div>
 			</div>
 
-            <div className='animate-fade-in-up'>
+            <div>
                 <MHeading03 className="mb-1">Brief</MHeading03>
                 <MBodyLight className="mb-4">{data.markdownRemark.frontmatter.projectBrief}</MBodyLight>
             </div>
 
-			<MHeading03 className="mt-14 mb-1">Case Study</MHeading03>
+			<MHeading03 className="mt-14 mb-1 animate-fade-in-up">Case Study</MHeading03>
 
-			<div className="prose prose-lg text-white max-w-none" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+			<div className="prose prose-lg text-white max-w-none animate-fade-in-up" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
 
 			{data.markdownRemark.frontmatter.showLiveContent && 
 				<LiveContentCard thumbnail={data.markdownRemark.frontmatter.image.childImageSharp.fluid.src} title={data.markdownRemark.frontmatter.title} url={data.markdownRemark.frontmatter.url} themeColor={data.markdownRemark.frontmatter.accentColor}/>

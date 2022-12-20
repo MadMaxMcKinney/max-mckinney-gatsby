@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import Img from 'gatsby-image'
 import { StaticImage } from 'gatsby-plugin-image';
 import ProjectCard from '../components/cards/ProjectCard';
 import PageLink from '../components/links/PageLink'
@@ -58,6 +57,7 @@ query ProjectQuery {
 			frontmatter {
 			  title
 			  projectShortBrief
+              projectRole
 			  themeColor
 			  accentColor
 			  image {
