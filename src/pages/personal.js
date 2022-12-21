@@ -119,7 +119,7 @@ query personalProjectQuery {
             siteUrl
         }
     }
-    personal: allMarkdownRemark(sort: {fields: [frontmatter___sortDate], order: DESC}, filter: {fileAbsolutePath:{regex: "/personalprojects/.*.md$/"}}) {
+    personal: allMarkdownRemark(sort: {frontmatter: {sortDate: DESC}}, filter: {fileAbsolutePath:{regex: "/personalprojects/.*.md$/"}}) {
         edges {
           node {
             fields {
@@ -130,7 +130,6 @@ query personalProjectQuery {
               description
               accent
               locationText
-              url
               externalLink
               icon {
                 childImageSharp {
