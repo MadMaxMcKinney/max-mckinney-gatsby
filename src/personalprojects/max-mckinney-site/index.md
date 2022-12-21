@@ -4,6 +4,7 @@ description: "A gatsbyJS and React powered portfolio site that is minimal and fa
 accent: "#41d8b5"
 locationText: "personal/max-mckinney-site/"
 icon: "max-mckinney-thumb.png"
+seoImage: "./max-mckinney-site.png"
 sortDate: "2019-08-01"
 postType: "personal-project"
 appStoreUrl: ""

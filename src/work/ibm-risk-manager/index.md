@@ -18,10 +18,8 @@ postType: "professional-project"
 
 Joining the Security organization within IBM, I built and attached a design team to an existing engineering-only product team, IBM's Risk Manager. There was a unique opportunity to elevate the product experience, create UI consistency, find new ways to bring delight to our users. With such ambition it became clear the biggest challenge would come in the form of cross-functional alignment and communication. This is how I built a design team that blurred the previously solid boundaries of design/development within Risk Manager over the course of a year.
 
-<div class="photo-grid-container">
-<div class="photo-grid">
+<div class="photo-container">
 <img src="ibm_asset_1.png" />
-</div>
 </div>
 <p class="photo-grid-subtitle">Risk Manager UI</p>
 
@@ -30,10 +28,8 @@ Starting my career in frontend development and eventually transitioning to produ
 
 Context is everything, context creates relatability, context gives you a foundation, and context gives teams the translational base-layer needed to speak efficiently between their x-functional disciplines.
 
-<div class="photo-grid-container">
-<div class="photo-grid">
+<div class="photo-container">
 <img src="ibm_asset_2.png"/>
-</div>
 </div>
 <p class="photo-grid-subtitle">Spark Festival Design Presentation</p>
 
@@ -100,10 +96,8 @@ The design team created new patterns, improved the redline experience, establish
 
 Some of the other seeds planted while I was there are starting to take root now as Security as a whole organization is now moving to tools like Figma to further increase the interconnectivity of teams while reducing "handoff" mentality.
 
-<div class="photo-grid-container">
-<div class="photo-grid">
+<div class="photo-container">
 <img src="IBM_Risk_Manager_Preview.png"/>
-</div>
 </div>
 <p class="photo-grid-subtitle">Risk Manager</p>
 

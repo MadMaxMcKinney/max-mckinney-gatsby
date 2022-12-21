@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
     <div>
         {/* Preview Image */}
         <div className="rounded-lg max-w-7xl h-96 overflow-hidden mx-auto md:h-project-image">
-            <Img className="object-fill h-full" fluid={props.data.frontmatter.thumb.childImageSharp.fluid}/>
+            <Img className="object-fill h-full" fluid={props.data.frontmatter.thumb.childImageSharp.fluid} alt={"Project image for portfolio item " + props.data.frontmatter.title}/>
         </div>
 
         {/* Card Content */}

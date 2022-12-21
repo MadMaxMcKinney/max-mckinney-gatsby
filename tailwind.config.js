@@ -26,6 +26,9 @@ module.exports = {
                 "11/12": '95%',
                 "content": '680px'
             },
+            maxWidth: {
+                "8xl": "1560px"
+            },
             lineHeight: {
                 'massive': '5.2rem'
             },

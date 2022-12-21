@@ -4,6 +4,7 @@ description: "A simplified WatchOS experience for users who want to keep track o
 accent: "#2094FA"
 locationText: "personal/get-sum/"
 icon: "../../assets/img/personal-projects/getsum-logo.png"
+seoImage: "./getsum-example.png"
 sortDate: "2020-08-01"
 postType: "personal-project"
 appStoreUrl: "https://apps.apple.com/us/app/id1532463456"

@@ -12,29 +12,29 @@ import { MBodyXL, MHeading01 } from '../components/typography'
 const SideProjectDetailView = ({data}) => (
 
     <React.Fragment>
-
+    {/* TODO: Fix meta tags to show the attached image instead of the icon*/}
     <Helmet title={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}>
         <meta name="description" content={data.personal.frontmatter.description} />
-        <meta name="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.icon.childImageSharp.fluid.src}/>
+        <meta name="image" content={data.site.siteMetadata.siteUrl + getImage(data.personal.frontmatter.seoImage)}/>
         <meta itemprop="name" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
         <meta itemprop="description" content={data.personal.frontmatter.description}/>
-        <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.icon.childImageSharp.fluid.src}/>
+        <meta itemprop="image" content={data.site.siteMetadata.siteUrl + getImage(data.personal.frontmatter.seoImage)}/>
 
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
         <meta name="twitter:description" content={data.personal.frontmatter.description}/>
         <meta name="twitter:site" content="@madmaxmckinney"/>
-        <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.icon.childImageSharp.fluid.src}/>
+        <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + getImage(data.personal.frontmatter.seoImage)}/>
 
         <meta name="og:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
         <meta name="og:description" content={data.personal.frontmatter.description}/>
-        <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.icon.childImageSharp.fluid.src}/>
+        <meta name="og:image" content={data.site.siteMetadata.siteUrl + getImage(data.personal.frontmatter.seoImage)}/>
         <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.personal.fields.slug}/>
         <meta name="og:site_name" content="Max McKinney"/>
     </Helmet>
 
     <div className='page-grid'>
-        <GatsbyImage className="w-24 h-24 mb-4 mt-44 rounded-3xl animate-fade-in-fast" image={getImage(data.personal.frontmatter.icon.childImageSharp)} />
+        <GatsbyImage className="w-24 h-24 mb-4 mt-44 rounded-3xl animate-fade-in-fast" image={getImage(data.personal.frontmatter.icon)} />
         <MHeading01 className="mb-6 mt-6 w-full text-white animate-fade-in-fast">{data.personal.frontmatter.title}</MHeading01>
         <MBodyXL className="text-gray-400 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
 
@@ -81,6 +81,11 @@ export const query = graphql`
                 title
                 description
                 locationText
+                seoImage {
+                    childImageSharp {
+                        gatsbyImageData(width: 512)
+                    }
+                }
                 icon {
                     childImageSharp {
                         gatsbyImageData(width: 200)

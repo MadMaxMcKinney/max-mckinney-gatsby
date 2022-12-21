@@ -4,6 +4,7 @@ description: "Created and maintained an ongoing UI/UX course and YouTube channel
 accent: "#25d675"
 locationText: "personal/design-course/"
 icon: "teaching-classes-thumbnail.png"
+seoImage: "./YouTube-Tutorials-Thumb.png"
 sortDate: "2020-11-01"
 postType: "personal-project"
 youtubeUrl: "https://www.youtube.com/c/maxmckinney"

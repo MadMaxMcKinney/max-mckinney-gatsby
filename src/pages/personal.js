@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { graphql } from "gatsby"
 import DynamicLink from '../components/utils/DynamicLink'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import {SIZE_MOBILE_LARGE} from '../components/CONSTANTS'
 
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
 
@@ -35,9 +34,9 @@ const SideProjectsPage = ({data}) => (
 
         <MHeading01 className="mb-6 mt-32 sm:mt-56 animate-fade-in-fast text-white">hello.</MHeading01>
         
-        <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in">These are some of my personal projects. They are all over the place, but you might find some things you enjoy!</MBodyXL>
+        <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in">These are some of my personal projects. They're all over the place, but you might find some things you enjoy!</MBodyXL>
 
-        <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in-slow">My projects span everything from iOS apps, education courses, game development, technical writing, and all the stuff inbetween! If you want to stay up-to-date on what I'm doing <PageLink className="text-blue-500" href="https://twitter.com/madmaxmckinney">Twitter</PageLink> is the best place, so follow me there.</MBodyXL>
+        <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in-slow">My projects span everything from, smart homes, web apps, iOS apps, education courses, game development, and all the stuff in-between!</MBodyXL>
 
         <div id="SideProjectGrid" className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 sm:gap-8 md:gap-14 sm:mt-24 animate-fade-in-slow">
             {data.personal.edges.map(({node}) => {
@@ -47,8 +46,8 @@ const SideProjectsPage = ({data}) => (
                 const processedLink = node.frontmatter.externalLink ? node.frontmatter.externalLink : node.fields.slug
 
                 return (
-                <SideProjectCard to={processedLink} accent={node.frontmatter.accent}>
-                    <GatsbyImage id="SideImage" className="w-24 h-24 rounded-3xl mb-8" image={getImage(node.frontmatter.image)} />
+                <SideProjectCard to={processedLink} accent={node.frontmatter.accent} key={node.key}>
+                    <GatsbyImage id="SideImage" className="w-24 h-24 rounded-3xl mb-8" image={getImage(node.frontmatter.icon)} alt=""/>
                     <MHeading03>{node.frontmatter.title}</MHeading03>
                     <MBody className="text-gray-400 mt-4 flex-1">{node.frontmatter.description}</MBody>
                     <MBodyLight className="mt-6 text-[color:var(--accent-color)]">{node.frontmatter.locationText}</MBodyLight>
@@ -133,7 +132,7 @@ query personalProjectQuery {
               locationText
               url
               externalLink
-              image {
+              icon {
                 childImageSharp {
                   gatsbyImageData(width: 200)
                 }
