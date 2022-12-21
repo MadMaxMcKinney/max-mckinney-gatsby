@@ -1,6 +1,5 @@
 ---
 title: "Dell Clarity 3 Design Language"
-url: ""
 projectClient: "Dell"
 projectDate: "Dec 2015 - Dec 2018"
 projectAgency: "Dell"
@@ -12,7 +11,6 @@ themeColor: "#152a3d"
 accentColor: "#1676b1"
 image: "clarity-toolkit-large.jpg"
 thumb: "clarity-toolkit-thumb.jpg"
-showLiveContent: false
 sortDate: "2017-11-01"
 postType: "professional-project"
 ---

@@ -3,8 +3,6 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
-
-import LiveContentCard from '../components/cards/LiveContentCard'
 import { MBodyLight, MHeading03 } from '../components/typography'
 
 export default function Template({ data }) {
@@ -65,10 +63,6 @@ export default function Template({ data }) {
 			<MHeading03 className="mt-14 mb-1 animate-fade-in-up">Case Study</MHeading03>
 
 			<div className="prose prose-lg text-white max-w-none animate-fade-in-up" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-
-			{data.markdownRemark.frontmatter.showLiveContent && 
-				<LiveContentCard thumbnail={data.markdownRemark.frontmatter.image.childImageSharp.fluid.src} title={data.markdownRemark.frontmatter.title} url={data.markdownRemark.frontmatter.url} themeColor={data.markdownRemark.frontmatter.accentColor}/>
-			}
 			
 
 		</div>
@@ -143,8 +137,6 @@ export const query = graphql`
                 projectShortBrief
 				themeColor
 				accentColor
-				url
-                showLiveContent
                 thumb {
                     childImageSharp {
                         fixed {

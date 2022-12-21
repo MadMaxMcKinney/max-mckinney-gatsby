@@ -1,6 +1,5 @@
 ---
 title: "IBM Risk Manager"
-url: ""
 projectClient: "IBM"
 projectDate: "Dec 2020 - Dec 2021"
 projectRole: "Design Lead"
@@ -11,7 +10,6 @@ themeColor: "#191028"
 accentColor: "#883EF8"
 image: "IBM_Risk_Manager_Background.png"
 thumb: "IBM_Risk_Manager_Preview.png"
-showLiveContent: false
 sortDate: "2021-12-01"
 postType: "professional-project"
 ---
