@@ -13,7 +13,6 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-plugin-layout`,
         'gatsby-plugin-image',
-        'gatsby-image',
         'gatsby-plugin-postcss',
 		{
 			resolve: 'gatsby-plugin-google-analytics',

@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import Pill from '../pills/Pill'
 import ReadMoreButton from '../buttons/ReadMoreButton'
 import PropTypes from 'prop-types'
@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
     <div>
         {/* Preview Image */}
         <div className="rounded-lg max-w-7xl h-96 overflow-hidden mx-auto md:h-project-image">
-            <Img className="object-fill h-full" fluid={props.data.frontmatter.thumb.childImageSharp.fluid} alt={"Project image for portfolio item " + props.data.frontmatter.title}/>
+            <GatsbyImage className="object-fill h-full" fluid={getImage(props.data.frontmatter.thumb)} alt={"Project image for portfolio item " + props.data.frontmatter.title}/>
         </div>
 
         {/* Card Content */}
