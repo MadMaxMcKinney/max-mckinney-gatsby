@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
     <div>
         {/* Preview Image */}
         <div className="rounded-lg max-w-7xl h-96 overflow-hidden mx-auto md:h-project-image">
-            <GatsbyImage className="object-fill h-full" fluid={getImage(props.data.frontmatter.thumb)} alt={"Project image for portfolio item " + props.data.frontmatter.title}/>
+            <GatsbyImage className="object-fill h-full" image={getImage(props.data.frontmatter.thumb)} alt={"Project image for portfolio item " + props.data.frontmatter.title}/>
         </div>
 
         {/* Card Content */}
