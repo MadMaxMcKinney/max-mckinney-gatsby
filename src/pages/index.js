@@ -60,18 +60,9 @@ query ProjectQuery {
               projectRole
 			  themeColor
 			  accentColor
-			  image {
-				childImageSharp {
-				  fluid(maxWidth: 1920) {
-					...GatsbyImageSharpFluid
-				  }
-				}
-              }
               thumb {
 				childImageSharp {
-				  fluid(maxWidth: 1920) {
-					...GatsbyImageSharpFluid
-				  }
+                  gatsbyImageData(layout: CONSTRAINED)
 				}
               }
               categories

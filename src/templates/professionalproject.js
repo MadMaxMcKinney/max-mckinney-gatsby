@@ -13,20 +13,20 @@ export default function Template({ data }) {
             <meta name="theme-color" content={data.markdownRemark.frontmatter.themeColor}/>
 
             <meta name="description" content={data.markdownRemark.frontmatter.projectShortBrief} />
-            <meta name="image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.thumb.childImageSharp.fixed.src}/>
+            <meta name="image" content={data.site.siteMetadata.siteUrl + getImage(data.markdownRemark.frontmatter.thumb)}/>
             <meta itemprop="name" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
             <meta itemprop="description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
-            <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.thumb.childImageSharp.fixed.src}/>
+            <meta itemprop="image" content={data.site.siteMetadata.siteUrl + getImage(data.markdownRemark.frontmatter.thumb)}/>
 
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:title" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
             <meta name="twitter:description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
             <meta name="twitter:site" content="@madmaxmckinney"/>
-            <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.thumb.childImageSharp.fixed.src}/>
+            <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + getImage(data.markdownRemark.frontmatter.thumb)}/>
 
             <meta name="og:title" content={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}/>
             <meta name="og:description" content={data.markdownRemark.frontmatter.projectShortBrief}/>
-            <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.markdownRemark.frontmatter.thumb.childImageSharp.fixed.src}/>
+            <meta name="og:image" content={data.site.siteMetadata.siteUrl + getImage(data.markdownRemark.frontmatter.thumb)}/>
             <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}/>
             <meta name="og:site_name" content="Max McKinney"/>
 
@@ -35,7 +35,7 @@ export default function Template({ data }) {
         </Helmet>
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
-			<GatsbyImage className="animate-fade-in" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} image={getImage(data.markdownRemark.frontmatter.image.childImageSharp)}/>
+			<GatsbyImage className="animate-fade-in" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} image={getImage(data.markdownRemark.frontmatter.image)}/>
 			<ProjectPostTitle className='animate-fade-in-slow'>{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
 		</ProjectHeader>
 
@@ -139,9 +139,7 @@ export const query = graphql`
 				accentColor
                 thumb {
                     childImageSharp {
-                        fixed {
-                            src
-                        }
+                        gatsbyImageData(width: 512)
                     }
                 }
 				image {
