@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import { MBodyLight, MHeading03 } from '../components/typography'
+import BodyColorizer from '../components/utils/BodyColorizer'
 
 export default function Template({ data }) {
 	return (
@@ -31,8 +32,9 @@ export default function Template({ data }) {
             <meta name="og:site_name" content="Max McKinney"/>
 
             <meta name="msapplication-TileColor" content={data.markdownRemark.frontmatter.themeColor}/>
-
         </Helmet>
+
+        <BodyColorizer hex={data.markdownRemark.frontmatter.themeColor} />
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
 			<GatsbyImage className="animate-fade-in" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} image={getImage(data.markdownRemark.frontmatter.image)}/>
@@ -40,7 +42,7 @@ export default function Template({ data }) {
 		</ProjectHeader>
 
 		<div className='page-grid page-grid-sm text-white/80 animate-fade-in-up'>
-			<div className='flex gap-12'>
+			<div className='flex gap-6 lg:gap-12'>
 				<div>
 					<MHeading03 className="mb-1">Role</MHeading03>
 					<MBodyLight className="mb-4">{data.markdownRemark.frontmatter.projectRole}</MBodyLight>
@@ -66,8 +68,6 @@ export default function Template({ data }) {
 			
 
 		</div>
-
-		<BackgroundColor themeColor={data.markdownRemark.frontmatter.themeColor}/>
 		</React.Fragment>
 	)
 }
@@ -105,18 +105,6 @@ const ProjectPostTitle = styled.h1`
 		font-size: 2.2rem;
 		line-height: 1;
 	}
-`;
-
-const BackgroundColor = styled.div`
-	position: fixed;
-	z-index: -10;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background-color: ${props => props.themeColor};
 `;
 
 export const query = graphql`

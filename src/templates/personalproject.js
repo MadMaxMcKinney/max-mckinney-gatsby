@@ -8,7 +8,6 @@ import GithubButton from '../components/buttons/social/GithubButton'
 import YouTubeButton from '../components/buttons/social/YouTubeButton'
 import { MBodyXL, MHeading01 } from '../components/typography'
 
-
 const SideProjectDetailView = ({data}) => (
 
     <React.Fragment>
@@ -34,7 +33,7 @@ const SideProjectDetailView = ({data}) => (
     </Helmet>
 
     <div className='page-grid'>
-        <GatsbyImage className="w-24 h-24 mb-4 mt-44 rounded-3xl animate-fade-in-fast" image={getImage(data.personal.frontmatter.icon)} />
+        <GatsbyImage className="w-24 h-24 mb-4 mt-44 animate-fade-in-fast" imgStyle={{ borderRadius: '1.5rem' }} image={getImage(data.personal.frontmatter.icon)} />
         <MHeading01 className="mb-6 mt-6 w-full text-white animate-fade-in-fast">{data.personal.frontmatter.title}</MHeading01>
         <MBodyXL className="text-gray-400 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
 

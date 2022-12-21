@@ -28,8 +28,6 @@ const IndexPage = ({data}) => (
                 <MBodyLead className="mb-6">I specialize in product design architecture and thrive in undefined problem spaces. My personal background is in user experience, product development, design systems, and design leadership.</MBodyLead>
 
                 <MBodyLead className="mb-6">To support my design projects I enjoy creating end-to-end experiences via frontend web development with a focus in React, Gatsby/Next, and CSS component systems.</MBodyLead>
-
-                <MBodyLead>Currently not available for hire. If you'd like to connect, please reach out to me at <PageLink href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</PageLink>.</MBodyLead>
             </div>
         </div>
 

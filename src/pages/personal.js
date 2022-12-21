@@ -47,7 +47,7 @@ const SideProjectsPage = ({data}) => (
 
                 return (
                 <SideProjectCard to={processedLink} accent={node.frontmatter.accent} key={node.key}>
-                    <GatsbyImage id="SideImage" className="w-24 h-24 rounded-3xl mb-8" image={getImage(node.frontmatter.icon)} alt=""/>
+                    <GatsbyImage id="SideImage" className="w-24 h-24l mb-8" imgStyle={{ borderRadius: '1.5rem' }} image={getImage(node.frontmatter.icon)} alt=""/>
                     <MHeading03>{node.frontmatter.title}</MHeading03>
                     <MBody className="text-gray-400 mt-4 flex-1">{node.frontmatter.description}</MBody>
                     <MBodyLight className="mt-6 text-[color:var(--accent-color)]">{node.frontmatter.locationText}</MBodyLight>
