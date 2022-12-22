@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Max McKinney <maxgames101@gmail.com>",
   "dependencies": {
+    "@heroicons/react": "^2.0.13",
     "@tailwindcss/typography": "^0.5.8",
     "autoprefixer": "^10.4.13",
     "gatsby": "^5.3.3",
