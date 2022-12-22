@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from "gatsby"
 import { StaticImage } from 'gatsby-plugin-image';
 import ProjectCard from '../components/cards/ProjectCard';
-import PageLink from '../components/links/PageLink'
 import { MHeadingHero, MBodyLead } from '../components/typography';
 
 const IndexPage = ({data}) => (

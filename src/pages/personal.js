@@ -7,7 +7,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
 
-import PageLink from '../components/links/PageLink'
 import { MBodyXL, MHeading01, MBody, MHeading03, MBodyLight } from '../components/typography'
 
 
