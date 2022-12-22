@@ -59,6 +59,8 @@ const Layout = ({ children, data, location }) => (
 
                 <script src="https://kit.fontawesome.com/d940246cad.js" crossorigin="anonymous"></script>
 
+                <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
             </Helmet>
 
             <Header location={location} />
