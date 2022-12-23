@@ -7,7 +7,7 @@ icon: "teaching-classes-thumbnail.png"
 seoImage: "./YouTube-Tutorials-Thumb.png"
 sortDate: "2020-11-01"
 postType: "personal-project"
-youtubeUrl: "https://www.youtube.com/c/maxmckinney"
+projectLink: "https://www.youtube.com/c/maxmckinney"
 ---
 
 ![Design Course Header Image](YouTube-Tutorials-Thumb.png)

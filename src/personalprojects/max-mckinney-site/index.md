@@ -7,8 +7,7 @@ icon: "max-mckinney-thumb.png"
 seoImage: "./max-mckinney-site.png"
 sortDate: "2019-08-01"
 postType: "personal-project"
-appStoreUrl: ""
-githubUrl: "https://github.com/MaxMcKinney/max-mckinney-gatsby"
+sourceLink: "https://github.com/MaxMcKinney/max-mckinney-gatsby"
 ---
 
 ![Get Sum Image](max-mckinney-site.png)
