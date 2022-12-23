@@ -1,6 +1,5 @@
 ---
 title: "Sureshot UI Product Ecosystem"
-url: ""
 projectClient: "Sureshot"
 projectDate: "Jan 2019 - October 2020"
 projectAgency: "Sureshot"
@@ -12,7 +11,6 @@ themeColor: "#330f0f"
 accentColor: "#CC2027"
 image: "Sureshot-UI-Header.png"
 thumb: "Sureshot-UI-Thumbnail.png"
-showLiveContent: false
 sortDate: "2019-1-01"
 postType: "professional-project"
 ---

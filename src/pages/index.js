@@ -1,9 +1,7 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import Img from 'gatsby-image'
 import { StaticImage } from 'gatsby-plugin-image';
 import ProjectCard from '../components/cards/ProjectCard';
-import PageLink from '../components/links/PageLink'
 import { MHeadingHero, MBodyLead } from '../components/typography';
 
 const IndexPage = ({data}) => (
@@ -12,12 +10,12 @@ const IndexPage = ({data}) => (
 
         <div className="flex items-end relative h-header-mobile md:min-h-870px md:h-header" id="Header">
             <div className="contained-content z-10 pb-16 md:pb-32">
-                <StaticImage className="h-auto w-40 mb-8 animate-fade-in-fast md:w-52" src={"../assets/img/max_transition_shapes.png"} alt="Max Shape Logo"/>
+                <StaticImage className="h-auto w-40 mb-8 animate-fade-in-fast md:w-52" src={"../assets/img/max_transition_shapes.png"} loading="eager" alt="Abstract transition shape logo"/>
                 <MHeadingHero className="mb-5 animate-fade-in">Designer.</MHeadingHero>
                 <MHeadingHero className="mb-5 animate-fade-in-slow">Leader.</MHeadingHero>
                 <MHeadingHero className="animate-fade-in-very-slow">Nerd.</MHeadingHero>
             </div>
-            <Img style={{position: 'absolute', top: 0, left: '-24px', right: '-24px', height: `100%`}} fluid={data.maxBG.childImageSharp.fluid} className="bg-bottom animate-fade-in-slow"/>
+            <StaticImage style={{position: 'absolute', top: 0, left: '-24px', right: '-24px', height: `100%`}} src={"../assets/img/max-helmet.jpeg"} loading="eager" className="bg-bottom animate-fade-in-slow" alt="Header background image of Max in a racing helment"/>
         </div>
 		
 
@@ -26,11 +24,9 @@ const IndexPage = ({data}) => (
             <div className="text-gray-400">
                 <MBodyLead className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a Designer at Figma. I also run a design centric YouTube channel, do automotive photography, and build cars.</MBodyLead>
 
-                <MBodyLead className="mb-6">I specialize in design architecture and thrive in undefined problem spaces. My experience is in UX design, user interfaces, design systems, and design leadership.</MBodyLead>
+                <MBodyLead className="mb-6">I specialize in product design architecture and thrive in undefined problem spaces. My personal background is in user experience, product development, design systems, and design leadership.</MBodyLead>
 
-                <MBodyLead className="mb-6">To support my designs I enjoy creating end-to-end experiences via frontend web development with a focus in React and CSS component systems.</MBodyLead>
-
-                <MBodyLead>Currently not available for hire. If you want to connect reach out to me at <PageLink href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</PageLink>.</MBodyLead>
+                <MBodyLead className="mb-6">To support my design projects I enjoy creating end-to-end experiences via frontend web development with a focus in React, Gatsby/Next, and CSS component systems.</MBodyLead>
             </div>
         </div>
 
@@ -49,7 +45,7 @@ export default IndexPage
 
 export const query = graphql`
 query ProjectQuery {
-	allMarkdownRemark(sort: {fields: [frontmatter___sortDate], order: DESC}, filter: {fileAbsolutePath:{regex: "/work/.*.md$/"}}) {
+	allMarkdownRemark(sort: {frontmatter: {sortDate: DESC}}, filter: {fileAbsolutePath:{regex: "/work/.*.md$/"}}) {
 		edges {
 		  node {
 			fields {
@@ -58,20 +54,12 @@ query ProjectQuery {
 			frontmatter {
 			  title
 			  projectShortBrief
+              projectRole
 			  themeColor
 			  accentColor
-			  image {
-				childImageSharp {
-				  fluid(maxWidth: 1920) {
-					...GatsbyImageSharpFluid
-				  }
-				}
-              }
               thumb {
 				childImageSharp {
-				  fluid(maxWidth: 1920) {
-					...GatsbyImageSharpFluid
-				  }
+                  gatsbyImageData(layout: CONSTRAINED)
 				}
               }
               categories
@@ -79,12 +67,5 @@ query ProjectQuery {
 		  }
 		}
 	}
-    maxBG: file(relativePath: { eq: "img/max-helmet.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
-    	}
-    }
 }
 `

@@ -35,47 +35,49 @@ exports.onCreateNode = ({node, getNode, actions}) => {
     }
 };
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
+
 	const { createPage } = actions
-	return new Promise((resolve, reject) => {
-	  graphql(`
-		{
-		  allMarkdownRemark {
-			edges {
-			  node {
-                frontmatter {
-                    postType
+
+    const queryResult = await graphql(`
+    {
+        personal: allMarkdownRemark(filter: {frontmatter: {postType: {eq: "personal-project"}}}) {
+            nodes {
+                fields {
+                    slug
                 }
-				fields {
-				  slug
-				}
-			  }
-			}
-		  }
-		}
-	  `).then(result => {
-		result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.frontmatter.postType === "personal-project") {
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve(`./src/templates/personalproject.js`),
-                context: {
+            }
+        }
+        professional: allMarkdownRemark(filter: {frontmatter: {postType: {eq: "professional-project"}}}) {
+            nodes {
+                fields {
+                    slug
+                }
+            }
+        }
+    }
+    `)
+
+    queryResult.data.personal.nodes.forEach((node) => {
+        createPage({
+            path: node.fields.slug,
+            component: path.resolve(`./src/templates/personalproject.js`),
+            context: {
                 // Data passed to context is available in page queries as GraphQL variables
                 slug: node.fields.slug,
-                },
-            })
-        } else if(node.frontmatter.postType === "professional-project") {
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve(`./src/templates/professionalproject.js`),
-                context: {
-                  // Data passed to context is available in page queries as GraphQL variables
-                  slug: node.fields.slug,
-                },
-              }) 
-          }
-		})
-		resolve()
-	  })
-	})
-  };
+            },
+        })
+    })
+
+    queryResult.data.professional.nodes.forEach((node) => {
+        createPage({
+            path: node.fields.slug,
+            component: path.resolve(`./src/templates/professionalproject.js`),
+            context: {
+                // Data passed to context is available in page queries as GraphQL variables
+                slug: node.fields.slug,
+            },
+        })
+    })
+
+};

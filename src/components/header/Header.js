@@ -1,19 +1,18 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import PageNavButton from '../buttons/PageNavButton'
 
 const Header = (props) => {
 
     return (
-        <Navmenu className="grid place-items-center w-full mt-4 px-6 z-10 top-0 absolute animate-fade-in-fast">
-            <div className="flex justify-between container">
+        <header className="h-16 grid place-items-center w-full mt-4 px-6 z-10 top-0 absolute animate-fade-in-fast">
+            <div className="flex justify-between mx-auto w-full xl:max-w-8xl">
 
             {/* Site Logo Container */}
             <div className="flex flex-row items-center justify-start">
                 <Link className='transition-opacity hover:opacity-80' to="/">
-                    <StaticImage className="h-auto w-12" src="../../assets/img/max_word_mark.png" alt="Max McKinney Shape Logo"/>
+                    <StaticImage className="h-auto w-12" src="../../assets/img/max_word_mark.png" alt="Max McKinney Logo"/>
                 </Link>
             </div>
 
@@ -35,12 +34,8 @@ const Header = (props) => {
                 </li>
             </div>
             </div>
-        </Navmenu>
+        </header>
     )
 }
-
-const Navmenu = styled.div`
-	height: 60px;
-`
 
 export default Header;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import Pill from '../pills/Pill'
 import ReadMoreButton from '../buttons/ReadMoreButton'
 import PropTypes from 'prop-types'
@@ -10,16 +10,14 @@ const ProjectCard = (props) => {
     <div>
         {/* Preview Image */}
         <div className="rounded-lg max-w-7xl h-96 overflow-hidden mx-auto md:h-project-image">
-            <Img className="object-fill h-full" fluid={props.data.frontmatter.thumb.childImageSharp.fluid}/>
+            <GatsbyImage className="object-fill h-full" image={getImage(props.data.frontmatter.thumb)} alt={"Project image for portfolio item " + props.data.frontmatter.title}/>
         </div>
 
         {/* Card Content */}
         <div className="contained-content mt-12">
             {/* Pills */}
             <div className="inline-grid grid-flow-col gap-3 pb-8">
-                {props.data.frontmatter.categories && props.data.frontmatter.categories.map(category => {
-                    return <Pill text={category}/>
-                })}
+                <Pill text={props.data.frontmatter.projectRole}/>
             </div>
             
             {/* Words */}
@@ -40,8 +38,8 @@ const ProjectCard = (props) => {
 ProjectCard.propTypes = {
     /** A markdown object that contains professional project details */
     data: PropTypes.shape({
-        categories: PropTypes.array,
         thumb: PropTypes.any,
+        projectRole: PropTypes.string,
         title: PropTypes.string,
         accentColor: PropTypes.string,
         fields: PropTypes.object

@@ -4,7 +4,7 @@ import PageLink from '../links/PageLink'
 
 const Footer = () => {
   return (
-	<div className="flex flex-col justify-between mt-20 mb-16 px-4 animate-fade-in-slow container sm:mb-10 sm:mt-40 sm:flex-row md:mt-32">
+	<div className="flex flex-col justify-between mt-20 mb-16 px-6 animate-fade-in-slow mx-auto w-full sm:mb-10 sm:mt-40 sm:flex-row md:mt-32 xl:max-w-8xl">
 
         {/* Social */}
         <div className="grid grid-flow-col gap-6 items-center list-none mb-8 animate-fade-in-slow sm:mb-0 sm:justify-start">

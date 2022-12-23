@@ -1,6 +1,7 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-    mode: "jit",
-    purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
         container: {
             center: true,
@@ -24,6 +25,9 @@ module.exports = {
             width: {
                 "11/12": '95%',
                 "content": '680px'
+            },
+            maxWidth: {
+                "8xl": "1560px"
             },
             lineHeight: {
                 'massive': '5.2rem'
@@ -55,7 +59,11 @@ module.exports = {
                     pink: {
                         300: '#DB2777'
                     }
-                }
+                },
+                // Alias these names for the v2 -> v3 transition
+                green: colors.emerald,
+                yellow: colors.amber,
+                purple: colors.violet,
             },
             animation: {
                 'pulse-right': 'pulsing-right 0.3s alternate infinite',
@@ -64,6 +72,7 @@ module.exports = {
                 'fade-in-slow': 'fade-in 3s',
                 'fade-in': 'fade-in 2s',
                 'fade-in-fast': 'fade-in 1s',
+                'fade-in-up': 'fade-in-up 1s',
                 'color-change': 'color-change 6s infinite'
             },
 			keyframes: {
@@ -75,6 +84,16 @@ module.exports = {
 					'0%': { 
                         opacity: 0,
                         transform: 'translateY(-20px)' 
+                    },
+					'100%': { 
+                        opacity: 1,
+                        transform: 'translateY(0px)'
+                    },
+				},
+                'fade-in-up': {
+					'0%': { 
+                        opacity: 0,
+                        transform: 'translateY(20px)' 
                     },
 					'100%': { 
                         opacity: 1,

@@ -1,6 +1,5 @@
 ---
 title: "Alienware Command Center"
-url: ""
 projectClient: "Alienware"
 projectDate: "Dec 2017 - Dec 2018"
 projectAgency: "Dell"
@@ -12,7 +11,6 @@ themeColor: "#2b3a61"
 accentColor: "#039ff2"
 image: "alienware-command-center-header.jpg"
 thumb: "alienware-command-center-thumb.jpg"
-showLiveContent: false
 sortDate: "2020-12-01"
 postType: "professional-project"
 ---

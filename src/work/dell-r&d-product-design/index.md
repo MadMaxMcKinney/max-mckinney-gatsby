@@ -1,6 +1,5 @@
 ---
 title: "Dell R&D Product Design"
-url: ""
 projectClient: "Dell"
 projectDate: "Dec 2012 - Mar 2015"
 projectAgency: "Dell"
@@ -12,7 +11,6 @@ themeColor: "#6923e0"
 accentColor: "#0095ff"
 image: "dell-welcome-header.jpg"
 thumb: "dell-welcome-thumb.jpg"
-showLiveContent: false
 sortDate: "2015-12-01"
 postType: "professional-project"
 ---

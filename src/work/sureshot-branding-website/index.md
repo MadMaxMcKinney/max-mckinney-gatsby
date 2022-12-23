@@ -1,6 +1,5 @@
 ---
 title: "Sureshot Brand Redesign & Website"
-url: "http://sureshot.io/"
 projectClient: "Sureshot"
 projectDate: "Jan 2020 - October 2020"
 projectAgency: "Sureshot"
@@ -12,7 +11,6 @@ themeColor: "#330f0f"
 accentColor: "#CC2027"
 image: "Sureshot-UI-Header.png"
 thumb: "Sureshot-Website-Thumbnail.png"
-showLiveContent: true
 sortDate: "2018-6-01"
 postType: "professional-project"
 ---
@@ -88,7 +86,3 @@ When it comes to selling products, words can be very powerful. However people bu
 <img src="sureshot-website-homepage.png" />
 </div>
 <p class="photo-grid-subtitle">Sureshot Website</p>
-
-#### Live Link
-
-Curious about the current live version? Check it out with the arrow below.

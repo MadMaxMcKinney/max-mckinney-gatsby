@@ -2,41 +2,38 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import AppStoreButton from '../components/buttons/social/AppStoreButton'
 import GithubButton from '../components/buttons/social/GithubButton'
 import YouTubeButton from '../components/buttons/social/YouTubeButton'
-import {fadeInDown} from '../animations/m-styled-animations'
 import { MBodyXL, MHeading01 } from '../components/typography'
-
 
 const SideProjectDetailView = ({data}) => (
 
     <React.Fragment>
-
+    {/* TODO: Fix meta tags to show the attached image instead of the icon*/}
     <Helmet title={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}>
-            <meta name="description" content={data.personal.frontmatter.description} />
-            <meta name="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
-            <meta itemprop="name" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
-            <meta itemprop="description" content={data.personal.frontmatter.description}/>
-            <meta itemprop="image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+        <meta name="description" content={data.personal.frontmatter.description} />
+        <meta name="image" content={data.site.siteMetadata.siteUrl + getImage(data.personal.frontmatter.seoImage)}/>
+        <meta itemprop="name" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
+        <meta itemprop="description" content={data.personal.frontmatter.description}/>
+        <meta itemprop="image" content={data.site.siteMetadata.siteUrl + getImage(data.personal.frontmatter.seoImage)}/>
 
-            <meta name="twitter:card" content="summary"/>
-            <meta name="twitter:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
-            <meta name="twitter:description" content={data.personal.frontmatter.description}/>
-            <meta name="twitter:site" content="@madmaxmckinney"/>
-            <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
+        <meta name="twitter:description" content={data.personal.frontmatter.description}/>
+        <meta name="twitter:site" content="@madmaxmckinney"/>
+        <meta name="twitter:image" content={data.site.siteMetadata.siteUrl + getImage(data.personal.frontmatter.seoImage)}/>
 
-            <meta name="og:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
-            <meta name="og:description" content={data.personal.frontmatter.description}/>
-            <meta name="og:image" content={data.site.siteMetadata.siteUrl + data.personal.frontmatter.image.childImageSharp.fluid.src}/>
-            <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.personal.fields.slug}/>
-            <meta name="og:site_name" content="Max McKinney"/>
-
+        <meta name="og:title" content={data.site.siteMetadata.title + ' | ' + data.personal.frontmatter.title}/>
+        <meta name="og:description" content={data.personal.frontmatter.description}/>
+        <meta name="og:image" content={data.site.siteMetadata.siteUrl + getImage(data.personal.frontmatter.seoImage)}/>
+        <meta name="og:url" content={data.site.siteMetadata.siteUrl + data.personal.fields.slug}/>
+        <meta name="og:site_name" content="Max McKinney"/>
     </Helmet>
 
-    <PageGrid>
-        <ProjectImg className="animate-fade-in-fast" fluid={data.personal.frontmatter.image.childImageSharp.fluid} />
+    <div className='page-grid'>
+        <GatsbyImage className="w-24 h-24 mb-4 mt-44 animate-fade-in-fast" imgStyle={{ borderRadius: '1.5rem' }} image={getImage(data.personal.frontmatter.icon)} />
         <MHeading01 className="mb-6 mt-6 w-full text-white animate-fade-in-fast">{data.personal.frontmatter.title}</MHeading01>
         <MBodyXL className="text-gray-400 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
 
@@ -52,32 +49,13 @@ const SideProjectDetailView = ({data}) => (
         }
         </div>
 
-        <Content className="prose prose-lg max-w-none text-white animate-fade-in-very-slow" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
+        <Content className="prose prose-lg max-w-none text-white mt-16 animate-fade-in-very-slow" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
 
-    </PageGrid>
+    </div>
     </React.Fragment>
 )
 
-const PageGrid = styled.div`
-	display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 1100px) [end] minmax(24px, 1fr);
-	& > * {
-		grid-column: center;
-	}
-`
-
-const ProjectImg = styled(Img)`
-    width: 100px;
-    height: 100px;
-    margin-bottom: 16px;
-
-    margin-top: 170px;
-    border-radius: 24px;
-`
-
 const Content = styled.div`
-    margin-top: 64px;
-
     img {
         border-radius: 2px;
     }
@@ -90,36 +68,36 @@ const Content = styled.div`
 export default SideProjectDetailView
 
 export const query = graphql`
-query PersonalProjectBySlug($slug: String!) {
-    site {
-        siteMetadata {
-            title
-            siteUrl
-        }
-    }
-    personal: markdownRemark(fields: { slug: { eq: $slug } }) {
-        frontmatter {
-            title
-            description
-            locationText
-            image {
-              childImageSharp {
-                  fixed {
-                      src
-                  }
-                fluid(maxWidth: 200) {
-                    ...GatsbyImageSharpFluid
-                }
-              }
+    query PersonalProjectBySlug($slug: String!) {
+        site {
+            siteMetadata {
+                title
+                siteUrl
             }
-            appStoreUrl
-            githubUrl
-            youtubeUrl
         }
-        html
-        fields {
-            slug
+        personal: markdownRemark(fields: { slug: { eq: $slug } }) {
+            frontmatter {
+                title
+                description
+                locationText
+                seoImage {
+                    childImageSharp {
+                        gatsbyImageData(width: 512)
+                    }
+                }
+                icon {
+                    childImageSharp {
+                        gatsbyImageData(width: 200)
+                    }
+                }
+                appStoreUrl
+                githubUrl
+                youtubeUrl
+            }
+            html
+            fields {
+                slug
+            }
         }
     }
-}
-`
+`;

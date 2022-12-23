@@ -1,22 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import GetSumLogo from '../../assets/img/getsum-logo.png'
+import GetSumLogo from '../../assets/img/personal-projects/getsum-logo.png'
 
 import PageHeaderTitle from '../../components/page/PageHeaderTitle'
 import PageSubtitle from '../../components/page/PageSubtitle'
 
-import {fadeInDown} from '../../animations/m-styled-animations'
-
 
 const GetSumPrivacyPage = ({data}) => (
-    <PageGrid>
+    <div className='page-grid'>
 
 
-        <ProjectImg src={GetSumLogo} />
-        <PageHeaderTitle>Get Sum - Privacy Policy</PageHeaderTitle>
-        <PageSubtitle>TLDR: I only collect the analytics that Apple automatically gives developers, nothing more. The app just counts things. That's it.</PageSubtitle>
+        <ProjectImg className='animate-fade-in-very-slow' src={GetSumLogo} />
+        <PageHeaderTitle className='animate-fade-in-slow'>Get Sum - Privacy Policy</PageHeaderTitle>
+        <PageSubtitle className='animate-fade-in-slow'>TLDR: I only collect the analytics that Apple automatically gives developers, nothing more. The app just counts things. That's it.</PageSubtitle>
 
-        <Content>
+        <Content className='animate-fade-in'>
         <h1>PRIVACY NOTICE</h1>
 <p>Last updated September 21, 2020</p>
 <p>Thank you for choosing to be part of our community at Timothy McKinney (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at <a href="mailto:maxmckinney@hey.com">maxmckinney@hey.com</a>.</p>
@@ -78,16 +76,8 @@ const GetSumPrivacyPage = ({data}) => (
 <p>This privacy policy was created using Termly&rsquo;s Privacy Policy Generator.</p>
         </Content>
 
-    </PageGrid>
+    </div>
 )
-
-const PageGrid = styled.div`
-	display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 1100px) [end] minmax(24px, 1fr);
-	& > * {
-		grid-column: center;
-	}
-`
 
 const ProjectImg = styled.img`
     width: 100px;
@@ -96,12 +86,9 @@ const ProjectImg = styled.img`
 
     margin-top: 170px;
     border-radius: 100%;
-
-    animation: ${fadeInDown} 0.8s;
 `
 
 const Content = styled.div`
-    animation: ${fadeInDown} 1.5s;
     margin-top: 64px;
 
     a {
