@@ -22,7 +22,7 @@ const IndexPage = ({data}) => (
         <div className="contained-content mt-16 animate-fade-in-slow sm:mt-24" id="BioDescription">
 
             <div className="text-gray-400">
-                <MBodyLead className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a Designer at Figma. I also create educational design content, dabble in smart home technologies, and build cars.</MBodyLead>
+                <MBodyLead className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a Designer at Figma. I also run a design centric YouTube channel, do automotive photography, and build cars.</MBodyLead>
 
                 <MBodyLead className="mb-6">I specialize in product design architecture and thrive in undefined problem spaces. My personal background is in user experience, product development, design systems, and design leadership.</MBodyLead>
 
