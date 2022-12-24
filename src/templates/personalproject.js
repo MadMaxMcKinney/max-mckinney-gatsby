@@ -3,9 +3,8 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql } from "gatsby"
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
-import AppStoreButton from '../components/buttons/social/AppStoreButton'
-import GithubButton from '../components/buttons/social/GithubButton'
-import YouTubeButton from '../components/buttons/social/YouTubeButton'
+import PersonalProjectLinkButton from '../components/buttons/PersonalProjectLinkButton'
+import PersonalProjectLinkSourceButton from '../components/buttons/PersonalProjectLinkSourceButton'
 import { MBodyXL, MHeading01 } from '../components/typography'
 
 const SideProjectDetailView = ({data}) => (
@@ -38,14 +37,11 @@ const SideProjectDetailView = ({data}) => (
         <MBodyXL className="text-gray-400 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
 
         <div className="flex flex-wrap gap-4 justify-start mt-8 animate-fade-in-very-slow">
-        {data.personal.frontmatter.appStoreUrl && 
-            <AppStoreButton href={data.personal.frontmatter.appStoreUrl}><i className="fab fa-app-store"></i>View on App Store</AppStoreButton>
+        {data.personal.frontmatter.projectLink && 
+            <PersonalProjectLinkButton href={data.personal.frontmatter.projectLink} accent={data.personal.frontmatter.accent} />
         }
-        {data.personal.frontmatter.githubUrl && 
-            <GithubButton href={data.personal.frontmatter.githubUrl}><i className="fab fa-github"></i> View on Github</GithubButton>
-        }
-        {data.personal.frontmatter.youtubeUrl && 
-            <YouTubeButton href={data.personal.frontmatter.youtubeUrl}><i className="fab fa-youtube"></i> View on YouTube</YouTubeButton>
+        {data.personal.frontmatter.sourceLink && 
+            <PersonalProjectLinkSourceButton href={data.personal.frontmatter.sourceLink} accent={data.personal.frontmatter.accent} />
         }
         </div>
 
@@ -80,6 +76,7 @@ export const query = graphql`
                 title
                 description
                 locationText
+                accent
                 seoImage {
                     childImageSharp {
                         gatsbyImageData(width: 512)
@@ -90,9 +87,8 @@ export const query = graphql`
                         gatsbyImageData(width: 200)
                     }
                 }
-                appStoreUrl
-                githubUrl
-                youtubeUrl
+                sourceLink
+                projectLink
             }
             html
             fields {

@@ -1,9 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import styled from 'styled-components'
 import { graphql } from "gatsby"
-import DynamicLink from '../components/utils/DynamicLink'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import PersonalProjectCard from '../components/cards/PersonalProjectCard'
 
 import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
 
@@ -43,70 +42,21 @@ const SideProjectsPage = ({data}) => (
                 // Determine if the project is linking to something external or an internal page
                 // If there is no externalLink frontmatter then use the generated slug for internal page
                 const processedLink = node.frontmatter.externalLink ? node.frontmatter.externalLink : node.fields.slug
-
+                
+                /* TODO: Remove external link options from personal projects, make everything a page */
                 return (
-                <SideProjectCard to={processedLink} accent={node.frontmatter.accent} key={node.key}>
+                <PersonalProjectCard to={processedLink} accent={node.frontmatter.accent} key={node.key}>
                     <GatsbyImage id="SideImage" className="w-24 h-24l mb-8" imgStyle={{ borderRadius: '1.5rem' }} image={getImage(node.frontmatter.icon)} alt=""/>
                     <MHeading03>{node.frontmatter.title}</MHeading03>
                     <MBody className="text-gray-400 mt-4 flex-1">{node.frontmatter.description}</MBody>
                     <MBodyLight className="mt-6 text-[color:var(--accent-color)]">{node.frontmatter.locationText}</MBodyLight>
-                </SideProjectCard>
+                </PersonalProjectCard>
                 )
             })}
         </div>
 
     </div>
 )
-
-const SideProjectCard = styled(DynamicLink)`
-    --accent-color: ${props => props.accent};
-    
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 32px;
-
-    border-radius: 24px;
-    border: 2px solid transparent;
-
-    background: var(--blueblack-500);
-    transition: all 0.2s;
-    overflow: hidden;
-
-    &:hover {
-        border-color: var(--accent-color);
-    }
-
-    & > * {
-        z-index: 10;
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: var(--accent-color);
-        opacity: 0;
-        transition: all 0.3s;
-        z-index: 1;
-    }
-
-    &:hover&::after {
-        opacity: 0.15;
-    }
-
-    &:active {
-        transform: scale(0.97);
-    }
-
-    @media(max-width: 1015px) {
-        padding: 24px;
-    }
-
-`
 
 export default SideProjectsPage
 
