@@ -38,7 +38,7 @@ export default function Template({ data }) {
 
 		<ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
 			<GatsbyImage className="animate-fade-in" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} image={getImage(data.markdownRemark.frontmatter.image)}/>
-			<ProjectPostTitle className='animate-fade-in-slow'>{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
+			<h1 className='font-bold text-center text-4xl z-10 md:text-6xl animate-fade-in-slow'>{data.markdownRemark.frontmatter.title}</h1>
 		</ProjectHeader>
 
 		<div className='page-grid page-grid-sm text-white/80 animate-fade-in-up'>
@@ -92,18 +92,6 @@ const ProjectHeader = styled.div`
 
 	@media (max-width: 715px) {
 		height: 430px;
-	}
-`;
-
-const ProjectPostTitle = styled.h1`
-	font-weight: 600;
-	text-align: center;
-	font-size: 3.7rem;
-	z-index: 5;
-
-	@media(max-width: 715px) {
-		font-size: 2.2rem;
-		line-height: 1;
 	}
 `;
 
