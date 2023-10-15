@@ -9,7 +9,7 @@ import metaFeaturedImage from './../assets/img/website-meta-share-personal.jpg'
 import { MBodyXL, MHeading01, MBody, MHeading03, MBodyLight } from '../components/typography'
 
 
-const description = "These are some of my personal projects. They are all over the place but you might find some things you enjoy!"
+const description = "These are some of my personal projects. They span through web-based projects, iOS projects, design education, and other projects I used to try new tech."
 
 const SideProjectsPage = ({data}) => (
     <div className="page-grid">
@@ -32,9 +32,9 @@ const SideProjectsPage = ({data}) => (
 
         <MHeading01 className="mb-6 mt-32 sm:mt-56 animate-fade-in-fast text-white">hello.</MHeading01>
         
-        <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in">These are some of my personal projects. They're all over the place, but you might find some things you enjoy!</MBodyXL>
+        <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in">These are some of my personal projects.</MBodyXL>
 
-        <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in-slow">My projects span everything from, smart homes, web apps, iOS apps, education courses, game development, and all the stuff in-between!</MBodyXL>
+        <MBodyXL className="mb-8 text-gray-400 max-w-3xl animate-fade-in-slow">They span through web-based projects, iOS projects, design education, and other projects I used to try new tech.</MBodyXL>
 
         <div id="SideProjectGrid" className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 sm:gap-8 md:gap-14 sm:mt-24 animate-fade-in-slow">
             {data.personal.edges.map(({node}) => {
@@ -45,7 +45,7 @@ const SideProjectsPage = ({data}) => (
                 
                 /* TODO: Remove external link options from personal projects, make everything a page */
                 return (
-                <PersonalProjectCard to={processedLink} accent={node.frontmatter.accent} key={node.key}>
+                <PersonalProjectCard to={processedLink} accent={node.frontmatter.accent} key={node.fields.slug}>
                     <GatsbyImage id="SideImage" className="w-24 h-24l mb-8" imgStyle={{ borderRadius: '1.5rem' }} image={getImage(node.frontmatter.icon)} alt=""/>
                     <MHeading03>{node.frontmatter.title}</MHeading03>
                     <MBody className="text-gray-400 mt-4 flex-1">{node.frontmatter.description}</MBody>

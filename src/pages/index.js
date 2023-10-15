@@ -22,18 +22,16 @@ const IndexPage = ({data}) => (
         <div className="contained-content mt-16 animate-fade-in-slow sm:mt-24" id="BioDescription">
 
             <div className="text-gray-400">
-                <MBodyLead className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a Designer at Figma. I also run a design centric YouTube channel, do automotive photography, and build cars.</MBodyLead>
+                <MBodyLead className="mb-6">Hi. I’m <span className="text-transparent bg-gradient-to-r from-max-red-300 via-max-purple-300 to-max-pink-300 bg-clip-text bg-300% animate-flow-background">Max McKinney</span>. I’m currently a Designer at Figma. I also love to tinker and build with all things web technology based, do automotive photography, and build classic cars.</MBodyLead>
 
                 <MBodyLead className="mb-6">I specialize in product design architecture and thrive in undefined problem spaces. My personal background is in user experience, product development, design systems, and design leadership.</MBodyLead>
-
-                <MBodyLead className="mb-6">To support my design projects I enjoy creating end-to-end experiences via frontend web development with a focus in React, Gatsby/Next, and CSS component systems.</MBodyLead>
             </div>
         </div>
 
         {/* Project Card Grid */}
 		<div id="ProjectGrid" className="animate-fade-in-slow mt-24 grid grid-cols-1 gap-16 sm:mt-30 lg:gap-32">
 			{data.allMarkdownRemark.edges.map(({node}) => (
-				<ProjectCard data={node} key={node.key}></ProjectCard>
+				<ProjectCard data={node} key={node.fields.slug}></ProjectCard>
 			))}
 		</div>
 
