@@ -8,7 +8,7 @@ seoImage: "./getsum-example.png"
 sortDate: "2020-08-01"
 postType: "personal-project"
 projectLink: "https://apps.apple.com/us/app/id1532463456"
-sourceLink: "https://github.com/MaxMcKinney/Get-Sum"
+sourceLink: "https://github.com/MadMaxMcKinney/Get-Sum"
 ---
 
 ![Get Sum Image](getsum-example.png)
