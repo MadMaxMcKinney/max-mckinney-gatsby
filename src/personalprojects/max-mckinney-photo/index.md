@@ -4,7 +4,7 @@ description: "Designed and developed a website for my photography portfolio buil
 accent: "#6F3BDD"
 locationText: "photos.maxmckinney/"
 icon: "./max-mckinney-photography-icon.png"
-seoImage: "./max-mckinney-photo-hero.png"
+seoImage: "./max-mckinney-photo-hero-v2.png"
 sortDate: "2023-01-01"
 postType: "personal-project"
 projectLink: "https://photos.maxmckinney.com/"
