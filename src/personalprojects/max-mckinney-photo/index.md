@@ -1,7 +1,7 @@
 ---
 title: "Max's Photography Website"
 description: "Designed and developed a website for my photography portfolio built on SvelteKit and Sanity CMS."
-accent: "#6F3BDD"
+accent: "#BE7E00"
 locationText: "photos.maxmckinney/"
 icon: "./max-mckinney-photography-icon.png"
 seoImage: "./max-mckinney-photo-hero-v2.png"
@@ -10,4 +10,4 @@ postType: "personal-project"
 projectLink: "https://photos.maxmckinney.com/"
 ---
 
-![Max McKinney Photography](./max-mckinney-photo-hero.png)
+![Max McKinney Photography](./max-mckinney-photo-hero-v2.png)
