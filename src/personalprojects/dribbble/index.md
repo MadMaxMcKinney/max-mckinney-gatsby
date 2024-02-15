@@ -6,6 +6,7 @@ locationText: "dribbble/maxmckinney/"
 icon: "../../assets/img/personal-projects/dribbble-max-project-icon.png"
 seoImage: "../../assets/img/personal-projects/dribbble-max-project-icon.png"
 sortDate: "2020-08-01"
+projectType: "design"
 postType: "personal-project"
 externalLink: "https://dribbble.com/MadMaxMcKinney"
 ---

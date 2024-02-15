@@ -6,6 +6,7 @@ locationText: "photos.maxmckinney/"
 icon: "./max-mckinney-photography-icon-v2.png"
 seoImage: "./max-mckinney-photo-hero-v3.png"
 sortDate: "2023-01-01"
+projectType: "web"
 postType: "personal-project"
 projectLink: "https://photos.maxmckinney.com/"
 ---

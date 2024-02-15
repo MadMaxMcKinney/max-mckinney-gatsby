@@ -14,15 +14,17 @@ const ProjectCard = (props) => {
             </div>
 
             {/* Card Content */}
-            <div className="contained-content mt-12">
+            <div className="contained-content mt-12 flex flex-col gap-6 items-start">
                 {/* Pills */}
-                <div className="inline-grid grid-flow-col gap-3 pb-8">
-                    <Pill text={props.data.frontmatter.projectRole} />
+                <div className="inline-grid grid-flow-col gap-3">
+                    <Pill type="primary" text={props.data.frontmatter.projectRole} />
                 </div>
 
                 {/* Words */}
-                <MHeading02>{props.data.frontmatter.title}</MHeading02>
-                <MBody className="text-gray-400 pt-6 pb-8 flex-1">{props.data.frontmatter.projectShortBrief}</MBody>
+                <div className="flex flex-col gap-4">
+                    <MHeading02>{props.data.frontmatter.title}</MHeading02>
+                    <MBody className="text-zinc-400 flex-1">{props.data.frontmatter.projectShortBrief}</MBody>
+                </div>
 
                 <div id="ProjectActions">
                     <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}>

@@ -6,13 +6,14 @@ const PersonalProjectCard = styled(DynamicLink)`
 
     display: flex;
     flex-direction: column;
+    gap: 24px;
     position: relative;
     padding: 32px;
 
     border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
-    background: var(--blueblack-500);
+    background: #0c0c12;
     transition: all 0.2s;
     overflow: hidden;
 

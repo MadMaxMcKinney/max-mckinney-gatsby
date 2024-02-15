@@ -6,6 +6,7 @@ locationText: "personal/design-course/"
 icon: "teaching-classes-thumbnail.png"
 seoImage: "./YouTube-Tutorials-Thumb.png"
 sortDate: "2020-11-01"
+projectType: "education"
 postType: "personal-project"
 projectLink: "https://www.youtube.com/c/maxmckinney"
 ---

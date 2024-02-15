@@ -7,6 +7,7 @@ icon: "../../assets/img/personal-projects/getsum-logo.png"
 seoImage: "./getsum-example.png"
 sortDate: "2020-08-01"
 postType: "personal-project"
+projectType: "iOS app"
 projectLink: "https://apps.apple.com/us/app/id1532463456"
 sourceLink: "https://github.com/MadMaxMcKinney/Get-Sum"
 ---
