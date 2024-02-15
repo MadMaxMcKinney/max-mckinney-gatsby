@@ -1,16 +1,16 @@
-import styled from 'styled-components'
-import DynamicLink from '../utils/DynamicLink'
+import styled from "styled-components";
+import DynamicLink from "../utils/DynamicLink";
 
 const PersonalProjectCard = styled(DynamicLink)`
-    --accent-color: ${props => props.accent};
-    
+    --accent-color: ${(props) => props.accent};
+
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 32px;
 
     border-radius: 24px;
-    border: 2px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 
     background: var(--blueblack-500);
     transition: all 0.2s;
@@ -25,7 +25,7 @@ const PersonalProjectCard = styled(DynamicLink)`
     }
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -45,10 +45,9 @@ const PersonalProjectCard = styled(DynamicLink)`
         transform: scale(0.97);
     }
 
-    @media(max-width: 1015px) {
+    @media (max-width: 1015px) {
         padding: 24px;
     }
+`;
 
-`
-
-export default PersonalProjectCard
+export default PersonalProjectCard;
