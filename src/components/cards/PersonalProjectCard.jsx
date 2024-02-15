@@ -26,11 +26,11 @@ const PersonalProjectCard = styled(DynamicLink)`
         }
     }
 
-    &:focus {
+    &:active {
         border-color: var(--accent-color);
         outline: none;
     }
-    &:focus&::after {
+    &:active&::after {
         opacity: 0.15;
     }
 
