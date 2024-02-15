@@ -7,7 +7,7 @@ import MaxShapes from "../components/icons/MaxShapes";
 const IndexPage = ({ data }) => (
     <React.Fragment>
         <div className="px-6">
-            <div className="flex items-end relative pt-56 pb-16" id="Header">
+            <div className="flex items-end relative pt-52 pb-16" id="Header">
                 <div className="contained-content z-10 flex flex-col gap-3">
                     <MaxShapes className="animate-fade-in-fast w-[150px] mb-6" />
                     <MHeadingHero className="animate-fade-in">Designer.</MHeadingHero>

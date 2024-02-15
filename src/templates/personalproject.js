@@ -6,6 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PersonalProjectLinkButton from "../components/buttons/PersonalProjectLinkButton";
 import PersonalProjectLinkSourceButton from "../components/buttons/PersonalProjectLinkSourceButton";
 import { MBodyXL, MHeading01 } from "../components/typography";
+import Pill from "../components/pills/Pill";
 
 const SideProjectDetailView = ({ data }) => (
     <React.Fragment>
@@ -32,7 +33,10 @@ const SideProjectDetailView = ({ data }) => (
 
         <div className="page-grid">
             <GatsbyImage className="w-24 h-24 mb-6 mt-44 animate-fade-in-fast" imgStyle={{ borderRadius: "1.5rem" }} image={getImage(data.personal.frontmatter.icon)} />
-            <MHeading01 className="mb-4 w-full text-white animate-fade-in-fast">{data.personal.frontmatter.title}</MHeading01>
+            <div className="flex gap-6 items-center animate-fade-in-fast mb-4">
+                <MHeading01 className="text-white">{data.personal.frontmatter.title}</MHeading01>
+                <Pill type="themed" theme={data.personal.frontmatter.accent} text={data.personal.frontmatter.projectType} />
+            </div>
             <MBodyXL className="text-zinc-400 mb-12 max-w-3xl animate-fade-in">{data.personal.frontmatter.description}</MBodyXL>
 
             <div className="flex flex-wrap gap-4 justify-start animate-fade-in-very-slow">
@@ -40,7 +44,7 @@ const SideProjectDetailView = ({ data }) => (
                 {data.personal.frontmatter.sourceLink && <PersonalProjectLinkSourceButton href={data.personal.frontmatter.sourceLink} accent={data.personal.frontmatter.accent} />}
             </div>
 
-            <Content className="prose prose-lg max-w-none text-white mt-16 animate-fade-in-very-slow" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
+            <Content className="prose prose-lg max-w-none text-zinc-400 mt-16 animate-fade-in-very-slow" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
         </div>
     </React.Fragment>
 );
@@ -70,6 +74,7 @@ export const query = graphql`
                 title
                 description
                 locationText
+                projectType
                 accent
                 seoImage {
                     childImageSharp {
