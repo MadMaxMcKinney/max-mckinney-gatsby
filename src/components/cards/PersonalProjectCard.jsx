@@ -17,8 +17,10 @@ const PersonalProjectCard = styled(DynamicLink)`
     transition: all 0.2s;
     overflow: hidden;
 
-    &:hover {
-        border-color: var(--accent-color);
+    @media (hover: hover) {
+        &:hover {
+            border-color: var(--accent-color);
+        }
     }
 
     & > * {

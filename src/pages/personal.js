@@ -6,10 +6,11 @@ import PersonalProjectCard from "../components/cards/PersonalProjectCard";
 
 import metaFeaturedImage from "./../assets/img/website-meta-share-personal.jpg";
 
-import { MBodyXL, MHeading01, MBody, MHeading03, MBodyLight } from "../components/typography";
+import { MBodyXL, MHeading01, MBody, MHeading03 } from "../components/typography";
 import Pill from "../components/pills/Pill";
 
-const description = "These are some of my personal projects. They span through web-based projects, iOS projects, design education, and other projects I used to try new tech.";
+const description =
+    "These are some of my personal projects. I dabble in a lot, but primarily in web tech, native apps, and educational design content. There’s probably something here to catch your interest.";
 
 const SideProjectsPage = ({ data }) => (
     <div className="page-grid">
@@ -34,7 +35,7 @@ const SideProjectsPage = ({ data }) => (
         <MBodyXL className="mb-8 text-zinc-400 max-w-3xl animate-fade-in">These are some of my personal projects.</MBodyXL>
 
         <MBodyXL className="mb-8 text-zinc-400 max-w-3xl animate-fade-in-slow">
-            They span through web-based projects, iOS projects, design education, and other projects I used to try new tech.
+            I dabble in a lot, but primarily in web tech, native apps, and educational design content. There’s probably something here to catch your interest.
         </MBodyXL>
 
         <div id="SideProjectGrid" className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 sm:gap-8 md:gap-14 sm:mt-24 animate-fade-in-slow">
