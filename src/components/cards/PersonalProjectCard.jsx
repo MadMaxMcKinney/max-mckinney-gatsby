@@ -21,6 +21,9 @@ const PersonalProjectCard = styled(DynamicLink)`
         &:hover {
             border-color: var(--accent-color);
         }
+        &:hover&::after {
+            opacity: 0.15;
+        }
     }
 
     & > * {
@@ -38,10 +41,6 @@ const PersonalProjectCard = styled(DynamicLink)`
         opacity: 0;
         transition: all 0.3s;
         z-index: 1;
-    }
-
-    &:hover&::after {
-        opacity: 0.15;
     }
 
     &:active {
