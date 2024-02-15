@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PersonalProjectCard from "../components/cards/PersonalProjectCard";
 
-import metaFeaturedImage from "./../assets/img/website-meta-share-personal.jpg";
+import metaFeaturedImage from "./../assets/img/website-meta-share-dark.jpg";
 
 import { MBodyXL, MHeading01, MBody, MHeading03 } from "../components/typography";
 import Pill from "../components/pills/Pill";
