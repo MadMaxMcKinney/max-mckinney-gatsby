@@ -5,7 +5,7 @@ import ReadMoreButton from "../buttons/ReadMoreButton";
 import PropTypes from "prop-types";
 import { MBody, MHeading02 } from "../typography";
 
-const ProjectCard = (props) => {
+const ProfessionalProjectCard = (props) => {
     return (
         <div>
             {/* Preview Image */}
@@ -36,7 +36,7 @@ const ProjectCard = (props) => {
     );
 };
 
-ProjectCard.propTypes = {
+ProfessionalProjectCard.propTypes = {
     /** A markdown object that contains professional project details */
     data: PropTypes.shape({
         thumb: PropTypes.any,
@@ -47,4 +47,4 @@ ProjectCard.propTypes = {
     }),
 };
 
-export default ProjectCard;
+export default ProfessionalProjectCard;

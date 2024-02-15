@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import ProjectCard from "../components/cards/ProjectCard";
+import ProfessionalProjectCard from "../components/cards/ProfessionalProjectCard";
 import { MHeadingHero, MBodyLead } from "../components/typography";
 import MaxShapes from "../components/icons/MaxShapes";
 
@@ -34,7 +33,7 @@ const IndexPage = ({ data }) => (
             {/* Project Card Grid */}
             <div id="ProjectGrid" className="animate-fade-in-slow mt-24 grid grid-cols-1 gap-16 sm:mt-30 lg:gap-32">
                 {data.allMarkdownRemark.edges.map(({ node }) => (
-                    <ProjectCard data={node} key={node.fields.slug}></ProjectCard>
+                    <ProfessionalProjectCard data={node} key={node.fields.slug}></ProfessionalProjectCard>
                 ))}
             </div>
         </div>
