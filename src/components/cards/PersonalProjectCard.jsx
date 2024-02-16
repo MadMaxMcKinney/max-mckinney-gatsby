@@ -26,14 +26,6 @@ const PersonalProjectCard = styled(DynamicLink)`
         }
     }
 
-    &:active {
-        border-color: var(--accent-color);
-        outline: none;
-    }
-    &:active&::after {
-        opacity: 0.15;
-    }
-
     & > * {
         z-index: 10;
     }
@@ -53,6 +45,11 @@ const PersonalProjectCard = styled(DynamicLink)`
 
     &:active {
         transform: scale(0.97);
+        border-color: var(--accent-color);
+        outline: none;
+    }
+    &:active&::after {
+        opacity: 0.15;
     }
 
     @media (max-width: 1015px) {

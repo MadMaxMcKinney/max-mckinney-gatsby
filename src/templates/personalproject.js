@@ -33,7 +33,7 @@ const SideProjectDetailView = ({ data }) => (
 
         <div className="page-grid">
             <GatsbyImage className="w-24 h-24 mb-6 mt-44 animate-fade-in-fast" imgStyle={{ borderRadius: "1.5rem" }} image={getImage(data.personal.frontmatter.icon)} />
-            <div className="flex gap-6 items-center animate-fade-in-fast mb-4">
+            <div className="flex flex-col-reverse gap-4 items-start animate-fade-in-fast mb-8 mt-2 md:mt-0 md:mb-4 md:gap-4 md:flex-row md:items-center">
                 <MHeading01 className="text-white">{data.personal.frontmatter.title}</MHeading01>
                 <Pill type="themed" theme={data.personal.frontmatter.accent} text={data.personal.frontmatter.projectType} />
             </div>
