@@ -27,24 +27,13 @@ const ProfessionalProjectCard = (props) => {
                 </div>
 
                 <div id="ProjectActions">
-                    <ReadMoreButton accent={props.data.frontmatter.accentColor} link={props.data.fields.slug}>
+                    <ReadMoreButton accent={props.data.frontmatter.accentColor} link={"/work/" + props.data.parent.name}>
                         View case study
                     </ReadMoreButton>
                 </div>
             </div>
         </div>
     );
-};
-
-ProfessionalProjectCard.propTypes = {
-    /** A markdown object that contains professional project details */
-    data: PropTypes.shape({
-        thumb: PropTypes.any,
-        projectRole: PropTypes.string,
-        title: PropTypes.string,
-        accentColor: PropTypes.string,
-        fields: PropTypes.object,
-    }),
 };
 
 export default ProfessionalProjectCard;

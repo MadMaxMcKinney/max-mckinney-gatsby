@@ -1,0 +1,70 @@
+---
+title: "Sureshot UI Product Ecosystem"
+projectClient: "Sureshot"
+projectDate: "Jan 2019 - October 2020"
+projectAgency: "Sureshot"
+projectRole: "Senior UI/UX Designer"
+projectBrief: "Prior to the Sureshot UI and product design effort Sureshot had several products that were highly disconnected. From a UX perspective they had very different interaction patterns and elements. Visually the products shared no similar elements and obviously were built at different times throughout the companies history. Establishing a strong product ecosystem was a primary goal. I approached this problem by understanding our primary users, and aligning the team on their needs. From there I directed and designed a consistent visual language (Sureshot UI) that aligned the products in terms of their visual space and components. This extended throughout the Sureshot product ecosystem (authentication pages, error pages, marketing, etc). As the visual updates were happening I explored the idea of creating shared patterns between the various products. This effort was looking at micro-interactions and shared features, like auto-complete, that could be aligned between the products. Having consistent interactions and unique shared UX allowed customers to switch between Sureshot's products with ease and familiarity. "
+projectShortBrief: "Lead the overall direction of Sureshot's product ecosystem experiences and created the Sureshot UI design language. Built a powerful collection of micro-interactions to be reused across the ecosystem. Lead the discovery effort for Sureshot's user personas. Defined user needs, hills, and product experience roadmaps. Interfaced with existing and future clients to continue user need definitions and provide iterative experiences via Sureshot's SAAS architecture."
+categories: ["Lead", "UI/UX", "Systems"]
+themeColor: "#330f0f"
+accentColor: "#CC2027"
+image: "Sureshot-UI-Header.png"
+thumb: "Sureshot-UI-Thumbnail.png"
+sortDate: "2019-1-01"
+postType: "professional-project"
+---
+<div class="photo-container">
+<img src="Sureshot-UI-Thumbnail.png" />
+</div>
+<p class="photo-grid-subtitle">Sureshot UI example components</p>
+
+#### Simplify, simplify, simplify
+The goal for the Sureshot design system (now called Sureshot UI) was to align all of the existing and new products visually and functionally. Sureshot provides many different products and they encourage the customer/user to switch between different products for different needs, similar to how the Google web app suite works. A key part of that business model is keeping users integrated into your products. If your products are not consistent in appearance and functionality it trains the user to be comfortable with switching product ecosystems since they have already gotten used to different visuals and workflows. 
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-command-web.png" />
+<img src="Sureshot-Connect-Web.png"/></div>
+</div>
+<p class="photo-grid-subtitle">Sureshot Command - Sureshot Connect</p>
+
+Sureshot UI aligned the visual language of the products with well documented UX patterns. This new consistency not only improved the appearance of the applications but also helped define the Sureshot ecosystem of products. Removing the learning curve from each new application the user would visit by sharing consistent UX patterns and visuals keeps the user in the Sureshot world, not jumping between various different platforms and applications.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-ui-product-command-overview.png" />
+<img src="sureshot-ui-product-connect-overview.png"/></div>
+</div>
+<p class="photo-grid-subtitle">Consistent visual styling</p>
+
+#### Collaboration
+Sureshot UI was built in Figma and utilized the team features of the tool to allow others to collaborate and quickly iterate with the custom modular designs and pre-built layout modules. Everything was built with the latest auto-layout components so designers could quickly iterate and prototype with ease. The library also included "layout modules" which were predefined sections of the UI that shared common elements and patterns. These modules still allowed for customization but helped create a consistent experience between the Sureshot ecosystem.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-figma.png" />
+<img src="sureshot-figma-case-study.png"/></div>
+</div>
+<p class="photo-grid-subtitle">Sureshot UI Figma</p>
+
+As the design language grew it also become better documented so that the team can reference components for UX guides and usage instructions. This is useful for those who are wanting to make new designs or for developers who are implementing/tweaking components.
+
+<div class="photo-container">
+<img src="sureshot-ui-updated-docs.png" />
+</div>
+<p class="photo-grid-subtitle">Sureshot UI Figma Documentation</p>
+
+#### Future-proofing
+Part of building a strong design system and product catalog is building applications that will scale. An often overlooked requirement is building well documented products internally with a solid onboarding experience. Sureshot UI was built on the idea that any questions surrounding the library could be solved with resources also provided by the library. Sureshot UI has solid documentation, visual examples, API/prop lists with explanations, and Storybook JS integration.
+
+<div class="photo-grid-container">
+<div class="photo-grid">
+<img src="sureshot-dev-storybook.png" />
+<img src="sureshot-dev-zero.png" />
+</div>
+</div>
+<p class="photo-grid-subtitle">Sureshot UI Dev Documentation Example</p>
+
+#### Business Outcomes
+At the end of this effort Sureshot went from struggling to keep clients from switching to competitor products to easily selling an entire ecosystem to customers. The strong pairing of product design and functionality combined with the compelling nature of staying in a familiar and linked ecosystem increased Sureshot's business revenue and customer retention rates.

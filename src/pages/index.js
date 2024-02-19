@@ -47,8 +47,8 @@ const IndexPage = ({ data }) => {
 
                 {/* Project Card Grid */}
                 <div id="ProjectGrid" className="animate-fade-in-slow mt-24 grid grid-cols-1 gap-16 sm:mt-30 lg:gap-32">
-                    {data.allMarkdownRemark.edges.map(({ node }) => (
-                        <ProfessionalProjectCard data={node} key={node.fields.slug}></ProfessionalProjectCard>
+                    {data.allMarkdownRemark.nodes.map((node) => (
+                        <ProfessionalProjectCard data={node} key={node.id}></ProfessionalProjectCard>
                     ))}
                 </div>
             </div>
@@ -61,23 +61,24 @@ export default IndexPage;
 export const query = graphql`
     query ProjectQuery {
         allMarkdownRemark(sort: { frontmatter: { sortDate: DESC } }, filter: { fileAbsolutePath: { regex: "/work/.*.md$/" } }) {
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        title
-                        projectShortBrief
-                        projectRole
-                        themeColor
-                        accentColor
-                        thumb {
-                            childImageSharp {
-                                gatsbyImageData(layout: CONSTRAINED)
-                            }
+            nodes {
+                id
+                frontmatter {
+                    title
+                    projectShortBrief
+                    projectRole
+                    themeColor
+                    accentColor
+                    thumb {
+                        childImageSharp {
+                            gatsbyImageData(layout: CONSTRAINED)
                         }
-                        categories
+                    }
+                    categories
+                }
+                parent {
+                    ... on File {
+                        name
                     }
                 }
             }
