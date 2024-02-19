@@ -20,10 +20,10 @@ const IndexPage = ({ data }) => {
                 <div className="flex items-end relative pt-32 pb-8 md:pt-52 md:pb-16" id="Header">
                     <div className="contained-content z-10 flex flex-col gap-3 items-start">
                         <div className="mb-2 animate-shapes-in">
-                            <Lottie
+                            {/* {<Lottie
                                 options={{ loop: false, autoplay: isPlayingShapes, rendererSettings: { preserveAspectRatio: "xMidYMid slice" }, animationData: animationData.default }}
                                 style={{ width: "150px", height: "auto", cursor: "default" }}
-                            />
+                            />} */}
                         </div>
                         <MHeadingHero className="animate-fade-in">Designer.</MHeadingHero>
                         <MHeadingHero className="animate-fade-in-slow">Leader.</MHeadingHero>
