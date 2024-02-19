@@ -1,60 +1,14 @@
-import styled from "styled-components";
-import DynamicLink from "../utils/DynamicLink";
+import React from "react";
+import { Link } from "gatsby";
 
-const PersonalProjectCard = styled(DynamicLink)`
-    --accent-color: ${(props) => props.accent};
-
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    position: relative;
-    padding: 32px;
-
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-
-    background: #0c0c12;
-    transition: all 0.2s;
-    overflow: hidden;
-
-    @media (hover: hover) {
-        &:hover {
-            border-color: var(--accent-color);
-        }
-        &:hover&::after {
-            opacity: 0.15;
-        }
-    }
-
-    & > * {
-        z-index: 10;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: var(--accent-color);
-        opacity: 0;
-        transition: all 0.3s;
-        z-index: 1;
-    }
-
-    &:active {
-        transform: scale(0.97);
-        border-color: var(--accent-color);
-        outline: none;
-    }
-    &:active&::after {
-        opacity: 0.15;
-    }
-
-    @media (max-width: 1015px) {
-        padding: 24px;
-    }
-`;
-
-export default PersonalProjectCard;
+export default function PersonalProjectCard(props) {
+    return (
+        <Link
+            style={{ "--accent": props.accent }}
+            className="flex flex-col gap-6 p-6 relative rounded-3xl border border-white/15 bg-[#0c0c12] transition-all z-10 overflow-clip md:p-8 after:absolute after:inset-0 after:bg-[var(--accent)] after:opacity-0 after:transition-all hover-supported:hover:border-[var(--accent)] hover-supported:hover:after:opacity-15 active:scale-[0.97] active:border-[var(--accent)] focus-visible:border-[var(--accent)] focus-visible:outline-none"
+            to={props.to}
+        >
+            {props.children}
+        </Link>
+    );
+}

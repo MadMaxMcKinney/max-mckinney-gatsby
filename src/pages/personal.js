@@ -42,13 +42,8 @@ const SideProjectsPage = ({ data }) => {
             <div id="SideProjectGrid" className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 sm:gap-8 md:gap-14 sm:mt-24 animate-fade-in-slow">
                 {data.projects?.nodes &&
                     data.projects.nodes.map((node) => {
-                        // Determine if the project is linking to something external or an internal page
-                        // If there is no externalLink frontmatter then use the generated slug for internal page
-                        const processedLink = node.frontmatter.externalLink ? node.frontmatter.externalLink : node.parent.name;
-
-                        /* TODO: Remove external link options from personal projects, make everything a page */
                         return (
-                            <PersonalProjectCard to={processedLink} accent={node.frontmatter.accent} key={node.id}>
+                            <PersonalProjectCard to={"/personal/" + node.parent.name} accent={node.frontmatter.accent} key={node.id}>
                                 <GatsbyImage id="SideImage" className="w-24 h-24" imgStyle={{ borderRadius: "1.5rem" }} image={getImage(node.frontmatter.icon)} alt="" />
                                 <div className="flex flex-col gap-2">
                                     <MHeading03>{node.frontmatter.title}</MHeading03>
@@ -84,7 +79,6 @@ export const query = graphql`
                     accent
                     projectType
                     locationText
-                    externalLink
                     icon {
                         childImageSharp {
                             gatsbyImageData(width: 200)

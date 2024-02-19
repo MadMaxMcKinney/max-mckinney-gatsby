@@ -1,6 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-import styled from "styled-components";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PersonalProjectLinkButton from "../components/buttons/PersonalProjectLinkButton";
@@ -43,20 +42,10 @@ const SideProjectDetailView = ({ data }) => (
                 {data.personal.frontmatter.sourceLink && <PersonalProjectLinkSourceButton href={data.personal.frontmatter.sourceLink} accent={data.personal.frontmatter.accent} />}
             </div>
 
-            <Content className="prose prose-lg max-w-none text-zinc-400 mt-16 animate-fade-in-very-slow" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
+            <div className="prose prose-lg max-w-none text-zinc-400 mt-16 animate-fade-in-very-slow [&_img]:rounded-sm [&_p]:opacity-85" dangerouslySetInnerHTML={{ __html: data.personal.html }} />
         </div>
     </React.Fragment>
 );
-
-const Content = styled.div`
-    img {
-        border-radius: 2px;
-    }
-
-    p {
-        opacity: 0.85;
-    }
-`;
 
 export default SideProjectDetailView;
 

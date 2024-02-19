@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
-import styled from "styled-components";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { MBodyLight, MHeading03 } from "../components/typography";
 import BodyColorizer from "../components/utils/BodyColorizer";
@@ -34,10 +33,13 @@ export default function Template({ data }) {
 
             <BodyColorizer hex={data.markdownRemark.frontmatter.themeColor} />
 
-            <ProjectHeader themeColor={data.markdownRemark.frontmatter.themeColor}>
+            <div
+                style={{ "--themeColor": data.markdownRemark.frontmatter.themeColor }}
+                className="h-[430px] flex justify-center items-center relative px-6 md:h-[800px] after:absolute after:inset-0 after:bg-gradient-to-b from-black/0 to-[var(--themeColor)]"
+            >
                 <GatsbyImage className="animate-fade-in" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: `100%` }} image={getImage(data.markdownRemark.frontmatter.image)} />
-                <ProjectPostTitle className="animate-fade-in-slow">{data.markdownRemark.frontmatter.title}</ProjectPostTitle>
-            </ProjectHeader>
+                <h1 className="font-bold text-center text-4xl z-10 md:text-6xl animate-fade-in-slow">{data.markdownRemark.frontmatter.title}</h1>
+            </div>
 
             <div className="page-grid page-grid-sm text-white animate-fade-in-up">
                 <div className="flex gap-6 lg:gap-12">
@@ -67,41 +69,6 @@ export default function Template({ data }) {
         </>
     );
 }
-
-const ProjectHeader = styled.div`
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 0px 24px;
-
-    &:after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, ${(props) => props.themeColor} 100%);
-    }
-
-    @media (max-width: 715px) {
-        height: 430px;
-    }
-`;
-
-const ProjectPostTitle = styled.h1`
-    font-weight: 600;
-    text-align: center;
-    font-size: 3.7rem;
-    z-index: 5;
-
-    @media (max-width: 715px) {
-        font-size: 2.2rem;
-        line-height: 1;
-    }
-`;
 
 export const query = graphql`
     query Work($id: String!) {
