@@ -65,6 +65,7 @@ module.exports = {
             animation: {
                 "pulse-right": "pulsing-right 0.3s alternate infinite",
                 "flow-background": "flow 5.5s ease-in-out infinite",
+                "shapes-in": "shapes-in 1s ease-in-out",
                 "fade-in-very-slow": "fade-in 4s",
                 "fade-in-slow": "fade-in 3s",
                 "fade-in": "fade-in 2s",
@@ -84,6 +85,26 @@ module.exports = {
                     },
                     "100%": {
                         opacity: 1,
+                        transform: "translateY(0px)",
+                    },
+                },
+                "shapes-in": {
+                    "0%": {
+                        opacity: 0,
+                        transform: "translateY(-20px)",
+                    },
+                    "25%": {
+                        opacity: 1,
+                    },
+                    "100%": {
+                        transform: "translateY(0px)",
+                    },
+                },
+                "slide-in": {
+                    "0%": {
+                        transform: "translateY(-20px)",
+                    },
+                    "100%": {
                         transform: "translateY(0px)",
                     },
                 },

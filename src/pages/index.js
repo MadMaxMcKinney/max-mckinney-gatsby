@@ -2,16 +2,15 @@ import React from "react";
 import { graphql } from "gatsby";
 import ProfessionalProjectCard from "../components/cards/ProfessionalProjectCard";
 import { MHeadingHero, MBodyLead } from "../components/typography";
-import MaxShapes from "../components/icons/MaxShapes";
 import Lottie from "react-lottie";
 import * as animationData from "../assets/lottie/max-shape.json";
 
 const IndexPage = ({ data }) => (
-    <React.Fragment>
+    <>
         <div className="px-6">
             <div className="flex items-end relative pt-32 pb-8 md:pt-52 md:pb-16" id="Header">
                 <div className="contained-content z-10 flex flex-col gap-3 items-start">
-                    <div className="mb-2 animate-fade-in">
+                    <div className="mb-2 animate-shapes-in">
                         <Lottie
                             options={{ loop: false, autoplay: true, rendererSettings: { preserveAspectRatio: "xMidYMid slice" }, animationData: animationData.default }}
                             style={{ width: "150px", height: "auto", cursor: "default" }}
@@ -44,7 +43,7 @@ const IndexPage = ({ data }) => (
                 ))}
             </div>
         </div>
-    </React.Fragment>
+    </>
 );
 
 export default IndexPage;
