@@ -14,7 +14,7 @@ const Header = (props) => {
                     </Link>
                 </div>
 
-                <div className="grid grid-flow-col gap-2 justify-end items-center list-none md:gap-4">
+                <ul className="grid grid-flow-col gap-2 justify-end items-center list-none md:gap-4">
                     {/* Page Tabs */}
                     <li id="professionalProjects">
                         <Link to="/">
@@ -30,7 +30,7 @@ const Header = (props) => {
                             </PageNavButton>
                         </Link>
                     </li>
-                </div>
+                </ul>
             </div>
         </header>
     );
