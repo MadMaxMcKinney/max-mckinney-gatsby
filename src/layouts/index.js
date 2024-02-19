@@ -12,9 +12,6 @@ import safariTab from "./../assets/favicon/safari-pinned-tab.svg";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
-require("typeface-rubik");
-require("typeface-inter");
-
 const Layout = ({ children, location }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
@@ -58,8 +55,6 @@ const Layout = ({ children, location }) => {
                 <meta name="theme-color" content="#000000" />
 
                 <script src="https://kit.fontawesome.com/d940246cad.js" crossorigin="anonymous"></script>
-
-                <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
             </Helmet>
 
             <Header location={location} />
