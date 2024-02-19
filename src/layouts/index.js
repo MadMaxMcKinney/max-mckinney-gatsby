@@ -54,7 +54,7 @@ const Layout = ({ children, location }) => {
                 <meta name="msapplication-TileColor" content="#000000" />
                 <meta name="theme-color" content="#000000" />
 
-                <script src="https://kit.fontawesome.com/d940246cad.js" crossorigin="anonymous"></script>
+                <script src="https://kit.fontawesome.com/d940246cad.js" crossorigin="anonymous" defer></script>
             </Helmet>
 
             <Header location={location} />
