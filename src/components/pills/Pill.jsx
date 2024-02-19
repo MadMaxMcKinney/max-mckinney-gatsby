@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props) => {
+export default function Pill(props) {
     const styleClasses = {
         primary: {
             backgroundColor: "#FF616126",
@@ -17,4 +17,4 @@ export default (props) => {
             <h6 className="uppercase text-sm font-medium tracking-wide">{props.text}</h6>
         </div>
     );
-};
+}

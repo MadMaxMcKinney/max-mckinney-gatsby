@@ -2,7 +2,6 @@ import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Pill from "../pills/Pill";
 import ReadMoreButton from "../buttons/ReadMoreButton";
-import PropTypes from "prop-types";
 import { MBody, MHeading02 } from "../typography";
 
 const ProfessionalProjectCard = (props) => {
