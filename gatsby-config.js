@@ -14,14 +14,6 @@ module.exports = {
         "gatsby-plugin-image",
         "gatsby-plugin-postcss",
         {
-            resolve: "gatsby-plugin-google-analytics",
-            options: {
-                trackingId: "UA-60484784-4",
-                // Puts tracking script in the head instead of the body
-                head: true,
-            },
-        },
-        {
             resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
